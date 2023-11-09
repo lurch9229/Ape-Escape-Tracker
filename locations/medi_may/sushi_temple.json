@@ -1,0 +1,711 @@
+[
+    {
+        "name": "Sushi Temple",
+        "color": "#FFFFFF",
+        "children": [
+            {
+                "name": "Sushi Temple",
+                "map_locations": [
+                    {
+                        "map": "Sushi_Temple",
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "map": "Medieval_Mayhem",
+                        "x": 60,
+                        "y": 140
+                    }
+                ],
+                "access_rules": 
+                        [
+                            "st_key"
+                        ],
+                "sections": [
+                    {
+                        "name": "Taku",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rocka",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Mara-lea",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Wog",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, sling",
+                            "net, op_no_ij, club",
+                            "net, op_no_ij, flyer",
+                            "net, op_et, club",
+                            "net, op_et, flyer"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Mayi",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Owyang",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Long",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                           "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Elly",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, flyer",
+                            "net, op_et, sling"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Chunky",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, flyer",
+                            "net, op_et, sling"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Voti",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, sling",
+                            "net, op_et, hoop, flyer"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Quel Tin",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Phaldo",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 1",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 2",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 3",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer",
+                            "op_et, sling"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Time Trial",
+                        "visibility_rules": 
+                        [
+                            "shuffleTT"
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Courtyard 1st - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Sushi_Temple",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Taku",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Courtyard 2nd - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Sushi_Temple",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Rocka",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Courtyard 3rd - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Sushi_Temple",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Mara-lea",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Temple Roof - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Sushi_Temple",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Wog",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "sling"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Temple Left - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Sushi_Temple",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Mayi",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Temple Right - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Sushi_Temple",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Owyang",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Buddha Statue  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Sushi_Temple",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Long",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                           ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Right Rafters  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Sushi_Temple",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Elly",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Left Rafters  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Sushi_Temple",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Chunky",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Behind Wall  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Sushi_Temple",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Voti",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "sling"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Lava Area 1st  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Sushi_Temple",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Quel Tin",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Lava Area 2nd  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Sushi_Temple",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Phaldo",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Sushi Temple - Outside - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Sushi_Temple",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 1",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Sushi Temple - Temple - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Sushi_Temple",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 2",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Sushi Temple - Well - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Sushi_Temple",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 3",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Sushi Temple - Time Attack",
+                "map_locations": [
+                    {
+                        "map": "Sushi_Temple",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Beat 0:0:0",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleTT"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            }
+        ]
+    }
+]

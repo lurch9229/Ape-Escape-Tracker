@@ -1,0 +1,1115 @@
+[
+    {
+        "name": "Crumbling Castle",
+        "color": "#FFFFFF",
+        "children": [
+            {
+                "name": "Crumbling Castle",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "map": "Medieval_Mayhem",
+                        "x": 295,
+                        "y": 130
+                    }
+                ],
+                "access_rules": 
+                        [
+                            "cca_key"
+                        ],
+                "sections": [
+                    {
+                        "name": "Robart",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Igor",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Naners",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Neeners",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Charles",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, punch"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Gustav",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Wilhelm",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                           "net, $CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Emmanuel",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Sir Cutty",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Calligan",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CC_WaterRoom, water",
+                            "net, $CC_WaterRoom, punch"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Castalist",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "$CC_WaterRoom, water"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Deveneom",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "$CC_WaterRoom, water",
+                            "net, $CC_WaterRoom, op_no_ij",
+                            "net, $CC_WaterRoom, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Astur",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CC_ButtonRoom"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Kilserack",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CC_ButtonRoom",
+                            "water, $CC_ButtonRoom"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Ringo",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Densil",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Figero",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Fej",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Joey",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $HasMobility"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Donqui",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 1",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "$CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 2",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "$CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 3",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "$CC_ButtonRoom"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 4",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "$CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Time Trial",
+                        "visibility_rules": 
+                        [
+                            "shuffleTT"
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "By UFO On Cliff - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Robart",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Behind Castle - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Igor",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Chilling On Cliffside - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Naners",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Castle Roof - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Neeners",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Roof Punch Box - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Charles",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "punch"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Throne - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Gustav",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Above Throne  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Wilhelm",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                           "CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Across Chandeliers  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Emmanuel",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "On Chandelier  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Sir Cutty",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "THrough Water Tunnel  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Calligan",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CC_WaterRoom, water",
+                            "CC_WaterRoom, punch"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Swim Underwater  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Castalist",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CC_WaterRoom, water"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Swim Surface  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Deveneom",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CC_WaterRoom, water"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Upper Level  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Astur",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CC_ButtonRoom"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Lower Level  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Kilserack",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CC_ButtonRoom"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Upper Guillotine  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Ringo",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Prison Cell  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Densil",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Lower Guillotine  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Figero",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Middle Ledge  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Fej",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "At The Top  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Joey",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "HasMobility"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Bells  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Donqui",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Crumbling Castle - Outside - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 1",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Crumbling Castle - Main Castle - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 2",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Crumbling Castle - Button Room - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 3",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "CC_ButtonRoom"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Crumbling Castle - Elevator Room - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 4",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "CC_5Monkeys"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Crumbling Castle - Time Attack",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Beat 0:0:0",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleTT"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Crumbling Castle - Boss",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Beat 0:0:0",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CC_ButtonRoom, CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            }
+        ]
+    }
+]

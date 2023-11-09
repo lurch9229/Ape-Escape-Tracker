@@ -1,0 +1,506 @@
+[
+    {
+        "name": "Hot Springs",
+        "color": "#FFFFFF",
+        "children": [
+            {
+                "name": "Open Area - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Hot_Springs",
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "map": "New_Freezeland",
+                        "x": 330,
+                        "y": 140
+                    }
+                ],
+                "access_rules": 
+                        [
+                            "hs_key"
+                        ],
+                "sections": [
+                    {
+                        "name": "Punky",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Ameego",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CanDive"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Yoky",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, flyer",
+                            "net, op_et, sling"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Jory",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, flyer",
+                            "net, op_et, sling"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crank",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, flyer",
+                            "net, op_et, sling"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Claxter",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, flyer",
+                            "net, op_et, sling"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Roti",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                           "net, $CanHitMultiple",
+                           "net, $CanHitOnce, op_no_ij",
+                           "net, $CanHitOnce, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Dissa",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CanHitMultiple",
+                            "net, $CanHitOnce, op_no_ij",
+                            "net, $CanHitOnce, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Coin 1",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer",
+                            "op_et, sling"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 2",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "$CanHitMultiple",
+                            "$CanHitOnce, op_no_ij",
+                            "$CanHitOnce, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Time Trial",
+                        "visibility_rules": 
+                        [
+                            "shuffleTT"
+                        ],
+                        "access_rules": 
+                        [
+                            "net, flyer",
+                            "net, op_no_ij, water, punch",
+                            "net, op_et, water, punch",
+                            "net, op_et, sling"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Open Area - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Hot_Springs",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Punky",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Underwater Cave - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Hot_Springs",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Ameego",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "water"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Across Ice Bridge - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Hot_Springs",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Yoky",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Upper Ledge - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Hot_Springs",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Jory",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Black Jacket - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Hot_Springs",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Crank",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Yellow Jacket - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Hot_Springs",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Claxter",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Polar Bear Furthest  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Hot_Springs",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Roti",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                           "CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Polar Bear Closest  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Hot_Springs",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Dissa",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Hot Springs - Hot Spring - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Hot_Springs",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 1",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Hot Springs - Polar Bear Cave - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Hot_Springs",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 2",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Hot Springs - Time Attack",
+                "map_locations": [
+                    {
+                        "map": "Hot_Springs",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Beat 0:0:0",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleTT"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            }
+        ]
+    }
+]

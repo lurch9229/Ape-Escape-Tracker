@@ -1,0 +1,833 @@
+[
+    {
+        "name": "Dark Ruins",
+        "color": "#FFFFFF",
+        "children": [
+            
+            {
+                "name": "Dark Ruins",
+                "map_locations": [
+                    {
+                        "map": "Dark_Ruins",
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "map": "Mysterious_Age",
+                        "x": 175,
+                        "y": 195
+                    }
+                ],
+                "access_rules": 
+                        [
+                            "dr_key"
+                        ],
+                "sections": [
+                    {
+                        "name": "Kyle",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CanHitOnce",
+                            "net, flyer",
+                            "net, $CanHitOnce, op_no_ij",
+                            "net, $CanHitOnce, op_et"
+
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Stan",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Kenny",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Cratman",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Mooshy",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, hoop",
+                            "net, op_no_ij",
+                            "net, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Nuzzy",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, sling",
+                            "net, punch",
+                            "net, hoop",
+                            "net, op_no_ij",
+                            "net, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Mav",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Papou",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Trance",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Bernt",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, shooter",
+                            "net, op_no_ij, punch",
+                            "net, op_et, punch"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Runt",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "water, sling",
+                            "water, hoop, $CanHitOnce",
+                            "water, hoop, flyer",
+                            "water, $CanHitOnce, op_no_ij",
+                            "net, op_no_ij, sling",
+                            "net, op_no_ij, hoop",
+                            "water, $CanHitOnce, op_et",
+                            "net, op_et, sling",
+                            "net, op_et, hoop"                            
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Hoolah",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Chino",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "water, sling",
+                            "water, hoop, $CanHitOnce",
+                            "water, hoop, flyer",
+                            "water, $CanHitOnce, op_no_ij",
+                            "net, op_no_ij, sling",
+                            "net, op_no_ij, hoop",
+                            "water, $CanHitOnce, op_et",
+                            "net, op_et, sling",
+                            "net, op_et, hoop"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 1",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 2",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 3",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "car",
+                            "punch",
+                            "op_no_ij, hoop, flyer",
+                            "op_et, hoop, flyer",
+                            "op_et, sling"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 4",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "water, $CanHitOnce",
+                            "water, flyer",
+                            "op_no_ij, $CanDive, $CanHitOnce",
+                            "op_et, $CanDive, $CanHitOnce"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Time Trial",
+                        "visibility_rules": 
+                        [
+                            "shuffleTT"
+                        ],
+                        "access_rules": 
+                        [
+                            "hoop",
+                            "flyer",
+                            "op_no_ij",
+                            "op_et"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Ledge Above Start - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dark_Ruins",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Kyle",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CanHitOnce"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "In Fenced Area - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dark_Ruins",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Stan",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Top Level of Obelisk - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dark_Ruins",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Kenny",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Pillars Area - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dark_Ruins",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Cratman",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Speedy Near Start - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dark_Ruins",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Mooshy",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "hoop"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "By Fan - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dark_Ruins",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Nuzzy",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "sling",
+                            "punch",
+                            "hoop"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Top Ledge - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dark_Ruins",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Mav",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "On Main Path - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dark_Ruins",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Papou",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Behind Punch Wall - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dark_Ruins",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Trance",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Hanging On Vines - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dark_Ruins",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Bernt",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "shooter"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Basement - Speedy Near Start - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dark_Ruins",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Runt",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "water, sling",
+                            "water, hoop, CanHitOnce"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Totem Miniboss - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dark_Ruins",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Hoolah",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Jumps After Runt - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dark_Ruins",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Chino",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "water, sling",
+                            "water, hoop, CanHitOnce"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Dark Ruins - Outside - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Dark_Ruins",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 1",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "HasMobility"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Dark Ruins - Fan Basement - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Dark_Ruins",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 2",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "TJ_Mushroom, CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Dark Ruins - Obelisk Interior - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Dark_Ruins",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 3",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "car",
+                            "punch"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Dark Ruins - Water Basement - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Dark_Ruins",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 4",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "water, CanHitOnce",
+                            "water, flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Dark Ruins - Time Attack",
+                "map_locations": [
+                    {
+                        "map": "Dark_Ruins",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Beat 0:0:0",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleTT"
+                        ],
+                        "access_rules": 
+                        [
+                            "hoop, flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            }
+        ]
+    }
+]

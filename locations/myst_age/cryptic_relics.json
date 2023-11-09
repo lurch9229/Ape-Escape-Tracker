@@ -1,0 +1,488 @@
+[
+    {
+        "name": "Cryptic Relics",
+        "color": "#FFFFFF",
+        "children": [
+            
+            {
+                "name": "Cryptic Relics",
+                "map_locations": [
+                    {
+                        "map": "Cryptic_Relics",
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "map": "Mysterious_Age",
+                        "x": 290,
+                        "y": 120
+                    }
+                ],
+                "access_rules": 
+                        [
+                            "cr_key"
+                        ],
+                "sections": [
+                    {
+                        "name": "Bazzle",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/items/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, sling",
+                            "net, flyer",
+                            "net, op_no_ij",
+                            "net, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Freeto",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/items/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Troopa",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/items/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, sling",
+                            "flyer, $CanHitOnce",
+                            "net, op_no_ij, hoop",
+                            "net, op_no_ij, flyer",
+                            "net, op_et, hoop",
+                            "net, op_et, flyer"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Stymie",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/items/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CR_Inside"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Spanky",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/items/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CR_Inside, water, flyer",
+                            "net, $CR_Inside, water, $CanHitMultiple",
+                            "net, $CR_Inside, op_no_ij, $CanSwim, $CanHitMultiple",
+                            "net, $CR_Inside, op_no_ij, flyer",
+                            "net, $CR_Inside, op_et, $CanSwim, $CanHitMultiple",
+                            "net, $CR_Inside, op_et, flyer",
+                            "net, $CR_Inside, op_et, sling"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Jesta",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/items/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CR_Inside, $CanHitMultiple",
+                            "net, $CR_Inside, $CanSwim, flyer",
+                            "net, $CR_Inside, op_et, $CanSwim, sling",
+                            "net, $CR_Inside, op_et, $CanSwim, hoop",
+                            "net, $CR_Inside, op_et, $CanSwim, flyer"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Pally",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/items/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CR_Inside"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crash",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/items/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CR_Inside, $RCMonkey"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/items/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "$CR_Inside, $CanSwim, $CanHitMultiple",
+                            "$CR_Inside, flyer",
+                            "$CR_Inside, op_no_ij, $CanSwim",
+                            "$CR_Inside, op_no_ij, flyer",
+                            "$CR_Inside, op_et, $CanSwim",
+                            "$CR_Inside, op_et, flyer",
+                            "$CR_Inside, op_et, sling",
+                            "$CR_Inside, op_et, hoop"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Time Trial",
+                        "visibility_rules": 
+                        [
+                            "shuffleTT"
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CR_Inside",
+                            "net, flyer, club",
+                            "net, op_no_ij, sling",
+                            "net, op_no_ij, hoop",
+                            "net, op_no_ij, flyer",
+                            "net, op_no_ij, punch",
+                            "net, op_et, sling",
+                            "net, op_et, hoop",
+                            "net, op_et, flyer",
+                            "net, op_et, punch"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Overlooking Start - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Cryptic_Relics",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Bazzle",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "sling",
+                            "flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Behind Push Block - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Cryptic_Relics",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Freeto",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Above Button - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Cryptic_Relics",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Troopa",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "sling",
+                            "flyer, CanHitOnce"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Behind Button Gate - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Cryptic_Relics",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Stymie",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CR_Inside"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "End Of Loop - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Cryptic_Relics",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Spanky",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CR_Inside, water"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "By River - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Cryptic_Relics",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Jesta",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "TJ_Mushroom, CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Atop Breakable Pillar - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Cryptic_Relics",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Pally",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CR_Inside"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Behind Car Cage - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Cryptic_Relics",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Crash",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CR_Inside, car"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Cryptic Relics - Main Ruins - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Cryptic_Relics",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 1",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "CR_Inside, water",
+                            "CR_Inside, flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Cryptic Relics - Time Attack",
+                "map_locations": [
+                    {
+                        "map": "Cryptic_Relics",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Beat 0:0:0",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleTT"
+                        ],
+                        "access_rules": 
+                        [
+                            "CR_Inside",
+                            "flyer, club"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            }
+        ]
+    }
+]

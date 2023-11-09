@@ -1,0 +1,677 @@
+[
+    {
+        "name": "Dexter's Island",
+        "color": "#FFFFFF",
+        "children": [
+            {
+                "name": "Dexter's Island",
+                "map_locations": [
+                    {
+                        "map": "Dexters_Island",
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "map": "Oceana",
+                        "x": 305,
+                        "y": 140
+                    }
+                ],
+                "access_rules": 
+                        [
+                            "di_key"
+                        ],
+                "sections": [
+                    {
+                        "name": "Ton Ton",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CanHitOnce"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Stuw",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, water",
+                            "net, $CanHitOnce"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Mars",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CanHitOnce, car",
+                            "water, $CanHitOnce, car",
+                            "net, op_no_ij, car",
+                            "water, op_no_ij, car",
+                            "net, op_et, car",
+                            "water, op_et, car"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Murky",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CanHitOnce"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Horke",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CanHitOnce, water",
+                            "net, $CanHitOnce, flyer",
+                            "net, op_et, sling"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Howeerd",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $DI_SecondHalf, shooter",
+                            "net, op_et, flyer"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Robbin",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $DI_SecondHalf, shooter",
+                            "net, op_et, flyer"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Jakkee",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $DI_SecondHalf, $DI_Boulders"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Frederic",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, DI_SecondHalf, DI_Boulders"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Baba",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, DI_SecondHalf, DI_Boulders"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Quirck",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, DI_SecondHalf, DI_Boulders"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Coin 1",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "water",
+                            "$CanHitOnce"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 2",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "water, $CanHitOnce"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 3",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "water, $CanHitOnce, net",
+                            "water, punch",
+                            "op_no_ij, $CanHitOnce, net",
+                            "op_no_ij, punch",
+                            "op_et, $CanHitOnce, net",
+                            "op_et, punch"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Time Trial",
+                        "visibility_rules": 
+                        [
+                            "shuffleTT"
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CanHitOnce"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Behind Wall - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dexters_Island",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Ton Ton",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CanHitOnce"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "On A Boat - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dexters_Island",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Stuw",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "water",
+                            "CanHitOnce"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Car Cage - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dexters_Island",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Mars",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CanHitOnce, car"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Above Ship - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dexters_Island",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Murky",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CanHitOnce"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Weird Room - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dexters_Island",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Horke",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CanHitOnce, water",
+                            "CanHitOnce, flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Shooting Gallery Hole 1st - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dexters_Island",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Howeerd",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "DI_SecondHalf, shooter"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Shooting Gallery Hole 2st - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dexters_Island",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Robbin",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "DI_SecondHalf, shooter"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Boulder Room 1st - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dexters_Island",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Jakkee",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "DI_SecondHalf, DI_Boulders"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Boulder Room 2nd - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dexters_Island",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Frederic",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "DI_SecondHalf, DI_Boulders"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Boulder Room 3rd - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dexters_Island",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Baba",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "water, CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Hanging Cage - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Dexters_Island",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Quirck",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "water, CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Dexter's Island - Outside - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Dexters_Island",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 1",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "water",
+                            "CanHitOnce"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Dexter's Island - Stomach - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Dexters_Island",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 2",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "water, CanHitOnce"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Dexter's Island - Slide - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Dexters_Island",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 3",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "water, net",
+                            "water, punch"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Dexter's Island - Time Attack",
+                "map_locations": [
+                    {
+                        "map": "Dexters_Island",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Beat 0:0:0",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CanHitOnce"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            }
+        ]
+    }
+]

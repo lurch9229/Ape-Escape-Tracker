@@ -1,0 +1,612 @@
+[
+    {
+        "name": "Frosty Retreat",
+        "color": "#FFFFFF",
+        "children": [
+            {
+                "name": "Frosty Retreat",
+                "map_locations": [
+                    {
+                        "map": "Frosty_Retreat",
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "map": "New_Freezeland",
+                        "x": 170,
+                        "y": 180
+                    }
+                ],
+                "access_rules": 
+                        [
+                            "fr_key"
+                        ],
+                "sections": [
+                    {
+                        "name": "Storm",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, flyer",
+                            "net, op_no_ij",
+                            "net, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Qube",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, flyer",
+                            "net, op_no_ij",
+                            "net, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Ranix",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, flyer sling",
+                            "water, flyer, sling",
+                            "net, op_no_ij, sling",
+                            "water, op_no_ij",
+                            "net, op_et, sling",
+                            "water, op_et",
+                            "net, hoop, flyer"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Sharpe",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, flyer",
+                            "net, op_no_ij",
+                            "net, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Sticky",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, flyer",
+                            "net, op_no_ij",
+                            "net, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Droog",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, flyer, water",
+                            "net, $CanDive, op_no_ij",
+                            "net, $CanDive, op_et",
+                            "net, op_et, flyer",
+                            "net, op_et, sling"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Gash",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                           "net, flyer",
+                           "water, flyer",
+                           "net, op_no_ij",
+                           "water, op_no_ij",
+                           "net, op_et",
+                           "water, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Kundra",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, flyer",
+                            "net, op_no_ij",
+                            "net, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Shadow",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, flyer",
+                            "net, op_no_ij",
+                            "net, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 1",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer",
+                            "op_no_ij",
+                            "op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 2",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer, water",
+                            "$CanDive, op_no_ij",
+                            "$CanDive, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 3",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer",
+                            "op_no_ij",
+                            "op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Time Trial",
+                        "visibility_rules": 
+                        [
+                            "shuffleTT"
+                        ],
+                        "access_rules": 
+                        [
+                            "net, flyer",
+                            "net, op_et"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "By Table 1st - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Frosty_Retreat",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Storm",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "By Table 2nd - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Frosty_Retreat",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Qube",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "UFO - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Frosty_Retreat",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Ranix",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer, water, sling"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Balance Beam - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Frosty_Retreat",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Sharpe",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Back Corner - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Frosty_Retreat",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Sticky",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Igloos - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Frosty_Retreat",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Droog",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer, water"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Early Caverns - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Frosty_Retreat",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Gash",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                           "flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Red Jacket, Upstairs - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Frosty_Retreat",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Kundra",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Raised Ledge - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Frosty_Retreat",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Shadow",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CanHitMultiple",
+                            "flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Frosty Retreat - Entrance - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Frosty_Retreat",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 1",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Frosty Retreat - Water Room - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Frosty_Retreat",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 2",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer, water"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Frosty Retreat - Caverns - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Frosty_Retreat",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 3",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Frosty Retreat - Time Attack",
+                "map_locations": [
+                    {
+                        "map": "Frosty_Retreat",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Beat 0:0:0",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleTT"
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            }
+        ]
+    }
+]

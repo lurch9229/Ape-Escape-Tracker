@@ -1,0 +1,126 @@
+{
+	"tracker_horizontal": 
+	{
+    	"type": "container",
+    	"content": {
+      		"type": "dock",
+      		"dropshadow": true,
+      		"content": [
+        		{
+          			"type": "array",
+          			"dock": "left",
+          			"orientation": "horizontal",
+          			"content": [
+            			{
+              				"type": "group",
+              				"header": "Items",
+              				"content": {
+                				"type": "array",
+                				"orientation": "vertical",
+                				"margin": "0,0",
+                				"content": [
+                  					{
+                    					"type": "layout",
+                    					"key": "item_grid"
+                  					}
+                				]
+            				}
+            			},
+                        {
+                            "type": "group",
+              				"header": "Levels",
+              				"content": {
+                				"type": "array",
+                				"orientation": "vertical",
+                				"margin": "0,0",
+                				"content": [
+                  					{
+                    					"type": "layout",
+                    					"key": "level_grid_left"
+                  					}
+                				]
+            				}
+                        },
+                        {
+                            "type": "group",
+              				"content": {
+                				"type": "array",
+                				"orientation": "vertical",
+                				"margin": "0,0",
+                				"content": [
+                  					{
+                    					"type": "layout",
+                    					"key": "level_grid_right"
+                  					}
+                				]
+            				}
+                        }
+					]
+				},
+                {
+                    "type": "array",
+                    "v_alignment": "stretch",
+                    "h_alignment": "stretch",
+                    "margin": "0, 0, 0, 0",
+                    "content": [
+                        {
+                            "type": "tabbed",
+                            "dock": "left",
+                            "tabs": [
+                                {
+                                    "title": "Lost Lands",
+                                    "content": {
+                                        "type":"map",
+                                        "maps": ["Lost_Lands"]
+                                    }
+                                },
+                                {
+                                    "title": "Mysterious Age",
+                                    "content": {
+                                        "type": "map",
+                                        "maps": ["Mysterious_Age"]
+                                    }
+                                },
+                                {
+                                    "title": "Oceana",
+                                    "content": {
+                                        "type": "map",
+                                        "maps": ["Oceana"]
+                                    }
+                                },
+                                {
+                                    "title": "New Freezeland",
+                                    "content": {
+                                        "type": "map",
+                                        "maps": ["New_Freezeland"]
+                                    }
+                                },
+                                {
+                                    "title": "Medieval Mayhem",
+                                    "content": {
+                                        "type": "map",
+                                        "maps": ["Medieval_Mayhem"]
+                                    }
+                                },
+                                {
+                                    "title": "Futurama",
+                                    "content": {
+                                        "type": "map",
+                                        "maps": ["Futurama"]
+                                    }
+                                },
+                                {
+                                    "title": "Specter Land",
+                                    "content": {
+                                        "type": "map",
+                                        "maps": ["Specter_Land"]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+			]
+		}
+	}
+}

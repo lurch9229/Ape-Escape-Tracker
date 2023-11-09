@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Logic Mode",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "loop": false,
+    "stages": [
+      {
+        "name": "Glitchless",
+        "img": "images/settings/logic_gless.png",
+        "codes": "op_gl",
+        "allow_disabled": false
+      },
+      {
+        "name": "No Infinite Jumps",
+        "img": "images/settings/logic_no_ij.png",
+        "codes": "op_no_ij",
+        "inherit_codes": false
+      },
+      {
+        "name": "Unrestricted",
+        "img": "images/settings/logic_no_rest.png",
+        "codes": "op_et",
+        "inherit_codes": false
+      }
+    ]
+  }
+]

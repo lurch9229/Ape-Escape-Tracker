@@ -1,0 +1,795 @@
+[
+    {
+        "name": "City Park",
+        "color": "#FFFFFF",
+        "children": [
+            {
+                "name": "City Park",
+                "map_locations": [
+                    {
+                        "map": "City_Park",
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "map": "Futurama",
+                        "x": 40,
+                        "y": 145
+                    }
+                ],
+                "access_rules": 
+                        [
+                            "cp_key"
+                        ],
+                "sections": [
+                    {
+                        "name": "Kaine",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $RCMonkey",
+                            "net, op_no_ij",
+                            "net, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Jaxx",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Gehry",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CP_FrontBarrels, water, flyer",
+                            "net, op_no_ij, flyer",
+                            "net, op_et, flyer",
+                            "net, op_et, sling"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Alcatraz",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Tino",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CP_FrontSewer, car",
+                            "net, $CP_BackSewer, op_no_ij, car",
+                            "net, $CP_BackSewer, op_et, car"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Q. Bee",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CP_FrontSewer, car",
+                            "net, $CP_BackSewer, op_no_ij",
+                            "net, $CP_BackSewer, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "McManic",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CP_FrontSewer, car",
+                            "net, $CP_BackSewer, op_no_ij, car",
+                            "net, op_no_ij, flyer",
+                            "net, $CP_BackSewer, op_et, car",
+                            "net, op_et, flyer",
+                            "net, op_et, sling"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Dywan",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CP_FrontBarrels",
+                            "net, $CP_BackSewer, op_no_ij",
+                            "net, $CP_BackSewer, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "CK Hutch",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CP_FrontBarrels, $CanDive, flyer",
+                            "net, $CP_BackSewer, $CanDive, op_no_ij",
+                            "net, $CP_BackSewer, $CanDive, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Winky",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CP_FrontBarrels, flyer",
+                            "water, $CP_FrontBarrels, flyer",
+                            "net, $CP_BackSewer, op_no_ij",
+                            "water, $CP_BackSewer, op_no_ij",
+                            "net, $CP_BackSewer, op_et",
+                            "water, $CP_BackSewer, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "B. Luv",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CP_FrontBarrels, flyer",
+                            "net, $CP_FrontBarrels, $CanSwim, op_no_ij",
+                            "net, $CP_FrontBarrels, op_no_ij, flyer",
+                            "net, $CP_BackSewer, op_no_ij",
+                            "net, $CP_FrontBarrels, $CanSwim, op_et",
+                            "net, $CP_FrontBarrels, op_et, flyer",
+                            "net, $CP_FrontBarrels, op_et, sling",
+                            "net, $CP_BackSewer, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Camper",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CP_FrontBarrels, water, flyer",
+                            "$CP_FrontBarrels, water, flyer",
+                            "net, $CP_BackSewer, water, op_no_ij",
+                            "net, $CP_BackSewer, water, op_et",
+                            "net, $CP_FrontBarrels, water, op_et",
+                            "net, $CP_BackSewer, water, op_et",
+                            "net, $CP_FrontBarrels, op_et, sling, car",
+                            "net, $CP_BackSewers, op_et, sling, car"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Huener",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CP_FrontBarrels, water, flyer",
+                            "net, $CP_FrontBarrels, op_no_ij, hoop, flyer",
+                            "net, $CP_FrontBarrels, op_no_ij, $CanSwim, flyer",
+                            "net, $CP_BackSewer, op_no_ij",
+                            "net, $CP_FrontBarrels, op_et, hoop, flyer",
+                            "net, $CP_FrontBarrels, op_et, $CanSwim, flyer",
+                            "net, $CP_BackSewer, op_et",
+                            "net, op_et, sling, "
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 1",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "$CP_FrontBarrels, water, flyer",
+                            "op_no_ij, flyer",
+                            "op_et, flyer",
+                            "op_et, sling"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 2",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "$CP_FrontSewer, car",
+                            "$CP_BackSewer, op_no_ij, car",
+                            "$CP_BackSewer, op_et, car",
+                            "op_et, sling"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 3",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "$CP_FrontBarrels, flyer",
+                            "$CP_BackSewer, op_no_ij, flyer",
+                            "$CP_BackSewer, op_et, flyer",
+                            "$CP_FrontBarrels, op_et, sling"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Time Trial",
+                        "visibility_rules": 
+                        [
+                            "shuffleTT"
+                        ],
+                        "access_rules": 
+                        [
+                            "net",
+                            "hoop, water, $CP_BackSewer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "City Park Outside - Car Cage - Monkey",
+                "map_locations": [
+                    {
+                        "map": "City_Park",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Kaine",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "RCMonkey"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "City Park Outside - Boxing Ring - Monkey",
+                "map_locations": [
+                    {
+                        "map": "City_Park",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Jaxx",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "City Park Outside - Upper Pipe - Monkey",
+                "map_locations": [
+                    {
+                        "map": "City_Park",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Gehry",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "CP_FrontBarrels, water, flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "City Park Outside - Bench - Monkey",
+                "map_locations": [
+                    {
+                        "map": "City_Park",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Alcatraz",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "City Park Sewers - Car Cage - Monkey",
+                "map_locations": [
+                    {
+                        "map": "City_Park",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Tino",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "CP_FrontSewer, car"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "City Park Sewers - Behind Closed Door - Monkey",
+                "map_locations": [
+                    {
+                        "map": "City_Park",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Q. Bee",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "CP_FrontSewer, car"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "City Park Sewers - Raised Grating - Monkey",
+                "map_locations": [
+                    {
+                        "map": "City_Park",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "McManic",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                           "CP_FrontSewer, car"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "City Park Barrel Room - Barrel Slope - Monkey",
+                "map_locations": [
+                    {
+                        "map": "City_Park",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Dywan",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "CP_FrontBarrels"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "City Park Barrel Room - Through Water Tunnel - Monkey",
+                "map_locations": [
+                    {
+                        "map": "City_Park",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "CK Hutch",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "CP_FrontBarrels"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "City Park Barrel Room - Pipe After Barrels - Monkey",
+                "map_locations": [
+                    {
+                        "map": "City_Park",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Winky",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "CP_FrontBarrels, flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "City Park Barrel Room - Platform Above Water - Monkey",
+                "map_locations": [
+                    {
+                        "map": "City_Park",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "B. Luv",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "CP_FrontBarrels, flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "City Park Barrel Room - Swim Underwater - Monkey",
+                "map_locations": [
+                    {
+                        "map": "City_Park",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Camper",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "CP_FrontBarrels, water, flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "City Park Barrel Room - High Ledge At End - Monkey",
+                "map_locations": [
+                    {
+                        "map": "City_Park",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Huener",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "CP_FrontBarrels, water, flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "City Park - Outside - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "City_Park",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 1",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "CP_FrontBarrels, water, flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "City Park - Sewers - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "City_Park",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 2",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "CP_FrontSewer, car"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "City Park - Barrel Room - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "City_Park",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 3",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "CP_FrontBarrels, flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "City Park - Time Attack",
+                "map_locations": [
+                    {
+                        "map": "City_Park",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Beat 0:0:0",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            }
+        ]
+    }
+]

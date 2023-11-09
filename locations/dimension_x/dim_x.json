@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Dimension X",
+        "chest_unopened_img": "images/items/chest_x.png",
+        "chest_opened_img": "images/items/chest_o.png",
+        "color": "#FFFFFF",
+        "children": [
+            {
+                "name": "Stadium Attack - Race Jake",
+                "map_locations": [
+                    {
+                        "map": "Dimension_X",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "5 Specter Coins",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "water"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Gladiator Attack - Race Jake",
+                "map_locations": [
+                    {
+                        "map": "Dimension_X",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "5 Specter Coins",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            }
+        ]
+    }
+]

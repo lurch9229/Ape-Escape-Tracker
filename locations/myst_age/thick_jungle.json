@@ -1,0 +1,864 @@
+[
+    {
+        "name": "Thick Jungle",
+        "color": "#FFFFFF",
+        "children": [
+            {
+                "name": "Thick Jungle",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "map": "Mysterious_Age",
+                        "x": 70,
+                        "y": 145
+                    }
+                ],
+                "access_rules": 
+                        [
+                            "tj_key"
+                        ],
+                "sections": [
+                    {
+                        "name": "Marquez",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CanHitMultiple",
+                            "net, op_no_ij",
+                            "net, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Livinston",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CanHitMultiple",
+                            "net, op_no_ij, $CanHitOnce",
+                            "net, op_et, $CanHitOnce"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "George",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Gonzo",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $TJ_Mushroom, $CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Zanzibar",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $TJ_Mushroom, $CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Alphonse",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $TJ_Mushroom, $CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Maki",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $TJ_FishEntry, sling",
+                            "net, op_et, $TJ_FishEntry, flyer, hoop"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Herb",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $TJ_FishEntry"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Dilweed",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $TJ_FishEntry, $CanHitMultiple",
+                            "net, $TJ_UFOEntry, $TJ_UFOCliff"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Stoddy",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $TJ_Mushroom, $CanHitMultiple",
+                            "net, $TJ_UFOEntry, $TJ_UFOCliff"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Mitong",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $TJ_FishEntry, $CanHitMultiple",
+                            "net, $TJ_UFOEntry, $TJ_UFOCliff"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Nasus",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $TJ_FishEntry, $CanHitMultiple",
+                            "net, $TJ_UFOEntry, $TJ_UFOCliff, $CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Elehcim",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $TJ_UFOEntry, sling",
+                            "net, $TJ_FishEntry, $CanHitMultiple, sling",
+                            "net, op_no_ij, $TJ_UFOEntry",
+                            "net, op_no_ij, $TJ_FishEntry, $CanHitMultiple",
+                            "net, op_et, $TJ_UFOEntry",
+                            "net, op_et, $TJ_FishEntry, $CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Selur",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, sling, $TJ_UFOEntry, $TJ_UFOCliff",
+                            "net, sling, $TJ_FishEntry, $CanHitMultiple",
+                            "net, club, $TJ_UFOEntry, $TJ_UFOCliff, op_no_ij",
+                            "net, flyer, $TJ_UFOEntry, $TJ_UFOCliff, op_no_ij",
+                            "net, club, $TJ_FishEntry, $CanHitMultiple, op_no_ij",
+                            "net, flyer, $TJ_FishEntry, $CanHitMultiple, op_no_ij",
+                            "net, club, $TJ_UFOEntry, $TJ_UFOCliff, op_et",
+                            "net, flyer, $TJ_UFOEntry, $TJ_UFOCliff, op_et",
+                            "net, club, $TJ_FishEntry, $CanHitMultiple, op_et",
+                            "net, flyer, $TJ_FishEntry, $CanHitMultiple, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 1",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "$HasMobility"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 2",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "$TJ_Mushroom, $CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 3",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "$TJ_FishEntry"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Specter Coin 4",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "$TJ_FishEntry, $CanHitMultiple",
+                            "$TJ_UFOEntry, $TJ_UFOCliff"
+                        ],
+                        "item_count": 4
+                    },
+                    {
+                        "name": "Time Trial",
+                        "visibility_rules": 
+                        [
+                            "shuffleTT"
+                        ],
+                        "access_rules": 
+                        [
+                            "net, water, $CanHitMultiple",
+                            "net, $HasMobility, $CanHitMultiple, op_no_ij",
+                            "net, $HasMobility, $CanHitMultiple, op_et",
+                            "net, sling, op_et"
+
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Behind Tree - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Marquez",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Front Left Beehive - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Livinston",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Wooden Tower - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "George",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Specter Statue - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Gonzo",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "TJ_Mushroom, CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Secret Cave - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Zanzibar",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "TJ_Mushroom, CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "By Tree - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Alphonse",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "TJ_Mushroom, CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Highest Hanging - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Maki",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "TJ_FishEntry, shooter"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Reachable Hanging - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Herb",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "TJ_FishEntry"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "End of River - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Dilweed",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "TJ_FishEntry, CanHitMultiple",
+                            "TJ_UFOEntry, TJ_UFOCliff"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Central Plateau - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Stoddy",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "TJ_Mushroom, CanHitMultiple",
+                            "TJ_UFOEntry, TJ_UFOCliff"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "By Tent - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Mitong",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "TJ_FishEntry, CanHitMultiple",
+                            "TJ_UFOEntry, TJ_UFOCliff"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "By Tree + Tent - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Nasus",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "TJ_FishEntry, CanHitMultiple",
+                            "TJ_UFOEntry, TJ_UFOCliff, CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Boulder Room - By UFO - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Elehcim",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "TJ_UFOEntry",
+                            "TJ_FishEntry, shooter, CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Boulder Room - Hanging - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Selur",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "TJ_Mushroom, CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Thick Jungle - Entry - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 1",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "HasMobility"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Thick Jungle - Mushroom Area - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 2",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "TJ_Mushroom, CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Thick Jungle - Fish Room - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 3",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "TJ_FishEntry"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Thick Jungle - Tent Room - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 4",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "TJ_FishEntry, CanHitMultiple",
+                            "TJ_UFOEntry, TJ_UFOCliff"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Thick Jungle - Time Attack",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Beat 0:0:0",
+                        "visibility_rules": 
+                        [
+                            "disabled",
+                            "shuffleTT"
+                        ],
+                        "access_rules": 
+                        [
+                            "water, CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            }
+        ]
+    }
+]

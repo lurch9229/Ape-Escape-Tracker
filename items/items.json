@@ -1,0 +1,75 @@
+[
+{
+    "name": "Stun Club",
+    "type": "toggle",
+    "loop": "false",
+    "img": "images/items/Stun_Club.png",
+    "initial_active_state": true,
+    "codes": "stun, club"
+  },
+  {
+    "name": "Time Net",
+    "type": "toggle",
+    "loop": "false",
+    "img": "images/items/Time_Net.png",
+    "initial_active_state": true,
+    "codes": "net"
+  },
+  {
+    "name": "Water Net",
+    "type": "toggle",
+    "loop": "false",
+    "img": "images/items/Water_Net.png",
+    "codes": "water"
+  },
+  {
+    "name": "Monkey Radar",
+    "type": "toggle",
+    "loop": "false",
+    "img": "images/items/Monkey_Radar.png",
+    "codes": "radar"
+  },
+  {
+    "name": "Super Hoop",
+    "type": "toggle",
+    "loop": "false",
+    "img": "images/items/Dash_Hoop.png",
+    "codes": "dash, hoop, super"
+  },
+  {
+    "name": "Sky Flyer",
+    "type": "toggle",
+    "img": "images/items/Sky_Flyer.png",
+    "codes": "flyer, sky"
+  },
+  {
+    "name": "RC Car",
+    "type": "toggle",
+    "loop": "false",
+    "img": "images/items/RC_Car.png",
+    "codes": "car"
+  },
+  {
+    "name": "Magic Punch",
+    "type": "toggle",
+    "loop": "false",
+    "img": "images/items/Magic_Punch.png",
+    "codes": "punch"
+  },
+  {
+    "name": "Slingback Shooter",
+    "type": "toggle",
+    "loop": "false",
+    "img": "images/items/Slingback_Shooter.png",
+    "codes": "shooter, sling"
+  },
+  {
+    "name": "Specter Coin",
+    "type": "consumable",
+    "loop": "false",
+    "max_quantity": 10,
+    "increment": 1,
+    "img": "images/items/Specter_Coin.png",
+    "codes": "coin"
+  }
+]

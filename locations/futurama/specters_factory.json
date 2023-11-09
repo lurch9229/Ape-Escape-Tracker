@@ -1,0 +1,580 @@
+[
+    {
+        "name": "Specter's Factory",
+        "chest_unopened_img": "images/items/chest_x.png",
+        "chest_opened_img": "images/items/chest_o.png",
+        "color": "#FFFFFF",
+        "children": [
+            {
+                "name": "Specter's Factory",
+                "map_locations": [
+                    {
+                        "map": "Specters_Factory",
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "map": "Futurama",
+                        "x": 165,
+                        "y": 180
+                    }
+                ],
+                "access_rules": 
+                        [
+                            "sf_key"
+                        ],
+                "sections": [
+                    {
+                        "name": "Big Show",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Dreos",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Reznor",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $SF_MechRoom"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Urkel",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $SF_CarRoom"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Vanilla S",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $SF_MechRoom, punch"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Radd",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $SF_MechRoom"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Shimbo",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                           "net, $SF_MechRoom, car"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Hurt",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $SF_MechRoom, $CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "String",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $SF_MechRoom"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Khamo",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "$SF_MechRoom, $CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Coin 1",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "$SF_CarRoom"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Coin 2",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "$SF_MechRoom"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Time Trial",
+                        "visibility_rules": 
+                        [
+                            "shuffleTT"
+                        ],
+                        "access_rules": 
+                        [
+                            "net, punch",
+                            "net, op_no_ij, hoop, car",
+                            "net, op_no_ij, hoop, flyer",
+                            "net, op_et, hoop, car",
+                            "net, op_et, hoop, flyer",
+                            "net, op_et, sling"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Specter's Factory Outside - By UFO - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Specters_Factory",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Big Show",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Specter's Factory Outside - By Mech - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Specters_Factory",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Dreos",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Specter's Factory Main - Upper Pipe - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Specters_Factory",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Reznor",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "SF_MechRoom"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Specter's Factory RC Car Room - Behind Gate - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Specters_Factory",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Urkel",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "SF_CarRoom"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Specter's Factory Lava Room - Behind Punch Wall - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Specters_Factory",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Vanilla S",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "SF_MechRoom, punch"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Specter's Factory Lava Room - Raised Grating - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Specters_Factory",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Radd",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "SF_MechRoom"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Specter's Factory Lava Room - Behind Car Cage - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Specters_Factory",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Shimbo",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                           "SF_MechRoom, car"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Specter's Factory Conveyor Room - Mech Fight - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Specters_Factory",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Hurt",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "SF_MechRoom, CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Specter's Factory Conveyors Room - Top Of Conveyors - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Specters_Factory",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "String",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "SF_MechRoom"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Specter's Factory Mech Room - Mech Fight - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Specters_Factory",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Khamo",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "SF_MechRoom, CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Specter's Factory - RC Car Room - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Specters_Factory",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 1",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "SF_CarRoom"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Specter's Factory - Lava Room - Specter Coin",
+                "map_locations": [
+                    {
+                        "map": "Specters_Factory",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Coin 2",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "SF_MechRoom"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Specter's Factory - Time Attack",
+                "map_locations": [
+                    {
+                        "map": "Specters_Factory",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Beat 0:0:0",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "punch"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            }
+        ]
+    }
+]
