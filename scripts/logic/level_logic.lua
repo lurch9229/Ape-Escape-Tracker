@@ -241,3 +241,51 @@ function MM_FinalBoss()
     or
     (op_et() and MM_UFODoor() and sling())
 end
+
+function LostLandsAccess()
+    if WorldkeyTotal() >= 1 then
+        Tracker:FindObjectForCode("ff_key").Active = true
+        Tracker:FindObjectForCode("po_key").Active = true
+        Tracker:FindObjectForCode("ml_key").Active = true
+    end
+end
+
+function MystAgeAccess()
+    if WorldkeyTotal() >= 2 then
+        Tracker:FindObjectForCode("tj_key").Active = true
+        Tracker:FindObjectForCode("dr_key").Active = true
+        Tracker:FindObjectForCode("cr_key").Active = true
+    end
+end
+
+function OceanaAccess()
+    if WorldkeyTotal() >= 3 then
+        Tracker:FindObjectForCode("cb_key").Active = true
+        Tracker:FindObjectForCode("cc_key").Active = true
+        Tracker:FindObjectForCode("di_key").Active = true
+    end
+end
+
+function NewFreezelandAccess()
+    if WorldkeyTotal() >= 4 then
+        Tracker:FindObjectForCode("sm_key").Active = true
+        Tracker:FindObjectForCode("fr_key").Active = true
+        Tracker:FindObjectForCode("hs_key").Active = true
+    end
+end
+
+function MediMadAccess()
+    if WorldkeyTotal() >= 5 then
+        Tracker:FindObjectForCode("st_key").Active = true
+        Tracker:FindObjectForCode("wsw_key").Active = true
+        Tracker:FindObjectForCode("cca_key").Active = true
+    end
+end
+
+function FuturamaAccess()
+    if WorldkeyTotal() >= 6 then
+        Tracker:FindObjectForCode("cp_key").Active = true
+        Tracker:FindObjectForCode("sf_key").Active = true
+        Tracker:FindObjectForCode("tvt_key").Active = true
+    end
+end

@@ -1,4 +1,5 @@
 # Ape-Escape-Tracker
+
 Tracker for Ape Escape, for use with AP
 
 Initial Tracker Release
@@ -9,7 +10,7 @@ Place Ape-Escape-Tracker.zip in packs folder
 
 Run Poptracker
 
-Upcoming Plans
+- Upcoming Plans
   - autotracking
   - better maps
   - better descriptors for monkey locations

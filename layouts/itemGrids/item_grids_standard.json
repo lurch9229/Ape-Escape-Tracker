@@ -14,7 +14,8 @@
       ["car"],
       ["punch"],
       ["radar"],
-      ["coin"]
+      ["coin"],
+      ["keyWorld"]
     ]
   }
 }

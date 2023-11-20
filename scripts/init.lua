@@ -1,5 +1,6 @@
 ScriptHost:LoadScript("scripts/logic/items.lua")
 ScriptHost:LoadScript("scripts/logic/level_logic.lua")
+ScriptHost:LoadScript("scripts/autotracking.lua")
 
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/levels.json")

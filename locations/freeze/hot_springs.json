@@ -143,6 +143,21 @@
                         "item_count": 1
                     },
                     {
+                        "name": "Looza",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, flyer",
+                            "net, op_et, sling"
+                        ],
+                        "item_count": 1
+                    },
+                    {
                         "name": "Coin 1",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
@@ -409,6 +424,35 @@
                         "access_rules": 
                         [
                             "CanHitMultiple"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Blue Jacket  - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Hot_Springs",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Looza",
+                        "visibility_rules": 
+                        [
+                            "disabled"
+                        ],
+                        "access_rules": 
+                        [
+                            "net, flyer",
+                            "net, op_et, sling"
                         ],
                         "item_count": 1
                     }

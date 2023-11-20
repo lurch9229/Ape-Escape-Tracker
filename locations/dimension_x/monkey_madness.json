@@ -372,6 +372,25 @@
                         "item_count": 1
                     },
                     {
+                        "name": "Specter",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, sling, flyer, club",
+                            "net, sling, flyer, punch",
+                            "net, op_no_ij, sling, punch",
+                            "net, op_no_ij, sling, club",
+                            "net, op_et, sling, punch",
+                            "net, op_et, sling, club"
+                        ],
+                        "item_count": 1
+                    },
+                    {
                         "name": "Specter Coin 1",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
@@ -1643,8 +1662,12 @@
                         ],
                         "access_rules": 
                         [
-                            "sling, flyer, club",
-                            "sling, flyer, punch"
+                            "net, sling, flyer, club",
+                            "net, sling, flyer, punch",
+                            "net, op_no_ij, sling, punch",
+                            "net, op_no_ij, sling, club",
+                            "net, op_et, sling, punch",
+                            "net, op_et, sling, club"
                         ],
                         "item_count": 1
                     }
