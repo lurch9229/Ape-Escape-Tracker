@@ -49,7 +49,7 @@ function onClear(slot_data)
                     obj.CurrentStage = 0
                     obj.Active = false
                 elseif v[2] == "consumable" then
-                    obj.AcquiredCount = 0
+                    obj.AcquiredCount = obj.MinCount
                 elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
                     print(string.format("onClear: unknown item type %s for code %s", v[2], v[1]))
                 end
@@ -65,29 +65,28 @@ function onClear(slot_data)
         return
     end
 
-    if slot_data['logic'] then
-        if slot_data['logic'] == "option_glitchless" then
-            Tracker:FindObjectForCode("op_logic").CurrentStage = 0
-        elseif slot_data['logic'] == "option_noil" then
-            Tracker:FindObjectForCode("op_logic").CurrentStage = 1
-        elseif slot_data['logic'] == "option_ij" then
-            Tracker:FindObjectForCode("op_logic").CurrentStage = 2
-        end
+    if slot_data['logic'] == "glitchless" then
+        Tracker:FindObjectForCode("op_logic").CurrentStage = 0
+    elseif slot_data['logic'] == "noij" then
+        Tracker:FindObjectForCode("op_logic").CurrentStage = 1
+    elseif slot_data['logic'] == "ij" then
+        Tracker:FindObjectForCode("op_logic").CurrentStage = 2
     end
+
     if slot_data['coin'] then
         local obj = Tracker:FindObjectForCode("op_sc")
         if obj then
-            obj.CurrentStage = slot_data['CoinOption']
+            obj.CurrentStage = slot_data['coin']
         end
     end
-    if slot_data['goal'] then
-        if slot_data['goal'] == "option_first" then
-            Tracker:FindObjectForCode("goal").CurrentStage = 0
-        elseif slot_data['goal'] == "option_second" then
-            Tracker:FindObjectForCode("goal").CurrentStage = 1
-        end
+
+    if slot_data['goal'] == "first" then
+        Tracker:FindObjectForCode("goal").CurrentStage = 0
+    elseif slot_data['goal'] == "second" then
+        Tracker:FindObjectForCode("goal").CurrentStage = 1
     end
 end
+
 
 -- called when an item gets collected
 function onItem(index, item_id, item_name, player_number)
