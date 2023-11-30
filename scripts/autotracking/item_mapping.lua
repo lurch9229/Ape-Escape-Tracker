@@ -8,6 +8,6 @@ ITEM_MAPPING =
 [128000020] = {"punch", "toggle"}, -- Magic Punch 
 [128000040] = {"flyer", "toggle"}, -- Sky Flyer
 [128000080] = {"car", "toggle"}, -- RC Car
-[128000100] = {"keyWorld", "progressive"}, -- World Key
+[128000100] = {"keyWorld", "consumable"}, -- World Key
 [128000400] = {"water", "toggle"} -- Water Net
 }

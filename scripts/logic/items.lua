@@ -47,11 +47,15 @@ function worldUnlocks()
     print("test")
     lvl_list = {"ff", "po", "ml", "tj", "dr", "cr", "cb", "cc", "di", "sm", "fr", "hs", "st", "wsw", "cca", "cp", "sf", "tvt", "mm"}
     local iterator = Tracker:ProviderCountForCode("keyWorld")*3
-    for index = iterator-2, iterator do
+    for index = 1, iterator do
         if index < 20 then
             print(index)
             Tracker:FindObjectForCode(lvl_list[index].."_key").Active = true
         end
+    end
+    for index = iterator +1, 19 do
+        print(index)
+        Tracker:FindObjectForCode(lvl_list[index].."_key").Active = false
     end
 end
 
