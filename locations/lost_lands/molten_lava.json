@@ -409,8 +409,8 @@
                         "name": "Coin 1",
                         "visibility_rules": 
                         [
-                            "shuffleCoins",
-                            "disabled"
+                            "disabled, shuffleCoins"
+                            
                         ],
                         "access_rules": 
                         [

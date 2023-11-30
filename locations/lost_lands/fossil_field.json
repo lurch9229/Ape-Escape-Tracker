@@ -271,8 +271,7 @@
                         "name": "Specter Coin 1",
                         "visibility_rules": 
                         [
-                            "shuffleCoin",
-                            "disabled"
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [

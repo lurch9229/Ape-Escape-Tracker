@@ -60,6 +60,33 @@ function onClear(slot_data)
     end
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
+
+    if SLOT_DATA == nil then
+        return
+    end
+
+    if slot_data['logic'] then
+        if slot_data['logic'] == "option_glitchless" then
+            Tracker:FindObjectForCode("op_logic").CurrentStage = 0
+        elseif slot_data['logic'] == "option_noil" then
+            Tracker:FindObjectForCode("op_logic").CurrentStage = 1
+        elseif slot_data['logic'] == "option_ij" then
+            Tracker:FindObjectForCode("op_logic").CurrentStage = 2
+        end
+    end
+    if slot_data['coin'] then
+        local obj = Tracker:FindObjectForCode("op_sc")
+        if obj then
+            obj.CurrentStage = slot_data['CoinOption']
+        end
+    end
+    if slot_data['goal'] then
+        if slot_data['goal'] == "option_first" then
+            Tracker:FindObjectForCode("goal").CurrentStage = 0
+        elseif slot_data['goal'] == "option_second" then
+            Tracker:FindObjectForCode("goal").CurrentStage = 1
+        end
+    end
 end
 
 -- called when an item gets collected

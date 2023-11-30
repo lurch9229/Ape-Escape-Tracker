@@ -576,7 +576,7 @@
                         "name": "Coin 1",
                         "visibility_rules": 
                         [
-                            "disabled"
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -605,7 +605,7 @@
                         "name": "Coin 2",
                         "visibility_rules": 
                         [
-                            "disabled"
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -633,7 +633,7 @@
                         "name": "Coin 3",
                         "visibility_rules": 
                         [
-                            "disabled"
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [

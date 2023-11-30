@@ -12,9 +12,9 @@
                         "y": 0
                     },
                     {
-                        "map": "Specters_Island",
-                        "x": 80,
-                        "y": 210
+                        "map": "Specter_Land",
+                        "x": 130,
+                        "y": 170
                     }
                 ],
                 "access_rules": 
@@ -1238,7 +1238,7 @@
                         "name": "Coin 1",
                         "visibility_rules": 
                         [
-                            ""
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -1266,7 +1266,7 @@
                         "name": "Coin 2",
                         "visibility_rules": 
                         [
-                            ""
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -1294,7 +1294,7 @@
                         "name": "Coin 3",
                         "visibility_rules": 
                         [
-                            ""
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -1322,7 +1322,7 @@
                         "name": "Coin 4",
                         "visibility_rules": 
                         [
-                            ""
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -1350,7 +1350,7 @@
                         "name": "Coin 5",
                         "visibility_rules": 
                         [
-                            ""
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -1378,7 +1378,7 @@
                         "name": "Coin 6",
                         "visibility_rules": 
                         [
-                            ""
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -1406,7 +1406,7 @@
                         "name": "Coin 7",
                         "visibility_rules": 
                         [
-                            ""
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -1434,7 +1434,7 @@
                         "name": "Coin 8",
                         "visibility_rules": 
                         [
-                            ""
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -1462,7 +1462,7 @@
                         "name": "Coin 9",
                         "visibility_rules": 
                         [
-                            ""
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -1490,7 +1490,7 @@
                         "name": "Coin 10",
                         "visibility_rules": 
                         [
-                            ""
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [

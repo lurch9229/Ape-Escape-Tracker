@@ -372,8 +372,7 @@
                         "name": "Coin 1",
                         "visibility_rules": 
                         [
-                            "disabled",
-                            "shuffleCoins"
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [

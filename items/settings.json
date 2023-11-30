@@ -9,19 +9,61 @@
       {
         "name": "Glitchless",
         "img": "images/settings/logic_gless.png",
-        "codes": "op_gl",
+        "codes": "op_logic, op_gl",
         "allow_disabled": false
       },
       {
         "name": "No Infinite Jumps",
         "img": "images/settings/logic_no_ij.png",
-        "codes": "op_no_ij",
+        "codes": "op_logic, op_no_ij",
         "inherit_codes": false
       },
       {
         "name": "Unrestricted",
         "img": "images/settings/logic_no_rest.png",
-        "codes": "op_et",
+        "codes": "op_logic, op_et",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Specter Coins",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "loop": false,
+    "stages": [
+      {
+        "name": "No Coins",
+        "img": "images/settings/coins_off.png",
+        "codes": "op_coins,op_sc_off",
+        "allow_disabled": false
+      },
+      {
+        "name": "Shuffled Coins",
+        "img": "images/settings/coins_on.png",
+        "codes": "op_coins,op_sc, shuffleCoins",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Goal",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "loop": false,
+    "stages": [
+      {
+        "name": "Specter 1",
+        "img": "images/settings/goal1.png",
+        "codes": "goal, goal1",
+        "allow_disabled": false
+      },
+      {
+        "name": "Specter 2",
+        "img": "images/settings/goal2.png",
+        "codes": "goal, goal2",
         "inherit_codes": false
       }
     ]

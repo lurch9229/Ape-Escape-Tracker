@@ -5,6 +5,7 @@
     "loop": "false",
     "img": "images/items/Stun_Club.png",
     "initial_active_state": true,
+    "allow_disabled": false,
     "codes": "stun, club"
   },
   {
@@ -13,6 +14,7 @@
     "loop": "false",
     "img": "images/items/Time_Net.png",
     "initial_active_state": true,
+    "allow_disabled": false,
     "codes": "net"
   },
   {
@@ -20,6 +22,7 @@
     "type": "toggle",
     "loop": "false",
     "img": "images/items/Water_Net.png",
+    "allow_disabled": false,
     "codes": "water"
   },
   {

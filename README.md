@@ -14,3 +14,8 @@ Run Poptracker
   - autotracking
   - better maps
   - better descriptors for monkey locations
+
+- dev 0.3
+  - added settings
+  - made Specter Coins viewable
+  - Changed how world keys work. Now a Consumable that toggles specific level keys

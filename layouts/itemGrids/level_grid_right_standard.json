@@ -365,7 +365,7 @@
               ["label_mm"]
             ],
             "item_size": 100,
-            "margin": "-180,-55,180,0"
+            "margin": "-120,-55,180,0"
           },
           {
             "type": "itemgrid",
@@ -404,7 +404,23 @@
               ["op_gl"]
             ],
             "item_size": 150,
+            "margin": "-260,-55,180,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["op_sc"]
+            ],
+            "item_size": 150,
             "margin": "-180,-55,180,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["goal"]
+            ],
+            "item_size": 150,
+            "margin": "-180,-55,0,0"
           }
         ]
       }
