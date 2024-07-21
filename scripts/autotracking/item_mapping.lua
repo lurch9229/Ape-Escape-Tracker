@@ -4,10 +4,10 @@ ITEM_MAPPING =
 [128000002] = {"net", "toggle"}, -- Time Net
 [128000004] = {"radar", "toggle"}, -- Monkey Radar
 [128000008] = {"sling", "toggle"}, -- Slingback Shooter
-[128000010] = {"hoop", "toggle"}, -- Super Hoop
-[128000020] = {"punch", "toggle"}, -- Magic Punch 
-[128000040] = {"flyer", "toggle"}, -- Sky Flyer
-[128000080] = {"car", "toggle"}, -- RC Car
-[128000100] = {"keyWorld", "consumable"}, -- World Key
-[128000400] = {"water", "toggle"} -- Water Net
+[128000016] = {"hoop", "toggle"}, -- Super Hoop
+[128000032] = {"punch", "toggle"}, -- Magic Punch 
+[128000064] = {"flyer", "toggle"}, -- Sky Flyer
+[128000128] = {"car", "toggle"}, -- RC Car
+[128000256] = {"keyWorld", "consumable"}, -- World Key
+[128001024] = {"water", "toggle"}, -- Water Net
 }
