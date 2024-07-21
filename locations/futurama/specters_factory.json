@@ -165,7 +165,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Coin 1",
+                        "name": "RC Car Room",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -179,7 +179,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Coin 2",
+                        "name": "Lava Room",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 

@@ -4,7 +4,7 @@
         "color": "#FFFFFF",
         "children": [
             {
-                "name": "Open Area - Monkey",
+                "name": "Hot Springs",
                 "map_locations": [
                     {
                         "map": "Hot_Springs",
@@ -158,7 +158,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Coin 1",
+                        "name": "Hot Spring",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -173,7 +173,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 2",
+                        "name": "Polar Bear Cave",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 

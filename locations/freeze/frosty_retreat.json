@@ -176,7 +176,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 1",
+                        "name": "Entry",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -192,7 +192,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 2",
+                        "name": "Water Room",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -208,7 +208,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 3",
+                        "name": "Caverns",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
