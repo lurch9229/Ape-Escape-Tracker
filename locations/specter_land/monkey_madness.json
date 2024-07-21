@@ -1,0 +1,1403 @@
+[
+    {
+        "name": "Monkey Madness",
+        "color": "#FFFFFF",
+        "children": [
+            {
+                "name": "Monkey Madness",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "map": "Specter_Land",
+                        "x": 80,
+                        "y": 205
+                    }
+                ],
+                "access_rules": 
+                        [
+                            "mm_key"
+                        ],
+                "sections": [
+                    {
+                        "name": "Goopo",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Porto",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Slam",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CanHitOnce"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Junk",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CanHitOnce"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crib",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $CanHitOnce"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Nak",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, sling",
+                            "net, op_no_ij, hoop",
+                            "net, op_et, hoop"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Cloy",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                           "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Shaw",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, sling",
+                            "net, op_no_ij, hoop",
+                            "net, op_et, hoop" 
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Flea",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, sling",
+                            "net, op_no_ij, hoop",
+                            "net, op_et, hoop"                            
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Schafette",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $MM_SHA, flyer",
+                            "net, $MM_SHA, op_no_ij",
+                            "net, $MM_SHA, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Donovan",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $MM_UFODoor"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Laura",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $MM_UFODoor"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Uribe",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $MM_UFODoor, punch"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Gordo",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $MM_UFODoor, car",
+                            "net, $MM_UFODoor, op-no_ij, flyer",
+                            "net, $MM_UFODoor, op_et, flyer"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Raeski",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $MM_UFODoor"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Poo-Pie",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $MM_UFODoor"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Teacup",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $MM_DoubleDoor"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Shine",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $MM_DoubleDoor"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Wrench",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_SpaceMonkeys"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Bronson",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $MM_SpaceMonkeys"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Bungee",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $MM_DoubleDoor"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Carro",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $MM_DoubleDoor"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Carlito",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $MM_DoubleDoor"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "BG",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $MM_SHA, flyer, sling",
+                            "net, $MM_SHA, op_no_ij, flyer",
+                            "net, $MM_SHA, op_et, flyer",
+                            "net, $MM_SHA, op_et, sling"
+                        ],
+                        "item_count": 1
+                    },
+					{
+                        "name": "Specter",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, $MM_SHA, flyer, sling",
+                            "net, $MM_SHA, op_no_ij, flyer",
+                            "net, $MM_SHA, op_et, flyer",
+                            "net, $MM_SHA, op_et, sling"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Time Trial",
+                        "visibility_rules": 
+                        [
+                            "shuffleTT"
+                        ],
+                        "access_rules": 
+                        [
+                            "net, sling",
+                            "net, op_no_ij, hoop",
+                            "net,op_et, hoop"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Coaster Entrance - Arcade Machines - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+				"visibility_rules": 
+						[
+							"shufflecoins"
+						],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Goopo",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Haunted House - Hidden Cage - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Porto",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Coffin Room - Center Ledge - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Slam",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "CanHitOnce"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Coffin Room - Right Ledge - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Junk",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "CanHitOnce"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Coffin Room - Left Ledge - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Crib",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "CanHitOnce"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Western Land - Right Window - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Nak",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "sling"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Western Land - Roof - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Cloy",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                           ""
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Western Land - Center Window - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Shaw",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "sling"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Western Land - Left Window - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Flea",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "sling"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Crater - Chilling At The Back - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Schafette",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_SHA, flyer"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Outside Castle - In 1st UFO - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Donovan",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_UFODoor"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Outside Castle - In 2nd UFO - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Laura",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_UFODoor"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Main Castle - Magic Punch Box - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Uribe",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_UFODoor, punch"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Main Castle - Pool Table - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Gordo",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_UFODoor, car"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Main Castle - Side Path - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Raeski",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_UFODoor"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Main Castle - Ledge Overlooking Buttons - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Poo-Pie",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_UFODoor"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Interior Climb - By Conveyors - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Teacup",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_DoubleDoor"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Interior Climb - By Console - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Shine",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_DoubleDoor"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Exterior Climb - Above Entrance - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Wrench",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_SpaceMonkeys"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Exterior Climb - By Coin - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Bronson",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_SpaceMonkeys"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Monkey Head - Overlooking Entrance - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Bungee",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_DoubleDoor"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Monkey Head - Car Cage - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Carro",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_DoubleDoor"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Monkey Head - Secret Grass Room - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Carlito",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_DoubleDoor"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness Castle Side Entrance - Car Cage - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "BG",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_SHA, flyer, sling"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness - Specter Coins",
+				"chest_unopened_img": "images/icons/coinOn.png",
+                "chest_opened_img": "images/icons/coinOff.png",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "map": "Specter_Land",
+                        "x": 80,
+                        "y": 230
+                    }
+                ],
+				"visibility_rules": 
+                        [
+                            "shufflecoins"
+                        ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+					{
+                        "name": "Coaster (Room 1)",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Coaster (Room 2)",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Haunted House",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "flyer",
+                            "op_et, sling"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Western Land",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crater",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_SHA, flyer"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Outside Castle",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_SHA"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Castle Main",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_UFODoor"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Climb (Outside)",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_SpaceMonkeys"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Monkey Head",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_DoubleDoor"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Side Entry",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_SHA, flyer",
+                            "MM_SHA, op_et, sling"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness - Time Attack",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Beat 0:0:0",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "sling"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness - Boss",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Beat The Boss",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_FinalBoss"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness - Natalie",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Rescue Them",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_Natalie"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness - Professor",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Rescue Them",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_Prof"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Madness - Jake",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Rescue Them",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "MM_Jake"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Peak Point Matrix - Monkey",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "access_rules": 
+                        [
+                            ""
+                        ],
+                "sections": [
+                    {
+                        "name": "Specter",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "sling, flyer, club",
+                            "sling, flyer, punch"
+                        ],
+                        "item_count": 1
+                    }
+                ]
+            }
+        ]
+    }
+]
