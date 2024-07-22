@@ -126,7 +126,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin",
+                        "name": "Entry",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 

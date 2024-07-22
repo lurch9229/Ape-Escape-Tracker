@@ -391,7 +391,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 1",
+                        "name": "Coaster (Room 1)",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -405,7 +405,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 2",
+                        "name": "Coaster (Room 2)",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -419,7 +419,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 3",
+                        "name": "Haunted House",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -434,7 +434,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 4",
+                        "name": "Western Land",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -448,7 +448,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 5",
+                        "name": "Crater",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -462,7 +462,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 6",
+                        "name": "Outside Castle",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -476,7 +476,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 7",
+                        "name": "Castle Main",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -490,7 +490,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 8",
+                        "name": "Climb (Outside)",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -504,7 +504,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 9",
+                        "name": "Monkey Head",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -518,7 +518,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 10",
+                        "name": "Side Entry",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 

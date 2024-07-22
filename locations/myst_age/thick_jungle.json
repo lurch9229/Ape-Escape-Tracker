@@ -242,7 +242,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 1",
+                        "name": "Entry",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -256,7 +256,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 2",
+                        "name": "Fish Room",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -270,7 +270,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 3",
+                        "name": "Mushroom Area",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -284,7 +284,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 4",
+                        "name": "Tent-Vines Room",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -296,7 +296,7 @@
                             "$TJ_FishEntry, $CanHitMultiple",
                             "$TJ_UFOEntry, $TJ_UFOCliff"
                         ],
-                        "item_count": 4
+                        "item_count": 1
                     },
                     {
                         "name": "Time Trial",
