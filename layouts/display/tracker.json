@@ -81,6 +81,13 @@
                                         "maps": ["Mysterious_Age"]
                                     }
                                 },
+								{
+				    "title": "Stadium Attack",
+                                    "content": {
+                                        "type": "map",
+                                        "maps": ["Stadium_Attack"]
+                                    }
+                                },
                                 {
                                     "title": "Oceana",
                                     "content": {
@@ -93,6 +100,13 @@
                                     "content": {
                                         "type": "map",
                                         "maps": ["New_Freezeland"]
+                                    }
+                                },
+				{
+				    "title": "Gladiator Attack",
+                                    "content": {
+                                        "type": "map",
+                                        "maps": ["Gladiator_Attack"]
                                     }
                                 },
                                 {
