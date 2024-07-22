@@ -144,8 +144,8 @@
                     },
                     {
                         "name": "Second Room",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
                         [
                             "shuffleCoins"
