@@ -256,7 +256,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Fish Room",
+                        "name": "Mushroom Area",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -270,7 +270,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Mushroom Area",
+                        "name": "Fish Room",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 

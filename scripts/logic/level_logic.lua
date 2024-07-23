@@ -172,6 +172,14 @@ function SF_CarRoom()
     (op_et() and (sling() or (hoop() and flyer())))
 end
 
+function SF_MechRoom()
+    return club() and SF_CarRoom()
+	or
+	(op_no_ij() and ((hoop() and flyer()) or (club() and (sling() or car())) or punch()))
+	or
+	(op_et() and (sling() or (hoop() and flyer) or (club() and car()) or punch()))
+end
+
 function TVT_HitButton()
     return flyer() and CanHitOnce()
     or
@@ -230,10 +238,10 @@ function MM_DoubleDoor()
     (op_et() and (MM_UFODoor() and hoop() and car()))
 end
 
-function MM_SpacMonkeys()
+function MM_SpaceMonkeys()
     return MM_DoubleDoor() and flyer()
-    or
-    (op_et() and (sling()))
+	or
+	(op_et() and (MM_DoubleDoor() and (sling() or flyer())))
 end
 
 function MM_FinalBoss()

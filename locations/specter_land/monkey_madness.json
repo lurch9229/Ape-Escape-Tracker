@@ -294,7 +294,7 @@
                         ],
                         "access_rules": 
                         [
-                            "MM_SpaceMonkeys"
+                            "$MM_SpaceMonkeys"
                         ],
                         "item_count": 1
                     },

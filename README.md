@@ -34,12 +34,12 @@ Run Poptracker
 		- Changed coin names for their respective name in Archipelago-Ape-Escape pack "String.py"(ex.:Fossil Fields "Specter Coin" is now "Main") 
 		- Changed location of monkey_madness.json from dim_x folder to a new folder to better fit the map : locations/specter_land/monkey_madness.json
 		- Renamed NewFreezeLand/Open Area - Monkey to NewFreezeLand/Hot Springs
+		- Added Stadium Attack and Gladiator Attack for coin tracking
 	- Fixes:
 		- Included code in archipelago.lua to put the Time Net Active by default.This is done as a placeholder since Net is not randomised in the pool yet
 		- Changed items.json to remove "allow_disabled": false :
 			- As for now, the icon showed always enabled but you could right click and logic would follow despite icon being still active,making it very confusing
 	- TODO:
-		- Add Dimension_X maps (Stadium Attack and Gladiator Attack) to track if you did the race,since locations are mapped for coins but not used
 		- Calculate Coins and Monkeys per Level in the grid
 		- Alternate layout option to separate Coins from Monkeys on the map tracker
 - dev version 0.0.2D (0.2.0)
