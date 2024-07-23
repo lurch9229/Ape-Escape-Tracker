@@ -294,7 +294,7 @@
                         ],
                         "access_rules": 
                         [
-                            "MM_SpaceMonkeys"
+                            "$MM_SpaceMonkeys"
                         ],
                         "item_count": 1
                     },
@@ -490,6 +490,20 @@
                         "item_count": 1
                     },
                     {
+                        "name": "Climb (Outside)",
+                        "chest_unopened_img": "images/icons/coinOn.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
+                        "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                        "access_rules": 
+                        [
+                            "$MM_SpaceMonkeys"
+                        ],
+                        "item_count": 1
+                    },
+                    {
                         "name": "Monkey Head",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
@@ -515,20 +529,6 @@
                         [
                             "$MM_SHA, flyer",
                             "$MM_SHA, op_et, sling"
-                        ],
-                        "item_count": 1
-                    },
-                    {
-                        "name": "Climb (Outside)",
-                        "chest_unopened_img": "images/icons/coinOn.png",
-                        "chest_opened_img": "images/icons/coinOff.png",
-                        "visibility_rules": 
-                        [
-                            "shuffleCoins"
-                        ],
-                        "access_rules": 
-                        [
-                            "$MM_SpaceMonkeys"
                         ],
                         "item_count": 1
                     },
