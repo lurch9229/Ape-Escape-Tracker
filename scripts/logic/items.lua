@@ -11,11 +11,11 @@ function hoop()
 end
 
 function punch()
-    return ("punch")
+    return has ("punch")
 end
 
 function sling()
-    return ("sling")
+    return has ("sling")
 end
 
 function car()
