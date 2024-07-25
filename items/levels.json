@@ -158,7 +158,7 @@
     "max_quantity": 4,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_ff"
+    "codes": "monkey_ff, monkey_code"
   },
   {
     "name": "FF Coins",
@@ -167,7 +167,7 @@
     "max_quantity": 1,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_ff"
+    "codes": "coin_ff, coin_code"
   },
   {
     "name": "FF Time Trial",
@@ -183,7 +183,7 @@
     "max_quantity": 6,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_po"
+    "codes": "monkey_po, monkey_code"
   },
   {
     "name": "PO Coins",
@@ -192,7 +192,7 @@
     "max_quantity": 1,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_po"
+    "codes": "coin_po, coin_code"
   },
   {
     "name": "PO Time Trial",
@@ -208,7 +208,7 @@
     "max_quantity": 7,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_ml"
+    "codes": "monkey_ml, monkey_code"
   },
   {
     "name": "ML Coins",
@@ -217,7 +217,7 @@
     "max_quantity": 1,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_ml"
+    "codes": "coin_ml, coin_code"
   },
   {
     "name": "ML Time Trial",
@@ -233,7 +233,7 @@
     "max_quantity": 14,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_tj"
+    "codes": "monkey_tj, monkey_code"
   },
   {
     "name": "TJ Coins",
@@ -242,7 +242,7 @@
     "max_quantity": 4,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_tj"
+    "codes": "coin_tj, coin_code"
   },
   {
     "name": "TJ Time Trial",
@@ -258,7 +258,7 @@
     "max_quantity": 13,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_dr"
+    "codes": "monkey_dr, monkey_code"
   },
   {
     "name": "DR Coins",
@@ -267,7 +267,7 @@
     "max_quantity": 4,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_dr"
+    "codes": "coin_dr, coin_code"
   },
   {
     "name": "DR Time Trial",
@@ -283,7 +283,7 @@
     "max_quantity": 8,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_cr"
+    "codes": "monkey_cr, monkey_code"
   },
   {
     "name": "CR Coins",
@@ -292,7 +292,7 @@
     "max_quantity": 1,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_cr"
+    "codes": "coin_cr, coin_code"
   },
   {
     "name": "CR Time Trial",
@@ -308,7 +308,7 @@
     "max_quantity": 8,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_cb"
+    "codes": "monkey_cb, monkey_code"
   },
   {
     "name": "CB Coins",
@@ -317,7 +317,7 @@
     "max_quantity": 1,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_cb"
+    "codes": "coin_cb, coin_code"
   },
   {
     "name": "CB Time Trial",
@@ -333,7 +333,7 @@
     "max_quantity": 8,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_cc"
+    "codes": "monkey_cc, monkey_code"
   },
   {
     "name": "CC Coins",
@@ -342,7 +342,7 @@
     "max_quantity": 1,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_cc"
+    "codes": "coin_cc, coin_code"
   },
   {
     "name": "CC Time Trial",
@@ -358,7 +358,7 @@
     "max_quantity": 11,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_di"
+    "codes": "monkey_di, monkey_code"
   },
   {
     "name": "DI Coins",
@@ -367,7 +367,7 @@
     "max_quantity": 3,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_di"
+    "codes": "coin_di, coin_code"
   },
   {
     "name": "DI Time Trial",
@@ -383,7 +383,7 @@
     "max_quantity": 6,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_sm"
+    "codes": "monkey_sm, monkey_code"
   },
   {
     "name": "SM Coins",
@@ -392,7 +392,7 @@
     "max_quantity": 1,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_sm"
+    "codes": "coin_sm, coin_code"
   },
   {
     "name": "SM Time Trial",
@@ -408,7 +408,7 @@
     "max_quantity": 9,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_fr"
+    "codes": "monkey_fr, monkey_code"
   },
   {
     "name": "FR Coins",
@@ -417,7 +417,7 @@
     "max_quantity": 3,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_fr"
+    "codes": "coin_fr, coin_code"
   },
   {
     "name": "FR Time Trial",
@@ -433,7 +433,7 @@
     "max_quantity": 9,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_hs"
+    "codes": "monkey_hs, monkey_code"
   },
   {
     "name": "HS Coins",
@@ -442,7 +442,7 @@
     "max_quantity": 2,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_hs"
+    "codes": "coin_hs, coin_code"
   },
   {
     "name": "HS Time Trial",
@@ -458,7 +458,7 @@
     "max_quantity": 12,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_st"
+    "codes": "monkey_st, monkey_code"
   },
   {
     "name": "ST Coins",
@@ -467,7 +467,7 @@
     "max_quantity": 3,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_st"
+    "codes": "coin_st, coin_code"
   },
   {
     "name": "ST Time Trial",
@@ -483,7 +483,7 @@
     "max_quantity": 10,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_wsw"
+    "codes": "monkey_wsw, monkey_code"
   },
   {
     "name": "WSW Coins",
@@ -492,7 +492,7 @@
     "max_quantity": 3,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_wsw"
+    "codes": "coin_ws, coin_codew"
   },
   {
     "name": "WSW Time Trial",
@@ -508,7 +508,7 @@
     "max_quantity": 20,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_cca"
+    "codes": "monkey_cc, monkey_codea"
   },
   {
     "name": "CCa Coins",
@@ -517,7 +517,7 @@
     "max_quantity": 4,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_cca"
+    "codes": "coin_cc, coin_codea"
   },
   {
     "name": "CCa Time Trial",
@@ -533,7 +533,7 @@
     "max_quantity": 13,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_cp"
+    "codes": "monkey_cp, monkey_code"
   },
   {
     "name": "CP Coins",
@@ -542,7 +542,7 @@
     "max_quantity": 3,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_cp"
+    "codes": "coin_cp, coin_code"
   },
   {
     "name": "CP Time Trial",
@@ -558,7 +558,7 @@
     "max_quantity": 10,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_sf"
+    "codes": "monkey_sf, monkey_code"
   },
   {
     "name": "SF Coins",
@@ -567,7 +567,7 @@
     "max_quantity": 2,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_sf"
+    "codes": "coin_sf, coin_code"
   },
   {
     "name": "SF Time Trial",
@@ -583,7 +583,7 @@
     "max_quantity": 12,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_tt"
+    "codes": "monkey_tt, monkey_code"
   },
   {
     "name": "TT Coins",
@@ -592,7 +592,7 @@
     "max_quantity": 2,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_tt"
+    "codes": "coin_tt, coin_code"
   },
   {
     "name": "TT Time Trial",
@@ -608,7 +608,7 @@
     "max_quantity": 24,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_mm"
+    "codes": "monkey_mm, monkey_code"
   },
   {
     "name": "MM Coins",
@@ -617,7 +617,7 @@
     "max_quantity": 6,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_mm"
+    "codes": "coin_mm, coin_code"
   },
   {
     "name": "MM Time Trial",
@@ -632,6 +632,7 @@
     "loop": "false",
     "initial_active_state": true,
     "img": "images/icons/base_key.png",
+    "initial_active_state": true,
     "codes": "ff_key"
   },
   {
@@ -640,6 +641,7 @@
     "loop": "false",
     "initial_active_state": true,
     "img": "images/icons/base_key.png",
+    "initial_active_state": true,
     "codes": "po_key"
   },
   {
@@ -648,6 +650,7 @@
     "loop": "false",
     "initial_active_state": true,
     "img": "images/icons/base_key.png",
+    "initial_active_state": true,
     "codes": "ml_key"
   },
   {
@@ -767,7 +770,7 @@
     "type": "consumable",
     "max_quantity": 6,
     "min_quantity": 0,
-    "initial_quantity": 0,
+    "initial_quantity": 1,
     "increment": 1,
     "img": "images/icons/base_key.png",
     "codes": "keyWorld"

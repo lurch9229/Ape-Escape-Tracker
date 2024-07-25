@@ -10,8 +10,7 @@ Place Ape-Escape-Tracker.zip in packs folder
 
 Run Poptracker
 
-- Upcoming Plans
-  - autotracking
+Upcoming Plans:
   - better maps
   - better descriptors for monkey locations
   
