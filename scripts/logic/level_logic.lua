@@ -203,9 +203,9 @@ end
 function MM_Professor()
     return flyer() and CanHitMultiple()
     or
-    (op_no_ij() and flyer() and (club() or swing()))
+    (op_no_ij() and flyer() and (club() or sling()))
     or
-    (op_et() and sling() or (flyer() and (club() or swing())))
+    (op_et() and sling() or (flyer() and (club() or sling())))
 end
 
 function Jake_Open()

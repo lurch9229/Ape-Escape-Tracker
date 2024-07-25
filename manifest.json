@@ -9,6 +9,10 @@
 		"map_tracker": {
 			"display_name": "Map Tracker",
 			"flags": [ "ap" ]
+		},
+		"items_only": {
+			"display_name": "Items Only",
+			"flags": [ "ap" ]
 		}
 	}
 }
