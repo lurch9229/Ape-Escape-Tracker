@@ -190,7 +190,9 @@
                             "$CC_WaterRoom, water",
                             "net, $CC_WaterRoom, op_no_ij",
                             "net, $CC_WaterRoom, flyer, op_no_ij",
-                            "net, $CC_WaterRoom, op_et"
+                            "net, $CC_WaterRoom, op_et",
+                            "net, $CC_WaterRoom, sling, op_et",
+                            "net, $CC_WaterRoom, flyer, op_et"
                         ],
                         "item_count": 1
                     },
