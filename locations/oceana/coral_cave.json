@@ -146,7 +146,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin",
+                        "name": "Second Room",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -422,7 +422,7 @@
                         "name": "Coin 1",
                         "visibility_rules": 
                         [
-                            ""
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [

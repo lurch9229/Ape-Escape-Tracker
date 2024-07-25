@@ -234,7 +234,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 1",
+                        "name": "Outside",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -248,7 +248,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 2",
+                        "name": "Fan Basement",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -262,7 +262,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 3",
+                        "name": "Obelisk Inside",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -280,7 +280,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 4",
+                        "name": "Water Basement",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -699,8 +699,7 @@
                         "name": "Coin 1",
                         "visibility_rules": 
                         [
-                            "disabled",
-                            "shuffleCoins"
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -728,8 +727,7 @@
                         "name": "Coin 2",
                         "visibility_rules": 
                         [
-                            "disabled",
-                            "shuffleCoins"
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -757,8 +755,7 @@
                         "name": "Coin 3",
                         "visibility_rules": 
                         [
-                            "disabled",
-                            "shuffleCoins"
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -787,8 +784,7 @@
                         "name": "Coin 4",
                         "visibility_rules": 
                         [
-                            "disabled",
-                            "shuffleCoins"
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [

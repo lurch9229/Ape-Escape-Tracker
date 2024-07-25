@@ -12,9 +12,9 @@
                         "y": 0
                     },
                     {
-                        "map": "Specters_Island",
-                        "x": 80,
-                        "y": 210
+                        "map": "Specter_Land",
+                        "x": 130,
+                        "y": 170
                     }
                 ],
                 "access_rules": 
@@ -294,7 +294,7 @@
                         ],
                         "access_rules": 
                         [
-                            "MM_SpaceMonkeys"
+                            "$MM_SpaceMonkeys"
                         ],
                         "item_count": 1
                     },
@@ -372,7 +372,26 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 1",
+                        "name": "Specter",
+                        "chest_unopened_img": "images/icons/monkeyOn.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "net, sling, flyer, club",
+                            "net, sling, flyer, punch",
+                            "net, op_no_ij, sling, punch",
+                            "net, op_no_ij, sling, club",
+                            "net, op_et, sling, punch",
+                            "net, op_et, sling, club"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Coaster (Room 1)",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -386,7 +405,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 2",
+                        "name": "Coaster (Room 2)",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -400,7 +419,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 3",
+                        "name": "Haunted House",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -415,7 +434,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 4",
+                        "name": "Western Land",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -429,7 +448,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 5",
+                        "name": "Crater",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -443,7 +462,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 6",
+                        "name": "Outside Castle",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -457,7 +476,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 7",
+                        "name": "Castle Main",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -471,7 +490,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 8",
+                        "name": "Climb (Outside)",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -485,7 +504,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 9",
+                        "name": "Monkey Head",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -499,7 +518,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin 10",
+                        "name": "Side Entry",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -1219,7 +1238,7 @@
                         "name": "Coin 1",
                         "visibility_rules": 
                         [
-                            ""
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -1247,7 +1266,7 @@
                         "name": "Coin 2",
                         "visibility_rules": 
                         [
-                            ""
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -1275,7 +1294,7 @@
                         "name": "Coin 3",
                         "visibility_rules": 
                         [
-                            ""
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -1303,7 +1322,7 @@
                         "name": "Coin 4",
                         "visibility_rules": 
                         [
-                            ""
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -1331,7 +1350,7 @@
                         "name": "Coin 5",
                         "visibility_rules": 
                         [
-                            ""
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -1359,7 +1378,7 @@
                         "name": "Coin 6",
                         "visibility_rules": 
                         [
-                            ""
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -1387,7 +1406,7 @@
                         "name": "Coin 7",
                         "visibility_rules": 
                         [
-                            ""
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -1415,7 +1434,7 @@
                         "name": "Coin 8",
                         "visibility_rules": 
                         [
-                            ""
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -1443,7 +1462,7 @@
                         "name": "Coin 9",
                         "visibility_rules": 
                         [
-                            ""
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -1471,7 +1490,7 @@
                         "name": "Coin 10",
                         "visibility_rules": 
                         [
-                            ""
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
@@ -1643,8 +1662,12 @@
                         ],
                         "access_rules": 
                         [
-                            "sling, flyer, club",
-                            "sling, flyer, punch"
+                            "net, sling, flyer, club",
+                            "net, sling, flyer, punch",
+                            "net, op_no_ij, sling, punch",
+                            "net, op_no_ij, sling, club",
+                            "net, op_et, sling, punch",
+                            "net, op_et, sling, club"
                         ],
                         "item_count": 1
                     }

@@ -1,17 +1,17 @@
 [
     {
         "name": "Dimension X",
-        "chest_unopened_img": "images/items/chest_x.png",
-        "chest_opened_img": "images/items/chest_o.png",
+        "chest_unopened_img": "images/icons/coinOn.png",
+        "chest_opened_img": "images/icons/coinOff.png",
         "color": "#FFFFFF",
         "children": [
             {
-                "name": "Stadium Attack - Race Jake",
+                "name": "Stadium Attack",
                 "map_locations": [
                     {
-                        "map": "Dimension_X",
-                        "x": 0,
-                        "y": 0
+                        "map": "Stadium_Attack",
+                        "x": 145,
+                        "y": 185
                     }
                 ],
                 "access_rules": 
@@ -20,26 +20,26 @@
                         ],
                 "sections": [
                     {
-                        "name": "5 Specter Coins",
+                        "name": "Race Jake",
                         "visibility_rules": 
                         [
-                            ""
+                            "shuffleCoins"
                         ],
                         "access_rules": 
                         [
                             "water"
                         ],
-                        "item_count": 1
+                        "item_count": 5
                     }
                 ]
             },
             {
-                "name": "Gladiator Attack - Race Jake",
+                "name": "Gladiator Attack",
                 "map_locations": [
                     {
-                        "map": "Dimension_X",
-                        "x": 0,
-                        "y": 0
+                        "map": "Gladiator_Attack",
+                        "x": 120,
+                        "y": 185
                     }
                 ],
                 "access_rules": 
@@ -48,16 +48,16 @@
                         ],
                 "sections": [
                     {
-                        "name": "5 Specter Coins",
+                        "name": "Race Jake",
                         "visibility_rules": 
                         [
-                            ""
+                            "shuffleCoins"
                         ],
                         "access_rules": 
                         [
                             "flyer"
                         ],
-                        "item_count": 1
+                        "item_count": 5
                     }
                 ]
             }
