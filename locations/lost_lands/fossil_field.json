@@ -1,6 +1,6 @@
 [
     {
-        "name": "Fossil Field",
+        "name": "Fossil Fields",
         "color": "#FFFFFF",
         "children": [
             {
@@ -84,8 +84,9 @@
                         ],
                         "item_count": 1
                     },
+					//Coins
                     {
-                        "name": "Specter Coin",
+                        "name": "Main",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
@@ -271,8 +272,7 @@
                         "name": "Specter Coin 1",
                         "visibility_rules": 
                         [
-                            "shuffleCoin",
-                            "disabled"
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [

@@ -1,5 +1,6 @@
 ScriptHost:LoadScript("scripts/logic/items.lua")
 ScriptHost:LoadScript("scripts/logic/level_logic.lua")
+ScriptHost:LoadScript("scripts/autotracking.lua")
 
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/levels.json")
@@ -31,4 +32,5 @@ Tracker:AddLocations("locations/medi_may/crumbling_castle.json")
 Tracker:AddLocations("locations/futurama/city_park.json")
 Tracker:AddLocations("locations/futurama/specters_factory.json")
 Tracker:AddLocations("locations/futurama/tv_tower.json")
-Tracker:AddLocations("locations/dimension_x/monkey_madness.json")
+Tracker:AddLocations("locations/specter_land/monkey_madness.json")
+Tracker:AddLocations("locations/dimension_x/dim_x.json")

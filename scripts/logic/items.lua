@@ -11,11 +11,11 @@ function hoop()
 end
 
 function punch()
-    return ("punch")
+    return has ("punch")
 end
 
 function sling()
-    return ("sling")
+    return has ("sling")
 end
 
 function car()
@@ -41,3 +41,21 @@ end
 function op_et()
     return has ("op_et")
 end
+
+
+function worldUnlocks()
+    --lvl_list = {"ff", "po", "ml", "tj", "dr", "cr", "cb", "cc", "di", "sm", "fr", "hs", "st", "wsw", "cca", "cp", "sf", "tvt", "mm"}
+    lvl_list = { "tj", "dr", "cr", "cb", "cc", "di", "sm", "fr", "hs", "st", "wsw", "cca", "cp", "sf", "tvt", "mm"}
+    local iterator = Tracker:ProviderCountForCode("keyWorld")*3 + 3
+    print(iterator)
+    for index = 1, 16 do
+	if index < iterator-2 then
+	    --print(index)
+	    Tracker:FindObjectForCode(lvl_list[index].."_key").Active = true
+	else
+	    Tracker:FindObjectForCode(lvl_list[index].."_key").Active = false
+	end
+    end
+end
+
+ScriptHost:AddWatchForCode("worldkey handler", "keyWorld", worldUnlocks)

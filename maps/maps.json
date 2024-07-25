@@ -43,9 +43,15 @@
     "img": "images/maps/specter_land_map.png"
   },
   {
-    "name": "Dimension_X",
+    "name": "Stadium_Attack",
     "location_size": 15,
     "location_border_thickness": 4,
-    "img": "images/maps/dimension_x_map.png"
+    "img": "images/maps/stadium_attack_map.png"
+  },
+  {
+    "name": "Gladiator_Attack",
+    "location_size": 15,
+    "location_border_thickness": 4,
+    "img": "images/maps/gladiator_attack_map.png"
   }
 ]

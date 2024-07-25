@@ -44,12 +44,17 @@ function onClear(slot_data)
             local obj = Tracker:FindObjectForCode(v[1])
             if obj then
                 if v[2] == "toggle" then
-                    obj.Active = false
+				--Net is not randomised at the moment,so toggle it by default
+					if v[1] == "net" then
+						obj.Active = true
+					else
+						obj.Active = false
+					end
                 elseif v[2] == "progressive" then
                     obj.CurrentStage = 0
                     obj.Active = false
                 elseif v[2] == "consumable" then
-                    obj.AcquiredCount = 0
+                    obj.AcquiredCount = obj.MinCount
                 elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
                     print(string.format("onClear: unknown item type %s for code %s", v[2], v[1]))
                 end
@@ -60,11 +65,33 @@ function onClear(slot_data)
     end
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
-    -- manually run snes interface functions after onClear in case we are already ingame
-    if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
-        -- add snes interface functions here
+
+    if SLOT_DATA == nil then
+        return
+    end
+
+    if slot_data['logic'] == "glitchless" then
+        Tracker:FindObjectForCode("op_logic").CurrentStage = 0
+    elseif slot_data['logic'] == "noij" then
+        Tracker:FindObjectForCode("op_logic").CurrentStage = 1
+    elseif slot_data['logic'] == "ij" then
+        Tracker:FindObjectForCode("op_logic").CurrentStage = 2
+    end
+
+    if slot_data['coin'] then
+        local obj = Tracker:FindObjectForCode("op_sc")
+        if obj then
+            obj.CurrentStage = slot_data['coin']
+        end
+    end
+
+    if slot_data['goal'] == "first" then
+        Tracker:FindObjectForCode("goal").CurrentStage = 0
+    elseif slot_data['goal'] == "second" then
+        Tracker:FindObjectForCode("goal").CurrentStage = 1
     end
 end
+
 
 -- called when an item gets collected
 function onItem(index, item_id, item_name, player_number)

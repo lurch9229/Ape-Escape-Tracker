@@ -154,7 +154,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "Specter Coin",
+                        "name": "Main Ruins",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/items/coinOff.png",
                         "visibility_rules": 
@@ -441,8 +441,7 @@
                         "name": "Coin 1",
                         "visibility_rules": 
                         [
-                            "disabled",
-                            "shuffleCoins"
+                            "disabled, shuffleCoins"
                         ],
                         "access_rules": 
                         [
