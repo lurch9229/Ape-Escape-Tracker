@@ -30,6 +30,7 @@ Run Poptracker
 		- Changed the calculation of worldUnlocks to better match AP pack: (Thanks for the initial code StripesOO7)
 			- The first 3 levels are always unlocked by default and then each key received will unlocks 3 more
 			- Changed initial value to 0 and max to 6 in the grid,as there is 6 keys total in the item pool.
+
 	- Map:
 		- Changed coin names for their respective name in Archipelago-Ape-Escape pack "String.py"(ex.:Fossil Fields "Specter Coin" is now "Main") 
 		- Changed location of monkey_madness.json from dim_x folder to a new folder to better fit the map : locations/specter_land/monkey_madness.json

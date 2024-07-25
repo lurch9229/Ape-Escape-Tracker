@@ -14,7 +14,7 @@ Tracker:AddLayouts("layouts/itemGrids/level_grid_left_standard.json")
 Tracker:AddLayouts("layouts/itemGrids/level_grid_right_standard.json")
 Tracker:AddLayouts("layouts/display/broadcast_horizontal.json")
 
-Tracker:AddLocations("locations/lost_lands/fossil_field.json")
+Tracker:AddLocations("locations/lost_lands/fossil_fields.json")
 Tracker:AddLocations("locations/lost_lands/primordial_ooze.json")
 Tracker:AddLocations("locations/lost_lands/molten_lava.json")
 Tracker:AddLocations("locations/myst_age/thick_jungle.json")
