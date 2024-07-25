@@ -630,6 +630,7 @@
     "name": "Fossil Field World Key",
     "type": "toggle",
     "loop": "false",
+    "initial_active_state": true,
     "img": "images/icons/base_key.png",
     "initial_active_state": true,
     "codes": "ff_key"
@@ -638,6 +639,7 @@
     "name": "Primordial Ooze World Key",
     "type": "toggle",
     "loop": "false",
+    "initial_active_state": true,
     "img": "images/icons/base_key.png",
     "initial_active_state": true,
     "codes": "po_key"
@@ -646,6 +648,7 @@
     "name": "Molten Lava World Key",
     "type": "toggle",
     "loop": "false",
+    "initial_active_state": true,
     "img": "images/icons/base_key.png",
     "initial_active_state": true,
     "codes": "ml_key"
