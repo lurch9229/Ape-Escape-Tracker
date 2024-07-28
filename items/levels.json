@@ -492,7 +492,7 @@
     "max_quantity": 3,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_ws, coin_codew"
+    "codes": "coin_wsw, coin_code"
   },
   {
     "name": "WSW Time Trial",
@@ -508,7 +508,7 @@
     "max_quantity": 20,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_cc, monkey_codea"
+    "codes": "monkey_cca, monkey_code"
   },
   {
     "name": "CCa Coins",
@@ -517,7 +517,7 @@
     "max_quantity": 4,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_cc, coin_codea"
+    "codes": "coin_cca, coin_code"
   },
   {
     "name": "CCa Time Trial",
