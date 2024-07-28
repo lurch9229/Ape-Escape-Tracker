@@ -468,18 +468,18 @@ local locationToCode ={
     ["Specter's Factory/Specter's Factory/Hurt"] = "Monkey_sf",
     ["Specter's Factory/Specter's Factory/String"] = "Monkey_sf",
     ["Specter's Factory/Specter's Factory/Khamo"] = "Monkey_sf",
-    ["TV Tower/TV Tower/Fredo"] = "Monkey_tvt",
-    ["TV Tower/TV Tower/Charlee"] = "Monkey_tvt",
-    ["TV Tower/TV Tower/Mach 3"] = "Monkey_tvt",
-    ["TV Tower/TV Tower/Tortuss"] = "Monkey_tvt",
-    ["TV Tower/TV Tower/Manic"] = "Monkey_tvt",
-    ["TV Tower/TV Tower/Ruptdis"] = "Monkey_tvt",
-    ["TV Tower/TV Tower/Eighty 7"] = "Monkey_tvt",
-    ["TV Tower/TV Tower/Danio"] = "Monkey_tvt",
-    ["TV Tower/TV Tower/Roosta"] = "Monkey_tvt",
-    ["TV Tower/TV Tower/Tellis"] = "Monkey_tvt",
-    ["TV Tower/TV Tower/Whack"] = "Monkey_tvt",
-    ["TV Tower/TV Tower/Frostee"] = "Monkey_tvt",
+    ["TV Tower/TV Tower/Fredo"] = "Monkey_tt",
+    ["TV Tower/TV Tower/Charlee"] = "Monkey_tt",
+    ["TV Tower/TV Tower/Mach 3"] = "Monkey_tt",
+    ["TV Tower/TV Tower/Tortuss"] = "Monkey_tt",
+    ["TV Tower/TV Tower/Manic"] = "Monkey_tt",
+    ["TV Tower/TV Tower/Ruptdis"] = "Monkey_tt",
+    ["TV Tower/TV Tower/Eighty 7"] = "Monkey_tt",
+    ["TV Tower/TV Tower/Danio"] = "Monkey_tt",
+    ["TV Tower/TV Tower/Roosta"] = "Monkey_tt",
+    ["TV Tower/TV Tower/Tellis"] = "Monkey_tt",
+    ["TV Tower/TV Tower/Whack"] = "Monkey_tt",
+    ["TV Tower/TV Tower/Frostee"] = "Monkey_tt",
     ["Monkey Madness/Monkey Madness/Goopo"] = "Monkey_mm",
     ["Monkey Madness/Monkey Madness/Porto"] = "Monkey_mm",
     ["Monkey Madness/Monkey Madness/Slam"] = "Monkey_mm",
@@ -554,8 +554,8 @@ local locationToCode ={
 	["City Park/City Park/Sewers Front"] = "coin_cp",
 	["Specter's Factory/Specter's Factory/Lava Room"] = "coin_sf",
 	["Specter's Factory/Specter's Factory/RC Car Room"] = "coin_sf",
-	["TV Tower/TV Tower/Tank Room"] = "coin_tvt",
-	["TV Tower/TV Tower/Water Basement"] = "coin_tvt",
+	["TV Tower/TV Tower/Tank Room"] = "coin_tt",
+	["TV Tower/TV Tower/Water Basement"] = "coin_tt",
 	["Monkey Madness/Monkey Madness/Castle Main"] = "coin_mm",
 	["Monkey Madness/Monkey Madness/Climb (Outside)"] = "coin_mm",
 	["Monkey Madness/Monkey Madness/Coaster (Room 1)"] = "coin_mm",
@@ -568,17 +568,35 @@ local locationToCode ={
 	["Monkey Madness/Monkey Madness/Western Land"] = "coin_mm"
 
 }
+
 function location_check(section)
 
 	local SectionID = section.FullID
+	
 	Code = locationToCode[SectionID]
 	isActive = Tracker:FindObjectForCode("@"..SectionID).AvailableChestCount == 1
+		print(Code)
 		if (Code) ~= nil then
 			if isActive == false then
-				Tracker:FindObjectForCode(Code).AcquiredCount = Tracker:FindObjectForCode(Code).AcquiredCount + 1
+			MinCount = Tracker:FindObjectForCode(Code).MinCount
+			MaxCount = Tracker:FindObjectForCode(Code).MaxCount
+				if Tracker:FindObjectForCode(Code).AcquiredCount +1 <= MaxCount then
+						--Tracker:FindObjectForCode(Code).AcquiredCount = Tracker:FindObjectForCode(Code).MaxCount
+						Tracker:FindObjectForCode(Code).AcquiredCount = Tracker:FindObjectForCode(Code).AcquiredCount + 1
+						if not Tracker:FindObjectForCode(Code).Active and (Tracker:FindObjectForCode(Code).AcquiredCount >= MinCount) then
+							Tracker:FindObjectForCode(Code).Active = true
+						end
+				end
 			else
-				Tracker:FindObjectForCode(Code).AcquiredCount = Tracker:FindObjectForCode(Code).AcquiredCount - 1
+				if Tracker:FindObjectForCode(Code).AcquiredCount -1 >= MinCount then
+						--Tracker:FindObjectForCode(Code).AcquiredCount = Tracker:FindObjectForCode(Code).MinCount
+						Tracker:FindObjectForCode(Code).AcquiredCount = Tracker:FindObjectForCode(Code).AcquiredCount - 1
+						if not Tracker:FindObjectForCode(Code).Active and (Tracker:FindObjectForCode(Code).AcquiredCount == MinCount) then
+							Tracker:FindObjectForCode(Code).Active = false
+						end
+				end
 			end
+
 		end
 end
 
