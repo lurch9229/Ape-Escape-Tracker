@@ -302,6 +302,16 @@
     "codes": "tt_cr"
   },
   {
+    "name": "SA Coins",
+    "type": "consumable",
+    "loop": "false",
+    "max_quantity": 5,
+	"min_quantity": 0,
+    "increment": 1,
+    "img": "images/icons/coinOn.png",
+    "codes": "coin_sa, coin_code"
+  },
+  {
     "name": "CB Monkeys",
     "type": "consumable",
     "loop": "false",
@@ -477,6 +487,16 @@
     "codes": "tt_st"
   },
   {
+    "name": "GA Coins",
+    "type": "consumable",
+    "loop": "false",
+    "max_quantity": 5,
+	"min_quantity": 0,
+    "increment": 1,
+    "img": "images/icons/coinOn.png",
+    "codes": "coin_ga, coin_code"
+  },
+  {
     "name": "WSW Monkeys",
     "type": "consumable",
     "loop": "false",
@@ -578,7 +598,7 @@
   },
   {
     "name": "TT Monkeys",
-    "type": "consumable",
+    "type": "non-interact",
     "loop": "false",
     "max_quantity": 12,
     "increment": 1,
@@ -614,7 +634,7 @@
     "name": "MM Coins",
     "type": "consumable",
     "loop": "false",
-    "max_quantity": 6,
+    "max_quantity": 10,
     "increment": 1,
     "img": "images/icons/coinOn.png",
     "codes": "coin_mm, coin_code"
@@ -630,24 +650,24 @@
     "name": "Fossil Field World Key",
     "type": "toggle",
     "loop": "false",
-    "initial_active_state": true,
     "img": "images/icons/base_key.png",
+    "initial_active_state": true,
     "codes": "ff_key"
   },
   {
     "name": "Primordial Ooze World Key",
     "type": "toggle",
     "loop": "false",
-    "initial_active_state": true,
     "img": "images/icons/base_key.png",
+    "initial_active_state": true,
     "codes": "po_key"
   },
   {
     "name": "Molten Lava World Key",
     "type": "toggle",
     "loop": "false",
-    "initial_active_state": true,
     "img": "images/icons/base_key.png",
+    "initial_active_state": true,
     "codes": "ml_key"
   },
   {
