@@ -632,7 +632,6 @@
     "loop": "false",
     "initial_active_state": true,
     "img": "images/icons/base_key.png",
-    "initial_active_state": true,
     "codes": "ff_key"
   },
   {
@@ -641,7 +640,6 @@
     "loop": "false",
     "initial_active_state": true,
     "img": "images/icons/base_key.png",
-    "initial_active_state": true,
     "codes": "po_key"
   },
   {
@@ -650,7 +648,6 @@
     "loop": "false",
     "initial_active_state": true,
     "img": "images/icons/base_key.png",
-    "initial_active_state": true,
     "codes": "ml_key"
   },
   {
