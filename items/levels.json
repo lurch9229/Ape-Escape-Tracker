@@ -770,7 +770,7 @@
     "type": "consumable",
     "max_quantity": 6,
     "min_quantity": 0,
-    "initial_quantity": 1,
+    "initial_quantity": 0,
     "increment": 1,
     "img": "images/icons/base_key.png",
     "codes": "keyWorld"
