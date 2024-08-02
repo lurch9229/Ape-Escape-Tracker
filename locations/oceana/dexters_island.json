@@ -154,7 +154,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, DI_SecondHalf, DI_Boulders"
+                            "net, $DI_SecondHalf, $DI_Boulders"
                         ],
                         "item_count": 1
                     },
@@ -168,7 +168,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, DI_SecondHalf, DI_Boulders"
+                            "net, $DI_SecondHalf, $DI_Boulders"
                         ],
                         "item_count": 1
                     },
@@ -182,7 +182,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, DI_SecondHalf, DI_Boulders"
+                            "net, $DI_SecondHalf, $DI_Boulders"
                         ],
                         "item_count": 1
                     },

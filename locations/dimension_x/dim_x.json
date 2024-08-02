@@ -14,22 +14,34 @@
                         "y": 185
                     }
                 ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Race Jake",
-                        "visibility_rules": 
+				"visibility_rules": 
                         [
                             "shuffleCoins"
                         ],
-                        "access_rules": 
+                "access_rules": 
                         [
                             "water"
                         ],
-                        "item_count": 5
+                "sections": [
+                    {
+                        "name": "Coin 1",
+                        "item_count": 1
+                    },
+					{
+                        "name": "Coin 2",
+                        "item_count": 1
+                    },
+					{
+                        "name": "Coin 3",
+                        "item_count": 1
+                    },
+					{
+                        "name": "Coin 4",
+                        "item_count": 1
+                    },
+					{
+                        "name": "Coin 5",
+                        "item_count": 1
                     }
                 ]
             },
@@ -42,22 +54,34 @@
                         "y": 185
                     }
                 ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Race Jake",
-                        "visibility_rules": 
+				"visibility_rules": 
                         [
                             "shuffleCoins"
                         ],
-                        "access_rules": 
+                "access_rules": 
                         [
                             "flyer"
                         ],
-                        "item_count": 5
+                "sections": [
+                    {
+                        "name": "Coin 1",
+                        "item_count": 1
+                    },
+					{
+                        "name": "Coin 2",
+                        "item_count": 1
+                    },
+					{
+                        "name": "Coin 3",
+                        "item_count": 1
+                    },
+					{
+                        "name": "Coin 4",
+                        "item_count": 1
+                    },
+					{
+                        "name": "Coin 5",
+                        "item_count": 1
                     }
                 ]
             }
