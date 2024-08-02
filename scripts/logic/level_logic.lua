@@ -312,15 +312,20 @@ function location_check(section)
 				if Tracker:FindObjectForCode(Code).AcquiredCount +1 <= MaxCount then
 					if (string.find(string.upper(Code), "COIN")) then
 						Tracker:FindObjectForCode("tot_coin").AcquiredCount = Tracker:FindObjectForCode("tot_coin").AcquiredCount + Tracker:FindObjectForCode(Code).Increment
+						if Tracker:FindObjectForCode("tot_coin").AcquiredCount > 0 then 
+							Tracker:FindObjectForCode("tot_coin").Active = true 
+						end
 					elseif (string.find(string.upper(Code), "MONKEY")) then
 						Tracker:FindObjectForCode("tot_ape").AcquiredCount = Tracker:FindObjectForCode("tot_ape").AcquiredCount + Tracker:FindObjectForCode(Code).Increment
+						if Tracker:FindObjectForCode("tot_ape").AcquiredCount > 0 then 
+							Tracker:FindObjectForCode("tot_ape").Active = true 
+						end
 					end
 					--Tracker:FindObjectForCode(Code).AcquiredCount = Tracker:FindObjectForCode(Code).MaxCount
 					Tracker:FindObjectForCode(Code).AcquiredCount = Tracker:FindObjectForCode(Code).AcquiredCount + Tracker:FindObjectForCode(Code).Increment
 					if not Tracker:FindObjectForCode(Code).Active and (Tracker:FindObjectForCode(Code).AcquiredCount >= MinCount) then
 						Tracker:FindObjectForCode(Code).Active = true
 					end
-
 				end
 			else
 
@@ -328,8 +333,14 @@ function location_check(section)
 					if (string.find(string.upper(Code), "COIN")) then
 					print(Tracker:FindObjectForCode(Code).Increment)
 						Tracker:FindObjectForCode("tot_coin").AcquiredCount = Tracker:FindObjectForCode("tot_coin").AcquiredCount - Tracker:FindObjectForCode(Code).Increment
+						if Tracker:FindObjectForCode("tot_coin").AcquiredCount == 0 then 
+							Tracker:FindObjectForCode("tot_coin").Active = false 
+						end
 					elseif (string.find(string.upper(Code), "MONKEY")) then
 						Tracker:FindObjectForCode("tot_ape").AcquiredCount = Tracker:FindObjectForCode("tot_ape").AcquiredCount - Tracker:FindObjectForCode(Code).Increment
+						if Tracker:FindObjectForCode("tot_ape").AcquiredCount == 0 then 
+							Tracker:FindObjectForCode("tot_ape").Active = false 
+						end
 					end
 					--Tracker:FindObjectForCode(Code).AcquiredCount = Tracker:FindObjectForCode(Code).MinCount
 					Tracker:FindObjectForCode(Code).AcquiredCount = Tracker:FindObjectForCode(Code).AcquiredCount - Tracker:FindObjectForCode(Code).Increment
