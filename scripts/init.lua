@@ -1,3 +1,5 @@
+ENABLE_DEBUG_LOG = true
+
 ScriptHost:LoadScript("scripts/logic/items.lua")
 ScriptHost:LoadScript("scripts/logic/level_logic.lua")
 ScriptHost:LoadScript("scripts/autotracking.lua")
@@ -8,12 +10,27 @@ Tracker:AddItems("items/settings.json")
 
 Tracker:AddMaps("maps/maps.json")
 
-Tracker:AddLayouts("layouts/display/tracker.json")
-Tracker:AddLayouts("layouts/itemGrids/item_grids_standard.json")
-Tracker:AddLayouts("layouts/itemGrids/level_grid_left_standard.json")
-Tracker:AddLayouts("layouts/itemGrids/level_grid_right_standard.json")
-Tracker:AddLayouts("layouts/display/broadcast_horizontal.json")
 
+if (Tracker.ActiveVariantUID == "map_tracker") then
+
+	Tracker:AddLayouts("layouts/display/tracker.json")
+	Tracker:AddLayouts("layouts/itemGrids/item_grids_standard.json")
+	Tracker:AddLayouts("layouts/itemGrids/level_grid_left_standard.json")
+	Tracker:AddLayouts("layouts/itemGrids/level_grid_right_standard.json")
+	
+elseif (Tracker.ActiveVariantUID == "map_tracker_alternative") then
+
+	Tracker:AddLayouts("layouts/itemGrids/item_grids_standard.json")
+	Tracker:AddLayouts("layouts/display/tracker_alternative.json")
+	Tracker:AddLayouts("layouts/itemGrids/settings_grid.json")
+	Tracker:AddLayouts("layouts/itemGrids/level_grid_alternative.json")
+	
+elseif (Tracker.ActiveVariantUID == "items_only") then
+
+	Tracker:AddLayouts("layouts/display/items_minimal.json")
+	
+end
+Tracker:AddLayouts("layouts/display/broadcast_horizontal.json")
 Tracker:AddLocations("locations/lost_lands/fossil_fields.json")
 Tracker:AddLocations("locations/lost_lands/primordial_ooze.json")
 Tracker:AddLocations("locations/lost_lands/molten_lava.json")
