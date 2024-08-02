@@ -10,6 +10,11 @@
 			"display_name": "Map Tracker",
 			"flags": [ "ap" ]
 		},
+		"map_tracker_alternative": {
+			"display_name": "Map Tracker (Alternative)",
+			"flags": [ "ap" ]
+		},
+		
 		"items_only": {
 			"display_name": "Items Only",
 			"flags": [ "ap" ]
