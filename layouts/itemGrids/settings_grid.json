@@ -1,0 +1,75 @@
+{
+  "settings_grid": {
+    "type": "array",
+	"h_alignement": "center",
+    "orientation": "vertical",
+    "content":[
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0,0,-40",
+
+        "content": [
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["op_gl"]
+            ],
+            "item_size": 150,
+            "margin": "0,10,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["op_sc"]
+            ],
+            "item_size": 150,
+            "margin": "0,-110,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["goal"]
+            ],
+            "item_size": 150,
+            "margin": "0,-110,0,0"
+          }
+        ]
+      }
+    ]
+  },
+  "totals_grid": {
+    "type": "array",
+    "orientation": "horizontal",
+    "content":[
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "20,10",
+		"item_margin": "20,0",
+        "content": [
+		  {
+			"type": "itemgrid",
+			
+			"v_alignment": "center",
+            "rows": [
+              ["tot_ape"]
+            ],
+            "item_size": 38,
+            "margin": "0,0,0,0"
+		  },
+		  {
+			"type": "itemgrid",
+			
+			"v_alignment": "center",
+            "rows": [
+              ["tot_coin"]
+            ],
+            "item_size": 45,
+            "margin": "0,0,0,0"
+		  }
+        ]
+      }
+    ]
+  }
+}
