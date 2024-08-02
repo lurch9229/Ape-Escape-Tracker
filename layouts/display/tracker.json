@@ -14,17 +14,50 @@
             			{
               				"type": "group",
               				"header": "Items",
-              				"content": {
-                				"type": "array",
-                				"orientation": "vertical",
-                				"margin": "0,0",
-                				"content": [
-                  					{
-                    					"type": "layout",
-                    					"key": "item_grid"
-                  					}
-                				]
-            				}
+							"content": [
+								{
+									"type": "array",
+									"orientation": "vertical",
+									"margin": "0,0",
+									"content": [
+										{
+											"type": "layout",
+											"key": "item_grid"
+										}
+									]
+								},
+								{
+									"type": "array",
+									"orientation": "horizontal",
+									"margin": "0,0",
+									"content": [
+									  {
+											"type": "group",
+											"header":"Totals",
+											"orientation": "horizontal",
+											"margin": "0,100",
+											"content": [
+											  {
+												"type": "itemgrid",
+												"rows": [
+												  ["tot_ape"]
+												],
+												"item_size": 38,
+												"margin": "0,0,0,0"
+											  },
+											  {
+												"type": "itemgrid",
+												"rows": [
+												  ["tot_coin"]
+												],
+												"item_size": 45,
+												"margin": "-5,0,0,0"
+											  }
+											]
+									  }
+									]
+								}
+							]
             			},
                         {
                             "type": "group",
