@@ -55,6 +55,8 @@ function onClear(slot_data)
                     obj.Active = false
                 elseif v[2] == "consumable" then
                     obj.AcquiredCount = obj.MinCount
+				elseif v[2] == "non-interractive" then
+                    obj.AcquiredCount = obj.MinCount
                 elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
                     print(string.format("onClear: unknown item type %s for code %s", v[2], v[1]))
                 end
@@ -69,25 +71,33 @@ function onClear(slot_data)
     if SLOT_DATA == nil then
         return
     end
-
-    if slot_data['logic'] == "glitchless" then
+	-- Logic :     
+		-- 0 = glitchless
+		-- 1 = noij
+		-- 2 = ij
+    if slot_data['logic'] == 0 then
         Tracker:FindObjectForCode("op_logic").CurrentStage = 0
-    elseif slot_data['logic'] == "noij" then
+    elseif slot_data['logic'] == 1 then
         Tracker:FindObjectForCode("op_logic").CurrentStage = 1
-    elseif slot_data['logic'] == "ij" then
+    elseif slot_data['logic'] == 2 then
         Tracker:FindObjectForCode("op_logic").CurrentStage = 2
     end
 
+	-- Coins Shuffle:
+		--0 = On
+		--1 = Off
     if slot_data['coin'] then
         local obj = Tracker:FindObjectForCode("op_sc")
         if obj then
             obj.CurrentStage = slot_data['coin']
         end
     end
-
-    if slot_data['goal'] == "first" then
+    -- Goal:
+		--0 = First
+		--1 = Second
+    if slot_data['goal'] == 0 then
         Tracker:FindObjectForCode("goal").CurrentStage = 0
-    elseif slot_data['goal'] == "second" then
+    elseif slot_data['goal'] == 1 then
         Tracker:FindObjectForCode("goal").CurrentStage = 1
     end
 end

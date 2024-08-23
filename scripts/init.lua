@@ -1,8 +1,9 @@
-ENABLE_DEBUG_LOG = true
+ENABLE_DEBUG_LOG = false
 
 ScriptHost:LoadScript("scripts/logic/items.lua")
 ScriptHost:LoadScript("scripts/logic/level_logic.lua")
 ScriptHost:LoadScript("scripts/autotracking.lua")
+--ScriptHost:LoadScript("scripts/utils.lua")
 
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/levels.json")
