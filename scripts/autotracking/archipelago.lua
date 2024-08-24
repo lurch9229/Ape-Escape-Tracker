@@ -86,11 +86,10 @@ function onClear(slot_data)
 	-- Coins Shuffle:
 		--0 = On
 		--1 = Off
-    if slot_data['coin'] then
-        local obj = Tracker:FindObjectForCode("op_sc")
-        if obj then
-            obj.CurrentStage = slot_data['coin']
-        end
+    if slot_data['coin'] == 0 then
+        Tracker:FindObjectForCode("op_coins").CurrentStage = 1
+	else
+		Tracker:FindObjectForCode("op_coins").CurrentStage = 0
     end
     -- Goal:
 		--0 = First
