@@ -2,15 +2,15 @@
 
 0.2.2
 
-    - Layouts -:
+    Layouts -:
 
 	    - [New] Map Tracker (Alternative) :
             - More of a vertical layout that occupy half a screen,so you can put your game/text client on the other half
         - Map Tracker : 
-            -Added Total coins and Monkeys into "Map Tracker" layout
-            -Changed Settings position to align (or try to) with Totals
+            - Added Total coins and Monkeys into "Map Tracker" layout
+            - Changed Settings position to align (or try to) with Totals
 
-    -Autotracking -:
+    Autotracking -:
 
 	    - Poptracker v0.27 : Implemented AddOnLocationSectionChangedHandler
             - Per Level Monkeys and Coins count tracking
@@ -21,7 +21,7 @@
             - It is a work in progress but I will soon PR to the apworld to include it,
               so the tracker will be able to use it instantly when released
 
-    - Items/Locations -:
+    Items/Locations -:
 
 	    - Made Coins and Monkeys type "non-interractive" in the Layout
             - This change prevents user interaction while still allowing LocationSectionChangedHandler to update the Items int the layout (Per Level AND Totals)
@@ -35,34 +35,25 @@
 	    - Changed fossil_field.json to fossil_fields.json to match real name of the location
 	    - Corrected Wabi Sabi Wall and Crumbling Castle "code" not matching the Items in the grid properly
 	
-    - Logic -:
-
+    Logic -:
         - Dexter's Island: Corrected access rules for Frederick, Baba and Quirck
 
-    - Syntax errors & Misc-:
+    Syntax errors & Misc-:
         - Deleted Duplicate statements in levels.json
 
 0.2.1
 
-    - Layouts -:
-    
+    Layouts -:
         - Added World Key Consumable that interacts with individual world keys to open levels as a group (needs testing for auto-tracking). Thanks StripesOO7
-
         - Started work on an items only variant (hopefully be finished next release)
 
-    - Logic -:
-
+    Logic -:
         - MM Professor now requires correct items
     
-    - Autotracking -:
-
+    Autotracking -:
         - Enabled Autotracking for Items,Locations and Coins
-
         - Corrected Item ID's for autotracking
-
-        - Added 60 lines to location_mapping for coins 
-            locations and linked them to locations on the map
-
+        - Added 60 lines to location_mapping for coins locations and linked them to locations on the map
         - Corrected Monkey names and location names to match map location for tracking: 
             Dr Monk-> Dr. Monk
             BongBong-> Bong-Bong
@@ -71,20 +62,17 @@
             Eight 7-> Eighty 7
             Poople-> Poo-Pie
 
-    - Locations - :
-            - Changed coin names for their respective name in Archipelago-Ape-Escape pack "String.py"(ex.:Fossil Fields "Specter Coin" is now "Main") 
-
+    - Locations -:
+            - Changed coin names for their respective name in Archipelago-Ape-Escape pack "String.py"(ex.:Fossil Fields "Specter Coin" is now "Main")
             - Changed location of monkey_madness.json from dim_x folder to a new folder to better fit the map : locations/specter_land/monkey_madness.json
-
             - Renamed NewFreezeLand/Open Area - Monkey to NewFreezeLand/Hot Springs
 
-    - Fixes - :
+    - Fixes -:
             - Made Time Net active by default
             - Changed items.json to remove "allow_disabled": false
+Dev version 0.0.2D (0.2.0)
 
-    - TODO - :
-            - Add Dimension_X maps (Stadium Attack and Gladiator Attack) to track if you did the race,since locations are mapped for coins but not used
-
-            - Calculate Coins and Monkeys per Level in the grid
-
-            - Alternate layout option to separate Coins from Monkeys on the map
+	Features/Bug fixes -:
+		- Added settings
+		- Made Specter Coins viewable
+		- Changed how world keys work. Now a Consumable that toggles specific level keys
