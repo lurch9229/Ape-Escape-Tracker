@@ -35,6 +35,7 @@ Version 0.2.2
 		- Fixed some items/locations images in various levels
 		- Fixed Wabi Sabi Wall and Crumbling Castle "code" not matching the Items in the grid properly
 		- Fixed some monkeys access rules for Desxter's Island
+  		- Fixed Stadium Attack and Gladiator Attack access rules
 Version 0.2.1
 
 	Autotracking -:
