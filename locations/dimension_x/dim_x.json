@@ -20,7 +20,7 @@
                         ],
                 "access_rules": 
                         [
-                            "water"
+                            "water, $stadiumAttack"
                         ],
                 "sections": [
                     {
@@ -60,7 +60,7 @@
                         ],
                 "access_rules": 
                         [
-                            "flyer"
+                            "flyer, $gladiatorAttack"
                         ],
                 "sections": [
                     {
