@@ -298,6 +298,13 @@ function FuturamaAccess()
     end
 end
 
+function stadiumAttack()
+	return (Tracker:ProviderCountForCode("keyWorld") >= 1)
+end
+
+function gladiatorAttack()
+	return (Tracker:ProviderCountForCode("keyWorld") >= 3)
+end
 function location_check(section)
 
 	local SectionID = section.FullID
