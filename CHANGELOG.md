@@ -34,7 +34,7 @@
 	    - Fixed Cryptic Relics Monkeys images
 	    - Changed fossil_field.json to fossil_fields.json to match real name of the location
 	    - Corrected Wabi Sabi Wall and Crumbling Castle "code" not matching the Items in the grid properly
-	    - Fixed Stadium Attack and Gladiator Attack access rules (Noew requires respectivly 1 Key and 3 Keys,in addition to existing rules)
+	    - Fixed Stadium Attack and Gladiator Attack access rules (Now requires respectivly 1 Key and 3 Keys,in addition to existing rules)
 	
     Logic -:
         - Dexter's Island: Corrected access rules for Frederick, Baba and Quirck
