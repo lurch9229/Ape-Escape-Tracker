@@ -299,11 +299,11 @@ function FuturamaAccess()
 end
 
 function stadiumAttack()
-	return (Tracker:ProviderCountForCode("keyWorld") >= 1)
+	return (Tracker:ProviderCountForCode("keyWorld") >= 2)
 end
 
 function gladiatorAttack()
-	return (Tracker:ProviderCountForCode("keyWorld") >= 3)
+	return (Tracker:ProviderCountForCode("keyWorld") >= 4)
 end
 function location_check(section)
 
