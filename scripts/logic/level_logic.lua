@@ -297,3 +297,66 @@ function FuturamaAccess()
         Tracker:FindObjectForCode("tvt_key").Active = true
     end
 end
+
+function stadiumAttack()
+	return (Tracker:ProviderCountForCode("keyWorld") >= 2)
+end
+
+function gladiatorAttack()
+	return (Tracker:ProviderCountForCode("keyWorld") >= 4)
+end
+function location_check(section)
+
+	local SectionID = section.FullID
+	print(SectionID)
+	Code = locationToCode[SectionID]
+	isActive = Tracker:FindObjectForCode("@"..SectionID).AvailableChestCount == 1
+		print(Code)
+		if (Code) ~= nil then
+		MinCount = Tracker:FindObjectForCode(Code).MinCount
+		MaxCount = Tracker:FindObjectForCode(Code).MaxCount
+			if isActive == false then
+				if Tracker:FindObjectForCode(Code).AcquiredCount +1 <= MaxCount then
+					if (string.find(string.upper(Code), "COIN")) then
+						Tracker:FindObjectForCode("tot_coin").AcquiredCount = Tracker:FindObjectForCode("tot_coin").AcquiredCount + Tracker:FindObjectForCode(Code).Increment
+						if Tracker:FindObjectForCode("tot_coin").AcquiredCount > 0 then
+							Tracker:FindObjectForCode("tot_coin").Active = true
+						end
+					elseif (string.find(string.upper(Code), "MONKEY")) then
+						Tracker:FindObjectForCode("tot_ape").AcquiredCount = Tracker:FindObjectForCode("tot_ape").AcquiredCount + Tracker:FindObjectForCode(Code).Increment
+						if Tracker:FindObjectForCode("tot_ape").AcquiredCount > 0 then
+							Tracker:FindObjectForCode("tot_ape").Active = true
+						end
+					end
+					--Tracker:FindObjectForCode(Code).AcquiredCount = Tracker:FindObjectForCode(Code).MaxCount
+					Tracker:FindObjectForCode(Code).AcquiredCount = Tracker:FindObjectForCode(Code).AcquiredCount + Tracker:FindObjectForCode(Code).Increment
+					if not Tracker:FindObjectForCode(Code).Active and (Tracker:FindObjectForCode(Code).AcquiredCount >= MinCount) then
+						Tracker:FindObjectForCode(Code).Active = true
+					end
+				end
+			else
+
+				if Tracker:FindObjectForCode(Code).AcquiredCount -1 >= MinCount then
+					if (string.find(string.upper(Code), "COIN")) then
+					print(Tracker:FindObjectForCode(Code).Increment)
+						Tracker:FindObjectForCode("tot_coin").AcquiredCount = Tracker:FindObjectForCode("tot_coin").AcquiredCount - Tracker:FindObjectForCode(Code).Increment
+						if Tracker:FindObjectForCode("tot_coin").AcquiredCount == 0 then
+							Tracker:FindObjectForCode("tot_coin").Active = false
+						end
+					elseif (string.find(string.upper(Code), "MONKEY")) then
+						Tracker:FindObjectForCode("tot_ape").AcquiredCount = Tracker:FindObjectForCode("tot_ape").AcquiredCount - Tracker:FindObjectForCode(Code).Increment
+						if Tracker:FindObjectForCode("tot_ape").AcquiredCount == 0 then
+							Tracker:FindObjectForCode("tot_ape").Active = false
+						end
+					end
+					--Tracker:FindObjectForCode(Code).AcquiredCount = Tracker:FindObjectForCode(Code).MinCount
+					Tracker:FindObjectForCode(Code).AcquiredCount = Tracker:FindObjectForCode(Code).AcquiredCount - Tracker:FindObjectForCode(Code).Increment
+					if Tracker:FindObjectForCode(Code).Active and (Tracker:FindObjectForCode(Code).AcquiredCount == MinCount) then
+						Tracker:FindObjectForCode(Code).Active = false
+					end
+				end
+			end
+		end
+end
+
+ScriptHost:AddOnLocationSectionChangedHandler("location_check",function(section) location_check(section) end)

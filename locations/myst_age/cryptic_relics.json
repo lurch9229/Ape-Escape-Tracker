@@ -26,7 +26,7 @@
                     {
                         "name": "Bazzle",
                         "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/items/monkeyOff.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
                         "visibility_rules": 
                         [
                             ""
@@ -43,7 +43,7 @@
                     {
                         "name": "Freeto",
                         "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/items/monkeyOff.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
                         "visibility_rules": 
                         [
                             ""
@@ -57,7 +57,7 @@
                     {
                         "name": "Troopa",
                         "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/items/monkeyOff.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
                         "visibility_rules": 
                         [
                             ""
@@ -76,7 +76,7 @@
                     {
                         "name": "Stymie",
                         "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/items/monkeyOff.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
                         "visibility_rules": 
                         [
                             ""
@@ -90,7 +90,7 @@
                     {
                         "name": "Spanky",
                         "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/items/monkeyOff.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
                         "visibility_rules": 
                         [
                             ""
@@ -110,7 +110,7 @@
                     {
                         "name": "Jesta",
                         "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/items/monkeyOff.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
                         "visibility_rules": 
                         [
                             ""
@@ -128,7 +128,7 @@
                     {
                         "name": "Pally",
                         "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/items/monkeyOff.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
                         "visibility_rules": 
                         [
                             ""
@@ -142,7 +142,7 @@
                     {
                         "name": "Crash",
                         "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/items/monkeyOff.png",
+                        "chest_opened_img": "images/icons/monkeyOff.png",
                         "visibility_rules": 
                         [
                             ""
@@ -156,7 +156,7 @@
                     {
                         "name": "Main Ruins",
                         "chest_unopened_img": "images/icons/coinOn.png",
-                        "chest_opened_img": "images/items/coinOff.png",
+                        "chest_opened_img": "images/icons/coinOff.png",
                         "visibility_rules": 
                         [
                             "shuffleCoins"
