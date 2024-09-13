@@ -21,8 +21,7 @@ Version 0.2.2
 
 	Autotracking -:
 		- Implemented AddOnLocationSectionChangedHandler to track per level Monkeys/Coins and global Totals
-		- Prepared for settings tracking with slot_data
-		  (It will work when the apworld gets updated)
+		- Autotracking with slot_data now works
 	
 	Layout -:
 		- New layout : Map Tracker (Alternative) -> A more vertical layout than the original one
