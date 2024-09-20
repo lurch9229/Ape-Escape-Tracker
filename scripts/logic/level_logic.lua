@@ -54,7 +54,14 @@ end
 function CanCatchWater()
     return water()
 end
-
+--FLYER
+function SuperFlyer()
+    return --false
+    or
+    (op_et() and (net() or club() or sling() or punch() and (Tracker:FindObjectForCode("superflyer").CurrentStage = 1))
+    or
+    (op_no_ij() and (net() or club() or sling() or punch() and (Tracker:FindObjectForCode("superflyer").CurrentStage = 1))
+end
 --THICK JUNGLE
 function TJ_UFOEntry()
     return
@@ -74,13 +81,18 @@ function TJ_FishEntry()
     return
     CanSwim()
     or
-    (op_no_ij())
+    (op_no_ij() and (flyer()))
     or
-    (op_et())
+    (op_et() and (flyer()))
 end
 
 function TJ_Mushroom()
-    return HasMobility()
+    return 
+    HasMobility() and CanHitMultiple()
+    or
+    (op_no_ij() and (SuperFlyer()))
+    or
+    (op_et() and (SuperFlyer()))
 end
 
 function CR_Inside()
@@ -91,7 +103,9 @@ function DI_SecondHalf()
     return 
     CanHitOnce() and CanDive()
     or
-    (op_et() and sling())
+    (op_no_ij() and CanHitMultiple() and CanDive())
+    or
+    (op_et() and sling() or (CanHitMultiple() and CanDive())
 end
 
 function DI_Boulders()
@@ -114,7 +128,7 @@ end
 
 function WSW_ForthRoom()
     return
-    CanHitMultiple() and CanDive()
+    CanHitMultiple() and flyer()
     or
     op_no_ij()
     or
@@ -124,18 +138,18 @@ end
 function CC_5Monkeys()
     return club() or flyer() or punch()
     or
-    (op_no_ij() and (hoop() or sling()))
+    (op_no_ij() and hoop() or sling())
     or
-    (op_et() and (hoop() or sling()))
+    (op_et() and hoop() or sling())
 end
 
 function CC_WaterRoom()
     return 
     CanHitMultiple() or (CanDive() and punch())
     or
-    (op_no_ij() and (CanDive() and flyer()))
+    (op_no_ij() and (CanHitMultiple() and water()) or (CanDive() and (flyer() or punch())) or (flyer() or hoop()) or SuperFlyer())
     or
-    (op_et() and (CanDive() and (sling() or flyer())))
+    (op_et() and (CanHitMultiple() and water()) or (CanDive() and (flyer() or punch())) or flyer() or hoop() or sling() or SuperFlyer())
 end
 
 function CC_ButtonRoom()
@@ -161,7 +175,7 @@ function CP_BackSewer()
     return -- FALSE
     (op_no_ij() and (flyer() and CanDive()))
     or
-    (op_et() and (sling() or ((flyer() and CanDive()))))
+    (op_et() and (sling() or flyer()) and CanDive())
 end
 
 function SF_CarRoom()
@@ -175,9 +189,9 @@ end
 function SF_MechRoom()
     return club() and SF_CarRoom()
 	or
-	(op_no_ij() and ((hoop() and flyer()) or (club() and (sling() or car())) or punch()))
+	(op_no_ij() and ((hoop() and flyer()) or (club() and (sling() or car())) or punch() or SuperFlyer()))
 	or
-	(op_et() and (sling() or (hoop() and flyer) or (club() and car()) or punch()))
+	(op_et() and sling() or (hoop() and flyer()) or (club() and car()) or punch() or SuperFlyer())
 end
 
 function TVT_HitButton()
@@ -203,9 +217,9 @@ end
 function MM_Professor()
     return flyer() and CanHitMultiple()
     or
-    (op_no_ij() and flyer() and (club() or sling()))
+    (op_no_ij() and flyer() and (club() or sling() or punch()))
     or
-    (op_et() and sling() or (flyer() and (club() or sling())))
+    (op_et() and sling() or (flyer() and (club() or punch()))
 end
 
 function Jake_Open()
@@ -246,8 +260,10 @@ end
 
 function MM_FinalBoss()
     return MM_DoubleDoor() and sling() and flyer()
+    or 
+    (op_no_ij() and (MM_UFODoor() and SuperFlyer()))
     or
-    (op_et() and MM_UFODoor() and sling())
+    (op_et() and MM_UFODoor() and (HasSling() or SuperFlyer()))
 end
 
 function LostLandsAccess()
