@@ -20,7 +20,7 @@
   "item_grid_horizontal": {
     "type": "itemgrid",
     "h_alignment": "center",
-	"v_alignment": "stretch",
+	"v_alignment": "center",
 	"margin": "145,0,0,0",
     "item_margin": "4,2",
     "item_size": "55,55",

@@ -91,7 +91,7 @@
                         "access_rules": 
                         [
                             "net, flyer",
-                            "net, op_et, sling"
+                            "net, sling, op_et"
                         ],
                         "item_count": 1
                     },
@@ -194,6 +194,22 @@
                         "item_count": 1
                     },
                     {
+                        "name": "Boss",
+                        "chest_unopened_img": "images/icons/specterOn.png",
+                        "chest_opened_img": "images/icons/specterOff.png",
+                        "visibility_rules":
+                        [
+                            ""
+                        ],
+                        "access_rules":
+                        [
+                            "net, $TVT_TankRoom, sling",
+                            "net, $TVT_TankRoom, flyer, car, op_no_ij",
+                            "net, $TVT_TankRoom, flyer, car, op_et"
+                        ],
+                        "item_count": 1
+                    },
+                    {
                         "name": "Water Basement",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
@@ -204,7 +220,7 @@
                         "access_rules": 
                         [
                             "flyer",
-                            "op_et, sling"
+                            "sling, op_et"
                         ],
                         "item_count": 1
                     },
@@ -233,12 +249,12 @@
                             "net, flyer, club",
                             "net, flyer, sling",
                             "net, flyer, punch",
-                            "net, op_no_ij, punch, club",
-                            "net, op_no_ij, punch, sling",
-                            "net, op_no_ij, flyer",
-                            "net, op_et, punch, club",
-                            "net, op_et, sling",
-                            "net, op_et, flyer"
+                            "net, punch, club, op_no_ij",
+                            "net, punch, sling, op_no_ij",
+                            "net, flyer, op_no_ij",
+                            "net, punch, club, op_et",
+                            "net, sling, op_et",
+                            "net, flyer, op_et"
                         ],
                         "item_count": 1
                     }

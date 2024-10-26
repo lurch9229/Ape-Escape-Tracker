@@ -4,7 +4,6 @@
     "type": "toggle",
     "loop": "false",
     "img": "images/items/Stun_Club.png",
-    "initial_active_state": true,
     "codes": "stun, club"
   },
   {

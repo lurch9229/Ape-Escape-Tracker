@@ -61,8 +61,8 @@
                         "access_rules": 
                         [
                             "net, $CanHitMultiple",
-                            "net, op_no_ij, $CanHitOnce",
-                            "net, op_et, $CanHitOnce"
+                            "net, $CanHitOnce, op_no_ij",
+                            "net, $CanHitOnce, op_et"
                         ],
                         "item_count": 1
                     },
@@ -119,8 +119,8 @@
                         "access_rules": 
                         [
                             "net, sling, $CanHitMultiple",
-                            "net, op_no_ij, sling",
-                            "net, op_et, sling"
+                            "net, sling, op_no_ij",
+                            "net, sling, op_et"
 
                         ],
                         "item_count": 1
@@ -150,40 +150,6 @@
                             "net, $CanHitMultiple",
                             "net, op_no_ij",
                             "net, op_et"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Molten Lava - Time Attack",
-                "map_locations": [
-                    {
-                        "map": "Molten_Lava",
-                        "x": 0,
-                        "y": 0
-                    },
-                    {
-                        "map": "Lost_Lands",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Beat 0:0:0",
-                        "visibility_rules": 
-                        [
-                            "shuffleTT",
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "CanHitMultiple"
                         ],
                         "item_count": 1
                     }

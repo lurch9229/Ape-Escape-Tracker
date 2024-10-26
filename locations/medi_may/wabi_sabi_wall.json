@@ -26,6 +26,7 @@
                 "sections": [
                     {
                         "name": "Minky",
+
                         "chest_unopened_img": "images/icons/monkeyOn.png",
                         "chest_opened_img": "images/icons/monkeyOff.png",
                         "visibility_rules": 
@@ -118,7 +119,7 @@
                         ],
                         "access_rules": 
                         [
-                           "net, $WSW_ThirdRoom, $WSW_ForthRoom"
+                           "net, $WSW_ThirdRoom, $WSW_FourthRoom"
                         ],
                         "item_count": 1
                     },
@@ -146,9 +147,9 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $WSW_ThirdRoom, $WSW_ForthRoom, sling",
-                            "net, $WSW_ThirdRoom, $WSW_ForthRoom, op_no_ij, hoop",
-                            "net, $WSW_ThirdRoom, $WSW_ForthRoom, op_et, hoop"
+                            "net, $WSW_ThirdRoom, $WSW_FourthRoom, sling",
+                            "net, $WSW_ThirdRoom, $WSW_FourthRoom, hoop, op_no_ij",
+                            "net, $WSW_ThirdRoom, $WSW_FourthRoom, hoop, op_et"
                         ],
                         "item_count": 1
                     },
@@ -164,8 +165,8 @@
                         [
                             "net, $WSW_ThirdRoom, $WSW_ForthRoom, sling",
                             "net, $WSW_ThirdRoom, $WSW_ForthRoom, flyer",
-                            "net, $WSW_ThirdRoom, $WSW_ForthRoom, op_no_ij, hoop",
-                            "net, $WSW_ThirdRoom, $WSW_ForthRoom, op_et, hoop"
+                            "net, $WSW_ThirdRoom, $WSW_ForthRoom, hoop, op_no_ij",
+                            "net, $WSW_ThirdRoom, $WSW_ForthRoom, hoop, op_et"
                         ],
                         "item_count": 1
                     },
@@ -208,7 +209,7 @@
                         "access_rules": 
                         [
                             "flyer",
-                            "op_et, sling"
+                            "sling, op_et"
                         ],
                         "item_count": 1
                     },

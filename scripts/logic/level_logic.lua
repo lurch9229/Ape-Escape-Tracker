@@ -10,58 +10,60 @@ function has(item, amount)
 
 function CanHitOnce()
     return 
-    club() or sling() or punch()
+    Club() or Sling() or Punch()
     or 
-    (op_no_ij() and (radar() or hoop() or flyer() or car()))
+    (op_no_ij() and (Radar() or Hoop() or Flyer() or Car()))
     or
-    (op_et() and (radar() or hoop() or flyer() or car()))
+    (op_et() and (Radar() or Hoop() or Flyer() or Car()))
 end
 
 function CanHitMultiple()
-    return club() or punch()
+    return Club() or Punch()
     or 
-    (op_no_ij() and (hoop() or sling()))
+    (op_no_ij() and (Hoop() or Sling()))
     or 
-    (op_et() and (hoop() or sling()))
+    (op_et() and (Hoop() or Sling()))
 end
 
 function HasMobility()
-    return flyer()
+    return Flyer()
     or
-    (op_no_ij() and hoop())
+    (op_no_ij() and Hoop())
     or
-    (op_et() and (hoop() or sling()))
+    (op_et() and (Sling() or Hoop()))
 end
 
 function RCMonkey()
     return
-    car()
+    Car()
     or
-    (op_et() and sling())
+    (op_no_ij() and Sling())
     or
-    (op_no_ij() and sling())
+    (op_et() and Sling())
+end
+
+--May have to get the setting to know if it's used or not
+--For now glitchless is always false,then other logic is always on
+function SuperFlyer()
+    return --FALSE
+    (op_no_ij() and op_superflyer() and (Flyer() and (Net() or Club() or Sling() or Punch())))
+    or
+    (op_et() and op_superflyer() and (Flyer() and (Net() or Club() or Sling() or Punch())))
 end
 
 --WATER NET
 function CanSwim()
-    return water()
+    return Water()
 end
 
 function CanDive()
-    return water()
+    return Water()
 end
 
-function CanCatchWater()
-    return water()
+function CanWaterCatch()
+    return Water()
 end
---FLYER
-function SuperFlyer()
-    return --false
-    or
-    (op_et() and (net() or club() or sling() or punch() and (Tracker:FindObjectForCode("superflyer").CurrentStage = 1))
-    or
-    (op_no_ij() and (net() or club() or sling() or punch() and (Tracker:FindObjectForCode("superflyer").CurrentStage = 1))
-end
+
 --THICK JUNGLE
 function TJ_UFOEntry()
     return
@@ -70,7 +72,7 @@ end
 
 function TJ_UFOCliff()
     return 
-    flyer()
+    Flyer()
     or
     (op_no_ij())
     or
@@ -81,54 +83,54 @@ function TJ_FishEntry()
     return
     CanSwim()
     or
-    (op_no_ij() and (flyer()))
+    (op_no_ij() and Flyer())
     or
-    (op_et() and (flyer()))
+    (op_et() and Flyer())
 end
 
 function TJ_Mushroom()
-    return 
-    HasMobility() and CanHitMultiple()
+    return
+    (HasMobility() and CanHitMultiple())
     or
-    (op_no_ij() and (SuperFlyer()))
+    (op_no_ij() and SuperFlyer())
     or
-    (op_et() and (SuperFlyer()))
+    (op_no_ij() and SuperFlyer())
 end
 
 function CR_Inside()
-    return sling() or punch()
+    return Sling() or Punch()
 end
 
 function DI_SecondHalf()
     return 
     CanHitOnce() and CanDive()
     or
-    (op_no_ij() and CanHitMultiple() and CanDive())
+    (op_no_ij() and (CanHitMultiple() and CanDive()))
     or
-    (op_et() and sling() or (CanHitMultiple() and CanDive())
+    (op_et() and (Sling() or (CanHitMultiple() and CanDive())))
 end
 
 function DI_Boulders()
     return
-    hoop() or car()
+    Hoop() or Car()
     or
-    (op_no_ij() and flyer())
+    (op_no_ij() and Flyer())
     or
-    (op_et() and (flyer() or sling()))
+    (op_et() and (Flyer() or Sling()))
 end
 
 function WSW_ThirdRoom()
     return
-    sling() or flyer()
+    (Net() and Sling()) or Flyer()
     or
-    (op_no_ij() and hoop())
+    (op_no_ij() and ((Net() and (Sling() or Hoop()))))
     or
-    (op_et() and hoop())
+    (op_et() and ((Net() and Hoop()) or Sling()))
 end
 
-function WSW_ForthRoom()
+function WSW_FourthRoom()
     return
-    CanHitMultiple() and flyer()
+    CanHitMultiple() and CanDive()
     or
     op_no_ij()
     or
@@ -136,36 +138,37 @@ function WSW_ForthRoom()
 end
 
 function CC_5Monkeys()
-    return club() or flyer() or punch()
+    return Net() and (Club() or Flyer() or Punch())
     or
-    (op_no_ij() and hoop() or sling())
+    (op_no_ij() and (Net() and (Hoop() or Sling())))
     or
-    (op_et() and hoop() or sling())
+    (op_et() and (Net() and (Hoop() or Sling())))
 end
 
 function CC_WaterRoom()
     return 
-    CanHitMultiple() or (CanDive() and punch())
+    (CanHitMultiple() and Net()) or (CanDive() and Punch())
     or
-    (op_no_ij() and (CanHitMultiple() and water()) or (CanDive() and (flyer() or punch())) or (flyer() or hoop()) or SuperFlyer())
+    (op_no_ij() and ((CanDive() and Flyer()) or (Hoop() and Flyer()) or SuperFlyer()))
     or
-    (op_et() and (CanHitMultiple() and water()) or (CanDive() and (flyer() or punch())) or flyer() or hoop() or sling() or SuperFlyer())
+    (op_et() and ((CanDive() and Flyer()) or (Hoop() and Flyer()) or Sling() or SuperFlyer()))
 end
 
 function CC_ButtonRoom()
     return 
     CC_WaterRoom() and CanSwim()
     or
-    (op_no_ij() and flyer())
+    (op_no_ij() and (CC_WaterRoom() and Flyer()))
     or
-    (op_et() and (flyer() or sling()))
+    (op_et() and (CC_WaterRoom() and (Flyer() or Sling())))
 end
 
 function CP_FrontSewer()
-    return car()
+    return Net() and Car()
     or
-    (op_et() and sling())
+    (op_et() and Net() and Sling())
 end
+
 
 function CP_FrontBarrels()
     return CP_FrontSewer() and (CanSwim() or HasMobility())
@@ -173,53 +176,49 @@ end
 
 function CP_BackSewer()
     return -- FALSE
-    (op_no_ij() and (flyer() and CanDive()))
+    (op_no_ij() and (Flyer() and CanDive()))
     or
-    (op_et() and (sling() or flyer()) and CanDive())
+    (op_et() and (Sling() or ((Flyer() and CanDive()))))
 end
 
 function SF_CarRoom()
-    return car() or punch()
+    return Car() or Punch()
     or
-    (op_no_ij() and (hoop() and flyer()))
+    (op_no_ij() and (Hoop() and Flyer()))
     or
-    (op_et() and (sling() or (hoop() and flyer())))
+    (op_et() and (Sling() or (Hoop() and Flyer())))
 end
 
 function SF_MechRoom()
-    return club() and SF_CarRoom()
+    return Net() and Club() and SF_CarRoom()
 	or
-	(op_no_ij() and ((hoop() and flyer()) or (club() and (sling() or car())) or punch() or SuperFlyer()))
+	(op_no_ij() and ((Hoop() and Flyer()) or (Net() and ((Club() and (Sling() or Car())) or Punch())) or SuperFlyer()))
 	or
-	(op_et() and sling() or (hoop() and flyer()) or (club() and car()) or punch() or SuperFlyer())
+	(op_et() and (Sling() or (Hoop() and Flyer()) or (Net() and ((Club() and Car()) or Punch())) or SuperFlyer()))
 end
 
 function TVT_HitButton()
-    return flyer() and CanHitOnce()
+    return Flyer() and CanHitOnce()
     or
-    (op_no_ij() and (club() or sling() or flyer()))
+    (op_no_ij() and (Club() or Sling() or Flyer()))
     or
-    (op_et() and (club() or sling() or flyer()))
+    (op_et() and (Club() or Sling() or Flyer()))
 end
 
 function TVT_TankRoom()
-    return TVT_HitButton()
+    return TVT_HitButton() and Net()
 end
 
 function MM_Natalie()
-    return CanHitMultiple()
-    or
-    (op_no_ij() and CanHitOnce())
-    or
-    (op_et() and CanHitOnce())
+    return CanHitOnce() and Net()
 end
 
 function MM_Professor()
-    return flyer() and CanHitMultiple()
+    return Flyer() and CanHitMultiple()
     or
-    (op_no_ij() and flyer() and (club() or sling() or punch()))
+    (op_no_ij() and Flyer() and (Club() or Sling()))
     or
-    (op_et() and sling() or (flyer() and (club() or punch()))
+    (op_et() and Sling() or (Flyer() and (Club() or Punch())))
 end
 
 function Jake_Open()
@@ -229,7 +228,7 @@ end
 function MM_Jake()
     return CanHitMultiple() and Jake_Open()
     or
-    (op_et() and (CanHitMultiple() and (sling() or Jake_Open())))
+    (op_et() and (CanHitMultiple() and (Sling() or Jake_Open())))
 end
 
 function MM_SHA()
@@ -237,33 +236,36 @@ function MM_SHA()
 end
 
 function MM_UFODoor()
-    return MM_SHA() and sling()
+    return MM_SHA() and Net() and Sling()
     or
-    (op_no_ij() and (club() or punch()))
+    (op_no_ij() and (Club() or Punch()))
     or
-    (op_et() and (club() or punch()))
+    (op_et() and (Club() or Punch()))
 end
+-------------------------EDIT DOWN HERE TO CONTINUE---------------------
 
 function MM_DoubleDoor()
-    return (MM_UFODoor() and hoop() and car() and CanHitMultiple())
+    return (MM_UFODoor() and Hoop() and Car() and CanHitMultiple())
     or
-    (op_no_ij() and (MM_UFODoor() and hoop() and car()))
+    (op_no_ij() and (MM_UFODoor() and Hoop() and Car()))
     or
-    (op_et() and (MM_UFODoor() and hoop() and car()))
+    (op_et() and (MM_UFODoor() and Hoop() and Car()))
 end
 
 function MM_SpaceMonkeys()
-    return MM_DoubleDoor() and flyer()
+    return MM_DoubleDoor() and Flyer()
 	or
-	(op_et() and (MM_DoubleDoor() and (sling() or flyer())))
+	(op_et() and (MM_DoubleDoor() and Sling()))
 end
 
 function MM_FinalBoss()
-    return MM_DoubleDoor() and sling() and flyer()
-    or 
-    (op_no_ij() and (MM_UFODoor() and SuperFlyer()))
+    return MM_DoubleDoor() and Sling() and Flyer()
     or
-    (op_et() and MM_UFODoor() and (HasSling() or SuperFlyer()))
+    (op_no_ij() and MM_UFODoor() and SuperFlyer())
+    or
+    (op_et() and MM_UFODoor() and SuperFlyer())
+    or
+    (op_et() and MM_UFODoor() and (Sling() or SuperFlyer()))
 end
 
 function LostLandsAccess()
@@ -321,18 +323,24 @@ end
 function gladiatorAttack()
 	return (Tracker:ProviderCountForCode("keyWorld") >= 4)
 end
+function PPMAccess()
+	return (Tracker:ProviderCountForCode("tot_ape") == 204)
+end
 function location_check(section)
 
 	local SectionID = section.FullID
-	print(SectionID)
 	Code = locationToCode[SectionID]
 	isActive = Tracker:FindObjectForCode("@"..SectionID).AvailableChestCount == 1
 		print(Code)
 		if (Code) ~= nil then
 		MinCount = Tracker:FindObjectForCode(Code).MinCount
 		MaxCount = Tracker:FindObjectForCode(Code).MaxCount
+		print (MinCount)
+		print (MaxCount)
 			if isActive == false then
-				if Tracker:FindObjectForCode(Code).AcquiredCount +1 <= MaxCount then
+			    if (string.find(string.upper(Code), "SPECTER")) then
+			        Tracker:FindObjectForCode(Code).Active = true
+				elseif Tracker:FindObjectForCode(Code).AcquiredCount +1 <= MaxCount then
 					if (string.find(string.upper(Code), "COIN")) then
 						Tracker:FindObjectForCode("tot_coin").AcquiredCount = Tracker:FindObjectForCode("tot_coin").AcquiredCount + Tracker:FindObjectForCode(Code).Increment
 						if Tracker:FindObjectForCode("tot_coin").AcquiredCount > 0 then
@@ -351,8 +359,9 @@ function location_check(section)
 					end
 				end
 			else
-
-				if Tracker:FindObjectForCode(Code).AcquiredCount -1 >= MinCount then
+			    if (string.find(string.upper(Code), "SPECTER")) then
+			        Tracker:FindObjectForCode(Code).Active = false
+				elseif Tracker:FindObjectForCode(Code).AcquiredCount -1 >= MinCount then
 					if (string.find(string.upper(Code), "COIN")) then
 					print(Tracker:FindObjectForCode(Code).Increment)
 						Tracker:FindObjectForCode("tot_coin").AcquiredCount = Tracker:FindObjectForCode("tot_coin").AcquiredCount - Tracker:FindObjectForCode(Code).Increment

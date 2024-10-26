@@ -67,5 +67,26 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Super Flyer",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "loop": false,
+    "stages": [
+      {
+        "name": "Super Flyer Off",
+        "img": "images/settings/superflyer_off.png",
+        "codes": "op_superflyer, op_sf_off",
+        "allow_disabled": false
+      },
+      {
+        "name": "Super Flyer On",
+        "img": "images/settings/superflyer_on.png",
+        "codes": "op_superflyer, op_sf_on",
+        "inherit_codes": false
+      }
+    ]
   }
 ]

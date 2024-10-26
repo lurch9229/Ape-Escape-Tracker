@@ -15,14 +15,13 @@ Upcoming Plans:
 2. [ ] Better descriptors for monkey locations
 3. [x] ~~Calculate Coins and Monkeys per Level in the grid~~
 
-See [CHANGELOG.md](https://github.com/Thedragon005/Ape-Escape-Tracker/blob/main/CHANGELOG.md) for full changes
+See [CHANGELOG.md](https://github.com/lurch9229/Ape-Escape-Tracker/blob/main/CHANGELOG.md) for full changes
 
 Version 0.2.2
 
 	Autotracking -:
 		- Implemented AddOnLocationSectionChangedHandler to track per level Monkeys/Coins and global Totals
-		- Prepared for settings tracking with slot_data
-		  (It will work when the apworld gets updated)
+		- Autotracking with slot_data now works
 	
 	Layout -:
 		- New layout : Map Tracker (Alternative) -> A more vertical layout than the original one

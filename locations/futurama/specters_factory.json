@@ -76,7 +76,11 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $SF_CarRoom"
+                            "net, $SF_CarRoom",
+                            "net, sling, op_no_ij",
+                            "net, $SuperFlyer, op_no_ij",
+                            "net, sling, op_no_ij",
+                            "net, $SuperFlyer, op_no_ij"
                         ],
                         "item_count": 1
                     },
@@ -118,7 +122,7 @@
                         ],
                         "access_rules": 
                         [
-                           "net, $SF_MechRoom, car"
+                           "net, $SF_MechRoom, $RCMonkey"
                         ],
                         "item_count": 1
                     },
@@ -174,7 +178,9 @@
                         ],
                         "access_rules": 
                         [
-                            "$SF_CarRoom"
+                            "$SF_CarRoom",
+                            "$SuperFlyer, op_no_ij",
+                            "$SuperFlyer, op_et"
                         ],
                         "item_count": 1
                     },
@@ -201,11 +207,11 @@
                         "access_rules": 
                         [
                             "net, punch",
-                            "net, op_no_ij, hoop, car",
-                            "net, op_no_ij, hoop, flyer",
-                            "net, op_et, hoop, car",
-                            "net, op_et, hoop, flyer",
-                            "net, op_et, sling"
+                            "net, hoop, flyer, op_no_ij",
+                            "net, hoop, car, op_no_ij",
+                            "net, hoop, flyer, op_et",
+                            "net, hoop, car, op_et",
+                            "net, sling, op_et"
                         ],
                         "item_count": 1
                     }

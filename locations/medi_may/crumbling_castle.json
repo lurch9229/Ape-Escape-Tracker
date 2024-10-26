@@ -158,7 +158,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CC_WaterRoom, water",
+                            "net, $CC_WaterRoom, $CanDive",
                             "net, $CC_WaterRoom, punch"
                         ],
                         "item_count": 1
@@ -173,10 +173,11 @@
                         ],
                         "access_rules": 
                         [
-                            "$CC_WaterRoom, water"
+                            "$CC_WaterRoom, $CanDive, $CanWaterCatch"
                         ],
                         "item_count": 1
                     },
+
                     {
                         "name": "Deveneom",
                         "chest_unopened_img": "images/icons/monkeyOn.png",
@@ -187,12 +188,8 @@
                         ],
                         "access_rules": 
                         [
-                            "$CC_WaterRoom, water",
-                            "net, $CC_WaterRoom, op_no_ij",
-                            "net, $CC_WaterRoom, flyer, op_no_ij",
-                            "net, $CC_WaterRoom, op_et",
-                            "net, $CC_WaterRoom, sling, op_et",
-                            "net, $CC_WaterRoom, flyer, op_et"
+                            "net, $CC_ButtonRoom",
+                            "$CanSwim, $CanWaterCatch, $CC_ButtonRoom"
                         ],
                         "item_count": 1
                     },
@@ -221,7 +218,7 @@
                         "access_rules": 
                         [
                             "net, $CC_ButtonRoom",
-                            "water, $CC_ButtonRoom"
+                            "$CanDive, $CanWaterCatch, $CC_ButtonRoom"
                         ],
                         "item_count": 1
                     },
@@ -291,7 +288,9 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $HasMobility"
+                            "net, $HasMobility",
+                            "net, $CC_5Monkeys, op_no_ij",
+                            "net, $CC_5Monkeys, op_et"
                         ],
                         "item_count": 1
                     },
@@ -306,6 +305,20 @@
                         "access_rules": 
                         [
                             "net"
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Boss",
+                        "chest_unopened_img": "images/icons/SpecterOn.png",
+                        "chest_opened_img": "images/icons/SpecterOff.png",
+                        "visibility_rules":
+                        [
+                            ""
+                        ],
+                        "access_rules":
+                        [
+                            "$CC_ButtonRoom, $CanHitMultiple"
                         ],
                         "item_count": 1
                     },
@@ -333,7 +346,8 @@
                         ],
                         "access_rules": 
                         [
-                            "$CC_5Monkeys"
+                            "$CC_5Monkeys",
+                            "sling, op_et"
                         ],
                         "item_count": 1
                     },
@@ -361,12 +375,18 @@
                         ],
                         "access_rules": 
                         [
-                            "$CC_5Monkeys"
+                            "$CC_5Monkeys",
+                            "$CC_WaterRoom",
+                            "hoop, flyer, op_no_ij",
+                            "sling, op_et",
+                            "hoop, flyer, op_et"
                         ],
                         "item_count": 1
                     },
                     {
-                        "name": "Time Trial",
+                        "name": "Time Attack",
+                        "chest_unopened_img": "images/icons/clockOn.png",
+                        "chest_opened_img": "images/icons/clockOff.png",
                         "visibility_rules": 
                         [
                             "shuffleTT"

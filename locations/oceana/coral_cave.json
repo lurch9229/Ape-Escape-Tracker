@@ -32,11 +32,15 @@
                         ],
                         "access_rules": 
                         [
-                            "net, water"
+                            "$CanWaterCatch, $CanSwim",
+                            "net, $CanSwim, op_no_IJ",
+                            "net, $CanSwim, op_et"
+
                         ],
                         "item_count": 1
                     },
                     {
+
                         "name": "Oreo",
                         "chest_unopened_img": "images/icons/monkeyOn.png",
                         "chest_opened_img": "images/icons/monkeyOff.png",
@@ -47,9 +51,7 @@
                         "access_rules": 
                         [
                             "net, hoop, $CanHitMultiple, $CanSwim",
-                            "net, $HasMobility",
-                            "net, op_no_ij, $HasMobility",
-                            "net, op_et, $HasMobility"
+                            "net, $HasMobility"
                         ],
                         "item_count": 1
                     },
@@ -63,14 +65,15 @@
                         ],
                         "access_rules": 
                         [
-                            "water",
-                            "net, op_no_ij, hoop, flyer",
-                            "net, op_et, hoop, flyer",
-                            "net, op_et, sling"
+                            "net, $CanDive",
+                            "net, hoop, flyer, op_no_ij",
+                            "net, hoop, flyer, op_et",
+                            "net, sling, op_et"
                         ],
                         "item_count": 1
                     },
                     {
+                        //Need to confirm if you don't go up does he jump down anyway?
                         "name": "Kalama",
                         "chest_unopened_img": "images/icons/monkeyOn.png",
                         "chest_opened_img": "images/icons/monkeyOff.png",
@@ -80,7 +83,8 @@
                         ],
                         "access_rules": 
                         [
-                            "net, hoop, $CanHitMultiple, water",
+                            "net, hoop, $CanHitMultiple, $CanSwim",
+                            "$CanSwim, $CanWaterCatch",
                             "net, $HasMobility"
                         ],
                         "item_count": 1
@@ -95,8 +99,8 @@
                         ],
                         "access_rules": 
                         [
-                            "net, water",
-                            "net, op_et, sling"
+                            "net, $CanSwim",
+                            "net, sling, op_et"
                         ],
                         "item_count": 1
                     },
@@ -110,8 +114,8 @@
                         ],
                         "access_rules": 
                         [
-                            "net, water",
-                            "net, op_et, sling"
+                            "net, $CanSwim",
+                            "net, sling, op_et"
                         ],
                         "item_count": 1
                     },
@@ -125,8 +129,8 @@
                         ],
                         "access_rules": 
                         [
-                            "net, water",
-                            "net, op_et, sling"
+                            "net, $CanSwim",
+                            "net, sling, op_et"
                         ],
                         "item_count": 1
                     },
@@ -140,8 +144,8 @@
                         ],
                         "access_rules": 
                         [
-                            "net, water, $CanHitMultiple",
-                            "net, op_et, sling"
+                            "net, $CanSwim, $CanHitMultiple",
+                            "net, sling, op_et"
                         ],
                         "item_count": 1
                     },
@@ -155,9 +159,9 @@
                         ],
                         "access_rules": 
                         [
-                            "water",
-                            "op_no_ij, car",
-                            "op_et, car"
+                            "$CanDive",
+                            "$CanSwim, car, op_no_ij",
+                            "$CanSwim, car, op_et"
                         ],
                         "item_count": 1
                     },
@@ -169,292 +173,10 @@
                         ],
                         "access_rules": 
                         [
-                            "net, water, hoop",
-                            "net, op_no_ij, water",
-                            "net, op_et, water",
-                            "net, op_et, sling"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Riding Shark - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Coral_Cave",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Chip",
-                        "visibility_rules": 
-                        [
-                            ""
-                        ],
-                        "access_rules": 
-                        [
-                            "water"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Upper Flower Ledge - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Coral_Cave",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Oreo",
-                        "visibility_rules": 
-                        [
-                            ""
-                        ],
-                        "access_rules": 
-                        [
-                            "hoop, CanHitMultiple",
-                            "HasMobility"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Upper Right Ledge - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Coral_Cave",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Puddles",
-                        "visibility_rules": 
-                        [
-                            ""
-                        ],
-                        "access_rules": 
-                        [
-                            "water"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Lower Flower Ledge - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Coral_Cave",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Kalama",
-                        "visibility_rules": 
-                        [
-                            ""
-                        ],
-                        "access_rules": 
-                        [
-                            "hoop, CanHitMultiple",
-                            "HasMobility"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Across Anchor Bridge - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Coral_Cave",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Iz",
-                        "visibility_rules": 
-                        [
-                            ""
-                        ],
-                        "access_rules": 
-                        [
-                            "water"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Entrance Overlook - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Coral_Cave",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Bong-Bong",
-                        "visibility_rules": 
-                        [
-                            ""
-                        ],
-                        "access_rules": 
-                        [
-                            "water"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Mech Overlook - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Coral_Cave",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Jux",
-                        "visibility_rules": 
-                        [
-                            ""
-                        ],
-                        "access_rules": 
-                        [
-                            "water"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Mech - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Coral_Cave",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Pickles",
-                        "visibility_rules": 
-                        [
-                            ""
-                        ],
-                        "access_rules": 
-                        [
-                            "water, CanHitMultiple"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Coral Cave - Specter Coin",
-                "map_locations": [
-                    {
-                        "map": "Coral_Cave",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Coin 1",
-                        "visibility_rules": 
-                        [
-                            "disabled, shuffleCoins"
-                        ],
-                        "access_rules": 
-                        [
-                            "water"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Coral Cave - Time Attack",
-                "map_locations": [
-                    {
-                        "map": "Coral_Cave",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Beat 0:0:0",
-                        "visibility_rules": 
-                        [
-                            ""
-                        ],
-                        "access_rules": 
-                        [
-                            "water, hoop"
+                            "net, $CanSwim, hoop",
+                            "net, $CanSwim, op_no_ij",
+                            "net, $CanSwim, op_et",
+                            "net, sling, op_et"
                         ],
                         "item_count": 1
                     }

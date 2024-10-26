@@ -1,37 +1,45 @@
-function club()
+function Club()
     return has ("club")
 end
 
-function net()
+function Net()
     return has ("net")
 end
 
-function hoop()
+function Hoop()
     return has ("hoop")
 end
 
-function punch()
+function Punch()
     return has ("punch")
 end
 
-function sling()
+function Sling()
     return has ("sling")
 end
 
-function car()
+function Car()
     return has ("car")
 end
 
-function flyer()
+function Flyer()
     return has ("flyer")
 end
 
-function water()
+function Water()
     return has ("water")
 end
 
-function radar()
+function Radar()
     return has ("radar")
+end
+
+function op_superflyer()
+    return has ("op_sf_on")
+end
+
+function op_gl()
+    return has ("op_gl")
 end
 
 function op_no_ij()

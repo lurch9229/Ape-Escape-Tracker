@@ -7,7 +7,7 @@
       {
         "type": "array",
         "orientation": "vertical",
-        "margin": "0,0,0,-40",
+        "margin": "0,0,0,-90",
 
         "content": [
           {
@@ -21,6 +21,14 @@
           {
             "type": "itemgrid",
             "rows": [
+              ["goal"]
+            ],
+            "item_size": 150,
+            "margin": "0,-110,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
               ["op_sc"]
             ],
             "item_size": 150,
@@ -29,7 +37,7 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["goal"]
+              ["op_superflyer"]
             ],
             "item_size": 150,
             "margin": "0,-110,0,0"

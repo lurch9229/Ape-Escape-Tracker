@@ -20,7 +20,7 @@
                         ],
                 "access_rules": 
                         [
-                            "water, $stadiumAttack"
+                            "$CanSwim, $stadiumAttack"
                         ],
                 "sections": [
                     {
@@ -81,6 +81,40 @@
                     },
 					{
                         "name": "Coin 5",
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Peak Point Matrix",
+                "chest_unopened_img": "images/icons/specterOn.png",
+                "chest_opened_img": "images/icons/specterOff.png",
+                "map_locations": [
+                    {
+                        "map": "Peak_Point_Matrix",
+                        "x": 180,
+                        "y": 160
+                    }
+                ],
+				"visibility_rules":
+                        [
+                            "goal2"
+                        ],
+                "access_rules":
+                        [
+                            "{$PPMAccess}",
+                            "$PPMAccess, net, sling, flyer, club",
+                            "$PPMAccess, net, sling, flyer, punch",
+                            "$PPMAccess, net, sling, club, op_no_ij",
+                            "$PPMAccess, net, sling, hoop, op_no_ij",
+                            "$PPMAccess, net, sling, punch, op_no_ij",
+                            "$PPMAccess, net, sling, club, op_et",
+                            "$PPMAccess, net, sling, hoop, op_et",
+                            "$PPMAccess, net, sling, punch, op_et"
+                        ],
+                "sections": [
+                    {
+                        "name": "Specter",
                         "item_count": 1
                     }
                 ]

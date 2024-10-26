@@ -53,5 +53,11 @@
     "location_size": 15,
     "location_border_thickness": 4,
     "img": "images/maps/gladiator_attack_map.png"
+  },
+  {
+    "name": "Peak_Point_Matrix",
+    "location_size": 15,
+    "location_border_thickness": 4,
+    "img": "images/maps/peak_point_matrix.png"
   }
 ]

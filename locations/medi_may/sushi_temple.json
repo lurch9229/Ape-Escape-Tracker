@@ -75,10 +75,10 @@
                         "access_rules": 
                         [
                             "net, sling",
-                            "net, op_no_ij, club",
-                            "net, op_no_ij, flyer",
-                            "net, op_et, club",
-                            "net, op_et, flyer"
+                            "net, club, op_no_ij",
+                            "net, flyer, op_no_ij",
+                            "net, club, op_et",
+                            "net, flyer, op_et"
                         ],
                         "item_count": 1
                     },
@@ -135,7 +135,7 @@
                         "access_rules": 
                         [
                             "net, flyer",
-                            "net, op_et, sling"
+                            "net, sling, op_et"
                         ],
                         "item_count": 1
                     },
@@ -150,7 +150,7 @@
                         "access_rules": 
                         [
                             "net, flyer",
-                            "net, op_et, sling"
+                            "net, sling, op_et"
                         ],
                         "item_count": 1
                     },
@@ -165,7 +165,10 @@
                         "access_rules": 
                         [
                             "net, sling",
-                            "net, op_et, hoop, flyer"
+                            "net, hoop, flyer, op_no_ij",
+                            "net, hoop, flyer, op_no_ij",
+                            "net, $SuperFlyer, op_et",
+                            "net, $SuperFlyer, op_et"
                         ],
                         "item_count": 1
                     },
@@ -236,7 +239,7 @@
                         "access_rules": 
                         [
                             "flyer",
-                            "op_et, sling"
+                            "sling, op_et"
                         ],
                         "item_count": 1
                     },

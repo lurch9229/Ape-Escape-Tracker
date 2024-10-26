@@ -54,6 +54,30 @@
 												"margin": "-5,0,0,0"
 											  }
 											]
+									  },
+									  {
+											"type": "group",
+											"header":"Specters",
+											"orientation": "horizontal",
+											"margin": "0,100",
+											"content": [
+											  {
+												"type": "itemgrid",
+												"rows": [
+												  ["Specter_1"]
+												],
+												"item_size": 38,
+												"margin": "0,0,0,0"
+											  },
+											  {
+												"type": "itemgrid",
+												"rows": [
+												  ["Specter_2"]
+												],
+												"item_size": 38,
+												"margin": "0,0,0,0"
+											  }
+											]
 									  }
 									]
 								}
@@ -162,7 +186,14 @@
                                         "type": "map",
                                         "maps": ["Specter_Land"]
                                     }
-                                }
+                                },
+								{
+									"title": "Peak Point Matrix",
+									"content": {
+										"type": "map",
+										"maps": ["Peak_Point_Matrix"]
+									}
+								}
                             ]
                         }
                     ]
