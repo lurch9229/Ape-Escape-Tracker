@@ -193,7 +193,7 @@
                         ],
                         "access_rules": 
                         [
-                            ""
+                            "net"
                         ],
                         "item_count": 1
                     },
