@@ -2,7 +2,7 @@
 
 Tracker for Ape Escape, for use with AP
 
-Tracker version 0.2.2
+Tracker version 0.3.0
 
 Installation instructions:
 
@@ -16,7 +16,26 @@ Upcoming Plans:
 3. [x] ~~Calculate Coins and Monkeys per Level in the grid~~
 
 See [CHANGELOG.md](https://github.com/lurch9229/Ape-Escape-Tracker/blob/main/CHANGELOG.md) for full changes
+Version 0.3.0
 
+	Autotracking -:
+		- Autotracking of Mailboxes
+  		- Added autotracking of new settings
+	
+	Layout -:
+		- Updated layout to include Specter 1 and Specter 2
+  		- Added Options : Mailboxes, SuperFlyer
+    		- Layout adjustement to make rooms for more options (We are starting to have MANY options)
+      		- Updated Map scaling to make it better
+	
+	Items/Locations -:
+		- Added Mailboxes as locations
+		- Revised ALL locations/item logic since it had been reworked in the apworld
+  		- Added CCA boss and TVT Boss in the tracking for their respective locations
+		- Verified/updated locations rules based on Net and WaterNet logic
+  		- Added Peak Point Matrix as a map location
+    		- Fixed Wabi Sabi Wall/Barrel Room Coin not being tracked properly
+    		- Fixed Specter's Factory Lava Room Coin not being tracked properly
 Version 0.2.2
 
 	Autotracking -:
