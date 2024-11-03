@@ -84,7 +84,6 @@
                         ],
                         "item_count": 1
                     },
-					//Coins
                     {
                         "name": "Main",
                         "chest_unopened_img": "images/icons/coinOn.png",
@@ -96,6 +95,48 @@
                         "access_rules": 
                         [
                             ""
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Stun Club Tutorial",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules":
+                        [
+                            "shuffleMailbox"
+                        ],
+                        "access_rules":
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Switch Gadgets Tutorial",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules":
+                        [
+                            "shuffleMailbox"
+                        ],
+                        "access_rules":
+                        [
+                            ""
+                        ],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Don't Toss Your Cookies!",
+                        "chest_unopened_img": "images/icons/BlueMailboxOn.png",
+                        "chest_opened_img": "images/icons/BlueMailboxOff.png",
+                        "visibility_rules":
+                        [
+                            "shuffleMailbox"
+                        ],
+                        "access_rules":
+                        [
+                            "$CanHitOnce"
                         ],
                         "item_count": 1
                     },

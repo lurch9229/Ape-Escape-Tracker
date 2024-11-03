@@ -55,7 +55,7 @@ function onClear(slot_data)
                     obj.Active = false
                 elseif v[2] == "consumable" then
                     obj.AcquiredCount = obj.MinCount
-				elseif v[2] == "non-interractive" then
+				elseif v[2] == "non-interactive" then
                     obj.AcquiredCount = obj.MinCount
                 elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
                     print(string.format("onClear: unknown item type %s for code %s", v[2], v[1]))
@@ -84,12 +84,12 @@ function onClear(slot_data)
     end
 
 	-- Coins Shuffle:
-		--0 = On
-		--1 = Off
+		--0 = Off
+		--1 = On
     if slot_data['coin'] == 0 then
-        Tracker:FindObjectForCode("op_coins").CurrentStage = 1
+        Tracker:FindObjectForCode("op_coins").CurrentStage = 0
 	else
-		Tracker:FindObjectForCode("op_coins").CurrentStage = 0
+		Tracker:FindObjectForCode("op_coins").CurrentStage = 1
     end
     -- Goal:
 		--0 = First
@@ -98,6 +98,16 @@ function onClear(slot_data)
         Tracker:FindObjectForCode("goal").CurrentStage = 0
     elseif slot_data['goal'] == 1 then
         Tracker:FindObjectForCode("goal").CurrentStage = 1
+    end
+    if slot_data['superflyer'] == 0 then
+        Tracker:FindObjectForCode("op_superflyer").CurrentStage = 0
+    elseif slot_data['superflyer'] == 1 then
+        Tracker:FindObjectForCode("op_superflyer").CurrentStage = 1
+    end
+    if slot_data['mailbox'] == 0 then
+        Tracker:FindObjectForCode("op_mailbox").CurrentStage = 0
+    elseif slot_data['mailbox'] == 1 then
+        Tracker:FindObjectForCode("op_mailbox").CurrentStage = 1
     end
 end
 

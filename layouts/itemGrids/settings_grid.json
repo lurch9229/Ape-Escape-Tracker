@@ -7,7 +7,7 @@
       {
         "type": "array",
         "orientation": "vertical",
-        "margin": "0,0,0,-40",
+        "margin": "0,0,0,-90",
 
         "content": [
           {
@@ -21,18 +21,34 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["op_sc"]
+              ["goal"]
             ],
             "item_size": 150,
-            "margin": "0,-110,0,0"
+            "margin": "0,-115,0,0"
           },
           {
             "type": "itemgrid",
             "rows": [
-              ["goal"]
+              ["op_mailbox"]
             ],
             "item_size": 150,
-            "margin": "0,-110,0,0"
+            "margin": "0,-115,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["op_coins"]
+            ],
+            "item_size": 150,
+            "margin": "0,-115,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["op_superflyer"]
+            ],
+            "item_size": 150,
+            "margin": "0,-115,0,0"
           }
         ]
       }

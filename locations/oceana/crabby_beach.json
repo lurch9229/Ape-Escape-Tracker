@@ -34,7 +34,7 @@
                         "access_rules": 
                         [
                             "net",
-                            "water"
+                            "$CanSwim, $CanWaterCatch"
                         ],
                         "item_count": 1
                     },
@@ -105,8 +105,7 @@
                         "access_rules": 
                         [
                             "net, $CanHitMultiple",
-                            "net, flyer",
-                            "net, op_et, hoop"
+                            "net, flyer"
                         ],
                         "item_count": 1
                     },
@@ -120,10 +119,10 @@
                         ],
                         "access_rules": 
                         [
-                            "net, flyer, shooter",
-                            "net, op_no_ij, hoop",
-                            "net, op_et, hoop",
-                            "net, op_et, sling"
+                            "net, sling, flyer",
+                            "net, hoop, op_no_ij",
+                            "net, hoop, op_et",
+                            "net, sling, op_et"
                         ],
                         "item_count": 1
                     },
@@ -138,7 +137,7 @@
                         "access_rules": 
                         [
                             "net, flyer",
-                            "net, op_et, sling"
+                            "net, sling, op_et"
                         ],
                         "item_count": 1
                     },
@@ -152,12 +151,54 @@
                         ],
                         "access_rules": 
                         [
-                            ""
+                            "net"
                         ],
                         "item_count": 1
                     },
                     {
-                        "name": "Beat 0:0:0",
+                      "name": "Hip Drop Attack",
+                      "chest_unopened_img": "images/icons/BlueMailboxOn.png",
+                      "chest_opened_img": "images/icons/BlueMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        "$CanHitOnce"
+                      ],
+                      "item_count": 1
+                    },
+                    {
+                      "name": "Monkey Lamp Tutorial",
+                      "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                      "chest_opened_img": "images/icons/RedMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        ""
+                      ],
+                      "item_count": 1
+                    },
+                    {
+                      "name": "Dangerous to Fall",
+                      "chest_unopened_img": "images/icons/BlueMailboxOn.png",
+                      "chest_opened_img": "images/icons/BlueMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        "$CanHitOnce, net"
+                      ],
+                      "item_count": 1
+                    },
+                    {
+                        "name": "Time Attack",
                         "visibility_rules": 
                         [
                             "shuffleTT"
@@ -165,294 +206,9 @@
                         "access_rules": 
                         [
                             "net, flyer",
-                            "net, op_no_ij, sling",
-                            "net, op_no_ij, hoop",
-                            "net, op_no_ij, flyer",
-                            "net, op_et, sling",
-                            "net, op_et, hoop",
-                            "net, op_et, flyer"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Beach - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Crabby_Beach",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Cool Blue",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Sandcastle - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Crabby_Beach",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Sandy",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Beach Chairs - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Crabby_Beach",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Shell E.",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "CanHitMultiple"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Hammock - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Crabby_Beach",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Gidget",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Button By UFO - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Crabby_Beach",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Shaka",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "2nd Room Start - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Crabby_Beach",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Puka",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "CanHitMultiple",
-                            "flyer"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "UFO - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Crabby_Beach",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "MaxMahalo",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "flyer, shooter"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Above UFO - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Crabby_Beach",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Moko",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "flyer"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Crabby Beach - Specter Coin",
-                "map_locations": [
-                    {
-                        "map": "Crabby_Beach",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Coin 1",
-                        "visibility_rules": 
-                        [
-                            "disabled, shuffleCoins"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Crabby Beach - Time Attack",
-                "map_locations": [
-                    {
-                        "map": "Crabby_Beach",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Beat 0:0:0",
-                        "visibility_rules": 
-                        [
-                            "disabled",
-                            "shuffleTT"
-                        ],
-                        "access_rules": 
-                        [
-                            "flyer"
+                            "net, hoop, op_no_ij",
+                            "net, sling, op_et",
+                            "net, hoop, op_et"
                         ],
                         "item_count": 1
                     }

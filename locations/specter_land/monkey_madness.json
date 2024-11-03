@@ -103,8 +103,8 @@
                         "access_rules": 
                         [
                             "net, sling",
-                            "net, op_no_ij, hoop",
-                            "net, op_et, hoop"
+                            "net, hoop, op_no_ij",
+                            "net, hoop, op_et"
                         ],
                         "item_count": 1
                     },
@@ -133,8 +133,8 @@
                         "access_rules": 
                         [
                             "net, sling",
-                            "net, op_no_ij, hoop",
-                            "net, op_et, hoop" 
+                            "net, hoop, op_no_ij",
+                            "net, hoop, op_et"
                         ],
                         "item_count": 1
                     },
@@ -149,8 +149,8 @@
                         "access_rules": 
                         [
                             "net, sling",
-                            "net, op_no_ij, hoop",
-                            "net, op_et, hoop"                            
+                            "net, hoop, op_no_ij",
+                            "net, hoop, op_et"
                         ],
                         "item_count": 1
                     },
@@ -223,8 +223,8 @@
                         "access_rules": 
                         [
                             "net, $MM_UFODoor, car",
-                            "net, $MM_UFODoor, op-no_ij, flyer",
-                            "net, $MM_UFODoor, op_et, flyer"
+                            "net, $MM_UFODoor, flyer, op-no_ij",
+                            "net, $MM_UFODoor, flyer, op_et"
                         ],
                         "item_count": 1
                     },
@@ -294,7 +294,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$MM_SpaceMonkeys"
+                            "net, $MM_SpaceMonkeys"
                         ],
                         "item_count": 1
                     },
@@ -364,29 +364,23 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $MM_SHA, flyer, sling",
-                            "net, $MM_SHA, op_no_ij, flyer",
-                            "net, $MM_SHA, op_et, flyer",
-                            "net, $MM_SHA, op_et, sling"
+                            "net, $MM_SHA, sling",
+                            "net, $MM_SHA, flyer, op_no_ij",
+                            "net, $MM_SHA, flyer, op_et"
                         ],
                         "item_count": 1
                     },
                     {
                         "name": "Specter",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        "chest_unopened_img": "images/icons/specterOn.png",
+                        "chest_opened_img": "images/icons/specterOff.png",
                         "visibility_rules": 
                         [
                             ""
                         ],
                         "access_rules": 
                         [
-                            "net, sling, flyer, club",
-                            "net, sling, flyer, punch",
-                            "net, op_no_ij, sling, punch",
-                            "net, op_no_ij, sling, club",
-                            "net, op_et, sling, punch",
-                            "net, op_et, sling, club"
+                            "$MM_FinalBoss"
                         ],
                         "item_count": 1
                     },
@@ -422,14 +416,14 @@
                         "name": "Haunted House",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
-                        "visibility_rules": 
+                        "visibility_rules":
                         [
                             "shuffleCoins"
                         ],
-                        "access_rules": 
+                        "access_rules":
                         [
                             "flyer",
-                            "op_et, sling"
+                            "sling, op_et"
                         ],
                         "item_count": 1
                     },
@@ -437,11 +431,11 @@
                         "name": "Western Land",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
-                        "visibility_rules": 
+                        "visibility_rules":
                         [
                             "shuffleCoins"
                         ],
-                        "access_rules": 
+                        "access_rules":
                         [
                             ""
                         ],
@@ -457,7 +451,8 @@
                         ],
                         "access_rules": 
                         [
-                            "$MM_SHA, flyer"
+                            "$MM_SHA, flyer",
+                            "$MM_SHA, sling, op_et"
                         ],
                         "item_count": 1
                     },
@@ -528,9 +523,23 @@
                         "access_rules": 
                         [
                             "$MM_SHA, flyer",
-                            "$MM_SHA, op_et, sling"
+                            "$MM_SHA, sling, op_et"
                         ],
                         "item_count": 1
+                    },
+                    {
+                      "name": "The Terror Coaster",
+                      "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                      "chest_opened_img": "images/icons/RedMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        ""
+                      ],
+                      "item_count": 1
                     },
                     {
                         "name": "Time Trial",
@@ -541,8 +550,8 @@
                         "access_rules": 
                         [
                             "net, sling",
-                            "net, op_no_ij, hoop",
-                            "net,op_et, hoop"
+                            "net, hoop, op_no_ij",
+                            "net, hoop, op_et"
                         ],
                         "item_count": 1
                     }

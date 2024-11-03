@@ -32,6 +32,7 @@ elseif (Tracker.ActiveVariantUID == "items_only") then
 	
 end
 Tracker:AddLayouts("layouts/display/broadcast_horizontal.json")
+Tracker:AddLocations("locations/timestation/time_station.json")
 Tracker:AddLocations("locations/lost_lands/fossil_fields.json")
 Tracker:AddLocations("locations/lost_lands/primordial_ooze.json")
 Tracker:AddLocations("locations/lost_lands/molten_lava.json")

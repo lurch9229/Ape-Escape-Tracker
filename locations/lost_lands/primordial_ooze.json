@@ -3,7 +3,6 @@
         "name": "Primordial Ooze",
         "color": "#FFFFFF",
         "children": [
-            
             {
                 "name": "Primordial Ooze",
                 "map_locations": [
@@ -18,25 +17,21 @@
                         "y": 180
                     }
                 ],
-                "visibility_rules": 
-                        [
-                            ""
-                        ],
-                "access_rules": 
-                        [
-                            "po_key"
-                        ],
+                "visibility_rules": [
+                    ""
+                ],
+                "access_rules": [
+                    "po_key"
+                ],
                 "sections": [
                     {
                         "name": "Shay",
                         "chest_unopened_img": "images/icons/monkeyOn.png",
                         "chest_opened_img": "images/icons/monkeyOff.png",
-                        "visibility_rules": 
-                        [
+                        "visibility_rules": [
                             ""
                         ],
-                        "access_rules": 
-                        [
+                        "access_rules": [
                             "net"
                         ],
                         "item_count": 1
@@ -45,12 +40,10 @@
                         "name": "Dr. Monk",
                         "chest_unopened_img": "images/icons/monkeyOn.png",
                         "chest_opened_img": "images/icons/monkeyOff.png",
-                        "visibility_rules": 
-                        [
+                        "visibility_rules": [
                             ""
                         ],
-                        "access_rules": 
-                        [
+                        "access_rules": [
                             "net"
                         ],
                         "item_count": 1
@@ -59,14 +52,12 @@
                         "name": "Ah-Choo",
                         "chest_unopened_img": "images/icons/monkeyOn.png",
                         "chest_opened_img": "images/icons/monkeyOff.png",
-                        "visibility_rules": 
-                        [
+                        "visibility_rules": [
                             ""
                         ],
-                        "access_rules": 
-                        [
+                        "access_rules": [
                             "net",
-                            "water"
+                            "$CanSwim, $CanWaterCatch"
                         ],
                         "item_count": 1
                     },
@@ -74,17 +65,14 @@
                         "name": "Grunt",
                         "chest_unopened_img": "images/icons/monkeyOn.png",
                         "chest_opened_img": "images/icons/monkeyOff.png",
-                        "visibility_rules": 
-                        [
+                        "visibility_rules": [
                             ""
                         ],
-                        "access_rules": 
-                        [
-                            "net, water",
+                        "access_rules": [
+                            "net, $CanSwim",
                             "net, flyer",
-                            "net, op_no_ij, hoop",
-                            "net, op_et, hoop",
-                            "net, op_et, sling"
+                            "net, op_no_ij",
+                            "net, op_et"
                         ],
                         "item_count": 1
                     },
@@ -92,12 +80,10 @@
                         "name": "Tyrone",
                         "chest_unopened_img": "images/icons/monkeyOn.png",
                         "chest_opened_img": "images/icons/monkeyOff.png",
-                        "visibility_rules": 
-                        [
+                        "visibility_rules": [
                             ""
                         ],
-                        "access_rules": 
-                        [
+                        "access_rules": [
                             "net"
                         ],
                         "item_count": 1
@@ -106,15 +92,12 @@
                         "name": "Gornif",
                         "chest_unopened_img": "images/icons/monkeyOn.png",
                         "chest_opened_img": "images/icons/monkeyOff.png",
-                        "visibility_rules": 
-                        [
+                        "visibility_rules": [
                             ""
                         ],
-                        "access_rules": 
-                        [
-                            "water",
-                            "op_no_ij, net",
-                            "op_et, net"
+                        "access_rules": [
+                            "net, $CanSwim",
+                            "$CanSwim, $CanWaterCatch"
                         ],
                         "item_count": 1
                     },
@@ -122,297 +105,81 @@
                         "name": "Main",
                         "chest_unopened_img": "images/icons/coinOn.png",
                         "chest_opened_img": "images/icons/coinOff.png",
-                        "visibility_rules": 
-                        [
+                        "visibility_rules": [
                             "shuffleCoins"
                         ],
-                        "access_rules": 
-                        [
-                            "water"
+                        "access_rules": [
+                            "$CanDive"
                         ],
                         "item_count": 1
+                    },
+                    {
+                      "name": "Dive Reminder",
+                      "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                      "chest_opened_img": "images/icons/RedMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        ""
+                      ],
+                      "item_count": 1
+                    },
+                    {
+                      "name": "Climb a Tree",
+                      "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                      "chest_opened_img": "images/icons/RedMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        ""
+                      ],
+                      "item_count": 1
+                    },
+                    {
+                      "name": "Camera Tutorial",
+                      "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                      "chest_opened_img": "images/icons/RedMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        ""
+                      ],
+                      "item_count": 1
+                    },
+                    {
+                      "name": "Crawl Tutorial",
+                      "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                      "chest_opened_img": "images/icons/RedMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        ""
+                      ],
+                      "item_count": 1
                     },
                     {
                         "name": "Time Trial",
-                        "visibility_rules": 
-                        [
+                        "visibility_rules": [
                             "shuffleTT"
                         ],
-                        "access_rules": 
-                        [
-                            "net, flyer",
+                        "access_rules": [
+                            "net, $CanSwim",
                             "net, hoop",
-                            "net, water",
+                            "net, flyer",
                             "net, op_no_ij",
                             "net, op_et"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Start - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Primordial_Ooze",
-                        "x": 0,
-                        "y": 0
-                    },
-                    {
-                        "map": "Lost_Lands",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Shay",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Back Corner - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Primordial_Ooze",
-                        "x": 0,
-                        "y": 0
-                    },
-                    {
-                        "map": "Lost_Lands",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Dr. Monk",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Octagon Peninsula - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Primordial_Ooze",
-                        "x": 0,
-                        "y": 0
-                    },
-                    {
-                        "map": "Lost_Lands",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Ah-Choo",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Highest Area - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Primordial_Ooze",
-                        "x": 0,
-                        "y": 0
-                    },
-                    {
-                        "map": "Lost_Lands",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Grunt",
-                        "visibility_rules":
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Jump From Dino - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Primordial_Ooze",
-                        "x": 0,
-                        "y": 0
-                    },
-                    {
-                        "map": "Lost_Lands",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Tyrone",
-                        "visibility_rules":
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Swimming - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Primordial_Ooze",
-                        "x": 0,
-                        "y": 0
-                    },
-                    {
-                        "map": "Lost_Lands",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Gornif",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "water",
-                            "flyer"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Primordial Ooze - Specter Coins",
-                "map_locations": [
-                    {
-                        "map": "Primordial_Ooze",
-                        "x": 0,
-                        "y": 0
-                    },
-                    {
-                        "map": "Lost_Lands",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Coin 1",
-                        "visibility_rules": 
-                        [
-                            "disabled, shuffleCoins"
-                        ],
-                        "access_rules": 
-                        [
-                            "water"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Primordial Ooze - Time Attack",
-                "map_locations": [
-                    {
-                        "map": "Primordial_Ooze",
-                        "x": 0,
-                        "y": 0
-                    },
-                    {
-                        "map": "Lost_Lands",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Beat 0:0:0",
-                        "visibility_rules": 
-                        [
-                            "disabled",
-                            "shuffleTT"
-                        ],
-                        "access_rules": 
-                        [
-                            "flyer",
-                            "hoop",
-                            "water"
                         ],
                         "item_count": 1
                     }

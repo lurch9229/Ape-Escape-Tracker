@@ -61,8 +61,8 @@
                         "access_rules": 
                         [
                             "net, $CanHitMultiple",
-                            "net, op_no_ij, $CanHitOnce",
-                            "net, op_et, $CanHitOnce"
+                            "net, $CanHitOnce, op_no_ij",
+                            "net, $CanHitOnce, op_et"
                         ],
                         "item_count": 1
                     },
@@ -119,8 +119,8 @@
                         "access_rules": 
                         [
                             "net, sling, $CanHitMultiple",
-                            "net, op_no_ij, sling",
-                            "net, op_et, sling"
+                            "net, sling, op_no_ij",
+                            "net, sling, op_et"
 
                         ],
                         "item_count": 1
@@ -140,6 +140,76 @@
                         "item_count": 1
                     },
                     {
+                      "name": "Surrounded by a Cliff",
+                      "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                      "chest_opened_img": "images/icons/RedMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        ""
+                      ],
+                      "item_count": 1
+                    },
+                    {
+                      "name": "Energy Chips",
+                      "chest_unopened_img": "images/icons/BlueMailboxOn.png",
+                      "chest_opened_img": "images/icons/BlueMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        "$CanHitOnce"
+                      ],
+                      "item_count": 1
+                    },
+                    {
+                      "name": "The T-Rex is Aggressive",
+                      "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                      "chest_opened_img": "images/icons/RedMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        ""
+                      ],
+                      "item_count": 1
+                    },
+                    {
+                      "name": "Did I Give You That Yet?",
+                      "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                      "chest_opened_img": "images/icons/RedMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        ""
+                      ],
+                      "item_count": 1
+                    },
+                    {
+                      "name": "Hit the Bombs!",
+                      "chest_unopened_img": "images/icons/BlueMailboxOn.png",
+                      "chest_opened_img": "images/icons/BlueMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        "sling"
+                      ],
+                      "item_count": 1
+                    },
+                    {
                         "name": "Time Trial",
                         "visibility_rules": 
                         [
@@ -150,305 +220,6 @@
                             "net, $CanHitMultiple",
                             "net, op_no_ij",
                             "net, op_et"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Behind Waterfall - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Molten_Lava",
-                        "x": 0,
-                        "y": 0
-                    },
-                    {
-                        "map": "Lost_Lands",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Scotty",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Across Waterfall - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Molten_Lava",
-                        "x": 0,
-                        "y": 0
-                    },
-                    {
-                        "map": "Lost_Lands",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Coco",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Eggshells - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Molten_Lava",
-                        "x": 0,
-                        "y": 0
-                    },
-                    {
-                        "map": "Lost_Lands",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "J. Thomas",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "CanHitMultiple"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Above Waterfall - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Molten_Lava",
-                        "x": 0,
-                        "y": 0
-                    },
-                    {
-                        "map": "Lost_Lands",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Moggan",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Riding T-Rex - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Molten_Lava",
-                        "x": 0,
-                        "y": 0
-                    },
-                    {
-                        "map": "Lost_Lands",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Barney",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Back Corner - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Molten_Lava",
-                        "x": 0,
-                        "y": 0
-                    },
-                    {
-                        "map": "Lost_Lands",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Mattie",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Riding Trike - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Molten_Lava",
-                        "x": 0,
-                        "y": 0
-                    },
-                    {
-                        "map": "Lost_Lands",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Rocky",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "CanHitMultiple, shooter"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Molten Lava - Specter Coins",
-                "map_locations": [
-                    {
-                        "map": "Molten_Lava",
-                        "x": 0,
-                        "y": 0
-                    },
-                    {
-                        "map": "Lost_Lands",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Coin 1",
-                        "visibility_rules": 
-                        [
-                            "disabled, shuffleCoins"
-                            
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Molten Lava - Time Attack",
-                "map_locations": [
-                    {
-                        "map": "Molten_Lava",
-                        "x": 0,
-                        "y": 0
-                    },
-                    {
-                        "map": "Lost_Lands",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Beat 0:0:0",
-                        "visibility_rules": 
-                        [
-                            "shuffleTT",
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "CanHitMultiple"
                         ],
                         "item_count": 1
                     }

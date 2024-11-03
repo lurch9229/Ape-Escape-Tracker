@@ -3,6 +3,7 @@
     "type": "array",
 	"margin": "0,0",
     "orientation": "vertical",
+    "h_alignment": "center",
     "content":[
       {
         "type": "array",
@@ -240,11 +241,11 @@
       }
     ]
   },
-  //Column_2
   "level_grid_2": {
     "type": "array",
 	"margin": "-10,0",
     "orientation": "vertical",
+    "h_alignment": "center",
     "content":[
       {
         "type": "array",
@@ -522,10 +523,10 @@
      
     ]
   },
-  //Column_3
   "level_grid_3": {
     "type": "array",
     "orientation": "vertical",
+    "h_alignment": "center",
     "content":[
       {
         "type": "array",

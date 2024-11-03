@@ -61,8 +61,11 @@
                         "access_rules": 
                         [
                             "net, sling",
-                            "net, op_no_ij, club, flyer",
-                            "net, op_et, club, flyer"
+                            "net, punch, op_no_ij",
+                            "net, club, flyer, op_no_ij",
+                            "net, punch, op_et",
+                            "net, club, flyer, op_et"
+
                         ],
                         "item_count": 1
                     },
@@ -132,6 +135,50 @@
                         "item_count": 1
                     },
                     {
+                      "name": "Severely Cold Sea",
+                      "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                      "chest_opened_img": "images/icons/RedMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        ""
+                      ],
+                      "item_count": 1
+                    },
+                    {
+                      "name": "You Are Lost!",
+                      "chest_unopened_img": "images/icons/BlueMailboxOn.png",
+                      "chest_opened_img": "images/icons/BlueMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        "$CanHitOnce"
+                      ],
+                      "item_count": 1
+                    },
+                    {
+                      "name": "This Hazardous Thing",
+                      "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                      "chest_opened_img": "images/icons/RedMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        "$CanHitMultiple",
+                        "op_no_ij",
+                        "op_et"
+                      ],
+                      "item_count": 1
+                    },
+                    {
                         "name": "Time Trial",
                         "visibility_rules": 
                         [
@@ -143,236 +190,6 @@
                             "net, flyer",
                             "net, op_no_ij",
                             "net, op_et"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Igloo - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Snowy_Mammoth",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Popcicle",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Ice Cave - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Snowy_Mammoth",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Iced",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "CanHitOnce"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Mammoth - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Snowy_Mammoth",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Rickets",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "sling"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Upper Bridge - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Snowy_Mammoth",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Skeens",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "CanHitOnce",
-                            "flyer"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Breakable Machine - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Snowy_Mammoth",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Denggoy",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "CanHitOnce",
-                            "flyer"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Top Center - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Snowy_Mammoth",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Chilly",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "CanHitMultiple",
-                            "flyer"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Snowy Mammoth - Specter Coin",
-                "map_locations": [
-                    {
-                        "map": "Snowy_Mammoth",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Coin 1",
-                        "visibility_rules": 
-                        [
-                            "disabled, shuffleCoins"
-                        ],
-                        "access_rules": 
-                        [
-                            "CanHitMultiple",
-                            "flyer"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Snowy Mammoth - Time Attack",
-                "map_locations": [
-                    {
-                        "map": "Snowy_Mammoth",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Beat 0:0:0",
-                        "visibility_rules": 
-                        [
-                            "disabled",
-                            "shuffleTT"
-                        ],
-                        "access_rules": 
-                        [
-                            "hoop, CanHitMultiple",
-                            "flyer"
                         ],
                         "item_count": 1
                     }

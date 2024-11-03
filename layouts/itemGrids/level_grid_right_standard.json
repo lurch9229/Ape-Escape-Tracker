@@ -409,7 +409,7 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["op_sc"]
+              ["goal"]
             ],
             "item_size": 150,
             "margin": "-180,10,180,0"
@@ -417,10 +417,26 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["goal"]
+              ["op_mailbox"]
             ],
             "item_size": 150,
-            "margin": "-180,10,0,0"
+            "margin": "-500,60,180,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["op_sc"]
+            ],
+            "item_size": 150,
+            "margin": "-180,60,180,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["op_superflyer"]
+            ],
+            "item_size": 150,
+            "margin": "-180,60,0,0"
           }
         ]
       }

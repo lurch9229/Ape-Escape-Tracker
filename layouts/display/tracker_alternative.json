@@ -11,11 +11,18 @@
 						"type": "array",
 						"h_alignment": "stretch",
 						"v_alignment": "stretch",
-						"dock": "top",
+						//"dock": "top",
 						"content": [
 							{
 								"type": "tabbed",
 								"tabs": [
+									{
+										"title": "Time Station",
+										"content": {
+											"type":"map",
+											"maps": ["Time_Station"]
+										}
+									},
 									{
 										"title": "Lost Lands",
 										"content": {
@@ -78,6 +85,13 @@
 											"type": "map",
 											"maps": ["Specter_Land"]
 										}
+									},
+									{
+										"title": "Peak Point Matrix",
+										"content": {
+											"type": "map",
+											"maps": ["Peak_Point_Matrix"]
+										}
 									}
 								]
 							}
@@ -85,32 +99,10 @@
 					},
 					{
 						"type": "array",
-						"dock": "top",
-						"orientation": "vertical",
-						"h_alignment":"center",
-						"content": [
-							{
-								"type": "group",
-								"header": "Items",
-								"content": {
-									"type": "array",
-									"orientation": "vertical",
-									"margin": "0,0",
-									"content": [
-										{
-											"type": "layout",
-											"key": "item_grid_horizontal"
-										}
-									]
-								}
-							}
-						]
-					},
-					{
-						"type": "array",
 						"header": "Levels",
 						"orientation": "horizontal",
-						"dock":"left",
+						"h_alignment": "center",
+						"dock":"bottom",
 						"content": [
 							{
 								"type": "array",
@@ -149,15 +141,30 @@
 												}
 											]
 										}
-									}
+									},
+									{
+											"type": "group",
+											"header":"Specters",
+											"orientation": "vertical",
+											"margin": "0,100",
+											"content": [
+											  {
+												"type": "itemgrid",
+												"rows": [
+												  ["Specter_1","Specter_2"]
+												],
+												"item_size": 38,
+												"margin": "25,0,0,0"
+											  }
+											]
+									  }
 								]
 							},
 							{
 								"type": "array",
-								"dock": "left",
+								"dock": "bottom",
 								"orientation": "vertical",
 								"v_alignment": "stretch",
-								"h_alignment": "stretch",
 								"content": [
 									{
 										"type": "group",
@@ -186,9 +193,33 @@
 								]
 							}
 						]
+					},
+					{
+						"type": "array",
+						"dock": "bottom",
+						"orientation": "vertical",
+						"h_alignment":"center",
+						"content": [
+							{
+								"type": "group",
+								"header": "Items",
+								"content": {
+									"type": "array",
+									"orientation": "horizontal",
+									"h_alignment":"stretch",
+									"margin": "0,0",
+									"content": [
+										{
+											"type": "layout",
+											"key": "item_grid_horizontal"
+										}
+									]
+								}
+							}
+						]
 					}
 				]
-			},
+			}
 			
 		]
 	}

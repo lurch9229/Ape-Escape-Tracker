@@ -65,11 +65,11 @@
                         "access_rules": 
                         [
                             "net, sling",
-                            "flyer, $CanHitOnce",
-                            "net, op_no_ij, hoop",
-                            "net, op_no_ij, flyer",
-                            "net, op_et, hoop",
-                            "net, op_et, flyer"
+                            "net, flyer, $CanHitOnce",
+                            "net, hoop, op_no_ij",
+                            "net, flyer, op_no_ij",
+                            "net, hoop, op_et",
+                            "net, flyer, op_et"
                         ],
                         "item_count": 1
                     },
@@ -97,13 +97,13 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CR_Inside, water, flyer",
-                            "net, $CR_Inside, water, $CanHitMultiple",
-                            "net, $CR_Inside, op_no_ij, $CanSwim, $CanHitMultiple",
-                            "net, $CR_Inside, op_no_ij, flyer",
-                            "net, $CR_Inside, op_et, $CanSwim, $CanHitMultiple",
-                            "net, $CR_Inside, op_et, flyer",
-                            "net, $CR_Inside, op_et, sling"
+                            "net, $CR_Inside, $CanSwim, $HasMobility",
+                            "net, $CR_Inside, $CanSwim, $CanHitMultiple",
+                            "net, $CR_Inside, $CanSwim, $CanHitMultiple, op_no_ij",
+                            "net, $CR_Inside, flyer, op_no_ij",
+                            "net, $CR_Inside, $CanSwim, $CanHitMultiple, op_et",
+                            "net, $CR_Inside, flyer, op_et",
+                            "net, $CR_Inside, sling, op_et"
                         ],
                         "item_count": 1
                     },
@@ -118,10 +118,7 @@
                         "access_rules": 
                         [
                             "net, $CR_Inside, $CanHitMultiple",
-                            "net, $CR_Inside, $CanSwim, flyer",
-                            "net, $CR_Inside, op_et, $CanSwim, sling",
-                            "net, $CR_Inside, op_et, $CanSwim, hoop",
-                            "net, $CR_Inside, op_et, $CanSwim, flyer"
+                            "net, $CR_Inside, $CanSwim, $HasMobility"
                         ],
                         "item_count": 1
                     },
@@ -149,7 +146,9 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CR_Inside, $RCMonkey"
+                            "net, $CR_Inside, $RCMonkey",
+                            "net, $CR_Inside, $SuperFlyer, op_no_ij",
+                            "net, $CR_Inside, $SuperFlyer, op_et"
                         ],
                         "item_count": 1
                     },
@@ -164,15 +163,82 @@
                         "access_rules": 
                         [
                             "$CR_Inside, $CanSwim, $CanHitMultiple",
-                            "$CR_Inside, flyer",
-                            "$CR_Inside, op_no_ij, $CanSwim",
-                            "$CR_Inside, op_no_ij, flyer",
-                            "$CR_Inside, op_et, $CanSwim",
-                            "$CR_Inside, op_et, flyer",
-                            "$CR_Inside, op_et, sling",
-                            "$CR_Inside, op_et, hoop"
+                            "$CR_Inside, $HasMobility",
+                            "$CR_Inside, $CanSwim, op_no_ij",
+                            "$CR_Inside, $CanSwim, op_et"
                         ],
                         "item_count": 1
+                    },
+                    {
+                      "name": "Get Rid of the Enemy",
+                      "chest_unopened_img": "images/icons/BlueMailboxOn.png",
+                      "chest_opened_img": "images/icons/BlueMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        "$CanHitOnce"
+                      ],
+                      "item_count": 1
+                    },
+                    {
+                      "name": "Don't Forget Your Sling",
+                      "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                      "chest_opened_img": "images/icons/RedMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        ""
+                      ],
+                      "item_count": 1
+                    },
+                    {
+                      "name": "Back Camera Tutorial",
+                      "chest_unopened_img": "images/icons/BlueMailboxOn.png",
+                      "chest_opened_img": "images/icons/BlueMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        "$CanHitOnce"
+                      ],
+                      "item_count": 1
+                    },
+                    {
+                      "name": "Remember to Save",
+                      "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                      "chest_opened_img": "images/icons/RedMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        "$CR_Inside, $CanSwim, $HasMobility",
+                        "$CR_Inside, $CanSwim, $CanHitMultiple"
+                      ],
+                      "item_count": 1
+                    },
+                    {
+                      "name": "Come Back Later!",
+                      "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                      "chest_opened_img": "images/icons/RedMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        "$CR_Inside"
+                      ],
+                      "item_count": 1
                     },
                     {
                         "name": "Time Trial",
@@ -184,299 +250,14 @@
                         [
                             "net, $CR_Inside",
                             "net, flyer, club",
-                            "net, op_no_ij, sling",
-                            "net, op_no_ij, hoop",
-                            "net, op_no_ij, flyer",
-                            "net, op_no_ij, punch",
-                            "net, op_et, sling",
-                            "net, op_et, hoop",
-                            "net, op_et, flyer",
-                            "net, op_et, punch"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Overlooking Start - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Cryptic_Relics",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Bazzle",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "sling",
-                            "flyer"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Behind Push Block - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Cryptic_Relics",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Freeto",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Above Button - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Cryptic_Relics",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Troopa",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "sling",
-                            "flyer, CanHitOnce"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Behind Button Gate - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Cryptic_Relics",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Stymie",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "CR_Inside"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "End Of Loop - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Cryptic_Relics",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Spanky",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "CR_Inside, water"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "By River - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Cryptic_Relics",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Jesta",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "TJ_Mushroom, CanHitMultiple"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Atop Breakable Pillar - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Cryptic_Relics",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Pally",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "CR_Inside"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Behind Car Cage - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Cryptic_Relics",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Crash",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "CR_Inside, car"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Cryptic Relics - Main Ruins - Specter Coin",
-                "map_locations": [
-                    {
-                        "map": "Cryptic_Relics",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Coin 1",
-                        "visibility_rules": 
-                        [
-                            "disabled, shuffleCoins"
-                        ],
-                        "access_rules": 
-                        [
-                            "CR_Inside, water",
-                            "CR_Inside, flyer"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Cryptic Relics - Time Attack",
-                "map_locations": [
-                    {
-                        "map": "Cryptic_Relics",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Beat 0:0:0",
-                        "visibility_rules": 
-                        [
-                            "disabled",
-                            "shuffleTT"
-                        ],
-                        "access_rules": 
-                        [
-                            "CR_Inside",
-                            "flyer, club"
+                            "net, sling, op_no_ij",
+                            "net, hoop, op_no_ij",
+                            "net, flyer, op_no_ij",
+                            "net, punch, op_no_ij",
+                            "net, sling, op_et",
+                            "net, hoop, op_et",
+                            "net, flyer, op_et",
+                            "net, punch, op_et"
                         ],
                         "item_count": 1
                     }

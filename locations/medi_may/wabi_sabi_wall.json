@@ -26,6 +26,7 @@
                 "sections": [
                     {
                         "name": "Minky",
+
                         "chest_unopened_img": "images/icons/monkeyOn.png",
                         "chest_opened_img": "images/icons/monkeyOff.png",
                         "visibility_rules": 
@@ -118,7 +119,7 @@
                         ],
                         "access_rules": 
                         [
-                           "net, $WSW_ThirdRoom, $WSW_ForthRoom"
+                           "net, $WSW_ThirdRoom, $WSW_FourthRoom"
                         ],
                         "item_count": 1
                     },
@@ -146,9 +147,9 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $WSW_ThirdRoom, $WSW_ForthRoom, sling",
-                            "net, $WSW_ThirdRoom, $WSW_ForthRoom, op_no_ij, hoop",
-                            "net, $WSW_ThirdRoom, $WSW_ForthRoom, op_et, hoop"
+                            "net, $WSW_ThirdRoom, $WSW_FourthRoom, sling",
+                            "net, $WSW_ThirdRoom, $WSW_FourthRoom, hoop, op_no_ij",
+                            "net, $WSW_ThirdRoom, $WSW_FourthRoom, hoop, op_et"
                         ],
                         "item_count": 1
                     },
@@ -162,10 +163,10 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $WSW_ThirdRoom, $WSW_ForthRoom, sling",
-                            "net, $WSW_ThirdRoom, $WSW_ForthRoom, flyer",
-                            "net, $WSW_ThirdRoom, $WSW_ForthRoom, op_no_ij, hoop",
-                            "net, $WSW_ThirdRoom, $WSW_ForthRoom, op_et, hoop"
+                            "net, $WSW_ThirdRoom, $WSW_FourthRoom, sling",
+                            "net, $WSW_ThirdRoom, $WSW_FourthRoom, flyer",
+                            "net, $WSW_ThirdRoom, $WSW_FourthRoom, hoop, op_no_ij",
+                            "net, $WSW_ThirdRoom, $WSW_FourthRoom, hoop, op_et"
                         ],
                         "item_count": 1
                     },
@@ -208,9 +209,53 @@
                         "access_rules": 
                         [
                             "flyer",
-                            "op_et, sling"
+                            "sling, op_et"
                         ],
                         "item_count": 1
+                    },
+                    {
+                      "name": "White Pants = Very Alert",
+                      "chest_unopened_img": "images/icons/BlueMailboxOn.png",
+                      "chest_opened_img": "images/icons/BlueMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        "$CanHitOnce"
+                      ],
+                      "item_count": 1
+                    },
+                    {
+                      "name": "Guided Pellet Tutorial",
+                      "chest_unopened_img": "images/icons/BlueMailboxOn.png",
+                      "chest_opened_img": "images/icons/BlueMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        "net, $CanHitOnce",
+                        "flyer, $CanHitOnce",
+                        "op_et, sling, $CanHitOnce"
+                      ],
+                      "item_count": 1
+                    },
+                    {
+                      "name": "Black Pants = Dangerous",
+                      "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                      "chest_opened_img": "images/icons/RedMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        "$WSW_ThirdRoom, $WSW_FourthRoom"
+                      ],
+                      "item_count": 1
                     },
                     {
                         "name": "Time Trial",
