@@ -69,6 +69,27 @@
     ]
   },
   {
+    "name": "Mailboxes",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "loop": false,
+    "stages": [
+      {
+        "name": "Mailboxes Off",
+        "img": "images/settings/mailboxes_off.png",
+        "codes": "op_mailbox, op_mb_off",
+        "allow_disabled": false
+      },
+      {
+        "name": "Mailboxes On",
+        "img": "images/settings/mailboxes_on.png",
+        "codes": "op_mailbox, op_mb_on, shuffleMailbox",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Super Flyer",
     "type": "progressive",
     "initial_stage_idx": 0,

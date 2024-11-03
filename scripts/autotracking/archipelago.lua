@@ -99,11 +99,15 @@ function onClear(slot_data)
     elseif slot_data['goal'] == 1 then
         Tracker:FindObjectForCode("goal").CurrentStage = 1
     end
-
     if slot_data['superflyer'] == 0 then
         Tracker:FindObjectForCode("op_superflyer").CurrentStage = 0
     elseif slot_data['superflyer'] == 1 then
         Tracker:FindObjectForCode("op_superflyer").CurrentStage = 1
+    end
+    if slot_data['mailbox'] == 0 then
+        Tracker:FindObjectForCode("op_mailbox").CurrentStage = 0
+    elseif slot_data['mailbox'] == 1 then
+        Tracker:FindObjectForCode("op_mailbox").CurrentStage = 1
     end
 end
 

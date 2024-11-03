@@ -1,5 +1,11 @@
 [
   {
+    "name": "Time_Station",
+    "location_size": 15,
+    "location_border_thickness": 4,
+    "img": "images/maps/time_station_map.png"
+  },
+  {
     "name": "Lost_Lands",
     "location_size": 15,
     "location_border_thickness": 4,

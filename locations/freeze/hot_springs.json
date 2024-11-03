@@ -189,6 +189,50 @@
                         "item_count": 1
                     },
                     {
+                      "name": "Ice Bridge Ahead",
+                      "chest_unopened_img": "images/icons/BlueMailboxOn.png",
+                      "chest_opened_img": "images/icons/BlueMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        "flyer, $CanHitOnce",
+                        "op_et, sling, $CanHitOnce"
+                      ],
+                      "item_count": 1
+                    },
+                    {
+                      "name": "Wonderful Hot Springs!!",
+                      "chest_unopened_img": "images/icons/BlueMailboxOn.png",
+                      "chest_opened_img": "images/icons/BlueMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        "flyer, $CanHitOnce",
+                        "op_et, sling, $CanHitOnce"
+                      ],
+                      "item_count": 1
+                    },
+                    {
+                      "name": "Blocked by an Ice Column",
+                      "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                      "chest_opened_img": "images/icons/RedMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        ""
+                      ],
+                      "item_count": 1
+                    },
+                    {
                         "name": "Time Trial",
                         "visibility_rules": 
                         [

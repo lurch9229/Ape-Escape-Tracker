@@ -242,6 +242,22 @@
                         "item_count": 1
                     },
                     {
+                      "name": "Select Button Tutorial",
+                      "chest_unopened_img": "images/icons/BlueMailboxOn.png",
+                      "chest_opened_img": "images/icons/BlueMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        "flyer, $CanHitOnce",
+                        "op_no_ij, $CanHitOnce",
+                        "op_et, $CanHitOnce"
+                      ],
+                      "item_count": 1
+                    },
+                    {
                         "name": "Time Trial",
                         "visibility_rules": 
                         [

@@ -417,12 +417,19 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["op_sc"]
+              ["op_mailbox"]
             ],
             "item_size": 150,
             "margin": "-500,60,180,0"
           },
-
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["op_sc"]
+            ],
+            "item_size": 150,
+            "margin": "-180,60,180,0"
+          },
           {
             "type": "itemgrid",
             "rows": [

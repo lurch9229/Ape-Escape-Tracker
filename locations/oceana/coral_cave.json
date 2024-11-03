@@ -166,6 +166,36 @@
                         "item_count": 1
                     },
                     {
+                      "name": "Yellow Pants = Normal",
+                      "chest_unopened_img": "images/icons/BlueMailboxOn.png",
+                      "chest_opened_img": "images/icons/BlueMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        "$CanSwim, $CanHitOnce",
+                        "op_et, sling"
+                      ],
+                      "item_count": 1
+                    },
+                    {
+                      "name": "Red Pants = Strong",
+                      "chest_unopened_img": "images/icons/BlueMailboxOn.png",
+                      "chest_opened_img": "images/icons/BlueMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        "$CanSwim, $CanHitOnce",
+                        "op_et, sling"
+                      ],
+                      "item_count": 1
+                    },
+                    {
                         "name": "Time Trial",
                         "visibility_rules": 
                         [
