@@ -16,6 +16,7 @@ Upcoming Plans:
 3. [x] ~~Calculate Coins and Monkeys per Level in the grid~~
 
 See [CHANGELOG.md](https://github.com/lurch9229/Ape-Escape-Tracker/blob/main/CHANGELOG.md) for full changes
+
 Version 0.3.0
 
 	Autotracking -:
