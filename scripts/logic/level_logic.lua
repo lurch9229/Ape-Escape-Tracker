@@ -130,7 +130,7 @@ end
 
 function WSW_FourthRoom()
     return
-    CanHitMultiple() and CanDive()
+    CanHitMultiple() or Flyer()
     or
     op_no_ij()
     or
