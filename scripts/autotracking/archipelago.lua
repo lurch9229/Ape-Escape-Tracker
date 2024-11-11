@@ -44,12 +44,7 @@ function onClear(slot_data)
             local obj = Tracker:FindObjectForCode(v[1])
             if obj then
                 if v[2] == "toggle" then
-				--Net is not randomised at the moment,so toggle it by default
-					if v[1] == "net" then
-						obj.Active = true
-					else
-						obj.Active = false
-					end
+					obj.Active = false
                 elseif v[2] == "progressive" then
                     obj.CurrentStage = 0
                     obj.Active = false
