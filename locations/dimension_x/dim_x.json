@@ -103,14 +103,15 @@
                 "access_rules":
                         [
                             "{$PPMAccess}",
-                            "$PPMAccess, net, sling, flyer, club",
-                            "$PPMAccess, net, sling, flyer, punch",
-                            "$PPMAccess, net, sling, club, op_no_ij",
-                            "$PPMAccess, net, sling, hoop, op_no_ij",
-                            "$PPMAccess, net, sling, punch, op_no_ij",
-                            "$PPMAccess, net, sling, club, op_et",
-                            "$PPMAccess, net, sling, hoop, op_et",
-                            "$PPMAccess, net, sling, punch, op_et"
+                            "$PPMAccess, net, sling, hoop, flyer, $CanHitMultiple, car, $CanDive, $CanWaterCatch"
+                            //"$PPMAccess, net, sling, flyer, club",
+                            //"$PPMAccess, net, sling, flyer, punch",
+                            //"$PPMAccess, net, sling, club, op_no_ij",
+                            //"$PPMAccess, net, sling, hoop, op_no_ij",
+                            //"$PPMAccess, net, sling, punch, op_no_ij",
+                            //"$PPMAccess, net, sling, club, op_et",
+                            //"$PPMAccess, net, sling, hoop, op_et",
+                            //"$PPMAccess, net, sling, punch, op_et"
                         ],
                 "sections": [
                     {
