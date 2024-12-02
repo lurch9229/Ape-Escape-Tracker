@@ -194,7 +194,7 @@
                         ],
                         "access_rules": 
                         [
-                            ""
+                            "net"
                         ],
                         "item_count": 1
                     },
@@ -240,6 +240,20 @@
                         "net, $CanHitOnce",
                         "flyer, $CanHitOnce",
                         "op_et, sling, $CanHitOnce"
+                      ],
+                      "item_count": 1
+                    },
+					{
+                      "name": "Big Cogwheel",
+                      "chest_unopened_img": "images/icons/BlueMailboxOn.png",
+                      "chest_opened_img": "images/icons/BlueMailboxOff.png",
+                      "visibility_rules":
+                      [
+                        "shuffleMailbox"
+                      ],
+                      "access_rules":
+                      [
+                        "$WSW_ThirdRoom, $CanHitOnce"
                       ],
                       "item_count": 1
                     },

@@ -342,14 +342,15 @@ LOCATION_MAPPING =
 	[128000452] = {"@Sushi Temple/Sushi Temple/Rest and Relax"},
 	[128000453] = {"@Wabi Sabi Wall/Wabi Sabi Wall/White Pants = Very Alert"},
 	[128000454] = {"@Wabi Sabi Wall/Wabi Sabi Wall/Guided Pellet Tutorial"},
-	[128000455] = {"@Wabi Sabi Wall/Wabi Sabi Wall/Black Pants = Dangerous"},
-	[128000456] = {"@Crumbling Castle/Crumbling Castle/Think Clearly"},
-	[128000457] = {"@Specter's Factory/Specter's Factory/Hop In The Tank"},
-	[128000458] = {"@Monkey Madness/Monkey Madness/The Terror Coaster"},
-	[128000459] = {"@Time Station/Time Station/Welcome!"},
-	[128000460] = {"@Time Station/Time Station/Save Station"},
-	[128000461] = {"@Time Station/Time Station/Mini Game Corner"},
-	[128000462] = {"@Time Station/Time Station/Training Space"},
+	[128000455] = {"@Wabi Sabi Wall/Wabi Sabi Wall/Big Cogwheel"},
+	[128000456] = {"@Wabi Sabi Wall/Wabi Sabi Wall/Black Pants = Dangerous"},
+	[128000457] = {"@Crumbling Castle/Crumbling Castle/Think Clearly"},
+	[128000458] = {"@Specter's Factory/Specter's Factory/Hop In The Tank"},
+	[128000459] = {"@Monkey Madness/Monkey Madness/The Terror Coaster"},
+	[128000460] = {"@Time Station/Time Station/Welcome!"},
+	[128000461] = {"@Time Station/Time Station/Save Station"},
+	[128000462] = {"@Time Station/Time Station/Mini Game Corner"},
+	[128000463] = {"@Time Station/Time Station/Training Space"},
 }
 
 locationToCode ={
