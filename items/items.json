@@ -13,12 +13,34 @@
     "img": "images/items/Time_Net.png",
     "codes": "net"
   },
+
   {
     "name": "Water Net",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": true,
+    "loop": false,
+    "stages": [
+      {
+        "name": "Water Net1",
+        "img": "images/items/Water_Net.png",
+        "codes": "water, swim",
+        "allow_disabled": false
+      },
+      {
+        "name": "Water Net2",
+        "img": "images/items/Water_Net.png",
+        "codes": "water, dive",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Water Catch",
     "type": "toggle",
     "loop": "false",
     "img": "images/items/Water_Net.png",
-    "codes": "water"
+    "codes": "watercatch"
   },
   {
     "name": "Monkey Radar",

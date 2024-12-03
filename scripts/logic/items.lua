@@ -26,16 +26,25 @@ function Flyer()
     return has ("flyer")
 end
 
-function Water()
-    return has ("water")
+function Swim()
+    return has ("swim") or has ("dive")
+end
+function Dive()
+    return has ("dive")
 end
 
+function WaterCatch()
+    return has ("watercatch")
+end
 function Radar()
     return has ("radar")
 end
 
 function op_superflyer()
     return has ("op_sf_on")
+end
+function op_waternet()
+    return has ("op_wn_on")
 end
 
 function op_gl()

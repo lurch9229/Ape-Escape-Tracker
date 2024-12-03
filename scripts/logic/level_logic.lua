@@ -53,21 +53,22 @@ end
 
 --WATER NET
 function CanSwim()
-    return Water()
+    return Swim()
 end
 
 function CanDive()
-    return Water()
+    return Dive()
+
 end
 
 function CanWaterCatch()
-    return Water()
+    return WaterCatch()
 end
 
 --THICK JUNGLE
 function TJ_UFOEntry()
     return
-    CanDive()
+    CanSwim()
 end
 
 function TJ_UFOCliff()
@@ -147,11 +148,11 @@ end
 
 function CC_WaterRoom()
     return 
-    (CanHitMultiple() and Net()) or (CanDive() and Punch())
+    (CanHitMultiple() and Net()) or (CanSwim() and Punch())
     or
-    (op_no_ij() and ((CanDive() and Flyer()) or (Hoop() and Flyer()) or SuperFlyer()))
+    (op_no_ij() and ((CanSwim() and Flyer()) or (Hoop() and Flyer()) or SuperFlyer()))
     or
-    (op_et() and ((CanDive() and Flyer()) or (Hoop() and Flyer()) or Sling() or SuperFlyer()))
+    (op_et() and ((CanSwim() and Flyer()) or (Hoop() and Flyer()) or Sling() or SuperFlyer()))
 end
 
 function CC_ButtonRoom()

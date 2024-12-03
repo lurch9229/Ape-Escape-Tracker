@@ -414,13 +414,21 @@
             "item_size": 150,
             "margin": "-180,10,180,0"
           },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["op_waternet"]
+            ],
+            "item_size": 150,
+            "margin": "-180,10,180,0"
+          },
           {
             "type": "itemgrid",
             "rows": [
               ["op_mailbox"]
             ],
             "item_size": 150,
-            "margin": "-500,60,180,0"
+            "margin": "-660,60,180,0"
           },
           {
             "type": "itemgrid",
