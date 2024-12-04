@@ -1,5 +1,43 @@
 # Ape Escape Poptracker Changlelog
 
+0.3.2
+
+    Layout -:
+      - Adjusted the layouts in preparations of Level / Room rando
+      - Added "Shuffle Water Net" option that displays the "Progressive Water Net" and "Water Catch" Item in the layout
+      - "World Key" item now has a maximum of 18 to represent the max acquirable keys in the new "Entrance" and "UnlocksPerKey" options
+        (Options not yet implemented into the tracker but they are in the ``apworld``)
+
+    Items/Locations -:
+      - Added the missing Mailbox in WSW
+      - Corrected access rules following ``apworld`` logic
+      - Fixed WSW_ThirdRoom and WSW_FourthRoom logic.
+      - Added/Fixed logic for CanSwim, CanDive and CanWaterCatch with Water Net Shuffle
+
+    Autotracking -:
+      - Fixed Mailbox tracking being off by some Id's
+      - Corrected Bosses autotracking
+      - Added autotracking of new settings
+0.3.0
+
+	Autotracking -:
+		- Autotracking of Mailboxes
+  		- Added autotracking of new settings
+	
+	Layout -:
+		- Updated layout to include Specter 1 and Specter 2
+		- Added Options : Mailboxes, SuperFlyer
+  		- Layout adjustement to make rooms for more options (We are starting to have MANY options)
+  		- Updated Map scaling to make it better
+	
+	Items/Locations -:
+		- Added Mailboxes as locations
+		- Revised ALL locations/item logic since it had been reworked in the apworld
+  		- Added CCA boss and TVT Boss in the tracking for their respective locations
+		- Verified/updated locations rules based on Net and WaterNet logic
+  		- Added Peak Point Matrix as a map location
+  		- Fixed Wabi Sabi Wall/Barrel Room Coin not being tracked properly
+  		- Fixed Specter's Factory Lava Room Coin not being tracked properly
 0.2.2
 
     Layouts -:
