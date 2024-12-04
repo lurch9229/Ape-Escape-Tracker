@@ -44,12 +44,7 @@ function onClear(slot_data)
             local obj = Tracker:FindObjectForCode(v[1])
             if obj then
                 if v[2] == "toggle" then
-				--Net is not randomised at the moment,so toggle it by default
-					if v[1] == "net" then
-						obj.Active = true
-					else
-						obj.Active = false
-					end
+					obj.Active = false
                 elseif v[2] == "progressive" then
                     obj.CurrentStage = 0
                     obj.Active = false
@@ -108,6 +103,11 @@ function onClear(slot_data)
         Tracker:FindObjectForCode("op_mailbox").CurrentStage = 0
     elseif slot_data['mailbox'] == 1 then
         Tracker:FindObjectForCode("op_mailbox").CurrentStage = 1
+    end
+     if slot_data['shufflewaternet'] == 0 then
+        Tracker:FindObjectForCode("op_waternet").CurrentStage = 0
+    elseif slot_data['shufflewaternet'] == 1 then
+        Tracker:FindObjectForCode("op_waternet").CurrentStage = 1
     end
 end
 

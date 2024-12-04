@@ -15,10 +15,40 @@
   },
   {
     "name": "Water Net",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": true,
+    "loop": false,
+    "codes": "progwater",
+	"stages": [
+	  {
+        "name": "Water Net (Swim)",
+        "img": "images/items/Water_Net_1.png",
+        "codes": "swim",
+        "allow_disabled": false
+      },
+      {
+        "name": "Water Net (Swim & Dive)",
+        "img": "images/items/Water_Net_2.png",
+        "codes": "dive",
+		"allow_disabled": false,
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Water Net",
     "type": "toggle",
     "loop": "false",
     "img": "images/items/Water_Net.png",
     "codes": "water"
+  },
+  {
+    "name": "Water Catch",
+    "type": "toggle",
+    "loop": "false",
+    "img": "images/items/Water_Catch.png",
+    "codes": "watercatch"
   },
   {
     "name": "Monkey Radar",

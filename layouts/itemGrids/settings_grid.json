@@ -7,7 +7,7 @@
       {
         "type": "array",
         "orientation": "vertical",
-        "margin": "0,0,0,-90",
+        "margin": "0,0,0,-100",
 
         "content": [
           {
@@ -46,6 +46,14 @@
             "type": "itemgrid",
             "rows": [
               ["op_superflyer"]
+            ],
+            "item_size": 150,
+            "margin": "0,-115,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["op_waternet"]
             ],
             "item_size": 150,
             "margin": "0,-115,0,0"

@@ -10,4 +10,6 @@ ITEM_MAPPING =
 [128000128] = {"car", "toggle"}, -- RC Car
 [128000256] = {"keyWorld", "consumable"}, -- World Key
 [128001024] = {"water", "toggle"}, -- Water Net
+[128001025] = {"progwater", "progressive"}, -- Water Net
+[128001026] = {"watercatch", "toggle"}, -- Water Net
 }

@@ -83,35 +83,36 @@
 								}
 							]
             			},
-                        {
-                            "type": "group",
-              				"header": "Levels",
-              				"content": {
-                				"type": "array",
-                				"orientation": "vertical",
-                				"margin": "0,0",
-                				"content": [
-                  					{
-                    					"type": "layout",
-                    					"key": "level_grid_left"
-                  					}
-                				]
-            				}
-                        },
-                        {
-                            "type": "group",
-              				"content": {
-                				"type": "array",
-                				"orientation": "vertical",
-                				"margin": "0,0",
-                				"content": [
-                  					{
-                    					"type": "layout",
-                    					"key": "level_grid_right"
-                  					}
-                				]
-            				}
-                        }
+						{
+							"type": "tabbed",
+							"tabs": [
+								{
+									"title": "Levels",
+									"content": {
+										"type": "array",
+										"orientation": "horizontal",
+										"margin": "0,0",
+										"content": [
+											{
+												"type": "layout",
+												"key": "level_grid_left"
+											},
+											{
+												"type": "layout",
+												"key": "level_grid_right"
+											},
+
+										]
+									}
+								},
+								{
+									"title": "Entrances (WIP)",
+									"content": {
+
+									}
+								}
+							]
+						}
 					]
 				},
                 {

@@ -408,7 +408,7 @@
                       "access_rules":
                       [
                         "$TJ_UFOEntry, $TJ_UFOCliff, $CanHitOnce",
-                        "$TJ_FishEntry and $CanHitMultiple"
+                        "$TJ_FishEntry, $CanHitMultiple"
                       ],
                       "item_count": 1
                     },
@@ -423,7 +423,7 @@
                       "access_rules":
                       [
                         "$TJ_UFOEntry, $TJ_UFOCliff, $CanHitOnce",
-                        "$TJ_FishEntry and $CanHitMultiple"
+                        "$TJ_FishEntry, $CanHitMultiple"
                       ],
                       "item_count": 1
                     },
