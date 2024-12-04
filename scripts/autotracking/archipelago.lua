@@ -104,6 +104,11 @@ function onClear(slot_data)
     elseif slot_data['mailbox'] == 1 then
         Tracker:FindObjectForCode("op_mailbox").CurrentStage = 1
     end
+     if slot_data['shufflewaternet'] == 0 then
+        Tracker:FindObjectForCode("op_waternet").CurrentStage = 0
+    elseif slot_data['shufflewaternet'] == 1 then
+        Tracker:FindObjectForCode("op_waternet").CurrentStage = 1
+    end
 end
 
 

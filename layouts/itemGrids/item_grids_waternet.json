@@ -4,11 +4,12 @@
     "h_alignment": "center",
     "item_margin": "1,2",
     "item_size": "55,55",
-	"margin": "0,0,0,59",
+	"margin": "0,0,0,0",
     "rows": [
       ["stun"], 
       ["net"], 
-      ["water"],
+      ["progwater"],
+	  ["watercatch"],
       ["hoop"],
       ["flyer"],
       ["shooter"],
@@ -26,7 +27,7 @@
     "item_margin": "4,2",
     "item_size": "55,55",
     "rows": [
-      ["stun","net","water","hoop","flyer","shooter","car","punch","radar","keyWorld"]
+      ["stun","net","progwater","watercatch","hoop","flyer","shooter","car","punch","radar","keyWorld"]
     ]
   }
 }

@@ -799,7 +799,7 @@
   {
     "name": "World Key",
     "type": "consumable",
-    "max_quantity": 6,
+    "max_quantity": 18,
     "min_quantity": 0,
     "initial_quantity": 0,
     "increment": 1,

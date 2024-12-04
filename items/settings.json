@@ -109,5 +109,26 @@
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Shuffle Water Net",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "loop": false,
+    "stages": [
+      {
+        "name": "Shuffle Water Net Off",
+        "img": "images/settings/shufflewaternet_off.png",
+        "codes": "op_waternet, op_wn_off",
+        "allow_disabled": false
+      },
+      {
+        "name": "Shuffle Water Net On",
+        "img": "images/settings/shufflewaternet_on.png",
+        "codes": "op_waternet, op_wn_on",
+        "inherit_codes": false
+      }
+    ]
   }
 ]

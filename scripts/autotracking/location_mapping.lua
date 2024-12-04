@@ -351,6 +351,9 @@ LOCATION_MAPPING =
 	[128000461] = {"@Time Station/Time Station/Save Station"},
 	[128000462] = {"@Time Station/Time Station/Mini Game Corner"},
 	[128000463] = {"@Time Station/Time Station/Training Space"},
+	-----Bosses----
+	[128000500] = {"@Crumbling Castle/Crumbling Castle/Boss"},
+	[128000501] = {"@TV Tower/TV Tower/Boss"},
 }
 
 locationToCode ={

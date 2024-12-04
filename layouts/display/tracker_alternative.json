@@ -116,7 +116,7 @@
 										"content": {
 											"type": "array",
 											"orientation": "vertical",
-											"margin": "0,0",
+											"margin": "0,-10",
 											"content": [
 												{
 													"type": "layout",
@@ -133,7 +133,7 @@
 										"content": {
 											"type": "array",
 											"orientation": "vertical",
-											"margin": "0,0",
+											"margin": "0,-15",
 											"content": [
 												{
 													"type": "layout",
@@ -146,7 +146,7 @@
 											"type": "group",
 											"header":"Specters",
 											"orientation": "vertical",
-											"margin": "0,100",
+											"margin": "0,0",
 											"content": [
 											  {
 												"type": "itemgrid",
@@ -167,28 +167,45 @@
 								"v_alignment": "stretch",
 								"content": [
 									{
-										"type": "group",
-										"header": "Levels",
-										"style": "wrap",
-										"content": {
-											"type": "array",
-											"orientation": "horizontal",
-											"margin": "0,0",
-											"content": [
-												{
-													"type": "layout",
-													"key": "level_grid_1"
-												},
-												{
-													"type": "layout",
-													"key": "level_grid_2"
-												},
-												{
-													"type": "layout",
-													"key": "level_grid_3"
-												}
-											]
-										}
+										"type": "array",
+										"h_alignment": "stretch",
+										"v_alignment": "stretch",
+										"dock": "top",
+										"content": [
+											{
+												"type": "tabbed",
+												"tabs": [
+													{
+														"title": "Levels",
+														"content": {
+															"type": "array",
+															"orientation": "horizontal",
+															"margin": "0,0",
+															"content": [
+																{
+																	"type": "layout",
+																	"key": "level_grid_1"
+																},
+																{
+																	"type": "layout",
+																	"key": "level_grid_2"
+																},
+																{
+																	"type": "layout",
+																	"key": "level_grid_3"
+																}
+															]
+														}
+													},
+													{
+														"title": "Entrances (WIP)",
+														"content": {
+
+														}
+													}
+												]
+											}
+										]
 									}
 								]
 							}
