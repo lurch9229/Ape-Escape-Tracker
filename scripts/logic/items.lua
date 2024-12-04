@@ -77,7 +77,7 @@ function worldUnlocks()
 end
 
 function waternet()
-	
+
 	OP_WaterNet_Stage = Tracker:FindObjectForCode("op_waternet").CurrentStage
 	WaterNet_Stage = Tracker:FindObjectForCode("waternet").CurrentStage
 	print(WaterNet_Stage)
@@ -92,7 +92,7 @@ function waternet()
 			WaterNet_Stage = 0
 		end
 	end
-	
+
 	Tracker:FindObjectForCode("waternet").CurrentStage = WaterNet_Stage
 end
 
