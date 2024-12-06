@@ -2,31 +2,31 @@
   "item_grid": {
     "type": "itemgrid",
     "h_alignment": "center",
-    "item_margin": "1,2",
+    "item_margin": "10,2,0,0",
     "item_size": "55,55",
 	"margin": "0,0,0,59",
     "rows": [
-      ["stun"], 
-      ["net"], 
-      ["water"],
-      ["hoop"],
-      ["flyer"],
-      ["shooter"],
-      ["car"],
-      ["punch"],
-      ["radar"],
-      ["keyWorld"]
+      ["stun","keyworld"], 
+      ["net","tot_ape"], 
+      ["water","tot_coin"],
+      ["hoop",""],
+      ["flyer",""],
+      ["shooter",""],
+      ["car",""],
+      ["punch",""],
+      ["radar",""],
+      ["keyWorld",""]
     ]
   },
   "item_grid_horizontal": {
     "type": "itemgrid",
     "h_alignment": "center",
 	"v_alignment": "center",
-	"margin": "145,0,0,0",
+	"margin": "0,0,0,0",
     "item_margin": "4,2",
     "item_size": "55,55",
     "rows": [
-      ["stun","net","water","hoop","flyer","shooter","car","punch","radar","keyWorld"]
+      ["","stun","net","water","hoop","flyer","shooter","car","punch","radar","","keyWorld","tot_ape","tot_coin"],
     ]
   }
 }

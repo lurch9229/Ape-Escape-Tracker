@@ -332,7 +332,13 @@
                         ],
                         "access_rules": 
                         [
-                            "$CC_5Monkeys"
+                            "club",
+							"flyer",
+							"punch",
+							"op_no_ij, sling",
+							"op_no_ij, hoop",
+							"op_et, sling",
+							"op_et, hoop"
                         ],
                         "item_count": 1
                     },

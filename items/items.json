@@ -97,7 +97,7 @@
     "loop": "false",
     "max_quantity": 204,
     "increment": 1,
-    "img": "images/icons/monkeyOn.png",
+    "img": "images/items/monkeytotal.png",
     "codes": "tot_ape"
   },
   {
@@ -108,5 +108,15 @@
     "increment": 1,
     "img": "images/items/Specter_Coin.png",
     "codes": "tot_coin"
+  },
+  {
+    "name": "World Key",
+    "type": "consumable",
+    "max_quantity": 18,
+    "min_quantity": 0,
+    "initial_quantity": 0,
+    "increment": 1,
+    "img": "images/items/World_Key.png",
+    "codes": "keyWorld"
   }
 ]

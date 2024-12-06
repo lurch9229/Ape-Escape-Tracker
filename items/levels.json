@@ -795,15 +795,5 @@
     "loop": "false",
     "img": "images/icons/Specter2_On.png",
     "codes": "specter_2"
-  },
-  {
-    "name": "World Key",
-    "type": "consumable",
-    "max_quantity": 18,
-    "min_quantity": 0,
-    "initial_quantity": 0,
-    "increment": 1,
-    "img": "images/icons/base_key.png",
-    "codes": "keyWorld"
   }
 ]
