@@ -1,0 +1,22 @@
+{
+    "versions": [
+    		{
+                "package_version": "0.3.2",
+                "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.3.2/Ape-Escape-Tracker-0.3.2.zip",
+                "sha256": "B58C8C8847A94A71AAC86796BFAD7BA0BF23ABD302DE8659EA351264791F4580",
+                "changelog": [
+                  "Corrected layout missmatch",
+                  "Adjusted the layouts in preparations of Level / Room rando",
+                  "Added 'Shuffle Water Net' option that displays the 'Progressive Water Net' and 'Water Catch' Item in the layout",
+                  "'World Key' item now has a maximum of 18 to represent the max acquirable keys in the new 'Entrance' and 'UnlocksPerKey' options",
+                  "Added the missing Mailbox in WSW",
+                  "Corrected access rules following apworld logic",
+                  "Fixed WSW_ThirdRoom and WSW_FourthRoom logic",
+                  "Added/Fixed logic for CanSwim, CanDive and CanWaterCatch with Water Net Shuffle",
+                  "Fixed Mailbox tracking being off by some Id's",
+                  "Corrected Bosses autotracking",
+                  "Added autotracking of new settings",
+                ]
+         }
+    ]
+}
