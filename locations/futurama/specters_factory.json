@@ -164,7 +164,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$SF_MechRoom, $CanHitMultiple"
+                            "net, $SF_MechRoom, $CanHitMultiple"
                         ],
                         "item_count": 1
                     },
