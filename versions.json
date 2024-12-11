@@ -1,6 +1,21 @@
 {
     "versions": [
-    		{
+        {
+                "package_version": "0.4.0",
+                "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.0/Ape-Escape-Tracker-0.4.0.zip",
+                "sha256": "22E0EA9254073B8E929DCCCC8D8A8916464E0AE43A59CB6988FD9E692B16688C",
+                "changelog": [
+                    "Enabled Bulk Updates in the code to make pack faster",
+                    "Added Auto-Update for future updates",
+                    "Added Keys option and modified World Key tracking",
+                    "Added \"Entrance\" option and Entrance Randomization tracking (With a Clear and Reset button)",
+                    "Added \"Pack Settings\" tab for Auto-set Entrances tracking when connecting to AP (Default is set to \"No\"). ",
+                    "Added tracking of Stadium Attack / Gladiator Attack Coins and keys",
+                    "Fixed Crumbling Castle coin \"Outside\" having wrong access rules in all logics",
+                    "Fixed \"Training Room\", \"Think Clearly\" and \"Hop in the Tank\" Mailboxes not tracking"
+                ]
+        },
+        {
                 "package_version": "0.3.2",
                 "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.3.2/Ape-Escape-Tracker-0.3.2.zip",
                 "sha256": "B58C8C8847A94A71AAC86796BFAD7BA0BF23ABD302DE8659EA351264791F4580",
@@ -18,7 +33,7 @@
                   "Added autotracking of new settings"
                 ]
          },
-        {
+         {
                 "package_version": "0.3.0",
                 "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.3.0/Ape-Escape-Tracker-0.3.0.zip",
                 "sha256": "EA93C0F25DFEFD905878D971E8D62A18A2662BD2F9BDAEC08AE6D297CAE58A9E",
