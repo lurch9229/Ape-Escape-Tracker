@@ -200,7 +200,7 @@
           }
         ]
       },
-      {
+	  {
         "type": "array",
         "orientation": "horizontal",
         "margin": "0,0",
@@ -238,7 +238,39 @@
             "margin": "-5,-65,0,0"
           }
         ]
-      }
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["label_sa"]
+            ],
+            "item_size": 100,
+            "margin": "0,-55,28,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["coin_sa"]
+            ],
+            "item_size": 45,
+            "margin": "5,-65,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["sa_key"]
+            ],
+            "item_size": 46,
+            "margin": "-5,-65,0,0"
+          },
+		  
+        ]
+      },
     ]
   },
   "level_grid_2": {
@@ -489,23 +521,15 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["label_mm"]
+              ["label_ga"]
             ],
             "item_size": 100,
-            "margin": "-120,-55,180,0"
+            "margin": "0,-55,28,0"
           },
           {
             "type": "itemgrid",
             "rows": [
-              ["monkey_mm"]
-            ],
-            "item_size": 38,
-            "margin": "-180,-65,-20,-12"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
-              ["coin_mm"]
+              ["coin_ga"]
             ],
             "item_size": 45,
             "margin": "5,-65,0,0"
@@ -513,11 +537,12 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["mm_key"]
+              ["ga_key"]
             ],
             "item_size": 46,
             "margin": "-5,-65,0,0"
-          }
+          },
+		  
         ]
       }
      
@@ -731,7 +756,7 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["label_tt"]
+              ["label_tvt"]
             ],
             "item_size": 100,
             "margin": "0,-55,180,0"
@@ -739,7 +764,7 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["monkey_tt"]
+              ["monkey_tvt"]
             ],
             "item_size": 38,
             "margin": "-180,-65,-20,-12"
@@ -747,7 +772,7 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["coin_tt"]
+              ["coin_tvt"]
             ],
             "item_size": 45,
             "margin": "5,-65,0,0"
@@ -761,7 +786,46 @@
             "margin": "-5,-65,0,0"
           }
         ]
-      }
+      },
+	  {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["label_mm"]
+            ],
+            "item_size": 100,
+            "margin": "0,-55,180,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["monkey_mm"]
+            ],
+            "item_size": 38,
+            "margin": "-180,-65,-20,-12"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["coin_mm"]
+            ],
+            "item_size": 45,
+            "margin": "5,-65,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["mm_key"]
+            ],
+            "item_size": 46,
+            "margin": "-5,-65,0,0"
+          }
+        ]
+      },
     ]
   }
 }

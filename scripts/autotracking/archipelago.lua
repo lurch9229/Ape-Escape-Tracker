@@ -11,8 +11,8 @@ SLOT_DATA = nil
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 
-function onClear(slot_data)
-    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+function onClear(slot_data) 
+	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onClear, slot_data:\n%s", dump_table(slot_data)))
     end
     SLOT_DATA = slot_data
@@ -62,7 +62,8 @@ function onClear(slot_data)
     end
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
-
+	
+	
     if SLOT_DATA == nil then
         return
     end
@@ -104,11 +105,35 @@ function onClear(slot_data)
     elseif slot_data['mailbox'] == 1 then
         Tracker:FindObjectForCode("op_mailbox").CurrentStage = 1
     end
-     if slot_data['shufflewaternet'] == 0 then
+    if slot_data['shufflewaternet'] == 0 then
         Tracker:FindObjectForCode("op_waternet").CurrentStage = 0
     elseif slot_data['shufflewaternet'] == 1 then
         Tracker:FindObjectForCode("op_waternet").CurrentStage = 1
     end
+	if slot_data['unlocksperkey'] == 0 then
+        Tracker:FindObjectForCode("op_keyoption").CurrentStage = 0
+    elseif slot_data['unlocksperkey'] == 1 then
+		Tracker:FindObjectForCode("op_keyoption").CurrentStage = 1
+	elseif slot_data['unlocksperkey'] == 2 then
+		Tracker:FindObjectForCode("op_keyoption").CurrentStage = 2
+	elseif slot_data['unlocksperkey'] == 3 then
+        Tracker:FindObjectForCode("op_keyoption").CurrentStage = 3
+    end
+	print(slot_data['entrance'])
+	if slot_data['entrance'] == 0 then
+        Tracker:FindObjectForCode("op_entrance").CurrentStage = 0
+    elseif slot_data['entrance'] == 1 then
+		Tracker:FindObjectForCode("op_entrance").CurrentStage = 1
+	elseif slot_data['entrance'] == 2 then
+		Tracker:FindObjectForCode("op_entrance").CurrentStage = 2
+	elseif slot_data['entrance'] == 3 then
+        Tracker:FindObjectForCode("op_entrance").CurrentStage = 3
+	elseif slot_data['entrance'] == 4 then
+        Tracker:FindObjectForCode("op_entrance").CurrentStage = 4
+    end
+
+	setER()
+	
 end
 
 

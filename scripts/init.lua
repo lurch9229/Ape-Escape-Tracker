@@ -1,16 +1,23 @@
 ENABLE_DEBUG_LOG = false
 
 local variant = Tracker.ActiveVariantUID
-
+print("\n-- Loading Ape Escape Tracker --")
+print("Variant: ", variant)
+if Tracker.AllowDeferredLogicUpdate ~= nil then
+	Tracker.AllowDeferredLogicUpdate = true
+end
 ScriptHost:LoadScript("scripts/logic/items.lua")
 ScriptHost:LoadScript("scripts/logic/level_logic.lua")
 ScriptHost:LoadScript("scripts/autotracking.lua")
-ScriptHost:LoadScript("scripts/layouts.lua")
---ScriptHost:LoadScript("scripts/utils.lua")
+
+ScriptHost:LoadScript("scripts/utils.lua")
 
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/levels.json")
+Tracker:AddItems("items/ER.json")
 Tracker:AddItems("items/settings.json")
+
+ScriptHost:LoadScript("scripts/layouts.lua")
 
 Tracker:AddMaps("maps/maps.json")
 

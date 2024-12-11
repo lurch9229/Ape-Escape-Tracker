@@ -48,6 +48,14 @@
     "codes": "label_cr"
   },
   {
+    "name": "Stadium Attack Label",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/labels/label_stadium_attack.png",
+    "codes": "label_sa"
+  },
+  {
     "name": "Crabby Beach Label",
     "type": "toggle",
     "initial_active_state": true,
@@ -96,6 +104,14 @@
     "codes": "label_hs"
   },
   {
+    "name": "Gladiator Attack Label",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/labels/label_gladiator_attack.png",
+    "codes": "label_ga"
+  },
+  {
     "name": "Sushi Temple Label",
     "type": "toggle",
     "initial_active_state": true,
@@ -141,7 +157,7 @@
     "initial_active_state": true,
     "allow_disabled": false,
     "img": "images/labels/label_tv_tower.png",
-    "codes": "label_tt"
+    "codes": "label_tvt"
   },
   {
     "name": "Monkey Madness Label",
@@ -294,6 +310,7 @@
     "img": "images/icons/coinOn.png",
     "codes": "coin_cr, coin_code"
   },
+  
   {
     "name": "CR Time Trial",
     "type": "toggle",
@@ -462,6 +479,16 @@
     "codes": "tt_hs"
   },
   {
+    "name": "GA Coins",
+    "type": "non-interactive",
+    "loop": "false",
+    "max_quantity": 5,
+	"min_quantity": 0,
+    "increment": 1,
+    "img": "images/icons/coinOn.png",
+    "codes": "coin_ga, coin_code"
+  },
+  {
     "name": "ST Monkeys",
     "type": "non-interactive",
     "loop": "false",
@@ -485,16 +512,6 @@
     "loop": "false",
     "img": "images/icons/coinOn.png",
     "codes": "tt_st"
-  },
-  {
-    "name": "GA Coins",
-    "type": "non-interactive",
-    "loop": "false",
-    "max_quantity": 5,
-	"min_quantity": 0,
-    "increment": 1,
-    "img": "images/icons/coinOn.png",
-    "codes": "coin_ga, coin_code"
   },
   {
     "name": "WSW Monkeys",
@@ -597,13 +614,13 @@
     "codes": "tt_sf"
   },
   {
-    "name": "TT Monkeys",
+    "name": "TVT Monkeys",
     "type": "non-interact",
     "loop": "false",
     "max_quantity": 12,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_tt, monkey_code"
+    "codes": "monkey_tvt, monkey_code"
   },
   {
     "name": "TT Coins",
@@ -612,14 +629,14 @@
     "max_quantity": 2,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_tt, coin_code"
+    "codes": "coin_tvt, coin_code"
   },
   {
     "name": "TT Time Trial",
     "type": "toggle",
     "loop": "false",
     "img": "images/icons/coinOn.png",
-    "codes": "tt_tt"
+    "codes": "tt_tvt"
   },
   {
     "name": "MM Monkeys",
@@ -651,7 +668,7 @@
     "type": "toggle",
     "loop": "false",
     "img": "images/icons/base_key.png",
-    "initial_active_state": true,
+    //"initial_active_state": true,
     "codes": "ff_key"
   },
   {
@@ -659,7 +676,7 @@
     "type": "toggle",
     "loop": "false",
     "img": "images/icons/base_key.png",
-    "initial_active_state": true,
+    //"initial_active_state": true,
     "codes": "po_key"
   },
   {
@@ -667,7 +684,7 @@
     "type": "toggle",
     "loop": "false",
     "img": "images/icons/base_key.png",
-    "initial_active_state": true,
+    //"initial_active_state": true,
     "codes": "ml_key"
   },
   {
@@ -697,6 +714,13 @@
     "loop": "false",
     "img": "images/icons/base_key.png",
     "codes": "cb_key"
+  },
+  {
+    "name": "Stadium Attack World Key",
+    "type": "toggle",
+    "loop": "false",
+    "img": "images/icons/base_key.png",
+    "codes": "sa_key"
   },
   {
     "name": "Coral Cave World Key",
@@ -732,6 +756,13 @@
     "loop": "false",
     "img": "images/icons/base_key.png",
     "codes": "hs_key"
+  },
+  {
+    "name": "Gladiator Attack World Key",
+    "type": "toggle",
+    "loop": "false",
+    "img": "images/icons/base_key.png",
+    "codes": "ga_key"
   },
   {
     "name": "Sushi Temple World Key",

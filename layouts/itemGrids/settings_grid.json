@@ -26,6 +26,22 @@
             "item_size": 150,
             "margin": "0,-115,0,0"
           },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["op_keyoption"]
+            ],
+            "item_size": 150,
+            "margin": "0,-115,0,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["op_entrance"]
+            ],
+            "item_size": 150,
+            "margin": "0,-115,0,0"
+          },
           {
             "type": "itemgrid",
             "rows": [
@@ -50,7 +66,7 @@
             "item_size": 150,
             "margin": "0,-115,0,0"
           },
-          {
+		  {
             "type": "itemgrid",
             "rows": [
               ["op_waternet"]

@@ -130,5 +130,139 @@
         "inherit_codes": false
       }
     ]
-  }
+  },
+  {
+    "name": "Key Option",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "loop": false,
+    "stages": [
+      {
+        "name": "World",
+        "img": "images/settings/keyunlock_worlds.png",
+        "codes": "op_keyoption, op_ko_w",
+        "allow_disabled": false
+      },
+      {
+        "name": "World and Races",
+        "img": "images/settings/keyunlock_worlds_races.png",
+        "codes": "op_keyoption, op_ko_wr",
+        "inherit_codes": false
+      },
+	  {
+        "name": "Levels",
+        "img": "images/settings/keyunlock_levels.png",
+        "codes": "op_keyoption, op_ko_l",
+        "inherit_codes": false
+      },
+	  {
+        "name": "Levels and Races",
+        "img": "images/settings/keyunlock_levels_races.png",
+        "codes": "op_keyoption, op_ko_lr",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Entrances Shuffle",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "loop": false,
+    "stages": [
+      {
+        "name": "None",
+        "img": "images/settings/entrance_none.png",
+        "codes": "op_entrance, op_es_n",
+        "allow_disabled": false
+      },
+	  {
+        "name": "Eras",
+        "img": "images/settings/entrance_eras.png",
+        "codes": "op_entrance, op_es_w",
+        "allow_disabled": false
+      },
+      {
+        "name": "Eras and Races",
+        "img": "images/settings/entrance_eras_races.png",
+        "codes": "op_entrance, op_es_wr",
+        "inherit_codes": false
+      },
+	  {
+        "name": "Levels",
+        "img": "images/settings/entrance_levels.png",
+        "codes": "op_entrance, op_es_l",
+        "inherit_codes": false
+      },
+	  {
+        "name": "Levels and Races",
+        "img": "images/settings/entrance_levels_races.png",
+        "codes": "op_entrance, op_es_lr",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+        "name": "Clear All Entrances",
+        "type": "progressive",
+        "codes": "__er_clear",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "loop": true,
+        "stages": [
+            {
+                "img": "images/er/er_clear.png",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/er/er_clear.png",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Reset All Entrances to Default",
+        "type": "progressive",
+        "codes": "__er_reset_all",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "loop": true,
+        "stages": [
+            {
+                "img": "images/er/er_reset_all.png",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/er/er_reset_all.png",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Auto-set Entrances",
+        "type": "static",
+        "codes": "__setting_auto_ent_txt",
+        "img": "images/settings/autoset_entrances.png"
+    },
+    {
+        "name": "Auto-set Entrances",
+        "type": "progressive",
+        "codes": "__setting_auto_ent",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "loop": true,
+        "stages": [
+            {
+                "name": "Auto-set Entrances - Disabled",
+                "img": "images/settings/no.png",
+                "inherit_codes": false
+            },
+            {
+                "name": "Auto-set Entrances - Enabled",
+                "img": "images/settings/yes.png",
+                "inherit_codes": false
+            }
+        ]
+    },
 ]

@@ -318,11 +318,11 @@ function FuturamaAccess()
 end
 
 function stadiumAttack()
-	return (Tracker:ProviderCountForCode("keyWorld") >= 2)
+	return Tracker:FindObjectForCode("sa_key").Active
 end
 
 function gladiatorAttack()
-	return (Tracker:ProviderCountForCode("keyWorld") >= 4)
+	return Tracker:FindObjectForCode("ga_key").Active
 end
 function PPMAccess()
 	return (Tracker:ProviderCountForCode("tot_ape") == 204)
@@ -332,12 +332,13 @@ function location_check(section)
 	local SectionID = section.FullID
 	Code = locationToCode[SectionID]
 	isActive = Tracker:FindObjectForCode("@"..SectionID).AvailableChestCount == 1
-		print(Code)
+		
+		--print(Code)
 		if (Code) ~= nil then
 		MinCount = Tracker:FindObjectForCode(Code).MinCount
 		MaxCount = Tracker:FindObjectForCode(Code).MaxCount
-		print (MinCount)
-		print (MaxCount)
+		--print (MinCount)
+		--print (MaxCount)
 			if isActive == false then
 			    if (string.find(string.upper(Code), "SPECTER")) then
 			        Tracker:FindObjectForCode(Code).Active = true

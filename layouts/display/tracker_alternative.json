@@ -11,7 +11,7 @@
 						"type": "array",
 						"h_alignment": "stretch",
 						"v_alignment": "stretch",
-						//"dock": "top",
+						"dock": "top",
 						"content": [
 							{
 								"type": "tabbed",
@@ -83,8 +83,8 @@
 										"title": "Specter Land",
 										"content": {
 											"type": "map",
-											"maps": ["Specter_Land"]
-										}
+											"maps": ["Specter_Land",]
+										},
 									},
 									{
 										"title": "Peak Point Matrix",
@@ -127,25 +127,9 @@
 										}
 									},
 									{
-										"type": "group",
-										"header": "Totals",
-										"dock":"left",
-										"content": {
-											"type": "array",
-											"orientation": "vertical",
-											"margin": "0,-15",
-											"content": [
-												{
-													"type": "layout",
-													"key": "totals_grid"
-												}
-											]
-										}
-									},
-									{
 											"type": "group",
 											"header":"Specters",
-											"orientation": "vertical",
+											"orientation": "horizontal",
 											"margin": "0,0",
 											"content": [
 											  {
@@ -198,9 +182,25 @@
 														}
 													},
 													{
-														"title": "Entrances (WIP)",
+														"title": "Entrances",
 														"content": {
-
+															"type": "array",
+															"orientation": "horizontal",
+															"margin": "0,0",
+															"content": [
+																{
+																	"type": "layout",
+																	"key": "entrance_grid_1"
+																},
+																{
+																	"type": "layout",
+																	"key": "entrance_grid_2"
+																},
+																{
+																	"type": "layout",
+																	"key": "entrance_grid_3"
+																}
+															]
 														}
 													}
 												]
@@ -219,7 +219,8 @@
 						"content": [
 							{
 								"type": "group",
-								"header": "Items",
+								// Very long string to place "Totals" at the right spot ----->
+								"header": "Items                                                                                                                                                                                       Totals",
 								"content": {
 									"type": "array",
 									"orientation": "horizontal",

@@ -13,7 +13,7 @@
           			"content": [
             			{
               				"type": "group",
-              				"header": "Items",
+              				"header": "Items            Totals",
 							"content": [
 								{
 									"type": "array",
@@ -33,30 +33,6 @@
 									"content": [
 									  {
 											"type": "group",
-											"header":"Totals",
-											"orientation": "horizontal",
-											"margin": "0,100",
-											"content": [
-											  {
-												"type": "itemgrid",
-												"rows": [
-												  ["tot_ape"]
-												],
-												"item_size": 38,
-												"margin": "0,0,0,0"
-											  },
-											  {
-												"type": "itemgrid",
-												"rows": [
-												  ["tot_coin"]
-												],
-												"item_size": 45,
-												"margin": "-5,0,0,0"
-											  }
-											]
-									  },
-									  {
-											"type": "group",
 											"header":"Specters",
 											"orientation": "horizontal",
 											"margin": "0,100",
@@ -64,15 +40,7 @@
 											  {
 												"type": "itemgrid",
 												"rows": [
-												  ["Specter_1"]
-												],
-												"item_size": 38,
-												"margin": "0,0,0,0"
-											  },
-											  {
-												"type": "itemgrid",
-												"rows": [
-												  ["Specter_2"]
+												  ["Specter_1","Specter_2"]
 												],
 												"item_size": 38,
 												"margin": "0,0,0,0"
@@ -106,9 +74,21 @@
 									}
 								},
 								{
-									"title": "Entrances (WIP)",
+									"title": "Entrances",
 									"content": {
-
+										"type": "array",
+										"orientation": "horizontal",
+										"margin": "0,0",
+										"content": [
+											{
+												"type": "layout",
+												"key": "entrance_grid_left"
+											},
+											{
+												"type": "layout",
+												"key": "entrance_grid_right"
+											}
+										]
 									}
 								}
 							]
