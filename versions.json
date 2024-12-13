@@ -5,8 +5,8 @@
                 "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.1/Ape-Escape-Tracker-0.4.1.zip",
                 "sha256": "80BC680B01475FA9FC3C21E83C2CAF126B04DB9FFD745944E3DE11EEB1174EC6",
                 "changelog": [
-                         "Fixed Coral Cave Puddles not having SuperFlyer logic",
-                        "Added an option to load ER locations only if you have enough key (See \"Pack Settings\")",
+                        "Fixed Coral Cave Puddles not having SuperFlyer logic",
+                        "Added an option to load ER locations only if you have enough key",
                         "Added \"Load from AP\" option from ER menu to reload Entrances from AP slot_data",
                         "Changed AP connection setting default value to \"If Logically accessible\""
                 ]
