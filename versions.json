@@ -1,6 +1,15 @@
 {
     "versions": [
         {
+                "package_version": "0.4.1",
+                "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.1/Ape-Escape-Tracker-0.4.1.zip",
+                "sha256": "80BC680B01475FA9FC3C21E83C2CAF126B04DB9FFD745944E3DE11EEB1174EC6",
+                "changelog": [
+                     "Added the \"Load from AP\" option in ER menu",
+                     "Added an option to load ER locations only if you have enough key (See \"Pack Settings\")"
+                ]
+        },
+        {
                 "package_version": "0.4.0",
                 "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.0/Ape-Escape-Tracker-0.4.0.zip",
                 "sha256": "22E0EA9254073B8E929DCCCC8D8A8916464E0AE43A59CB6988FD9E692B16688C",
