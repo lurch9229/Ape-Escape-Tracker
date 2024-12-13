@@ -8,7 +8,7 @@
                          "Fixed Coral Cave Puddles not having SuperFlyer logic",
                         "Added an option to load ER locations only if you have enough key (See \"Pack Settings\")",
                         "Added \"Load from AP\" option from ER menu to reload Entrances from AP slot_data",
-                        "Changed AP connection setting default value to \"If Logically accessible\"",
+                        "Changed AP connection setting default value to \"If Logically accessible\""
                 ]
         },
         {
