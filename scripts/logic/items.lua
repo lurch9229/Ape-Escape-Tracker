@@ -70,24 +70,31 @@ local function has_value (tab, val)
     return false
 end
 
+local function find_index (tab, val)
+    for index, value in ipairs(tab) do
+        if value == val then
+            return index
+        end
+    end
+
+    return -1
+end
+
 function getReqKeys()
 	local KeyOption = Tracker:FindObjectForCode("op_keyoption").CurrentStage
 	requiredKeys = {}
 	if KeyOption == 0 then
         reqkeys = {0, 0, 0, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 6, 6}
-		Tracker:FindObjectForCode("Keyworld").MaxCount = 6
+		--Tracker:FindObjectForCode("Keyworld").MaxCount = 6
     elseif KeyOption == 1 then
         reqkeys = {0, 0, 0, 1, 1, 1, 2, 3, 3, 3, 4, 4, 4, 5, 6, 6, 6, 7, 7, 7, 8, 8}
-		Tracker:FindObjectForCode("Keyworld").MaxCount = 8
-
+		--Tracker:FindObjectForCode("Keyworld").MaxCount = 8
     elseif KeyOption == 2 then
         reqkeys = {0, 0, 0, 1, 2, 3, 4, 4, 5, 6, 7, 8, 9, 10, 10, 11, 12, 13, 14, 15, 16, 16}
-		Tracker:FindObjectForCode("Keyworld").MaxCount = 16
-
+		--Tracker:FindObjectForCode("Keyworld").MaxCount = 16
     elseif KeyOption == 3 then
         reqkeys = {0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 18}
-		Tracker:FindObjectForCode("Keyworld").MaxCount = 18
-
+		--Tracker:FindObjectForCode("Keyworld").MaxCount = 18
 	end
 	
 	for index = 1, 21 do
@@ -104,47 +111,50 @@ function getLvlOrder()
 	lvl_order = {}
 	for index = 1, 21 do
 		value = Tracker:FindObjectForCode("__er_"..lvl_list[index].."_dst").CurrentStage
-		if LevelRando > 0 then
-			table.insert(lvl_order,index,value)
-		else
-			table.insert(lvl_order,index,index)
+		if value == 0 then
+			value = index
 		end
+		table.insert(lvl_order,index,value)
     end
-	print(dump_table(lvl_order))
+	--print(dump_table(lvl_order))
 	return lvl_order
 end
 
-function switchKey()
-	for index = 1, 21 do
-		Tracker:FindObjectForCode(lvl_list[index].."_key").Active = false
-    end
+function switchKey(label)
+
+	-- Get lvl name of clicked label
+	levelclicked = string.sub(label,6,-5)
+	index = find_index(lvl_list,levelclicked)
+	-- Before refreshing lvl_order,go see what level was there and deactivate the key
+	disableKeyID = lvl_order[index]
+	disableKeyLevel = lvl_list[disableKeyID]
+	Tracker:FindObjectForCode(disableKeyLevel.."_key").Active = false
+	
+	--Then do the world unlocks to reactivate the right keys depending on the new level_order
 	worldUnlocks()
 end
 
 function worldUnlocks()
-	
-	--Normal unlocks,non-shuffle
 	
 	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "cca", "cp", "sf", "tvt", "mm"}
 	getLvlOrder()
 	getReqKeys()
 	worldkeys = Tracker:ProviderCountForCode("keyWorld")
 	LevelRando = Tracker:FindObjectForCode("op_entrance").CurrentStage
+	Auto_ER = Tracker:FindObjectForCode("__setting_auto_ent").CurrentStage
 	already_checked = {}
 	for index = 1, 21 do
 		value = Tracker:FindObjectForCode("__er_"..lvl_list[index].."_dst").CurrentStage
 		
-		if value == 0 or LevelRando == 0 then
+		if value == 0 then
 			value = index
 		end
 		level_reqKeys = requiredKeys[index]
 		if not has_value(already_checked, value) then
 			if worldkeys >= level_reqKeys then
-				print("Activate: "..lvl_list[value].."_key")
 				Tracker:FindObjectForCode(lvl_list[value].."_key").Active = true
 				table.insert(already_checked,value)
 			elseif worldkeys < level_reqKeys then
-				print("Deactivate: "..lvl_list[value].."_key")
 				Tracker:FindObjectForCode(lvl_list[value].."_key").Active = false
 			end
 		end
@@ -165,43 +175,47 @@ function resetER()
     end
 end
 
-function setER()
+function setER(source)	
 	Auto_ER = Tracker:FindObjectForCode("__setting_auto_ent").CurrentStage
-	if Auto_ER == 1 then
-		-- set entrances mapping
-		lvl_list = { "ff","po","ml","tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "cca", "cp", "sf", "tvt", "mm","ppm"}
-		lvl_order = SLOT_DATA['entranceids']
-		true_lvl_order = {}
-		for k, v in pairs(lvl_order) do
-			if v then
-				index_lvl = k
-				stage_value = levelsIdsToIndex[v]
-				table.insert(true_lvl_order,k,stage_value)
-				print(string.format("ER entrance %s | %s | %s", index_lvl,stage_value,lvl_list[index_lvl]))
-				Tracker:FindObjectForCode("__er_"..lvl_list[index_lvl].."_dst").CurrentStage = stage_value
+	reqKeys = getReqKeys()
+	worldkeys = Tracker:ProviderCountForCode("keyWorld")
+	if SLOT_DATA ~= nil then
+	
+		if Auto_ER == 1 then
+			-- set entrances mapping respecting logic
+			lvl_list = { "ff","po","ml","tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "cca", "cp", "sf", "tvt", "mm","ppm"}
+			lvl_order = SLOT_DATA['entranceids']
+			true_lvl_order = {}
+			for k, v in pairs(lvl_order) do
+				if v then
+					index_lvl = k
+					stage_value = levelsIdsToIndex[v]
+					table.insert(true_lvl_order,k,stage_value)
+					
+					--print(string.format("ER entrance %s | %s | %s", index_lvl,stage_value,lvl_list[index_lvl]))
+					if worldkeys >= reqKeys[index_lvl] then
+						Tracker:FindObjectForCode("__er_"..lvl_list[index_lvl].."_dst").CurrentStage = stage_value
+					else
+						Tracker:FindObjectForCode("__er_"..lvl_list[index_lvl].."_dst").CurrentStage = 0
+					end
+				end
+			end
+		elseif Auto_ER == 2 then
+			-- set entrances mapping despite not knowing logic
+			lvl_list = { "ff","po","ml","tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "cca", "cp", "sf", "tvt", "mm","ppm"}
+			lvl_order = SLOT_DATA['entranceids']
+			true_lvl_order = {}
+			for k, v in pairs(lvl_order) do
+				if v then
+					index_lvl = k
+					stage_value = levelsIdsToIndex[v]
+					table.insert(true_lvl_order,k,stage_value)
+					--print(string.format("ER entrance %s | %s | %s", index_lvl,stage_value,lvl_list[index_lvl]))
+					Tracker:FindObjectForCode("__er_"..lvl_list[index_lvl].."_dst").CurrentStage = stage_value
+				end
 			end
 		end
 	end
-end
-
-function waternet()
-
-	OP_WaterNet_Stage = Tracker:FindObjectForCode("op_waternet").CurrentStage
-	WaterNet_Stage = Tracker:FindObjectForCode("waternet").CurrentStage
-	print(WaterNet_Stage)
-	--WaterNetShuffle is off
-	if OP_WaterNet_Stage == 0 then
-		--Do not allow going past stage 1 fo the item
-		if WaterNet_Stage > 1 then
-			WaterNet_Stage = 1
-		end
-	else
-		if WaterNet_Stage < 2 then
-			WaterNet_Stage = 0
-		end
-	end
-
-	Tracker:FindObjectForCode("waternet").CurrentStage = WaterNet_Stage
 end
 
 function apLayoutChange()
@@ -220,11 +234,14 @@ end
 
 ScriptHost:AddWatchForCode("useApLayout", "op_waternet", apLayoutChange)
 ScriptHost:AddWatchForCode("worldkey handler", "keyWorld", worldUnlocks)
-ScriptHost:AddWatchForCode("er_label handler", "__er_label", switchKey)
-ScriptHost:AddWatchForCode("er_entrance switch", "op_entrance", switchKey)
+lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "cca", "cp", "sf", "tvt", "mm"}
+for index = 1, 21 do
+	ScriptHost:AddWatchForCode("er_label handler_"..lvl_list[index], "__er_"..lvl_list[index].."_dst", switchKey)
+end
 
+ScriptHost:AddWatchForCode("op_entrance switch", "op_entrance", worldUnlocks)
+ScriptHost:AddWatchForCode("op_keys switch", "op_keyoption", worldUnlocks)
 
-ScriptHost:AddWatchForCode("Clear ER entrances", "__er_clear", clearER)
-ScriptHost:AddWatchForCode("Reset ER entrances", "__er_reset_all", resetER)
---ScriptHost:AddWatchForCode("water net handler2", "water", waternet)
---ScriptHost:AddWatchForCode("water net handler", "op_waternet", waternet)
+ScriptHost:AddWatchForCode("Clear entrances (ER)", "__er_clear", clearER)
+ScriptHost:AddWatchForCode("Reset entrances (ER)", "__er_reset_all", resetER)
+ScriptHost:AddWatchForCode("Load from AP (ER)", "__er_load_ap", setER)

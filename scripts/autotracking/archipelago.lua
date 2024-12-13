@@ -131,8 +131,6 @@ function onClear(slot_data)
 	elseif slot_data['entrance'] == 4 then
         Tracker:FindObjectForCode("op_entrance").CurrentStage = 4
     end
-
-	setER()
 	
 end
 
@@ -199,6 +197,8 @@ function onItem(index, item_id, item_name, player_number)
     if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
         -- add snes interface functions here for local item tracking
     end
+	
+	setER()
 end
 
 --called when a location gets cleared

@@ -67,7 +67,9 @@
                         [
                             "net, $CanDive",
                             "net, hoop, flyer, op_no_ij",
+							"net, $Superflyer, op_no_ij",
                             "net, hoop, flyer, op_et",
+                            "net, $Superflyer, op_et",
                             "net, sling, op_et"
                         ],
                         "item_count": 1

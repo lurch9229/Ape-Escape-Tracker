@@ -250,12 +250,17 @@
         "type": "progressive",
         "codes": "__setting_auto_ent",
         "allow_disabled": false,
-        "initial_stage_idx": 0,
+        "initial_stage_idx": 1,
         "loop": true,
         "stages": [
             {
                 "name": "Auto-set Entrances - Disabled",
                 "img": "images/settings/no.png",
+                "inherit_codes": false
+            },
+            {
+                "name": "Auto-set Entrances - Disabled",
+                "img": "images/settings/logical_access.png",
                 "inherit_codes": false
             },
             {
@@ -265,4 +270,22 @@
             }
         ]
     },
+    {
+        "name": "Load entrances from AP",
+        "type": "progressive",
+        "codes": "__er_load_ap",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "loop": true,
+        "stages": [
+            {
+                "img": "images/er/er_load_ap.png",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/er/er_load_ap.png",
+                "inherit_codes": false
+            }
+        ]
+    }
 ]
