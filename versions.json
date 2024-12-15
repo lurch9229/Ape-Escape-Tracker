@@ -3,7 +3,7 @@
         {
                 "package_version": "0.4.2",
                 "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.2/Ape-Escape-Tracker-0.4.2.zip",
-                "sha256": "F66B5C59B8443FD7BB7FD81D2B9CD9D7A05B6B1A958C146DC6859035BCDBE0A1",
+                "sha256": "A68C310102BD32AC06C2944F3C8AB91F377CDF59ED79840F181A7F6509ADC4FB",
                 "changelog": [
                          "Fixed \"Load from AP\" setting keys wrongly",
                 ]
