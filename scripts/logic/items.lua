@@ -134,6 +134,14 @@ function switchKey(label)
 	worldUnlocks()
 end
 
+function resetworldUnlocks()
+	
+	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "cca", "cp", "sf", "tvt", "mm"}
+	for index = 1, 21 do
+		Tracker:FindObjectForCode(lvl_list[index].."_key").Active = false
+    end
+end
+
 function worldUnlocks()
 	
 	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "cca", "cp", "sf", "tvt", "mm"}
@@ -154,7 +162,7 @@ function worldUnlocks()
 			if worldkeys >= level_reqKeys then
 				Tracker:FindObjectForCode(lvl_list[value].."_key").Active = true
 				table.insert(already_checked,value)
-			elseif worldkeys < level_reqKeys then
+			else
 				Tracker:FindObjectForCode(lvl_list[value].."_key").Active = false
 			end
 		end
@@ -179,6 +187,7 @@ function setER(source)
 	Auto_ER = Tracker:FindObjectForCode("__setting_auto_ent").CurrentStage
 	reqKeys = getReqKeys()
 	worldkeys = Tracker:ProviderCountForCode("keyWorld")
+	resetworldUnlocks()
 	if SLOT_DATA ~= nil then
 	
 		if Auto_ER == 1 then
@@ -216,6 +225,7 @@ function setER(source)
 			end
 		end
 	end
+	worldUnlocks()
 end
 
 function apLayoutChange()
