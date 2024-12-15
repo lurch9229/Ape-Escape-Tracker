@@ -153,17 +153,22 @@ function worldUnlocks()
 	already_checked = {}
 	for index = 1, 21 do
 		value = Tracker:FindObjectForCode("__er_"..lvl_list[index].."_dst").CurrentStage
-		
-		if value == 0 then
-			value = index
+		if LevelRando == 0 then
+			if value == 0 then
+				value = index
+			end
 		end
-		level_reqKeys = requiredKeys[index]
-		if not has_value(already_checked, value) then
-			if worldkeys >= level_reqKeys then
-				Tracker:FindObjectForCode(lvl_list[value].."_key").Active = true
-				table.insert(already_checked,value)
-			else
-				Tracker:FindObjectForCode(lvl_list[value].."_key").Active = false
+		if value ~= 0 then
+			level_reqKeys = requiredKeys[index]
+			if has_value(already_checked, value) == false then
+				if worldkeys >= level_reqKeys then
+					print("activate"..lvl_list[value].."_key")
+					Tracker:FindObjectForCode(lvl_list[value].."_key").Active = true
+					table.insert(already_checked,value)
+				elseif worldkeys < level_reqKeys then
+					print("--deactivate"..lvl_list[value].."_key")
+					Tracker:FindObjectForCode(lvl_list[value].."_key").Active = false
+				end
 			end
 		end
     end
@@ -183,11 +188,17 @@ function resetER()
     end
 end
 
+function loadAP()
+	resetworldUnlocks()
+	setER()
+end
+
 function setER(source)	
 	Auto_ER = Tracker:FindObjectForCode("__setting_auto_ent").CurrentStage
 	reqKeys = getReqKeys()
 	worldkeys = Tracker:ProviderCountForCode("keyWorld")
 	resetworldUnlocks()
+	
 	if SLOT_DATA ~= nil then
 	
 		if Auto_ER == 1 then
@@ -201,7 +212,7 @@ function setER(source)
 					stage_value = levelsIdsToIndex[v]
 					table.insert(true_lvl_order,k,stage_value)
 					
-					--print(string.format("ER entrance %s | %s | %s", index_lvl,stage_value,lvl_list[index_lvl]))
+					print(string.format("ER entrance %s | %s | %s", index_lvl,stage_value,lvl_list[index_lvl]))
 					if worldkeys >= reqKeys[index_lvl] then
 						Tracker:FindObjectForCode("__er_"..lvl_list[index_lvl].."_dst").CurrentStage = stage_value
 					else

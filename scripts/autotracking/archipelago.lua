@@ -200,7 +200,6 @@ function onItem(index, item_id, item_name, player_number)
     end
 	
 	setER()
-	resetworldUnlocks()
 end
 
 --called when a location gets cleared
@@ -225,6 +224,8 @@ function onLocation(location_id, location_name)
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("onLocation: could not find object for code %s", v[1]))
     end
+	
+	setER()
 end
 
 -- called when a locations is scouted
