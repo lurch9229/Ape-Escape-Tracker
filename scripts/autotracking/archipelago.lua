@@ -132,7 +132,7 @@ function onClear(slot_data)
         Tracker:FindObjectForCode("op_entrance").CurrentStage = 4
     end
 	
-	setER()
+	loadAP()
 end
 
 
@@ -200,6 +200,7 @@ function onItem(index, item_id, item_name, player_number)
     end
 	
 	setER()
+	worldUnlocks()
 end
 
 --called when a location gets cleared
@@ -226,6 +227,7 @@ function onLocation(location_id, location_name)
     end
 	
 	setER()
+	worldUnlocks()
 end
 
 -- called when a locations is scouted

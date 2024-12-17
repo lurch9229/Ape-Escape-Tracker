@@ -197,7 +197,6 @@ function setER(source)
 	Auto_ER = Tracker:FindObjectForCode("__setting_auto_ent").CurrentStage
 	reqKeys = getReqKeys()
 	worldkeys = Tracker:ProviderCountForCode("keyWorld")
-	resetworldUnlocks()
 	
 	if SLOT_DATA ~= nil then
 	
@@ -236,7 +235,6 @@ function setER(source)
 			end
 		end
 	end
-	worldUnlocks()
 end
 
 function apLayoutChange()
@@ -265,4 +263,4 @@ ScriptHost:AddWatchForCode("op_keys switch", "op_keyoption", worldUnlocks)
 
 ScriptHost:AddWatchForCode("Clear entrances (ER)", "__er_clear", clearER)
 ScriptHost:AddWatchForCode("Reset entrances (ER)", "__er_reset_all", resetER)
-ScriptHost:AddWatchForCode("Load from AP (ER)", "__er_load_ap", setER)
+ScriptHost:AddWatchForCode("Load from AP (ER)", "__er_load_ap", loadAP)
