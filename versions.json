@@ -1,5 +1,14 @@
 {
     "versions": [
+        
+        {
+                "package_version": "0.4.3",
+                "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.3/Ape-Escape-Tracker-0.4.3.zip",
+                "sha256": "B5310DBCD3E21FB54579E16A81111A555198B456BAD8F6870205A40F093A72B0",
+                "changelog": [
+                         "Hopefully fixed the ER \"Load from AP\" option for the final time"
+                ]
+        },
         {
                 "package_version": "0.4.2",
                 "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.2/Ape-Escape-Tracker-0.4.2.zip",
