@@ -27,14 +27,15 @@ function Flyer()
 end
 
 function Swim()
-    return has ("water") or has ("swim") or has ("dive")
+	return (has ("op_wn_off") and has ("water")) or (has ("op_wn_on") and (has ("swim") or has ("dive")))
 end
+
 function Dive()
-    return has ("dive")
+    return (has ("op_wn_off") and has ("water")) or (has ("op_wn_on") and has ("dive"))
 end
 
 function WaterCatch()
-    return has ("watercatch")
+    return (has ("op_wn_off") and has ("water")) or (has ("op_wn_on") and has ("watercatch"))
 end
 
 function Radar()
@@ -121,7 +122,7 @@ function getLvlOrder()
 end
 
 function switchKey(label)
-
+	getLvlOrder()
 	-- Get lvl name of clicked label
 	levelclicked = string.sub(label,6,-5)
 	index = find_index(lvl_list,levelclicked)

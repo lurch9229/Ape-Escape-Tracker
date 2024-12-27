@@ -121,8 +121,8 @@ function DI_Boulders()
 end
 
 function WSW_ThirdRoom()
-    return
-    (Net() and Sling()) or Flyer()
+    return 
+	(Net() and Sling()) or Flyer()
     or
     (op_no_ij() and ((Net() and (Sling() or Hoop()))))
     or
@@ -130,8 +130,8 @@ function WSW_ThirdRoom()
 end
 
 function WSW_FourthRoom()
-    return
-    CanHitMultiple() or Flyer()
+    return 
+	CanHitMultiple() or Flyer()
     or
     op_no_ij()
     or
@@ -148,7 +148,7 @@ end
 
 function CC_WaterRoom()
     return 
-    (CanHitMultiple() and Net()) or (CanSwim() and Punch())
+	(CanHitMultiple() and Net()) or (CanSwim() and Punch())
     or
     (op_no_ij() and ((CanSwim() and Flyer()) or (Hoop() and Flyer()) or SuperFlyer()))
     or
