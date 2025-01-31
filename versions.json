@@ -1,14 +1,6 @@
 {
     "versions": [
-        {
-                "package_version": "0.4.4",
-                "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.4/Ape-Escape-Tracker-0.4.4.zip",
-                "sha256": "9737A0D25BA38E75067FAE1EECAC1CC1A5D739BC4095588097E9B20B39F0E1AE",
-                "changelog": [
-                         "Fixed the rules for CanSwim, CanDive and CanWaterCatch not taking Water Net Shuffle options into account",
-                         "Fixed a bug with ER randomization that did not display the unlocked worlds correctly (Finally!)"
-                ]
-        },
+        
         {
                 "package_version": "0.4.3",
                 "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.3/Ape-Escape-Tracker-0.4.3.zip",

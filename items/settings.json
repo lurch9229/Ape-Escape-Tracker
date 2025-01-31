@@ -124,6 +124,12 @@
         "allow_disabled": false
       },
       {
+        "name": "Shuffle Water Net Progressive",
+        "img": "images/settings/shufflewaternet_prog.png",
+        "codes": "op_waternet, op_wn_prog",
+        "inherit_codes": false
+      },
+      {
         "name": "Shuffle Water Net On",
         "img": "images/settings/shufflewaternet_on.png",
         "codes": "op_waternet, op_wn_on",

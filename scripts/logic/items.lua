@@ -242,12 +242,12 @@ function apLayoutChange()
   local waternet = Tracker:FindObjectForCode("op_waternet")
   if (string.find(Tracker.ActiveVariantUID, "map_tracker")) or
   (string.find(Tracker.ActiveVariantUID, "map_tracker_alternative")) then
-    if waternet.CurrentStage == 1 then
-	    print("WaterNet")
-        Tracker:AddLayouts("layouts/itemGrids/item_grids_waternet.json")
-    else
-		print("No water net")
+    if waternet.CurrentStage == 0 or waternet.CurrentStage == 2 then
+	    print("Option : off")
 		Tracker:AddLayouts("layouts/itemGrids/item_grids_standard.json")
+	elseif waternet.CurrentStage == 1 then
+		print("Option : progressive")
+        Tracker:AddLayouts("layouts/itemGrids/item_grids_waternet.json")
 	end
   end
 end
