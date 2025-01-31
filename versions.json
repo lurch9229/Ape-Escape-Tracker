@@ -2,6 +2,15 @@
     "versions": [
         
         {
+                "package_version": "0.4.5",
+                "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.5/Ape-Escape-Tracker-0.4.5.zip",
+                "sha256": "2CC7AB784D096060C66ECB95A5DCD0A8E8889D91D151BC1DC14E2BA768356282",
+                "changelog": [
+                         "Changed Shuffle Water Net Option to reflect changes in APWorld 0.6.4 (off, progressive, on)",
+                        "Fixed Coral Cave Super Flyer rule error in syntax, causing it to not register correctly"
+                ]
+        },
+        {
                 "package_version": "0.4.3",
                 "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.3/Ape-Escape-Tracker-0.4.3.zip",
                 "sha256": "B5310DBCD3E21FB54579E16A81111A555198B456BAD8F6870205A40F093A72B0",
