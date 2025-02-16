@@ -132,6 +132,32 @@ function onClear(slot_data)
         Tracker:FindObjectForCode("op_entrance").CurrentStage = 4
     end
 	
+	Tracker:FindObjectForCode("ap_connected").Active = true
+	--Special code handling for previous versions,remove after the dev version is up
+	--==============================================================================
+	if slot_data["lamp"] == nil and Tracker:FindObjectForCode("ap_connected").Active == true then
+		Tracker:FindObjectForCode("mm_lobby_doubledoor").Active = true
+		Tracker:FindObjectForCode("mm_lobby_doubledoor").Icon = ""
+		Tracker:FindObjectForCode("op_lamps_off").Icon = ""
+		Tracker:FindObjectForCode("op_lamps_on").Icon = ""
+		ScriptHost:RemoveWatchForCode("useApLayout2")
+	else
+		Tracker:FindObjectForCode("mm_lobby_doubledoor").Active = false
+		Tracker:FindObjectForCode("mm_lobby_doubledoor").Icon = "images/items/MM_door_unlock.png"
+		Tracker:FindObjectForCode("op_lamps_off").Icon = "images/settings/lamps_off.png"
+		Tracker:FindObjectForCode("op_lamps_on").Icon = "images/settings/lamps_on.png"
+		ScriptHost:AddWatchForCode("useApLayout2", "op_lamps", apLevelsLayoutChange)
+	end
+	--==============================================================================
+	
+	
+	
+	if slot_data['lamp'] == 0 or slot_data["lamp"] == nil then
+		Tracker:FindObjectForCode("op_lamps").CurrentStage = 0
+	else
+		Tracker:FindObjectForCode("op_lamps").CurrentStage = 1
+	end
+	
 	loadAP()
 end
 

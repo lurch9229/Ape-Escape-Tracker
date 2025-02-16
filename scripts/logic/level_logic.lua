@@ -139,16 +139,16 @@ function WSW_FourthRoom()
 end
 
 function CC_5Monkeys()
-    return Net() and (Club() or Flyer() or Punch())
+    return CRC_Lamp() and (Club() or Flyer() or Punch())
     or
-    (op_no_ij() and (Net() and (Hoop() or Sling())))
+    (op_no_ij() and (CRC_Lamp() and (Hoop() or Sling())))
     or
-    (op_et() and (Net() and (Hoop() or Sling())))
+    (op_et() and (CRC_Lamp() and (Hoop() or Sling())))
 end
 
 function CC_WaterRoom()
     return 
-	(CanHitMultiple() and Net()) or (CanSwim() and Punch())
+	(CanHitMultiple() and CRC_Lamp()) or (CanSwim() and Punch())
     or
     (op_no_ij() and ((CanSwim() and Flyer()) or (Hoop() and Flyer()) or SuperFlyer()))
     or
@@ -165,9 +165,9 @@ function CC_ButtonRoom()
 end
 
 function CP_FrontSewer()
-    return Net() and Car()
+    return CP_Lamp() and Car()
     or
-    (op_et() and Net() and Sling())
+    (op_et() and CP_Lamp() and Sling())
 end
 
 
@@ -191,11 +191,11 @@ function SF_CarRoom()
 end
 
 function SF_MechRoom()
-    return Net() and Club() and SF_CarRoom()
+    return SF_Lamp() and Club() and SF_CarRoom()
 	or
-	(op_no_ij() and ((Hoop() and Flyer()) or (Net() and ((Club() and (Sling() or Car())) or Punch())) or SuperFlyer()))
+	(op_no_ij() and ((Hoop() and Flyer()) or (SF_Lamp() and ((Club() and (Sling() or Car())) or Punch())) or SuperFlyer()))
 	or
-	(op_et() and (Sling() or (Hoop() and Flyer()) or (Net() and ((Club() and Car()) or Punch())) or SuperFlyer()))
+	(op_et() and (Sling() or (Hoop() and Flyer()) or (SF_Lamp() and ((Club() and Car()) or Punch())) or SuperFlyer()))
 end
 
 function TVT_HitButton()
@@ -207,7 +207,11 @@ function TVT_HitButton()
 end
 
 function TVT_TankRoom()
-    return TVT_HitButton() and Net()
+    return TVT_HitButton() and TVT_Lobby_Lamp()
+end
+
+function TVT_BossRoom()
+    return TVT_TankRoom() and TVT_Tank_Lamp()
 end
 
 function MM_Natalie()
@@ -223,7 +227,7 @@ function MM_Professor()
 end
 
 function Jake_Open()
-    return MM_Natalie() and MM_Professor()
+    return true
 end
 
 function MM_Jake()
@@ -233,15 +237,19 @@ function MM_Jake()
 end
 
 function MM_SHA()
-    return MM_Natalie() and MM_Professor() and MM_Jake()
+    return MM_Lobby_DoubleDoor()
 end
 
-function MM_UFODoor()
+function MM_UFOMonkeys()
     return MM_SHA() and Net() and Sling()
     or
     (op_no_ij() and (Club() or Punch()))
     or
     (op_et() and (Club() or Punch()))
+end
+
+function MM_UFODoor()
+    return MM_UFOMonkeys() and MM_Lamp()
 end
 -------------------------EDIT DOWN HERE TO CONTINUE---------------------
 

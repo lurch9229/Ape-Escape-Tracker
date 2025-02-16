@@ -4,7 +4,7 @@
         "color": "#FFFFFF",
         "children": [
             {
-                "name": "Frosty Retreat",
+                "name": "Frosty Retreat - Monkeys",
                 "map_locations": [
                     {
                         "map": "Frosty_Retreat",
@@ -15,8 +15,15 @@
                         "map": "New_Freezeland",
                         "x": 170,
                         "y": 180
-                    }
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 385,
+                        "y": 260
+                    },
                 ],
+				"chest_unopened_img": "images/icons/monkeyOn.png",
+                "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
                             "fr_key"
@@ -24,8 +31,7 @@
                 "sections": [
                     {
                         "name": "Storm",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -40,8 +46,7 @@
                     },
                     {
                         "name": "Qube",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -56,8 +61,7 @@
                     },
                     {
                         "name": "Ranix",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -93,8 +97,7 @@
                     },
                     {
                         "name": "Sharpe",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -109,8 +112,7 @@
                     },
                     {
                         "name": "Sticky",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -125,8 +127,7 @@
                     },
                     {
                         "name": "Droog",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -144,8 +145,7 @@
                     },
                     {
                         "name": "Gash",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -163,8 +163,7 @@
                     },
                     {
                         "name": "Kundra",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -179,8 +178,7 @@
                     },
                     {
                         "name": "Shadow",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -192,7 +190,33 @@
                             "net, op_et"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Frosty Retreat - Specter Coins",
+                "map_locations": [
+                    {
+                        "map": "Frosty_Retreat",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "New_Freezeland",
+                        "x": 200,
+                        "y": 180
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 415,
+                        "y": 260
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "fr_key"
+                        ],
+                "sections": [
                     {
                         "name": "Entry",
                         "chest_unopened_img": "images/icons/coinOn.png",
@@ -240,7 +264,33 @@
                             "op_et"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Frosty Retreat - Mailboxes",
+                "map_locations": [
+                    {
+                        "map": "Frosty_Retreat",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "New_Freezeland",
+                        "x": 230,
+                        "y": 180
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 445,
+                        "y": 260
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "fr_key"
+                        ],
+                "sections": [
                     {
                       "name": "Select Button Tutorial",
                       "chest_unopened_img": "images/icons/BlueMailboxOn.png",

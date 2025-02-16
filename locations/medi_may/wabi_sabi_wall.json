@@ -6,7 +6,7 @@
         "color": "#FFFFFF",
         "children": [
             {
-                "name": "Wabi Sabi Wall",
+                "name": "Wabi Sabi Wall - Monkeys",
                 "map_locations": [
                     {
                         "map": "Wabi_Sabi_Wall",
@@ -16,9 +16,16 @@
                     {
                         "map": "Medieval_Mayhem",
                         "x": 155,
-                        "y": 170
-                    }
+                        "y": 180
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 505,
+                        "y": 260
+                    },
                 ],
+				"chest_unopened_img": "images/icons/monkeyOn.png",
+                "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
                             "wsw_key"
@@ -27,8 +34,7 @@
                     {
                         "name": "Minky",
 
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -41,8 +47,7 @@
                     },
                     {
                         "name": "Zobbro",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -55,8 +60,7 @@
                     },
                     {
                         "name": "Xeeto",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -69,8 +73,7 @@
                     },
                     {
                         "name": "Moops",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -83,8 +86,7 @@
                     },
                     {
                         "name": "Zanabi",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -97,8 +99,7 @@
                     },
                     {
                         "name": "Doxs",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -111,8 +112,7 @@
                     },
                     {
                         "name": "Buddha",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -125,8 +125,7 @@
                     },
                     {
                         "name": "Fooey",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -139,8 +138,7 @@
                     },
                     {
                         "name": "Kong",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -155,8 +153,7 @@
                     },
                     {
                         "name": "Phool",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -169,7 +166,33 @@
                             "net, $WSW_ThirdRoom, $WSW_FourthRoom, hoop, op_et"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Wabi Sabi Wall - Specter Coins",
+                "map_locations": [
+                    {
+                        "map": "Wabi_Sabi_Wall",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Medieval_Mayhem",
+                        "x": 185,
+                        "y": 180
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 535,
+                        "y": 260
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "wsw_key"
+                        ],
+                "sections": [
                     {
                         "name": "First Room",
                         "chest_unopened_img": "images/icons/coinOn.png",
@@ -212,7 +235,33 @@
                             "sling, op_et"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Wabi Sabi Wall - Mailboxes",
+                "map_locations": [
+                    {
+                        "map": "Wabi_Sabi_Wall",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Medieval_Mayhem",
+                        "x": 215,
+                        "y": 180
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 565,
+                        "y": 260
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "wsw_key"
+                        ],
+                "sections": [
                     {
                       "name": "White Pants = Very Alert",
                       "chest_unopened_img": "images/icons/BlueMailboxOn.png",
@@ -259,8 +308,8 @@
                     },
                     {
                       "name": "Black Pants = Dangerous",
-                      "chest_unopened_img": "images/icons/RedMailboxOn.png",
-                      "chest_opened_img": "images/icons/RedMailboxOff.png",
+                      "chest_unopened_img": "images/icons/BlueMailboxOn.png",
+                      "chest_opened_img": "images/icons/BlueMailboxOff.png",
                       "visibility_rules":
                       [
                         "shuffleMailbox"

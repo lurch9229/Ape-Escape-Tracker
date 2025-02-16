@@ -4,7 +4,7 @@
         "color": "#FFFFFF",
         "children": [
             {
-                "name": "Molten Lava",
+                "name": "Molten Lava - Monkeys",
                 "map_locations": [
                     {
                         "map": "Molten_Lava",
@@ -15,8 +15,15 @@
                         "map": "Lost_Lands",
                         "x": 300,
                         "y": 140
-                    }
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 30,
+                        "y": 400
+                    },
                 ],
+				"chest_unopened_img": "images/icons/monkeyOn.png",
+                "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
                             "ml_key"
@@ -24,8 +31,7 @@
                 "sections": [
                     {
                         "name": "Scotty",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -38,8 +44,7 @@
                     },
                     {
                         "name": "Coco",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -52,8 +57,7 @@
                     },
                     {
                         "name": "J. Thomas",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -68,8 +72,7 @@
                     },
                     {
                         "name": "Moggan",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -82,8 +85,7 @@
                     },
                     {
                         "name": "Barney",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -96,8 +98,7 @@
                     },
                     {
                         "name": "Mattie",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -110,8 +111,7 @@
                     },
                     {
                         "name": "Rocky",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -124,7 +124,36 @@
 
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Molten Lava - Specter Coins",
+                "map_locations": [
+                    {
+                        "map": "Molten_Lava",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Lost_Lands",
+                        "x": 330,
+                        "y": 140
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 60,
+                        "y": 400
+                    },
+                ],
+				"visibility_rules": [
+                    "shuffleCoins"
+                ],
+                "access_rules": 
+                        [
+                            "ml_key"
+                        ],
+                "sections": [
                     {
                         "name": "Entry",
                         "chest_unopened_img": "images/icons/coinOn.png",
@@ -138,7 +167,36 @@
                             ""
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Molten Lava - Mailboxes",
+                "map_locations": [
+                    {
+                        "map": "Molten_Lava",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Lost_Lands",
+                        "x": 360,
+                        "y": 140
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 90,
+                        "y": 400
+                    },
+                ],
+				"visibility_rules": [
+                    "shuffleMailbox"
+                ],
+                "access_rules": 
+                        [
+                            "ml_key"
+                        ],
+                "sections": [
                     {
                       "name": "Surrounded by a Cliff",
                       "chest_unopened_img": "images/icons/RedMailboxOn.png",

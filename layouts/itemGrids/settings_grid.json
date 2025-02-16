@@ -45,7 +45,7 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["op_mailbox"]
+              ["op_coins"]
             ],
             "item_size": 150,
             "margin": "0,-115,0,0"
@@ -53,7 +53,7 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["op_coins"]
+              ["op_mailbox"]
             ],
             "item_size": 150,
             "margin": "0,-115,0,0"
@@ -70,6 +70,69 @@
             "type": "itemgrid",
             "rows": [
               ["op_waternet"]
+            ],
+            "item_size": 150,
+            "margin": "0,-115,0,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["op_lamps"]
+            ],
+            "item_size": 150,
+            "margin": "0,-115,0,0"
+          }
+        ]
+      }
+    ]
+  },
+  "settings_grid2": {
+    "type": "array",
+	"h_alignement": "center",
+    "orientation": "vertical",
+    "content":[
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0,0,-100",
+
+        "content": [
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["op_gl","op_coins","ap_connected"]
+            ],
+            "item_size": 150,
+            "margin": "0,10,0,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["goal","op_mailbox"]
+            ],
+            "item_size": 150,
+            "margin": "0,-115,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["op_keyoption","op_superflyer"]
+            ],
+            "item_size": 150,
+            "margin": "0,-115,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["op_entrance","op_waternet"]
+            ],
+            "item_size": 150,
+            "margin": "0,-115,0,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["op_lamps"]
             ],
             "item_size": 150,
             "margin": "0,-115,0,0"

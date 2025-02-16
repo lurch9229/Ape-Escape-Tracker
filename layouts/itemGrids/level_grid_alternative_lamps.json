@@ -1,7 +1,9 @@
 {
-  "level_grid_left": {
+  "level_grid_1": {
     "type": "array",
+	"margin": "20,0,0,0",
     "orientation": "vertical",
+    "h_alignment": "center",
     "content":[
       {
         "type": "array",
@@ -30,7 +32,7 @@
               ["ff_key"]
             ],
             "item_size": 46,
-            "margin": "5,3,0,0"
+            "margin": "7,3,0,0"
           }
         ]
       },
@@ -61,7 +63,7 @@
               ["po_key"]
             ],
             "item_size": 46,
-            "margin": "5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -92,7 +94,7 @@
               ["ml_key"]
             ],
             "item_size": 46,
-            "margin": "5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -109,7 +111,7 @@
             "item_size": 100,
             "margin": "0,-55,180,0"
           },
-          {
+		  {
             "type": "itemgrid",
             "rows": [
               ["monkey_tj"]
@@ -123,7 +125,7 @@
               ["tj_key"]
             ],
             "item_size": 46,
-            "margin": "5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -154,11 +156,11 @@
               ["dr_key"]
             ],
             "item_size": 46,
-            "margin": "5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
-      {
+	  {
         "type": "array",
         "orientation": "horizontal",
         "margin": "0,0",
@@ -185,38 +187,7 @@
               ["cr_key"]
             ],
             "item_size": 46,
-            "margin": "5,-65,0,0"
-          }
-        ]
-      },
-	  {
-        "type": "array",
-        "orientation": "horizontal",
-        "margin": "0,0",
-        "content": [
-          {
-            "type": "itemgrid",
-            "rows": [
-              ["label_sa"]
-            ],
-            "item_size": 100,
-            "margin": "0,-55,180,0"
-          },
-		  {
-            "type": "itemgrid",
-            "rows": [
-              ["coin_sa"]
-            ],
-            "item_size": 40,
-            "margin": "-185,-65,0,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
-              ["sa_key"]
-            ],
-            "item_size": 46,
-            "margin": "-12,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -228,10 +199,50 @@
           {
             "type": "itemgrid",
             "rows": [
+              ["label_sa"]
+            ],
+            "item_size": 100,
+            "margin": "0,-55,28,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["coin_sa"]
+            ],
+            "item_size": 40,
+            "margin": "-30,-65,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["sa_key"]
+            ],
+            "item_size": 46,
+            "margin": "-15,-65,0,0"
+          },
+		  
+        ]
+      },
+    ]
+  },
+  "level_grid_2": {
+    "type": "array",
+	"margin": "25,0,0,0",
+    "orientation": "vertical",
+    "h_alignment": "center",
+    "content":[
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "0,0",
+        "content": [
+		  {
+            "type": "itemgrid",
+            "rows": [
               ["label_cb"]
             ],
             "item_size": 100,
-            "margin": "0,-55,180,0"
+            "margin": "0,10,180,0"
           },
           {
             "type": "itemgrid",
@@ -239,16 +250,24 @@
               ["monkey_cb"]
             ],
             "item_size": 38,
-            "margin": "-180,-65,-20,-12"
+            "margin": "-180,0,-20,-12"
           },
-          {
+		  {
             "type": "itemgrid",
             "rows": [
               ["cb_key"]
             ],
             "item_size": 46,
-            "margin": "5,-65,0,0"
-          }
+            "margin": "7,0,0,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["cb_lamp"]
+            ],
+            "item_size": 46,
+            "margin": "-9,3,0,0"
+          },
         ]
       },
       {
@@ -278,7 +297,7 @@
               ["cc_key"]
             ],
             "item_size": 46,
-            "margin": "5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -309,18 +328,19 @@
               ["di_key"]
             ],
             "item_size": 46,
-            "margin": "5,-65,0,0"
-          }
+            "margin": "7,-65,0,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["di_lamp"]
+            ],
+            "item_size": 46,
+            "margin": "-5,-65,0,0"
+          },
         ]
-      }
-    ]
-  },
-  "level_grid_right": {
-    "type": "array",
-    "orientation": "vertical",
-    "margin": "60,0,0,0",
-	"content":[
-      {
+      },
+	  {
         "type": "array",
         "orientation": "horizontal",
         "margin": "0,0",
@@ -331,7 +351,7 @@
               ["label_sm"]
             ],
             "item_size": 100,
-            "margin": "0,10,180,0"
+            "margin": "0,-55,180,0"
           },
           {
             "type": "itemgrid",
@@ -339,7 +359,7 @@
               ["monkey_sm"]
             ],
             "item_size": 38,
-            "margin": "-180,0,-20,-12"
+            "margin": "-180,-65,-20,-12"
           },
           {
             "type": "itemgrid",
@@ -347,7 +367,7 @@
               ["sm_key"]
             ],
             "item_size": 46,
-            "margin": "5,3,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -378,7 +398,7 @@
               ["fr_key"]
             ],
             "item_size": 46,
-            "margin": "5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -409,7 +429,7 @@
               ["hs_key"]
             ],
             "item_size": 46,
-            "margin": "5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -424,15 +444,15 @@
               ["label_ga"]
             ],
             "item_size": 100,
-            "margin": "0,-55,180,0"
+            "margin": "0,-55,28,0"
           },
 		  {
             "type": "itemgrid",
             "rows": [
-              ["coin_sa"]
+              ["coin_ga"]
             ],
             "item_size": 40,
-            "margin": "-185,-65,0,0"
+            "margin": "-30,-65,0,0"
           },
           {
             "type": "itemgrid",
@@ -440,14 +460,24 @@
               ["ga_key"]
             ],
             "item_size": 46,
-            "margin": "-12,-65,0,0"
-          }
+            "margin": "-15,-65,0,0"
+          },
+		  
         ]
-      },
+      }
+     
+    ]
+  },
+  "level_grid_3": {
+    "type": "array",
+    "orientation": "vertical",
+    "h_alignment": "center",
+    "margin": "-26,0,0,0",
+	"content":[
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "0,0",
+
         "content": [
           {
             "type": "itemgrid",
@@ -455,7 +485,7 @@
               ["label_st"]
             ],
             "item_size": 100,
-            "margin": "0,-55,180,0"
+            "margin": "0,10,180,0"
           },
           {
             "type": "itemgrid",
@@ -463,7 +493,7 @@
               ["monkey_st"]
             ],
             "item_size": 38,
-            "margin": "-180,-65,-20,-12"
+            "margin": "-180,0,-20,-12"
           },
           {
             "type": "itemgrid",
@@ -471,7 +501,7 @@
               ["st_key"]
             ],
             "item_size": 46,
-            "margin": "5,-65,0,0"
+            "margin": "7,3,0,0"
           }
         ]
       },
@@ -502,7 +532,7 @@
               ["wsw_key"]
             ],
             "item_size": 46,
-            "margin": "5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -533,8 +563,16 @@
               ["cca_key"]
             ],
             "item_size": 46,
-            "margin": "5,-65,0,0"
-          }
+            "margin": "7,-65,0,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["crc_lamp"]
+            ],
+            "item_size": 46,
+            "margin": "-5,-65,0,0"
+          },
         ]
       },
       {
@@ -564,8 +602,16 @@
               ["cp_key"]
             ],
             "item_size": 46,
-            "margin": "5,-65,0,0"
-          }
+            "margin": "7,-65,0,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["cp_lamp"]
+            ],
+            "item_size": 46,
+            "margin": "-5,-65,0,0"
+          },
         ]
       },
       {
@@ -595,8 +641,16 @@
               ["sf_key"]
             ],
             "item_size": 46,
-            "margin": "5,-65,0,0"
-          }
+            "margin": "7,-65,0,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["sf_lamp"]
+            ],
+            "item_size": 46,
+            "margin": "-5,-65,0,0"
+          },
         ]
       },
       {
@@ -626,11 +680,27 @@
               ["tvt_key"]
             ],
             "item_size": 46,
-            "margin": "5,-65,0,0"
+            "margin": "7,-65,0,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["tvt_lamp_l"]
+            ],
+            "item_size": 46,
+            "margin": "-5,-65,-25,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["tvt_lamp_tr"]
+            ],
+            "item_size": 46,
+            "margin": "5,-65,-25,0"
           }
         ]
       },
-      {
+	  {
         "type": "array",
         "orientation": "horizontal",
         "margin": "0,0",
@@ -641,7 +711,7 @@
               ["label_mm"]
             ],
             "item_size": 100,
-            "margin": "-120,-55,180,0"
+            "margin": "0,-55,180,0"
           },
           {
             "type": "itemgrid",
@@ -657,7 +727,15 @@
               ["mm_key"]
             ],
             "item_size": 46,
-            "margin": "5,-65,0,0"
+            "margin": "7,-65,0,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["mm_lamp"]
+            ],
+            "item_size": 46,
+            "margin": "-5,-65,-25,-65"
           },
 		  {
             "type": "itemgrid",
@@ -669,85 +747,8 @@
           },
         ]
       },
-      {
-        "type": "array",
-        "orientation": "horizontal",
-        "margin": "0,0",
-        "content": [
-          {
-            "type": "itemgrid",
-            "rows": [
-              ["op_gl"]
-            ],
-            "item_size": 150,
-            "margin": "-250,10,180,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
-              ["goal"]
-            ],
-            "item_size": 150,
-            "margin": "-180,10,180,0"
-          },
-		  {
-            "type": "itemgrid",
-            "rows": [
-              ["op_keyoption"]
-            ],
-            "item_size": 150,
-            "margin": "-180,10,180,0"
-          },
-		  {
-            "type": "itemgrid",
-            "rows": [
-              ["op_entrance"]
-            ],
-            "item_size": 150,
-            "margin": "-660,60,0,0"
-          },
-		  {
-            "type": "itemgrid",
-            "rows": [
-              ["op_waternet"]
-            ],
-            "item_size": 150,
-            "margin": "0,60,180,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
-              ["op_sc"]
-            ],
-            "item_size": 150,
-            "margin": "-180,60,180,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
-              ["op_mailbox"]
-            ],
-            "item_size": 150,
-            "margin": "-660,110,180,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
-              ["op_superflyer"]
-            ],
-            "item_size": 150,
-			"margin": "-180,110,0,0"
-          },
-		  {
-            "type": "itemgrid",
-            "rows": [
-              ["op_lamps"]
-            ],
-            "item_size": 150,
-			"margin": "-0,110,0,0"
-          }
-        ]
-      }
     ]
   }
 }
+
+

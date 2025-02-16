@@ -4,7 +4,7 @@
         "color": "#FFFFFF",
         "children": [
             {
-                "name": "Coral Cave",
+                "name": "Coral Cave - Monkeys",
                 "map_locations": [
                     {
                         "map": "Coral_Cave",
@@ -15,8 +15,15 @@
                         "map": "Oceana",
                         "x": 175,
                         "y": 180
-                    }
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 260,
+                        "y": 260
+                    },
                 ],
+				"chest_unopened_img": "images/icons/monkeyOn.png",
+                "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
                             "cc_key"
@@ -24,8 +31,7 @@
                 "sections": [
                     {
                         "name": "Chip",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -42,8 +48,7 @@
                     {
 
                         "name": "Oreo",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -57,8 +62,7 @@
                     },
                     {
                         "name": "Puddles",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -77,8 +81,7 @@
                     {
                         //Need to confirm if you don't go up does he jump down anyway?
                         "name": "Kalama",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -93,8 +96,7 @@
                     },
                     {
                         "name": "Iz",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -108,8 +110,7 @@
                     },
                     {
                         "name": "Bong-Bong",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -123,8 +124,7 @@
                     },
                     {
                         "name": "Jux",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -138,8 +138,7 @@
                     },
                     {
                         "name": "Pickles",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -150,7 +149,33 @@
                             "net, sling, op_et"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Coral Cave - Specter Coins",
+                "map_locations": [
+                    {
+                        "map": "Coral_Cave",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Oceana",
+                        "x": 205,
+                        "y": 180
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 290,
+                        "y": 260
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "cc_key"
+                        ],
+                "sections": [
                     {
                         "name": "Second Room",
                         "chest_unopened_img": "images/icons/coinOn.png",
@@ -166,7 +191,33 @@
                             "$CanSwim, car, op_et"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Coral Cave - Mailboxes",
+                "map_locations": [
+                    {
+                        "map": "Coral_Cave",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Oceana",
+                        "x": 235,
+                        "y": 180
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 320,
+                        "y": 260
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "cc_key"
+                        ],
+                "sections": [
                     {
                       "name": "Yellow Pants = Normal",
                       "chest_unopened_img": "images/icons/BlueMailboxOn.png",

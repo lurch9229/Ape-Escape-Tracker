@@ -4,7 +4,7 @@
         "color": "#FFFFFF",
         "children": [
             {
-                "name": "TV Tower",
+                "name": "TV Tower - Monkeys",
                 "map_locations": [
                     {
                         "map": "TV_Tower",
@@ -15,8 +15,15 @@
                         "map": "Futurama",
                         "x": 290,
                         "y": 140
-                    }
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 620,
+                        "y": 400
+                    },
                 ],
+				"chest_unopened_img": "images/icons/monkeyOn.png",
+                "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
                             "tvt_key"
@@ -24,8 +31,7 @@
                 "sections": [
                     {
                         "name": "Fredo",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -38,8 +44,7 @@
                     },
                     {
                         "name": "Charlee",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -54,8 +59,7 @@
                     },
                     {
                         "name": "Mach 3",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -68,8 +72,7 @@
                     },
                     {
                         "name": "Tortuss",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -82,8 +85,7 @@
                     },
                     {
                         "name": "Manic",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -97,8 +99,7 @@
                     },
                     {
                         "name": "Ruptdis",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -111,8 +112,7 @@
                     },
                     {
                         "name": "Eighty 7",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -125,8 +125,7 @@
                     },
                     {
                         "name": "Danio",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -139,8 +138,7 @@
                     },
                     {
                         "name": "Roosta",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -153,8 +151,7 @@
                     },
                     {
                         "name": "Tellis",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -167,8 +164,7 @@
                     },
                     {
                         "name": "Whack",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -181,8 +177,7 @@
                     },
                     {
                         "name": "Frostee",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -203,12 +198,38 @@
                         ],
                         "access_rules":
                         [
-                            "net, $TVT_TankRoom, sling",
-                            "net, $TVT_TankRoom, flyer, car, op_no_ij",
-                            "net, $TVT_TankRoom, flyer, car, op_et"
+                            "net, $TVT_BossRoom, sling",
+                            "net, $TVT_BossRoom, flyer, car, op_no_ij",
+                            "net, $TVT_BossRoom, flyer, car, op_et"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "TV Tower - Specter Coins",
+                "map_locations": [
+                    {
+                        "map": "TV_Tower",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Futurama",
+                        "x": 320,
+                        "y": 140
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 650,
+                        "y": 400
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "tvt_key"
+                        ],
+                "sections": [
                     {
                         "name": "Water Basement",
                         "chest_unopened_img": "images/icons/coinOn.png",
@@ -237,7 +258,33 @@
                             "$TVT_TankRoom"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "TV Tower - Mailboxes",
+                "map_locations": [
+                    {
+                        "map": "TV_Tower",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Futurama",
+                        "x": 350,
+                        "y": 140
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 680,
+                        "y": 400
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "tvt_key"
+                        ],
+                "sections": [
                     {
                         "name": "Time Trial",
                         "visibility_rules": 

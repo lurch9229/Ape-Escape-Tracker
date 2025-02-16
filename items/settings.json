@@ -171,6 +171,27 @@
     ]
   },
   {
+    "name": "Lamps",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "loop": false,
+    "stages": [
+      {
+        "name": "Lamps - Off",
+        "img": "images/settings/lamps_off.png",
+        "codes": "op_lamps, op_lamps_off",
+        "allow_disabled": false
+      },
+      {
+        "name": "Lamps - On",
+        "img": "images/settings/lamps_on.png",
+        "codes": "op_lamps, op_lamps_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Entrances Shuffle",
     "type": "progressive",
     "initial_stage_idx": 0,

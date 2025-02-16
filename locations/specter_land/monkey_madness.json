@@ -4,7 +4,7 @@
         "color": "#FFFFFF",
         "children": [
             {
-                "name": "Monkey Madness",
+                "name": "Monkey Madness - Monkeys",
                 "map_locations": [
                     {
                         "map": "Monkey_Madness",
@@ -14,9 +14,16 @@
                     {
                         "map": "Specter_Land",
                         "x": 130,
-                        "y": 170
-                    }
+                        "y": 190
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 785,
+                        "y": 200
+                    },
                 ],
+				"chest_unopened_img": "images/icons/monkeyOn.png",
+                "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
                             "mm_key"
@@ -24,8 +31,7 @@
                 "sections": [
                     {
                         "name": "Goopo",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -38,8 +44,7 @@
                     },
                     {
                         "name": "Porto",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -52,8 +57,7 @@
                     },
                     {
                         "name": "Slam",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -66,8 +70,7 @@
                     },
                     {
                         "name": "Junk",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -80,8 +83,7 @@
                     },
                     {
                         "name": "Crib",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -94,8 +96,7 @@
                     },
                     {
                         "name": "Nak",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -110,8 +111,7 @@
                     },
                     {
                         "name": "Cloy",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -124,8 +124,7 @@
                     },
                     {
                         "name": "Shaw",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -140,8 +139,7 @@
                     },
                     {
                         "name": "Flea",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -156,8 +154,7 @@
                     },
                     {
                         "name": "Schafette",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -172,36 +169,33 @@
                     },
                     {
                         "name": "Donovan",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
                         ],
                         "access_rules": 
                         [
-                            "net, $MM_UFODoor"
+                            "net, $MM_UFOMonkeys"
                         ],
                         "item_count": 1
                     },
                     {
                         "name": "Laura",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
                         ],
                         "access_rules": 
                         [
-                            "net, $MM_UFODoor"
+                            "net, $MM_UFOMonkeys"
                         ],
                         "item_count": 1
                     },
                     {
                         "name": "Uribe",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -214,8 +208,7 @@
                     },
                     {
                         "name": "Gordo",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -230,8 +223,7 @@
                     },
                     {
                         "name": "Raeski",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -244,8 +236,7 @@
                     },
                     {
                         "name": "Poo-Pie",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -258,8 +249,7 @@
                     },
                     {
                         "name": "Teacup",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -272,8 +262,7 @@
                     },
                     {
                         "name": "Shine",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -286,8 +275,7 @@
                     },
                     {
                         "name": "Wrench",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -300,8 +288,7 @@
                     },
                     {
                         "name": "Bronson",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -314,8 +301,7 @@
                     },
                     {
                         "name": "Bungee",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -328,8 +314,7 @@
                     },
                     {
                         "name": "Carro",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -342,8 +327,7 @@
                     },
                     {
                         "name": "Carlito",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -356,8 +340,7 @@
                     },
                     {
                         "name": "BG",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -383,7 +366,33 @@
                             "$MM_FinalBoss"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Monkey Madness - Specter Coins",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Specter_Land",
+                        "x": 160,
+                        "y": 190
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 815,
+                        "y": 200
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "mm_key"
+                        ],
+                "sections": [
                     {
                         "name": "Coaster (Room 1)",
                         "chest_unopened_img": "images/icons/coinOn.png",
@@ -526,7 +535,33 @@
                             "$MM_SHA, sling, op_et"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Monkey Madness - Mailboxes",
+                "map_locations": [
+                    {
+                        "map": "Monkey_Madness",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Specter_Land",
+                        "x": 190,
+                        "y": 190
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 845,
+                        "y": 200
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "mm_key"
+                        ],
+                "sections": [
                     {
                       "name": "The Terror Coaster",
                       "chest_unopened_img": "images/icons/RedMailboxOn.png",

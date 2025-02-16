@@ -25,29 +25,6 @@
 											"key": "item_grid"
 										}
 									]
-								},
-								{
-									"type": "array",
-									"orientation": "horizontal",
-									"margin": "0,0",
-									"content": [
-									  {
-											"type": "group",
-											"header":"Specters",
-											"orientation": "horizontal",
-											"margin": "0,100",
-											"content": [
-											  {
-												"type": "itemgrid",
-												"rows": [
-												  ["Specter_1","Specter_2"]
-												],
-												"item_size": 38,
-												"margin": "0,0,0,0"
-											  }
-											]
-									  }
-									]
 								}
 							]
             			},
@@ -96,96 +73,106 @@
 					]
 				},
                 {
-                    "type": "array",
-                    "v_alignment": "stretch",
-                    "h_alignment": "stretch",
-                    "margin": "0, 0, 0, 0",
-                    "content": [
-                        {
-                            "type": "tabbed",
-                            "dock": "left",
-                            "tabs": [
-								{
-                                    "title": "Time Station",
-                                    "content": {
-                                        "type":"map",
-                                        "maps": ["Time_Station"]
-                                    }
-                                },
-                                {
-                                    "title": "Lost Lands",
-                                    "content": {
-                                        "type":"map",
-                                        "maps": ["Lost_Lands"]
-                                    }
-                                },
-                                {
-                                    "title": "Mysterious Age",
-                                    "content": {
-                                        "type": "map",
-                                        "maps": ["Mysterious_Age"]
-                                    }
-                                },
-								{
-				    "title": "Stadium Attack",
-                                    "content": {
-                                        "type": "map",
-                                        "maps": ["Stadium_Attack"]
-                                    }
-                                },
-                                {
-                                    "title": "Oceana",
-                                    "content": {
-                                        "type": "map",
-                                        "maps": ["Oceana"]
-                                    }
-                                },
-                                {
-                                    "title": "New Freezeland",
-                                    "content": {
-                                        "type": "map",
-                                        "maps": ["New_Freezeland"]
-                                    }
-                                },
-				{
-				    "title": "Gladiator Attack",
-                                    "content": {
-                                        "type": "map",
-                                        "maps": ["Gladiator_Attack"]
-                                    }
-                                },
-                                {
-                                    "title": "Medieval Mayhem",
-                                    "content": {
-                                        "type": "map",
-                                        "maps": ["Medieval_Mayhem"]
-                                    }
-                                },
-                                {
-                                    "title": "Futurama",
-                                    "content": {
-                                        "type": "map",
-                                        "maps": ["Futurama"]
-                                    }
-                                },
-                                {
-                                    "title": "Specter Land",
-                                    "content": {
-                                        "type": "map",
-                                        "maps": ["Specter_Land"]
-                                    }
-                                },
-								{
-									"title": "Peak Point Matrix",
-									"content": {
-										"type": "map",
-										"maps": ["Peak_Point_Matrix"]
+								"type": "tabbed",
+								"content": [
+									{
+										"title": "Levels",
+										"type": "tabbed",
+										"tabs": [
+											{
+												"title": "Time Station",
+												"content": {
+													"type":"map",
+													"maps": ["Time_Station"]
+												}
+											},
+											{
+												"title": "Lost Lands",
+												"content": {
+													"type":"map",
+													"maps": ["Lost_Lands"]
+												}
+											},
+											{
+												"title": "Mysterious Age",
+												"content": {
+													"type": "map",
+													"maps": ["Mysterious_Age"]
+												}
+											},
+											{
+												"title": "Stadium Attack",
+												"content": {
+													"type": "map",
+													"maps": ["Stadium_Attack"]
+												}
+											},
+											{
+												"title": "Oceana",
+												"content": {
+													"type": "map",
+													"maps": ["Oceana"]
+												}
+											},
+											{
+												"title": "New Freezeland",
+												"content": {
+													"type": "map",
+													"maps": ["New_Freezeland"]
+												}
+											},
+											{
+												"title": "Gladiator Attack",
+												"content": {
+													"type": "map",
+													"maps": ["Gladiator_Attack"]
+												}
+											},
+											{
+												"title": "Medieval Mayhem",
+												"content": {
+													"type": "map",
+													"maps": ["Medieval_Mayhem"]
+												}
+											},
+											{
+												"title": "Futurama",
+												"content": {
+													"type": "map",
+													"maps": ["Futurama"]
+												}
+											},
+											{
+												"title": "Specter Land",
+												"content": {
+													"type": "map",
+													"maps": ["Specter_Land",]
+												},
+											},
+											{
+												"title": "Peak Point Matrix",
+												"content": {
+													"type": "map",
+													"maps": ["Peak_Point_Matrix"]
+												}
+											}
+										]
+									},
+									{
+										"title": "Overall view",
+										"type": "tabbed",
+										"tabs": [
+											{
+												"title": "Overall View",
+												"content": {
+													"type":"map",
+													"maps": ["Overall_View"]
+												}
+											}
+										]
 									}
-								}
-                            ]
-                        }
-                    ]
-                }
+								]
+				}
 			]
 		}
 	}

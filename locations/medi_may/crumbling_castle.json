@@ -4,7 +4,7 @@
         "color": "#FFFFFF",
         "children": [
             {
-                "name": "Crumbling Castle",
+                "name": "Crumbling Castle - Monkeys",
                 "map_locations": [
                     {
                         "map": "Crumbling_Castle",
@@ -15,8 +15,15 @@
                         "map": "Medieval_Mayhem",
                         "x": 295,
                         "y": 130
-                    }
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 505,
+                        "y": 400
+                    },
                 ],
+				"chest_unopened_img": "images/icons/monkeyOn.png",
+                "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
                             "cca_key"
@@ -24,8 +31,7 @@
                 "sections": [
                     {
                         "name": "Robart",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -38,8 +44,7 @@
                     },
                     {
                         "name": "Igor",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -52,8 +57,7 @@
                     },
                     {
                         "name": "Naners",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -66,8 +70,7 @@
                     },
                     {
                         "name": "Neeners",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -80,8 +83,7 @@
                     },
                     {
                         "name": "Charles",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -94,8 +96,7 @@
                     },
                     {
                         "name": "Gustav",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -108,8 +109,7 @@
                     },
                     {
                         "name": "Wilhelm",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -122,8 +122,7 @@
                     },
                     {
                         "name": "Emmanuel",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -136,8 +135,7 @@
                     },
                     {
                         "name": "Sir Cutty",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -150,8 +148,7 @@
                     },
                     {
                         "name": "Calligan",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -165,8 +162,7 @@
                     },
                     {
                         "name": "Castalist",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -180,8 +176,7 @@
 
                     {
                         "name": "Deveneom",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -195,8 +190,7 @@
                     },
                     {
                         "name": "Astur",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -209,8 +203,7 @@
                     },
                     {
                         "name": "Kilserack",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -224,8 +217,7 @@
                     },
                     {
                         "name": "Ringo",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -238,8 +230,7 @@
                     },
                     {
                         "name": "Densil",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -252,8 +243,7 @@
                     },
                     {
                         "name": "Figero",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -266,8 +256,7 @@
                     },
                     {
                         "name": "Fej",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -280,8 +269,7 @@
                     },
                     {
                         "name": "Joey",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -296,8 +284,7 @@
                     },
                     {
                         "name": "Donqui",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -321,7 +308,33 @@
                             "$CC_ButtonRoom, $CanHitMultiple"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Crumbling Castle - Specter Coins",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Medieval_Mayhem",
+                        "x": 325,
+                        "y": 130
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 535,
+                        "y": 400
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "cca_key"
+                        ],
+                "sections": [
                     {
                         "name": "Outside",
                         "chest_unopened_img": "images/icons/coinOn.png",
@@ -388,7 +401,33 @@
                             "hoop, flyer, op_et"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Crumbling Castle - Mailboxes",
+                "map_locations": [
+                    {
+                        "map": "Crumbling_Castle",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Medieval_Mayhem",
+                        "x": 355,
+                        "y": 130
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 565,
+                        "y": 400
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "cca_key"
+                        ],
+                "sections": [
                     {
                       "name": "Think Clearly",
                       "chest_unopened_img": "images/icons/BlueMailboxOn.png",

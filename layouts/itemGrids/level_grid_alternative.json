@@ -1,7 +1,7 @@
 {
   "level_grid_1": {
     "type": "array",
-	"margin": "0,0",
+	"margin": "20,0,0,0",
     "orientation": "vertical",
     "h_alignment": "center",
     "content":[
@@ -29,18 +29,10 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["coin_ff"]
-            ],
-            "item_size": 45,
-            "margin": "5,3,0,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
               ["ff_key"]
             ],
             "item_size": 46,
-            "margin": "-5,3,0,0"
+            "margin": "7,3,0,0"
           }
         ]
       },
@@ -68,18 +60,10 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["coin_po"]
-            ],
-            "item_size": 45,
-            "margin": "5,-65,0,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
               ["po_key"]
             ],
             "item_size": 46,
-            "margin": "-5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -107,18 +91,10 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["coin_ml"]
-            ],
-            "item_size": 45,
-            "margin": "5,-65,0,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
               ["ml_key"]
             ],
             "item_size": 46,
-            "margin": "-5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -135,7 +111,7 @@
             "item_size": 100,
             "margin": "0,-55,180,0"
           },
-          {
+		  {
             "type": "itemgrid",
             "rows": [
               ["monkey_tj"]
@@ -146,18 +122,10 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["coin_tj"]
-            ],
-            "item_size": 45,
-            "margin": "5,-65,0,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
               ["tj_key"]
             ],
             "item_size": 46,
-            "margin": "-5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -185,18 +153,10 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["coin_dr"]
-            ],
-            "item_size": 45,
-            "margin": "5,-65,0,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
               ["dr_key"]
             ],
             "item_size": 46,
-            "margin": "-5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -224,18 +184,10 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["coin_cr"]
-            ],
-            "item_size": 45,
-            "margin": "5,-65,0,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
               ["cr_key"]
             ],
             "item_size": 46,
-            "margin": "-5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -252,13 +204,13 @@
             "item_size": 100,
             "margin": "0,-55,28,0"
           },
-          {
+		  {
             "type": "itemgrid",
             "rows": [
               ["coin_sa"]
             ],
-            "item_size": 45,
-            "margin": "5,-65,0,0"
+            "item_size": 40,
+            "margin": "-30,-65,0,0"
           },
           {
             "type": "itemgrid",
@@ -266,7 +218,7 @@
               ["sa_key"]
             ],
             "item_size": 46,
-            "margin": "-5,-65,0,0"
+            "margin": "-15,-65,0,0"
           },
 		  
         ]
@@ -275,7 +227,7 @@
   },
   "level_grid_2": {
     "type": "array",
-	"margin": "-10,0",
+	"margin": "25,0,0,0",
     "orientation": "vertical",
     "h_alignment": "center",
     "content":[
@@ -300,21 +252,13 @@
             "item_size": 38,
             "margin": "-180,0,-20,-12"
           },
-          {
-            "type": "itemgrid",
-            "rows": [
-              ["coin_cb"]
-            ],
-            "item_size": 45,
-            "margin": "5,3,0,0"
-          },
-          {
+		  {
             "type": "itemgrid",
             "rows": [
               ["cb_key"]
             ],
             "item_size": 46,
-            "margin": "-5,3,0,0"
+            "margin": "7,0,0,0"
           }
         ]
       },
@@ -342,18 +286,10 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["coin_cc"]
-            ],
-            "item_size": 45,
-            "margin": "5,-65,0,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
               ["cc_key"]
             ],
             "item_size": 46,
-            "margin": "-5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -381,18 +317,10 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["coin_di"]
-            ],
-            "item_size": 45,
-            "margin": "5,-65,0,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
               ["di_key"]
             ],
             "item_size": 46,
-            "margin": "-5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -420,18 +348,10 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["coin_sm"]
-            ],
-            "item_size": 45,
-            "margin": "5,-65,0,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
               ["sm_key"]
             ],
             "item_size": 46,
-            "margin": "-5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -459,18 +379,10 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["coin_fr"]
-            ],
-            "item_size": 45,
-            "margin": "5,-65,0,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
               ["fr_key"]
             ],
             "item_size": 46,
-            "margin": "-5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -498,18 +410,10 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["coin_hs"]
-            ],
-            "item_size": 45,
-            "margin": "5,-65,0,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
               ["hs_key"]
             ],
             "item_size": 46,
-            "margin": "-5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -526,13 +430,13 @@
             "item_size": 100,
             "margin": "0,-55,28,0"
           },
-          {
+		  {
             "type": "itemgrid",
             "rows": [
               ["coin_ga"]
             ],
-            "item_size": 45,
-            "margin": "5,-65,0,0"
+            "item_size": 40,
+            "margin": "-30,-65,0,0"
           },
           {
             "type": "itemgrid",
@@ -540,7 +444,7 @@
               ["ga_key"]
             ],
             "item_size": 46,
-            "margin": "-5,-65,0,0"
+            "margin": "-15,-65,0,0"
           },
 		  
         ]
@@ -552,11 +456,12 @@
     "type": "array",
     "orientation": "vertical",
     "h_alignment": "center",
-    "content":[
+    "margin": "25,0,0,0",
+	"content":[
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "0,0",
+
         "content": [
           {
             "type": "itemgrid",
@@ -577,18 +482,10 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["coin_st"]
-            ],
-            "item_size": 45,
-            "margin": "5,3,0,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
               ["st_key"]
             ],
             "item_size": 46,
-            "margin": "-5,3,0,0"
+            "margin": "7,3,0,0"
           }
         ]
       },
@@ -616,18 +513,10 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["coin_wsw"]
-            ],
-            "item_size": 45,
-            "margin": "5,-65,0,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
               ["wsw_key"]
             ],
             "item_size": 46,
-            "margin": "-5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -655,18 +544,10 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["coin_cca"]
-            ],
-            "item_size": 45,
-            "margin": "5,-65,0,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
               ["cca_key"]
             ],
             "item_size": 46,
-            "margin": "-5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -694,18 +575,10 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["coin_cp"]
-            ],
-            "item_size": 45,
-            "margin": "5,-65,0,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
               ["cp_key"]
             ],
             "item_size": 46,
-            "margin": "-5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -733,18 +606,10 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["coin_sf"]
-            ],
-            "item_size": 45,
-            "margin": "5,-65,0,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
               ["sf_key"]
             ],
             "item_size": 46,
-            "margin": "-5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -772,18 +637,10 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["coin_tvt"]
-            ],
-            "item_size": 45,
-            "margin": "5,-65,0,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
               ["tvt_key"]
             ],
             "item_size": 46,
-            "margin": "-5,-65,0,0"
+            "margin": "7,-65,0,0"
           }
         ]
       },
@@ -811,19 +668,19 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["coin_mm"]
-            ],
-            "item_size": 45,
-            "margin": "5,-65,0,0"
-          },
-          {
-            "type": "itemgrid",
-            "rows": [
               ["mm_key"]
             ],
             "item_size": 46,
-            "margin": "-5,-65,0,0"
-          }
+            "margin": "7,-65,0,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["mm_lobby_doubledoor"]
+            ],
+            "item_size": 46,
+            "margin": "-5,-65,-25,-65"
+          },
         ]
       },
     ]

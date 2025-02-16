@@ -5,7 +5,7 @@
         "children": [
             
             {
-                "name": "Crabby Beach",
+                "name": "Crabby Beach - Monkeys",
                 "map_locations": [
                     {
                         "map": "Crabby_Beach",
@@ -16,8 +16,15 @@
                         "map": "Oceana",
                         "x": 65,
                         "y": 145
-                    }
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 260,
+                        "y": 120
+                    },
                 ],
+				"chest_unopened_img": "images/icons/monkeyOn.png",
+                "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
                             "cb_key"
@@ -25,8 +32,7 @@
                 "sections": [
                     {
                         "name": "Cool Blue",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -40,8 +46,7 @@
                     },
                     {
                         "name": "Sandy",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -54,8 +59,7 @@
                     },
                     {
                         "name": "Shell E.",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -68,8 +72,7 @@
                     },
                     {
                         "name": "Gidget",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -82,65 +85,87 @@
                     },
                     {
                         "name": "Shaka",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "net, $CB_Lamp"
                         ],
                         "item_count": 1
                     },
                     {
                         "name": "Puka",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
                         ],
                         "access_rules": 
                         [
-                            "net, $CanHitMultiple",
-                            "net, flyer"
+                            "net, $CanHitMultiple, $CB_Lamp",
+                            "net, flyer, $CB_Lamp"
                         ],
                         "item_count": 1
                     },
                     {
                         "name": "MaxMahalo",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
                         ],
                         "access_rules": 
                         [
-                            "net, sling, flyer",
-                            "net, hoop, op_no_ij",
-                            "net, hoop, op_et",
-                            "net, sling, op_et"
+                            "net, sling, flyer, $CB_Lamp",
+                            "net, hoop, op_no_ij, $CB_Lamp",
+                            "net, hoop, op_et, $CB_Lamp",
+                            "net, sling, op_et, $CB_Lamp"
                         ],
                         "item_count": 1
                     },
                     {
                         "name": "Moko",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
                         ],
                         "access_rules": 
                         [
-                            "net, flyer",
-                            "net, sling, op_et"
+                            "net, flyer, $CB_Lamp",
+                            "net, sling, op_et, $CB_Lamp"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Crabby Beach - Specter Coins",
+                "map_locations": [
+                    {
+                        "map": "Crabby_Beach",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Oceana",
+                        "x": 95,
+                        "y": 145
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 290,
+                        "y": 120
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "cb_key"
+                        ],
+                "sections": [
                     {
                         "name": "Second Room",
                         "chest_unopened_img": "images/icons/coinOn.png",
@@ -151,10 +176,36 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "net, $CB_Lamp"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Crabby Beach - Mailboxes",
+                "map_locations": [
+                    {
+                        "map": "Crabby_Beach",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Oceana",
+                        "x": 125,
+                        "y": 145
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 320,
+                        "y": 120
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "cb_key"
+                        ],
+                "sections": [
                     {
                       "name": "Hip Drop Attack",
                       "chest_unopened_img": "images/icons/BlueMailboxOn.png",
@@ -193,7 +244,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanHitOnce, net"
+                        "$CanHitOnce, net, $CB_Lamp"
                       ],
                       "item_count": 1
                     },

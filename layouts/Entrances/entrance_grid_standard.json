@@ -318,7 +318,7 @@
   "entrance_grid_right": {
     "type": "array",
     "orientation": "vertical",
-	"margin": "-150,0,-150,0",
+	"margin": "-156,0,-150,0",
     "content":[
       {
         "type": "array",
@@ -664,7 +664,7 @@
       {
         "type": "array",
         "orientation": "horizontal",
-        "margin": "-16,0,0,0",
+        "margin": "0,0,0,0",
         "content": [
           {
             "type": "itemgrid",
@@ -709,7 +709,7 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["op_mailbox"]
+              ["op_sc"]
             ],
             "item_size": 150,
             "margin": "-180,60,180,0"
@@ -717,7 +717,7 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["op_sc"]
+              ["op_mailbox"]
             ],
             "item_size": 150,
             "margin": "-660,110,180,0"
@@ -729,6 +729,14 @@
             ],
             "item_size": 150,
 			"margin": "-180,110,0,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["op_lamps"]
+            ],
+            "item_size": 150,
+			"margin": "-0,110,0,0"
           }
         ]
       },

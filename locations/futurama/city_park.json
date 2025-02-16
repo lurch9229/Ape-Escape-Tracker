@@ -4,7 +4,7 @@
         "color": "#FFFFFF",
         "children": [
             {
-                "name": "City Park",
+                "name": "City Park - Monkeys",
                 "map_locations": [
                     {
                         "map": "City_Park",
@@ -15,8 +15,15 @@
                         "map": "Futurama",
                         "x": 40,
                         "y": 145
-                    }
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 620,
+                        "y": 120
+                    },
                 ],
+				"chest_unopened_img": "images/icons/monkeyOn.png",
+                "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
                             "cp_key"
@@ -24,8 +31,7 @@
                 "sections": [
                     {
                         "name": "Kaine",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -40,8 +46,7 @@
                     },
                     {
                         "name": "Jaxx",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -54,8 +59,7 @@
                     },
                     {
                         "name": "Gehry",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -73,8 +77,7 @@
                     },
                     {
                         "name": "Alcatraz",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -87,8 +90,7 @@
                     },
                     {
                         "name": "Tino",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -103,8 +105,7 @@
                     },
                     {
                         "name": "Q. Bee",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -119,8 +120,7 @@
                     },
                     {
                         "name": "McManic",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -138,8 +138,7 @@
                     },
                     {
                         "name": "Dywan",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -154,8 +153,7 @@
                     },
                     {
                         "name": "CK Hutch",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -172,8 +170,7 @@
                     },
                     {
                         "name": "Winky",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -195,8 +192,7 @@
                     },
                     {
                         "name": "B. Luv",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -215,8 +211,7 @@
                     },
                     {
                         "name": "Camper",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -241,8 +236,7 @@
                     },
                     {
                         "name": "Huener",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -259,7 +253,33 @@
                             "net, sling, op_et"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "City Park - Specter Coins",
+                "map_locations": [
+                    {
+                        "map": "City_Park",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Futurama",
+                        "x": 70,
+                        "y": 145
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 650,
+                        "y": 120
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "cp_key"
+                        ],
+                "sections": [
                     {
                         "name": "Outside",
                         "chest_unopened_img": "images/icons/coinOn.png",
@@ -319,7 +339,33 @@
 
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "City Park - Mailboxes",
+                "map_locations": [
+                    {
+                        "map": "City_Park",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Futurama",
+                        "x": 100,
+                        "y": 145
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 680,
+                        "y": 120
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "cp_key"
+                        ],
+                "sections": [
                     {
                         "name": "Time Trial",
                         "visibility_rules": 

@@ -4,7 +4,7 @@
         "color": "#FFFFFF",
         "children": [
             {
-                "name": "Hot Springs",
+                "name": "Hot Springs - Monkeys",
                 "map_locations": [
                     {
                         "map": "Hot_Springs",
@@ -13,10 +13,17 @@
                     },
                     {
                         "map": "New_Freezeland",
-                        "x": 330,
+                        "x": 310,
                         "y": 140
-                    }
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 385,
+                        "y": 400
+                    },
                 ],
+				"chest_unopened_img": "images/icons/monkeyOn.png",
+                "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
                             "hs_key"
@@ -24,8 +31,7 @@
                 "sections": [
                     {
                         "name": "Punky",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -38,8 +44,7 @@
                     },
                     {
                         "name": "Ameego",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -52,8 +57,7 @@
                     },
                     {
                         "name": "Yoky",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -67,8 +71,7 @@
                     },
                     {
                         "name": "Jory",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -82,8 +85,7 @@
                     },
                     {
                         "name": "Crank",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -97,8 +99,7 @@
                     },
                     {
                         "name": "Claxter",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -112,8 +113,7 @@
                     },
                     {
                         "name": "Looza",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules":
                         [
                             ""
@@ -127,8 +127,7 @@
                     },
                     {
                         "name": "Roti",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -143,8 +142,7 @@
                     },
                     {
                         "name": "Dissa",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -156,7 +154,33 @@
                             "net, $CanHitOnce, op_et"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Hot Springs - Specter Coins",
+                "map_locations": [
+                    {
+                        "map": "Hot_Springs",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "New_Freezeland",
+                        "x": 340,
+                        "y": 140
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 415,
+                        "y": 400
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "hs_key"
+                        ],
+                "sections": [
                     {
                         "name": "Hot Spring",
                         "chest_unopened_img": "images/icons/coinOn.png",
@@ -187,7 +211,33 @@
                             "$CanHitOnce, op_et"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Hot Springs - Mailboxes",
+                "map_locations": [
+                    {
+                        "map": "Hot_Springs",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "New_Freezeland",
+                        "x": 370,
+                        "y": 140
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 445,
+                        "y": 400
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "hs_key"
+                        ],
+                "sections": [
                     {
                       "name": "Ice Bridge Ahead",
                       "chest_unopened_img": "images/icons/BlueMailboxOn.png",

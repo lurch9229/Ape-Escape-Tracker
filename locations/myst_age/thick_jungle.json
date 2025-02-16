@@ -4,7 +4,7 @@
         "color": "#FFFFFF",
         "children": [
             {
-                "name": "Thick Jungle",
+                "name": "Thick Jungle - Monkeys",
                 "map_locations": [
                     {
                         "map": "Thick_Jungle",
@@ -15,8 +15,15 @@
                         "map": "Mysterious_Age",
                         "x": 70,
                         "y": 145
-                    }
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 140,
+                        "y": 120
+                    },
                 ],
+				"chest_unopened_img": "images/icons/monkeyOn.png",
+                "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
                             "tj_key"
@@ -24,8 +31,7 @@
                 "sections": [
                     {
                         "name": "Marquez",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -40,8 +46,7 @@
                     },
                     {
                         "name": "Livinston",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -56,8 +61,7 @@
                     },
                     {
                         "name": "George",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -70,8 +74,7 @@
                     },
                     {
                         "name": "Gonzo",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -84,8 +87,7 @@
                     },
                     {
                         "name": "Zanzibar",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -98,8 +100,7 @@
                     },
                     {
                         "name": "Alphonse",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -112,8 +113,7 @@
                     },
                     {
                         "name": "Maki",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -128,8 +128,7 @@
                     },
                     {
                         "name": "Herb",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -142,8 +141,7 @@
                     },
                     {
                         "name": "Dilweed",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -157,8 +155,7 @@
                     },
                     {
                         "name": "Stoddy",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -172,8 +169,7 @@
                     },
                     {
                         "name": "Mitong",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -187,8 +183,7 @@
                     },
                     {
                         "name": "Nasus",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -202,8 +197,7 @@
                     },
                     {
                         "name": "Elehcim",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -221,8 +215,7 @@
                     },
                     {
                         "name": "Selur",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -241,7 +234,33 @@
                             "net, $TJ_FishEntry, $CanHitMultiple, flyer, op_et"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Thick Jungle - Specter Coins",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Mysterious_Age",
+                        "x": 100,
+                        "y": 145
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 170,
+                        "y": 120
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "tj_key"
+                        ],
+                "sections": [
                     {
                         "name": "Entry",
                         "chest_unopened_img": "images/icons/coinOn.png",
@@ -298,7 +317,33 @@
                             "$TJ_UFOEntry, $TJ_UFOCliff"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Thick Jungle - Mailboxes",
+                "map_locations": [
+                    {
+                        "map": "Thick_Jungle",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Mysterious_Age",
+                        "x": 130,
+                        "y": 145
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 200,
+                        "y": 120
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "tj_key"
+                        ],
+                "sections": [
                     {
                       "name": "Monkeys are Hiding",
                       "chest_unopened_img": "images/icons/RedMailboxOn.png",

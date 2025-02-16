@@ -248,6 +248,14 @@
             ],
             "item_size": 46,
             "margin": "5,-65,0,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["cb_lamp"]
+            ],
+            "item_size": 46,
+            "margin": "-9,-65,0,0"
           }
         ]
       },
@@ -310,6 +318,14 @@
             ],
             "item_size": 46,
             "margin": "5,-65,0,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["di_lamp"]
+            ],
+            "item_size": 46,
+            "margin": "-8,-65,0,0"
           }
         ]
       }
@@ -318,7 +334,7 @@
   "level_grid_right": {
     "type": "array",
     "orientation": "vertical",
-    "margin": "60,0,0,0",
+    "margin": "12,0,0,0",
 	"content":[
       {
         "type": "array",
@@ -429,7 +445,7 @@
 		  {
             "type": "itemgrid",
             "rows": [
-              ["coin_sa"]
+              ["coin_ga"]
             ],
             "item_size": 40,
             "margin": "-185,-65,0,0"
@@ -534,7 +550,15 @@
             ],
             "item_size": 46,
             "margin": "5,-65,0,0"
-          }
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["crc_lamp"]
+            ],
+            "item_size": 46,
+            "margin": "-5,-65,0,0"
+          },
         ]
       },
       {
@@ -565,7 +589,15 @@
             ],
             "item_size": 46,
             "margin": "5,-65,0,0"
-          }
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["cp_lamp"]
+            ],
+            "item_size": 46,
+            "margin": "-5,-65,0,0"
+          },
         ]
       },
       {
@@ -596,7 +628,15 @@
             ],
             "item_size": 46,
             "margin": "5,-65,0,0"
-          }
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["sf_lamp"]
+            ],
+            "item_size": 46,
+            "margin": "-5,-65,0,0"
+          },
         ]
       },
       {
@@ -627,6 +667,22 @@
             ],
             "item_size": 46,
             "margin": "5,-65,0,0"
+          },
+		  		  {
+            "type": "itemgrid",
+            "rows": [
+              ["tvt_lamp_l"]
+            ],
+            "item_size": 46,
+            "margin": "-5,-65,-25,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["tvt_lamp_tr"]
+            ],
+            "item_size": 46,
+            "margin": "5,-65,-25,0"
           }
         ]
       },
@@ -658,6 +714,14 @@
             ],
             "item_size": 46,
             "margin": "5,-65,0,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["mm_lamp"]
+            ],
+            "item_size": 46,
+            "margin": "-5,-65,-25,-65"
           },
 		  {
             "type": "itemgrid",
@@ -717,7 +781,7 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["op_sc"]
+              ["op_mailbox"]
             ],
             "item_size": 150,
             "margin": "-180,60,180,0"
@@ -725,7 +789,7 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["op_mailbox"]
+              ["op_sc"]
             ],
             "item_size": 150,
             "margin": "-660,110,180,0"

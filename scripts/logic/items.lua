@@ -27,15 +27,51 @@ function Flyer()
 end
 
 function Swim()
-	return (has ("op_wn_off") and has ("water")) or (has ("op_wn_on") and (has ("swim") or has ("dive")))
+	return ((has ("op_wn_off") or has("op_wn_on")) and has ("water")) or (has ("op_wn_prog") and (has ("swim") or has ("dive")))
 end
 
 function Dive()
-    return (has ("op_wn_off") and has ("water")) or (has ("op_wn_on") and has ("dive"))
+    return ((has ("op_wn_off") or has("op_wn_on")) and has ("water")) or (has ("op_wn_prog") and has ("dive"))
 end
 
 function WaterCatch()
-    return (has ("op_wn_off") and has ("water")) or (has ("op_wn_on") and has ("watercatch"))
+    return ((has ("op_wn_off") or has("op_wn_on")) and has ("water")) or (has ("op_wn_prog") and has ("watercatch"))
+end
+
+function CB_Lamp()
+    return (Net and (has ("op_lamps_on") and has ("cb_lamp_on")) or (has ("op_lamps_off")))
+end
+
+function DI_Lamp()
+    return (Net and (has ("op_lamps_on") and has ("di_lamp_on")) or (has ("op_lamps_off")))
+end
+
+function CRC_Lamp()
+    return (Net and (has ("op_lamps_on") and has ("crc_lamp_on")) or (has ("op_lamps_off")))
+end
+
+function CP_Lamp()
+    return (Net and (has ("op_lamps_on") and has ("cp_lamp_on")) or (has ("op_lamps_off")))
+end
+
+function SF_Lamp()
+    return (Net and (has ("op_lamps_on") and has ("sf_lamp_on")) or (has ("op_lamps_off")))
+end
+
+function TVT_Lobby_Lamp()
+    return (Net and (has ("op_lamps_on") and has ("tvt_lamp_l_on")) or (has ("op_lamps_off")))
+end
+
+function TVT_Tank_Lamp()
+    return (Net and (has ("op_lamps_on") and has ("tvt_lamp_tr_on")) or (has ("op_lamps_off")))
+end
+
+function MM_Lamp()
+    return (Net and (has ("op_lamps_on") and has ("mm_lamp_on")) or (has ("op_lamps_off")))
+end
+
+function MM_Lobby_DoubleDoor()
+    return (has ("mm_lobby_doubledoor"))
 end
 
 function Radar()
@@ -122,17 +158,18 @@ function getLvlOrder()
 end
 
 function switchKey(label)
-	getLvlOrder()
+	print("====================SwitchKey==================")
+	--getLvlOrder()
 	-- Get lvl name of clicked label
 	levelclicked = string.sub(label,6,-5)
 	index = find_index(lvl_list,levelclicked)
 	-- Before refreshing lvl_order,go see what level was there and deactivate the key
 	disableKeyID = lvl_order[index]
 	disableKeyLevel = lvl_list[disableKeyID]
+	print("Disabled:"..disableKeyLevel.."_key")
 	Tracker:FindObjectForCode(disableKeyLevel.."_key").Active = false
-	
 	--Then do the world unlocks to reactivate the right keys depending on the new level_order
-	worldUnlocks()
+	worldUnlocks(index)
 end
 
 function resetworldUnlocks()
@@ -143,8 +180,57 @@ function resetworldUnlocks()
     end
 end
 
-function worldUnlocks()
+function worldUnlocks(source)
+	print("===================Unlocks====================")
+	print(source)
+	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "cca", "cp", "sf", "tvt", "mm"}
+	getLvlOrder()
+	getReqKeys()
+	worldkeys = Tracker:ProviderCountForCode("keyWorld")
+	LevelRando = Tracker:FindObjectForCode("op_entrance").CurrentStage
+	Auto_ER = Tracker:FindObjectForCode("__setting_auto_ent").CurrentStage
+	already_checked = {}
 	
+	if LevelRando ~= 0 then
+		Tracker:FindObjectForCode(lvl_list[1].."_key").Active = false
+		Tracker:FindObjectForCode(lvl_list[2].."_key").Active = false
+		Tracker:FindObjectForCode(lvl_list[3].."_key").Active = false
+	end
+
+	for index = 1, 21 do
+		value = Tracker:FindObjectForCode("__er_"..lvl_list[index].."_dst").CurrentStage
+		if LevelRando == 0 then
+			--if value == 0 then
+				value = index
+			--end
+
+		end
+		print(value)
+		if value ~= 0 then
+			level_reqKeys = requiredKeys[index]
+			if has_value(already_checked, value) == false then
+				if worldkeys >= level_reqKeys then
+					--print("activate_"..lvl_list[value].."_key")
+					Tracker:FindObjectForCode(lvl_list[value].."_key").Active = true
+					table.insert(already_checked,value)
+				elseif worldkeys < level_reqKeys then
+					--print("--deactivate_"..lvl_list[value].."_key")
+					Tracker:FindObjectForCode(lvl_list[value].."_key").Active = false
+				end
+			end
+		else
+			if has_value(already_checked, index) == false then
+				--print(index)
+				--print("--deactivate_"..lvl_list[index].."_key")
+				Tracker:FindObjectForCode(lvl_list[index].."_key").Active = false
+				--table.insert(already_checked,index)
+			end
+		end
+    end
+end
+
+function worldUnlocks_Old()
+	print("===================Unlocks====================")
 	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "cca", "cp", "sf", "tvt", "mm"}
 	getLvlOrder()
 	getReqKeys()
@@ -163,17 +249,19 @@ function worldUnlocks()
 			level_reqKeys = requiredKeys[index]
 			if has_value(already_checked, value) == false then
 				if worldkeys >= level_reqKeys then
-					print("activate"..lvl_list[value].."_key")
+					print("activate_"..lvl_list[value].."_key")
 					Tracker:FindObjectForCode(lvl_list[value].."_key").Active = true
+					--Tracker:FindObjectForCode(lvl_list[i].."_key").Active = false
 					table.insert(already_checked,value)
 				elseif worldkeys < level_reqKeys then
-					print("--deactivate"..lvl_list[value].."_key")
+					print("--deactivate_"..lvl_list[value].."_key")
 					Tracker:FindObjectForCode(lvl_list[value].."_key").Active = false
 				end
 			end
 		end
     end
 end
+
 
 function clearER()
 	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "cca", "cp", "sf", "tvt", "mm"}
@@ -192,6 +280,7 @@ end
 function loadAP()
 	resetworldUnlocks()
 	setER()
+	
 end
 
 function setER(source)	
@@ -212,7 +301,7 @@ function setER(source)
 					stage_value = levelsIdsToIndex[v]
 					table.insert(true_lvl_order,k,stage_value)
 					
-					print(string.format("ER entrance %s | %s | %s", index_lvl,stage_value,lvl_list[index_lvl]))
+					--print(string.format("ER entrance %s | %s | %s", index_lvl,stage_value,lvl_list[index_lvl]))
 					if worldkeys >= reqKeys[index_lvl] then
 						Tracker:FindObjectForCode("__er_"..lvl_list[index_lvl].."_dst").CurrentStage = stage_value
 					else
@@ -238,10 +327,14 @@ function setER(source)
 	end
 end
 
-function apLayoutChange()
+
+
+
+function apItemLayoutChange()
   local waternet = Tracker:FindObjectForCode("op_waternet")
-  if (string.find(Tracker.ActiveVariantUID, "map_tracker")) or
-  (string.find(Tracker.ActiveVariantUID, "map_tracker_alternative")) then
+  local lamps = Tracker:FindObjectForCode("op_lamps")
+  print(lamps.CurrentStage)
+  if (Tracker.ActiveVariantUID == "map_tracker") or (Tracker.ActiveVariantUID == "map_tracker_alternative") then
     if waternet.CurrentStage == 0 or waternet.CurrentStage == 2 then
 	    print("Option : off")
 		Tracker:AddLayouts("layouts/itemGrids/item_grids_standard.json")
@@ -252,8 +345,79 @@ function apLayoutChange()
   end
 end
 
-ScriptHost:AddWatchForCode("useApLayout", "op_waternet", apLayoutChange)
+function apLevelsLayoutChange()
+  local lamps = Tracker:FindObjectForCode("op_lamps")
+  print(lamps.CurrentStage)
+  if (Tracker.ActiveVariantUID == "map_tracker") then
+    if lamps.CurrentStage == 0 then
+	    print("Option : off")
+	    Tracker:AddLayouts("layouts/itemGrids/level_grid_standard.json")
+    elseif lamps.CurrentStage == 1 then
+	    print("Option : on")
+	    Tracker:AddLayouts("layouts/itemGrids/level_grid_standard_lamps.json")
+    end
+  end
+  if (Tracker.ActiveVariantUID == "map_tracker_alternative") then
+	if lamps.CurrentStage == 0 then
+	    print("Option : off")
+	    Tracker:AddLayouts("layouts/itemGrids/level_grid_alternative.json")
+    elseif lamps.CurrentStage == 1 then
+	    print("Option : on")
+	    Tracker:AddLayouts("layouts/itemGrids/level_grid_alternative_lamps.json")
+    end
+  end
+end
+
+
+
+--Dev version check,remove when in prod!!!!
+--==============================================================
+function new_version_check()
+	--print(SLOT_DATA)
+	if Tracker:FindObjectForCode("ap_connected").Active == false then
+		SLOT_DATA = nil
+	end
+	if SLOT_DATA then
+		if SLOT_DATA['lamp'] == nil then
+			Tracker:FindObjectForCode("mm_lobby_doubledoor").Active = true
+			Tracker:FindObjectForCode("mm_lobby_doubledoor").Icon = ""
+			Tracker:FindObjectForCode("op_lamps_off").Icon = ""
+			Tracker:FindObjectForCode("op_lamps_on").Icon = ""
+			Tracker:FindObjectForCode("op_lamps").CurrentStage = 0
+		else
+			Tracker:FindObjectForCode("mm_lobby_doubledoor").Icon = "images/items/MM_door_unlock.png"
+			print("--------------------------------------------------------")
+			Tracker:FindObjectForCode("op_lamps_off").Icon = "images/settings/lamps_off.png"
+			Tracker:FindObjectForCode("op_lamps_on").Icon = "images/settings/lamps_on.png"
+		end
+	end
+	MM_Door_Icon = Tracker:FindObjectForCode("mm_lobby_doubledoor").Icon
+	lamps_off_Icon = Tracker:FindObjectForCode("op_lamps_off").Icon
+	lamps_on_Icon = Tracker:FindObjectForCode("op_lamps_on").Icon
+	if Tracker:FindObjectForCode("ap_connected").Active == false then
+		--Tracker:FindObjectForCode("op_lamps").CurrentStage = 0
+		ScriptHost:AddWatchForCode("useApLayout2", "op_lamps", apLevelsLayoutChange)
+	end
+end
+
+
+ScriptHost:AddWatchForCode("Door Handler", "mm_lobby_doubledoor", new_version_check)
+ScriptHost:AddWatchForCode("Lamps Handler", "op_lamps", new_version_check)
+--==============================================================
+
+
+
+
+
+
+
+
+
+
+ScriptHost:AddWatchForCode("useApLayout", "op_waternet", apItemLayoutChange)
+ScriptHost:AddWatchForCode("useApLayout2", "op_lamps", apLevelsLayoutChange)
 ScriptHost:AddWatchForCode("worldkey handler", "keyWorld", worldUnlocks)
+
 lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "cca", "cp", "sf", "tvt", "mm"}
 for index = 1, 21 do
 	ScriptHost:AddWatchForCode("er_label handler_"..lvl_list[index], "__er_"..lvl_list[index].."_dst", switchKey)

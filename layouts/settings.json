@@ -14,7 +14,19 @@
                         "__setting_auto_ent"
                     ]
                 ]
-            }
+            },
+			{
+					"type": "array",
+					"orientation": "vertical",
+					"margin": "0,-10",
+					"content": [
+						{
+							"type": "layout",
+							"key": "ap_connected"
+						}
+
+					]
+			}
         ]
     }
 }

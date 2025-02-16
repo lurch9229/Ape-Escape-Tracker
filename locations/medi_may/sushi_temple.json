@@ -4,7 +4,7 @@
         "color": "#FFFFFF",
         "children": [
             {
-                "name": "Sushi Temple",
+                "name": "Sushi Temple - Monkeys",
                 "map_locations": [
                     {
                         "map": "Sushi_Temple",
@@ -15,8 +15,15 @@
                         "map": "Medieval_Mayhem",
                         "x": 60,
                         "y": 140
-                    }
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 505,
+                        "y": 120
+                    },
                 ],
+				"chest_unopened_img": "images/icons/monkeyOn.png",
+                "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
                             "st_key"
@@ -24,8 +31,7 @@
                 "sections": [
                     {
                         "name": "Taku",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -38,8 +44,7 @@
                     },
                     {
                         "name": "Rocka",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -52,8 +57,7 @@
                     },
                     {
                         "name": "Mara-lea",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -66,8 +70,7 @@
                     },
                     {
                         "name": "Wog",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -84,8 +87,7 @@
                     },
                     {
                         "name": "Mayi",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -98,8 +100,7 @@
                     },
                     {
                         "name": "Owyang",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -112,8 +113,7 @@
                     },
                     {
                         "name": "Long",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -126,8 +126,7 @@
                     },
                     {
                         "name": "Elly",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -141,8 +140,7 @@
                     },
                     {
                         "name": "Chunky",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -156,8 +154,7 @@
                     },
                     {
                         "name": "Voti",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -174,8 +171,7 @@
                     },
                     {
                         "name": "Quel Tin",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -188,8 +184,7 @@
                     },
                     {
                         "name": "Phaldo",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -199,7 +194,33 @@
                             "net"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Sushi Temple - Specter Coins",
+                "map_locations": [
+                    {
+                        "map": "Sushi_Temple",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Medieval_Mayhem",
+                        "x": 90,
+                        "y": 140
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 535,
+                        "y": 120
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "st_key"
+                        ],
+                "sections": [
                     {
                         "name": "Outside",
                         "chest_unopened_img": "images/icons/coinOn.png",
@@ -242,7 +263,33 @@
                             "sling, op_et"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Sushi Temple - Mailboxes",
+                "map_locations": [
+                    {
+                        "map": "Sushi_Temple",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Medieval_Mayhem",
+                        "x": 120,
+                        "y": 140
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 565,
+                        "y": 120
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "st_key"
+                        ],
+                "sections": [
                     {
                       "name": "Green Pants = Great Vision",
                       "chest_unopened_img": "images/icons/BlueMailboxOn.png",

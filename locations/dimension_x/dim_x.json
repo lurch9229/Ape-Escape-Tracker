@@ -12,7 +12,12 @@
                         "map": "Stadium_Attack",
                         "x": 145,
                         "y": 185
-                    }
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 205,
+                        "y": 520
+                    },
                 ],
 				"visibility_rules": 
                         [
@@ -52,7 +57,12 @@
                         "map": "Gladiator_Attack",
                         "x": 120,
                         "y": 185
-                    }
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 450,
+                        "y": 520
+                    },
                 ],
 				"visibility_rules": 
                         [
@@ -94,7 +104,12 @@
                         "map": "Peak_Point_Matrix",
                         "x": 180,
                         "y": 160
-                    }
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 835,
+                        "y": 345
+                    },
                 ],
 				"visibility_rules":
                         [

@@ -3,10 +3,10 @@
         "name": "Specter's Factory",
         "chest_unopened_img": "images/items/chest_x.png",
         "chest_opened_img": "images/items/chest_o.png",
-        "color": "#FFFFFF",
+        "color": "#0000000",
         "children": [
             {
-                "name": "Specter's Factory",
+                "name": "Specter's Factory - Monkeys",
                 "map_locations": [
                     {
                         "map": "Specters_Factory",
@@ -17,8 +17,15 @@
                         "map": "Futurama",
                         "x": 165,
                         "y": 180
-                    }
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 620,
+                        "y": 260
+                    },
                 ],
+				"chest_unopened_img": "images/icons/monkeyOn.png",
+                "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
                             "sf_key"
@@ -26,8 +33,7 @@
                 "sections": [
                     {
                         "name": "Big Show",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -40,8 +46,7 @@
                     },
                     {
                         "name": "Dreos",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -54,8 +59,7 @@
                     },
                     {
                         "name": "Reznor",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -68,8 +72,7 @@
                     },
                     {
                         "name": "Urkel",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -86,8 +89,7 @@
                     },
                     {
                         "name": "Vanilla S",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -100,8 +102,7 @@
                     },
                     {
                         "name": "Radd",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -114,8 +115,7 @@
                     },
                     {
                         "name": "Shimbo",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -128,8 +128,7 @@
                     },
                     {
                         "name": "Hurt",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -142,8 +141,7 @@
                     },
                     {
                         "name": "String",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -156,8 +154,7 @@
                     },
                     {
                         "name": "Khamo",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -167,7 +164,33 @@
                             "net, $SF_MechRoom, $CanHitMultiple"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Specter's Factory - Specter Coins",
+                "map_locations": [
+                    {
+                        "map": "Specters_Factory",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Futurama",
+                        "x": 195,
+                        "y": 180
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 650,
+                        "y": 260
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "sf_key"
+                        ],
+                "sections": [
                     {
                         "name": "RC Car Room",
                         "chest_unopened_img": "images/icons/coinOn.png",
@@ -197,7 +220,33 @@
                             "$SF_MechRoom"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Specter's Factory - Mailboxes",
+                "map_locations": [
+                    {
+                        "map": "Specters_Factory",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Futurama",
+                        "x": 225,
+                        "y": 180
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 680,
+                        "y": 260
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "sf_key"
+                        ],
+                "sections": [
                     {
                       "name": "Hop In The Tank",
                       "chest_unopened_img": "images/icons/RedMailboxOn.png",

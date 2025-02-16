@@ -4,7 +4,7 @@
         "color": "#FFFFFF",
         "children": [
             {
-                "name": "Fossil Fields",
+                "name": "Fossil Fields - Monkeys",
                 "map_locations": [
                     {
                         "map": "Fossil_Field",
@@ -13,10 +13,17 @@
                     },
                     {
                         "map": "Lost_Lands",
-                        "x": 45,
+                        "x": 30,
                         "y": 140
-                    }
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 30,
+                        "y": 120
+                    },
                 ],
+				"chest_unopened_img": "images/icons/monkeyOn.png",
+                "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "visibility_rules": 
                         [
                             ""
@@ -28,8 +35,7 @@
                 "sections": [
                     {
                         "name": "Noonan",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+
                         "visibility_rules": 
                         [
                             ""
@@ -42,8 +48,6 @@
                     },
                     {
                         "name": "Jorjy",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
                         "visibility_rules": 
                         [
                             ""
@@ -56,8 +60,6 @@
                     },
                     {
                         "name": "Nati",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
                         "visibility_rules": 
                         [
                             ""
@@ -70,8 +72,6 @@
                     },
                     {
                         "name": "Tray C",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
                         "visibility_rules": 
                         [
                             ""
@@ -83,7 +83,37 @@
                             "net, op_et"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Fossil Fields - Specter Coins",
+                "map_locations": [
+                    {
+                        "map": "Fossil_Field",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Lost_Lands",
+                        "x": 60,
+                        "y": 140
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 60,
+                        "y": 120
+                    },
+                ],
+                "visibility_rules": 
+                        [
+                            "shuffleCoins"
+                        ],
+                "access_rules": 
+                        [
+                            "ff_key"
+                        ],
+                "sections": [
                     {
                         "name": "Main",
                         "chest_unopened_img": "images/icons/coinOn.png",
@@ -97,7 +127,37 @@
                             ""
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Fossil Fields - Mailboxes",
+                "map_locations": [
+                    {
+                        "map": "Fossil_Field",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Lost_Lands",
+                        "x": 90,
+                        "y": 140
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 90,
+                        "y": 120
+                    },
+                ],
+                "visibility_rules": 
+                        [
+                            "shuffleMailbox"
+                        ],
+                "access_rules": 
+                        [
+                            "ff_key"
+                        ],
+                "sections": [
                     {
                         "name": "Stun Club Tutorial",
                         "chest_unopened_img": "images/icons/RedMailboxOn.png",

@@ -5,7 +5,7 @@
         "children": [
             
             {
-                "name": "Cryptic Relics",
+                "name": "Cryptic Relics - Monkeys",
                 "map_locations": [
                     {
                         "map": "Cryptic_Relics",
@@ -15,9 +15,16 @@
                     {
                         "map": "Mysterious_Age",
                         "x": 290,
-                        "y": 120
-                    }
+                        "y": 140
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 140,
+                        "y": 400
+                    },
                 ],
+				"chest_unopened_img": "images/icons/monkeyOn.png",
+                "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
                             "cr_key"
@@ -25,8 +32,7 @@
                 "sections": [
                     {
                         "name": "Bazzle",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -42,8 +48,7 @@
                     },
                     {
                         "name": "Freeto",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -56,8 +61,7 @@
                     },
                     {
                         "name": "Troopa",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -75,8 +79,7 @@
                     },
                     {
                         "name": "Stymie",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -89,8 +92,7 @@
                     },
                     {
                         "name": "Spanky",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -109,8 +111,7 @@
                     },
                     {
                         "name": "Jesta",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -124,8 +125,7 @@
                     },
                     {
                         "name": "Pally",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -138,8 +138,7 @@
                     },
                     {
                         "name": "Crash",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -151,7 +150,33 @@
                             "net, $CR_Inside, $SuperFlyer, op_et"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Cryptic Relics - Specter Coins",
+                "map_locations": [
+                    {
+                        "map": "Cryptic_Relics",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Mysterious_Age",
+                        "x": 320,
+                        "y": 140
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 170,
+                        "y": 400
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "cr_key"
+                        ],
+                "sections": [
                     {
                         "name": "Main Ruins",
                         "chest_unopened_img": "images/icons/coinOn.png",
@@ -168,7 +193,33 @@
                             "$CR_Inside, $CanSwim, op_et"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Cryptic Relics - Mailboxes",
+                "map_locations": [
+                    {
+                        "map": "Cryptic_Relics",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Mysterious_Age",
+                        "x": 350,
+                        "y": 140
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 200,
+                        "y": 400
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "cr_key"
+                        ],
+                "sections": [
                     {
                       "name": "Get Rid of the Enemy",
                       "chest_unopened_img": "images/icons/BlueMailboxOn.png",

@@ -4,7 +4,7 @@
         "color": "#FFFFFF",
         "children": [
             {
-                "name": "Snowy Mammoth",
+                "name": "Snowy Mammoth - Monkeys",
                 "map_locations": [
                     {
                         "map": "Snowy_Mammoth",
@@ -15,8 +15,15 @@
                         "map": "New_Freezeland",
                         "x": 45,
                         "y": 145
-                    }
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 385,
+                        "y": 120
+                    },
                 ],
+				"chest_unopened_img": "images/icons/monkeyOn.png",
+                "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
                             "sm_key"
@@ -24,8 +31,7 @@
                 "sections": [
                     {
                         "name": "Popcicle",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -38,8 +44,7 @@
                     },
                     {
                         "name": "Iced",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -52,8 +57,7 @@
                     },
                     {
                         "name": "Rickets",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -71,8 +75,7 @@
                     },
                     {
                         "name": "Skeens",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -88,8 +91,7 @@
                     },
                     {
                         "name": "Denggoy",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -105,8 +107,7 @@
                     },
                     {
                         "name": "Chilly",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": 
                         [
                             ""
@@ -119,7 +120,33 @@
                             "net, op_et"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Snowy Mammoth - Specter Coins",
+                "map_locations": [
+                    {
+                        "map": "Snowy_Mammoth",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "New_Freezeland",
+                        "x": 75,
+                        "y": 145
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 415,
+                        "y": 120
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "sm_key"
+                        ],
+                "sections": [
                     {
                         "name": "Main",
                         "chest_unopened_img": "images/icons/coinOn.png",
@@ -133,7 +160,33 @@
                             ""
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Snowy Mammoth - Mailboxes",
+                "map_locations": [
+                    {
+                        "map": "Snowy_Mammoth",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "New_Freezeland",
+                        "x": 105,
+                        "y": 145
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 445,
+                        "y": 120
+                    },
+                ],
+                "access_rules": 
+                        [
+                            "sm_key"
+                        ],
+                "sections": [
                     {
                       "name": "Severely Cold Sea",
                       "chest_unopened_img": "images/icons/RedMailboxOn.png",

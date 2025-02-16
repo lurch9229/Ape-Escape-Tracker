@@ -4,7 +4,7 @@
         "color": "#FFFFFF",
         "children": [
             {
-                "name": "Primordial Ooze",
+                "name": "Primordial Ooze - Monkeys",
                 "map_locations": [
                     {
                         "map": "Primordial_Ooze",
@@ -15,8 +15,15 @@
                         "map": "Lost_Lands",
                         "x": 170,
                         "y": 180
-                    }
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 30,
+                        "y": 260
+                    },
                 ],
+				"chest_unopened_img": "images/icons/monkeyOn.png",
+                "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "visibility_rules": [
                     ""
                 ],
@@ -26,8 +33,7 @@
                 "sections": [
                     {
                         "name": "Shay",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": [
                             ""
                         ],
@@ -38,8 +44,7 @@
                     },
                     {
                         "name": "Dr. Monk",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": [
                             ""
                         ],
@@ -50,8 +55,7 @@
                     },
                     {
                         "name": "Ah-Choo",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": [
                             ""
                         ],
@@ -63,8 +67,7 @@
                     },
                     {
                         "name": "Grunt",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": [
                             ""
                         ],
@@ -78,8 +81,7 @@
                     },
                     {
                         "name": "Tyrone",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": [
                             ""
                         ],
@@ -90,8 +92,7 @@
                     },
                     {
                         "name": "Gornif",
-                        "chest_unopened_img": "images/icons/monkeyOn.png",
-                        "chest_opened_img": "images/icons/monkeyOff.png",
+                        
                         "visibility_rules": [
                             ""
                         ],
@@ -100,7 +101,35 @@
                             "$CanSwim, $CanWaterCatch"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Primordial Ooze - Specter Coins",
+                "map_locations": [
+                    {
+                        "map": "Primordial_Ooze",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Lost_Lands",
+                        "x": 200,
+                        "y": 180
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 60,
+                        "y": 260
+                    },
+                ],
+                "visibility_rules": [
+                    "shuffleCoins"
+                ],
+                "access_rules": [
+                    "po_key"
+                ],
+                "sections": [
                     {
                         "name": "Main",
                         "chest_unopened_img": "images/icons/coinOn.png",
@@ -112,7 +141,35 @@
                             "$CanDive"
                         ],
                         "item_count": 1
+                    }
+                ]
+            },
+			{
+                "name": "Primordial Ooze - Mailboxes",
+                "map_locations": [
+                    {
+                        "map": "Primordial_Ooze",
+                        "x": 0,
+                        "y": 0
                     },
+                    {
+                        "map": "Lost_Lands",
+                        "x": 230,
+                        "y": 180
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 90,
+                        "y": 260
+                    },
+                ],
+                "visibility_rules": [
+                    "shuffleMailbox"
+                ],
+                "access_rules": [
+                    "po_key"
+                ],
+                "sections": [
                     {
                       "name": "Dive Reminder",
                       "chest_unopened_img": "images/icons/RedMailboxOn.png",
