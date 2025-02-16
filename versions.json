@@ -1,6 +1,21 @@
 {
     "versions": [
-        
+        {
+                "package_version": "0.4.6",
+                "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.6/Ape-Escape-Tracker-0.4.6.zip",
+                "sha256": "18CD4147948D9C6BB57277C59BC60EC02F9244C4A8394327C384E53EE386E208",
+                "changelog": [
+                        "Fixes to Water Net logic not taking Progressive Water net into account",
+                        "Fixed ER being weird with the world unlocks while manually clicking the Labels",
+                        "Changed behavior of ER unlocks : While Entrance randomization is at \"Vanilla\", no changes in the ER tab will impact the world unlocks. To take into account the ER tab entrances, switch to a value other than \"Vanilla\"",
+                        "Removed displaying of Coins in the levels totals : They do not serve any purpose. (They are still tracked in the map)",
+                        "Split the nodes on the map into 3 different nodes : Monkeys (& bosses) , Specter Coins and Mailboxes",
+                        "There is now a new global Tab : Overall View. This maps have all levels/locations on it so it is easier to track at once !",
+                        "Changed Icon for catched monkeys to be the a Net Icon, similar of the one you see in the game's pause menu",
+                        "(NYI) Added Lamps and MM_Door/Adjusted Logic. Also adjusted logic for MM Donovan and Laura to take into account you can catch them without having the Lamp Item",
+                        "(NYI) Added an option for future updates : Lamps and MM_Door tracking. Will automatically be disabled (and hidden) if you connect to a seed without them."
+                ]
+        },
         {
                 "package_version": "0.4.5",
                 "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.5/Ape-Escape-Tracker-0.4.5.zip",
