@@ -318,8 +318,17 @@
   {
     "name": "AP_Connected",
     "type": "toggle",
+	"initial_active_state": false,
     "loop": "false",
     "img": "",
     "codes": "ap_connected"
+  },
+  {
+    "name": "New_Version",
+    "type": "toggle",
+    "initial_active_state": false,
+	"loop": "false",
+    "img": "",
+    "codes": "new_version"
   },
 ]

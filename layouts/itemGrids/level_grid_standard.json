@@ -658,15 +658,7 @@
             ],
             "item_size": 46,
             "margin": "5,-65,0,0"
-          },
-		  {
-            "type": "itemgrid",
-            "rows": [
-              ["mm_lobby_doubledoor"]
-            ],
-            "item_size": 46,
-            "margin": "-5,-65,-25,-65"
-          },
+          }
         ]
       },
       {

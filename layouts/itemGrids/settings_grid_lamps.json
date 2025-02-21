@@ -73,6 +73,14 @@
             ],
             "item_size": 150,
             "margin": "0,-115,0,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["op_lamps"]
+            ],
+            "item_size": 150,
+            "margin": "0,-115,0,0"
           }
         ]
       }
@@ -117,6 +125,14 @@
             "type": "itemgrid",
             "rows": [
               ["op_entrance","op_waternet"]
+            ],
+            "item_size": 150,
+            "margin": "0,-115,0,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["op_lamps"]
             ],
             "item_size": 150,
             "margin": "0,-115,0,0"

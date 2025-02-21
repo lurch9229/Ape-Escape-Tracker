@@ -119,7 +119,7 @@ function onClear(slot_data)
 	elseif slot_data['unlocksperkey'] == 3 then
         Tracker:FindObjectForCode("op_keyoption").CurrentStage = 3
     end
-	print(slot_data['entrance'])
+	--print(slot_data['entrance'])
 	if slot_data['entrance'] == 0 then
         Tracker:FindObjectForCode("op_entrance").CurrentStage = 0
     elseif slot_data['entrance'] == 1 then
@@ -131,37 +131,47 @@ function onClear(slot_data)
 	elseif slot_data['entrance'] == 4 then
         Tracker:FindObjectForCode("op_entrance").CurrentStage = 4
     end
+
+	--==============================================================================
+	--print("--------------------LAYOUT------------------")
+	--print(slot_data["lamp"])
+
+	--Lamps()
+	loadAP()
+	--new_version_check()
 	
+end
+
+function Lamps()
 	Tracker:FindObjectForCode("ap_connected").Active = true
+
 	--Special code handling for previous versions,remove after the dev version is up
 	--==============================================================================
-	if slot_data["lamp"] == nil and Tracker:FindObjectForCode("ap_connected").Active == true then
-		Tracker:FindObjectForCode("mm_lobby_doubledoor").Active = true
-		Tracker:FindObjectForCode("mm_lobby_doubledoor").Icon = ""
-		Tracker:FindObjectForCode("op_lamps_off").Icon = ""
-		Tracker:FindObjectForCode("op_lamps_on").Icon = ""
-		ScriptHost:RemoveWatchForCode("useApLayout2")
-	else
-		Tracker:FindObjectForCode("mm_lobby_doubledoor").Active = false
-		Tracker:FindObjectForCode("mm_lobby_doubledoor").Icon = "images/items/MM_door_unlock.png"
-		Tracker:FindObjectForCode("op_lamps_off").Icon = "images/settings/lamps_off.png"
-		Tracker:FindObjectForCode("op_lamps_on").Icon = "images/settings/lamps_on.png"
-		ScriptHost:AddWatchForCode("useApLayout2", "op_lamps", apLevelsLayoutChange)
-	end
-	--==============================================================================
-	
-	
 	
 	if slot_data['lamp'] == 0 or slot_data["lamp"] == nil then
 		Tracker:FindObjectForCode("op_lamps").CurrentStage = 0
 	else
 		Tracker:FindObjectForCode("op_lamps").CurrentStage = 1
 	end
-	
-	loadAP()
+	Tracker:FindObjectForCode("mm_lobby_doubledoor").Active = false
+	if slot_data["lamp"] == nil and Tracker:FindObjectForCode("ap_connected").Active == true then
+		--Tracker:FindObjectForCode("mm_lobby_doubledoor").Active = true
+		--Tracker:FindObjectForCode("mm_lobby_doubledoor").Active = false
+		Tracker:FindObjectForCode("mm_lobby_doubledoor").Icon = ""
+		Tracker:FindObjectForCode("op_lamps_off").Icon = ""
+		Tracker:FindObjectForCode("op_lamps_on").Icon = ""
+		--Tracker:FindObjectForCode("op_lamps").CurrentStage = 0
+		ScriptHost:RemoveWatchForCode("useApLayout2")
+	elseif Tracker:FindObjectForCode("ap_connected").Active == true then
+		Tracker:FindObjectForCode("new_version").Active = true
+		Tracker:FindObjectForCode("mm_lobby_doubledoor").Icon = "images/items/MM_door_unlock.png"
+		
+		Tracker:FindObjectForCode("op_lamps_off").Icon = "images/settings/lamps_off.png"
+		Tracker:FindObjectForCode("op_lamps_on").Icon = "images/settings/lamps_on.png"
+		ScriptHost:AddWatchForCode("useApLayout2", "op_lamps", apLevelsLayoutChange)
+		--Tracker:FindObjectForCode("op_lamps").CurrentStage = 0
+	end
 end
-
-
 -- called when an item gets collected
 function onItem(index, item_id, item_name, player_number)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
