@@ -1,6 +1,15 @@
 {
     "versions": [
-        {
+		{
+                "package_version": "0.4.7",
+                "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.7/Ape-Escape-Tracker-0.4.7.zip",
+                "sha256": "0952F8C666EE87ACFAB69AE95474E307A27F12E7263039011834DB84C3FED490",
+                "changelog": [
+						"Corrected Logic for MM",
+						"Removed Lamps/Door options for now since it caused some bugs"
+                ]
+        },
+		{
                 "package_version": "0.4.6",
                 "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.6/Ape-Escape-Tracker-0.4.6.zip",
                 "sha256": "18CD4147948D9C6BB57277C59BC60EC02F9244C4A8394327C384E53EE386E208",
