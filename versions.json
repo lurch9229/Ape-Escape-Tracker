@@ -1,6 +1,15 @@
 {
     "versions": [
 		{
+                "package_version": "0.4.8",
+                "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.8/Ape-Escape-Tracker-0.4.8.zip",
+                "sha256": "E5767AD4962F930C410F849604F2BD3F9415FF5C2A3A6E8C262AC5B4EDE0F0C6",
+                "changelog": [
+						"Fixed : Due to a code error, some Level ER order would cause keys to not detect correctly",
+						"Changed code referencing \"Crumbling Castle\" to now be \"crc\" instead of \"cca\" for consistency with the APworld"
+                ]
+        },
+		{
                 "package_version": "0.4.7",
                 "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.7/Ape-Escape-Tracker-0.4.7.zip",
                 "sha256": "0952F8C666EE87ACFAB69AE95474E307A27F12E7263039011834DB84C3FED490",
