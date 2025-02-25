@@ -134,7 +134,7 @@
     "initial_active_state": true,
     "allow_disabled": false,
     "img": "images/er/er_crumbling_castle_ent.png",
-    "codes": "__er_cca_ent"
+    "codes": "__er_crc_ent"
   },
   {
     "name": "City Park - Entrance",
@@ -2094,7 +2094,7 @@
 	"loop": true,
 	"initial_stage_idx": 0,
 	"allow_disabled": false,
-	"codes": "__er_label, __er_cca_dst",
+	"codes": "__er_label, __er_crc_dst",
 	"stages": [
 		{
 			"name": "Unknown Destination",

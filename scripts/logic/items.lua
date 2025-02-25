@@ -167,14 +167,16 @@ function switchKey(label)
 	disableKeyID = lvl_order[index]
 	disableKeyLevel = lvl_list[disableKeyID]
 	print("Disabled:"..disableKeyLevel.."_key")
-	Tracker:FindObjectForCode(disableKeyLevel.."_key").Active = false
+	if disableKeyLevel ~= "ppm" then
+		Tracker:FindObjectForCode(disableKeyLevel.."_key").Active = false
+	end
 	--Then do the world unlocks to reactivate the right keys depending on the new level_order
 	worldUnlocks(index)
 end
 
 function resetworldUnlocks()
 	
-	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "cca", "cp", "sf", "tvt", "mm"}
+	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
 	for index = 1, 21 do
 		Tracker:FindObjectForCode(lvl_list[index].."_key").Active = false
     end
@@ -183,7 +185,7 @@ end
 function worldUnlocks(source)
 	--print("===================Unlocks====================")
 	--print(source)
-	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "cca", "cp", "sf", "tvt", "mm"}
+	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
 	getLvlOrder()
 	getReqKeys()
 	worldkeys = Tracker:ProviderCountForCode("keyWorld")
@@ -231,7 +233,7 @@ end
 
 function worldUnlocks_Old()
 	print("===================Unlocks====================")
-	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "cca", "cp", "sf", "tvt", "mm"}
+	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
 	getLvlOrder()
 	getReqKeys()
 	worldkeys = Tracker:ProviderCountForCode("keyWorld")
@@ -264,14 +266,14 @@ end
 
 
 function clearER()
-	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "cca", "cp", "sf", "tvt", "mm"}
+	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
 	for index = 1, 21 do
 		Tracker:FindObjectForCode("__er_"..lvl_list[index].."_dst").CurrentStage = 0
     end
 end
 
 function resetER()
-	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "cca", "cp", "sf", "tvt", "mm"}
+	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
 	for index = 1, 21 do
 		Tracker:FindObjectForCode("__er_"..lvl_list[index].."_dst").CurrentStage = index
     end
@@ -292,12 +294,12 @@ function setER(source)
 	
 		if Auto_ER == 1 then
 			-- set entrances mapping respecting logic
-			--lvl_list = { "ff","po","ml","tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "cca", "cp", "sf", "tvt", "mm","ppm"}
-			lvl_list = { "ff","po","ml","tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "cca", "cp", "sf", "tvt", "mm"}
+			--lvl_list = { "ff","po","ml","tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm","ppm"}
+			lvl_list = { "ff","po","ml","tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
 			lvl_order = SLOT_DATA['entranceids']
 			true_lvl_order = {}
 			for k, v in pairs(lvl_order) do
-				if v then
+				if v and k < 22 then
 					index_lvl = k
 					stage_value = levelsIdsToIndex[v]
 					table.insert(true_lvl_order,k,stage_value)
@@ -315,12 +317,12 @@ function setER(source)
 			end
 		elseif Auto_ER == 2 then
 			-- set entrances mapping despite not knowing logic
-			--lvl_list = { "ff","po","ml","tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "cca", "cp", "sf", "tvt", "mm","ppm"}
-			lvl_list = { "ff","po","ml","tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "cca", "cp", "sf", "tvt", "mm"}
+			--lvl_list = { "ff","po","ml","tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm","ppm"}
+			lvl_list = { "ff","po","ml","tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
 			lvl_order = SLOT_DATA['entranceids']
 			true_lvl_order = {}
 			for k, v in pairs(lvl_order) do
-				if v then
+				if v and k < 22 then
 					index_lvl = k
 					stage_value = levelsIdsToIndex[v]
 					table.insert(true_lvl_order,k,stage_value)
@@ -447,7 +449,7 @@ ScriptHost:AddWatchForCode("useApLayout", "op_waternet", apItemLayoutChange)
 --ScriptHost:AddWatchForCode("useApLayout2", "op_lamps", apLevelsLayoutChange)
 ScriptHost:AddWatchForCode("worldkey handler", "keyWorld", worldUnlocks)
 
-lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "cca", "cp", "sf", "tvt", "mm"}
+lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
 for index = 1, 21 do
 	ScriptHost:AddWatchForCode("er_label handler_"..lvl_list[index], "__er_"..lvl_list[index].."_dst", switchKey)
 end

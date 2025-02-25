@@ -206,7 +206,7 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["label_cca"]
+              ["label_crc"]
             ],
             "item_size": 100,
             "margin": "0,-55,180,0"
@@ -214,7 +214,7 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["monkey_cca"]
+              ["monkey_crc"]
             ],
             "item_size": 38,
             "margin": "-180,-65,-20,-12"
@@ -222,7 +222,7 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["coin_cca"]
+              ["coin_crc"]
             ],
             "item_size": 45,
             "margin": "5,-65,0,0"
@@ -230,7 +230,7 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["cca_key"]
+              ["crc_key"]
             ],
             "item_size": 46,
             "margin": "-5,-65,0,0"

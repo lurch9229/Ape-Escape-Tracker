@@ -133,7 +133,7 @@
     "initial_active_state": true,
     "allow_disabled": false,
     "img": "images/labels/label_crumbling_castle.png",
-    "codes": "label_cca"
+    "codes": "label_crc"
   },
   {
     "name": "City Park Label",
@@ -539,29 +539,29 @@
     "codes": "tt_wsw"
   },
   {
-    "name": "CCa Monkeys",
+    "name": "crc Monkeys",
     "type": "non-interactive",
     "loop": "false",
     "max_quantity": 20,
     "increment": 1,
     "img": "images/icons/monkeyOn.png",
-    "codes": "monkey_cca, monkey_code"
+    "codes": "monkey_crc, monkey_code"
   },
   {
-    "name": "CCa Coins",
+    "name": "crc Coins",
     "type": "non-interactive",
     "loop": "false",
     "max_quantity": 4,
     "increment": 1,
     "img": "images/icons/coinOn.png",
-    "codes": "coin_cca, coin_code"
+    "codes": "coin_crc, coin_code"
   },
   {
-    "name": "CCa Time Trial",
+    "name": "crc Time Trial",
     "type": "toggle",
     "loop": "false",
     "img": "images/icons/coinOn.png",
-    "codes": "tt_cca"
+    "codes": "tt_crc"
   },
   {
     "name": "CP Monkeys",
@@ -783,7 +783,7 @@
     "type": "toggle",
     "loop": "false",
     "img": "images/icons/base_key.png",
-    "codes": "cca_key"
+    "codes": "crc_key"
   },
   {
     "name": "City Park World Key",

@@ -526,7 +526,7 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["__er_cca_ent"]
+              ["__er_crc_ent"]
             ],
             "item_size": 100,
             "margin": "0,-55,180,0"
@@ -542,7 +542,7 @@
 		  {
             "type": "itemgrid",
             "rows": [
-              ["__er_cca_dst"]
+              ["__er_crc_dst"]
             ],
             "item_size": 100,
             "margin": "0,-55,180,0"

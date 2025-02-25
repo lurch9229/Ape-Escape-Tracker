@@ -313,7 +313,7 @@ function MediMadAccess()
     if WorldkeyTotal() >= 5 then
         Tracker:FindObjectForCode("st_key").Active = true
         Tracker:FindObjectForCode("wsw_key").Active = true
-        Tracker:FindObjectForCode("cca_key").Active = true
+        Tracker:FindObjectForCode("crc_key").Active = true
     end
 end
 
