@@ -353,6 +353,34 @@
                         ],
                         "item_count": 1
                     },
+					{
+                        "name": "Rescue Professor",
+                        "chest_unopened_img": "images/icons/ProfessorOn.png",
+                        "chest_opened_img": "images/icons/ProfessorOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "$MM_Professor"
+                        ],
+                        "item_count": 1
+                    },
+					{
+                        "name": "Defeat Jake",
+                        "chest_unopened_img": "images/icons/JakeOn.png",
+                        "chest_opened_img": "images/icons/JakeOff.png",
+                        "visibility_rules": 
+                        [
+                            ""
+                        ],
+                        "access_rules": 
+                        [
+                            "$MM_Jake"
+                        ],
+                        "item_count": 1
+                    },
                     {
                         "name": "Specter",
                         "chest_unopened_img": "images/icons/specterOn.png",

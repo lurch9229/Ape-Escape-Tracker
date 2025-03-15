@@ -658,7 +658,15 @@
             ],
             "item_size": 46,
             "margin": "5,-65,0,0"
-          }
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["mm_lobby_doubledoor"]
+            ],
+            "item_size": 46,
+            "margin": "-5,-65,-25,-65"
+          },
         ]
       },
       {
@@ -729,6 +737,14 @@
             ],
             "item_size": 150,
 			"margin": "-180,110,0,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["op_lamps"]
+            ],
+            "item_size": 150,
+			"margin": "-0,110,0,0"
           }
         ]
       }

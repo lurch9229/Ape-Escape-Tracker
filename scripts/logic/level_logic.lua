@@ -227,7 +227,7 @@ function MM_Professor()
 end
 
 function Jake_Open()
-    return (has("new_version")) or ((has("new_version") == false) and MM_Natalie() and MM_Professor())
+    return true
 end
 
 function MM_Jake()
@@ -237,7 +237,7 @@ function MM_Jake()
 end
 
 function MM_SHA()
-    return (has("new_version") and MM_Lobby_DoubleDoor()) or ((has("new_version") == false) and MM_Natalie() and MM_Professor() and MM_Jake())
+    return MM_Lobby_DoubleDoor()
 end
 
 function MM_UFOMonkeys()

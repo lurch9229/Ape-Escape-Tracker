@@ -39,35 +39,35 @@ function WaterCatch()
 end
 
 function CB_Lamp()
-    return (Net and (has ("op_lamps_on") and has ("cb_lamp_on")) or (has ("op_lamps_off")))
+    return (((has ("op_lamps_on") and has ("cb_lamp_on")) or (Net() and has ("op_lamps_off"))))
 end
 
 function DI_Lamp()
-    return (Net and (has ("op_lamps_on") and has ("di_lamp_on")) or (has ("op_lamps_off")))
+    return (((has ("op_lamps_on") and has ("di_lamp_on")) or (Net() and has ("op_lamps_off"))))
 end
 
 function CRC_Lamp()
-    return (Net and (has ("op_lamps_on") and has ("crc_lamp_on")) or (has ("op_lamps_off")))
+    return (((has ("op_lamps_on") and has ("crc_lamp_on")) or (Net() and has ("op_lamps_off"))))
 end
 
 function CP_Lamp()
-    return (Net and (has ("op_lamps_on") and has ("cp_lamp_on")) or (has ("op_lamps_off")))
+    return (((has ("op_lamps_on") and has ("cp_lamp_on")) or (Net() and has ("op_lamps_off"))))
 end
 
 function SF_Lamp()
-    return (Net and (has ("op_lamps_on") and has ("sf_lamp_on")) or (has ("op_lamps_off")))
+    return (((has ("op_lamps_on") and has ("sf_lamp_on")) or (Net() and has ("op_lamps_off"))))
 end
 
 function TVT_Lobby_Lamp()
-    return (Net and (has ("op_lamps_on") and has ("tvt_lamp_l_on")) or (has ("op_lamps_off")))
+	return (((has ("op_lamps_on") and has ("tvt_lamp_l_on")) or (Net() and has ("op_lamps_off"))))
 end
 
 function TVT_Tank_Lamp()
-    return (Net and (has ("op_lamps_on") and has ("tvt_lamp_tr_on")) or (has ("op_lamps_off")))
+	return (((has ("op_lamps_on") and has ("tvt_lamp_tr_on")) or (Net() and has ("op_lamps_off"))))
 end
 
 function MM_Lamp()
-    return (Net and (has ("op_lamps_on") and has ("mm_lamp_on")) or (has ("op_lamps_off")))
+	return (((has ("op_lamps_on") and has ("mm_lamp_on")) or (Net() and has ("op_lamps_off"))))
 end
 
 function MM_Lobby_DoubleDoor()
@@ -183,8 +183,8 @@ function resetworldUnlocks()
 end
 
 function worldUnlocks(source)
-	--print("===================Unlocks====================")
-	--print(source)
+	print("===================Unlocks====================")
+	print(source)
 	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
 	getLvlOrder()
 	getReqKeys()
@@ -212,11 +212,11 @@ function worldUnlocks(source)
 			level_reqKeys = requiredKeys[index]
 			if has_value(already_checked, value) == false then
 				if worldkeys >= level_reqKeys then
-					--print("activate_"..lvl_list[value].."_key")
+					print("activate_"..lvl_list[value].."_key")
 					Tracker:FindObjectForCode(lvl_list[value].."_key").Active = true
 					table.insert(already_checked,value)
 				elseif worldkeys < level_reqKeys then
-					--print("--deactivate_"..lvl_list[value].."_key")
+					print("--deactivate_"..lvl_list[value].."_key")
 					Tracker:FindObjectForCode(lvl_list[value].."_key").Active = false
 				end
 			end
@@ -294,35 +294,30 @@ function setER(source)
 	
 		if Auto_ER == 1 then
 			-- set entrances mapping respecting logic
-			--lvl_list = { "ff","po","ml","tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm","ppm"}
-			lvl_list = { "ff","po","ml","tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
+			lvl_list = { "ff","po","ml","tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm","ppm"}
 			lvl_order = SLOT_DATA['entranceids']
 			true_lvl_order = {}
 			for k, v in pairs(lvl_order) do
-				if v and k < 22 then
+				if v and k < 22 then -- Exclude PPM to not cause errors
 					index_lvl = k
 					stage_value = levelsIdsToIndex[v]
 					table.insert(true_lvl_order,k,stage_value)
 					
-					--print(string.format("ER entrance %s | %s | %s", index_lvl,stage_value,lvl_list[index_lvl]))
-					--print(worldkeys)
-					if reqKeys[index_lvl] ~= nil then
-						if worldkeys >= reqKeys[index_lvl] then
-							Tracker:FindObjectForCode("__er_"..lvl_list[index_lvl].."_dst").CurrentStage = stage_value
-						else
-							Tracker:FindObjectForCode("__er_"..lvl_list[index_lvl].."_dst").CurrentStage = 0
-						end
+					print(string.format("ER entrance %s | %s | %s", index_lvl,stage_value,reqKeys[index_lvl]))
+					if worldkeys >= reqKeys[index_lvl] then
+						Tracker:FindObjectForCode("__er_"..lvl_list[index_lvl].."_dst").CurrentStage = stage_value
+					else
+						Tracker:FindObjectForCode("__er_"..lvl_list[index_lvl].."_dst").CurrentStage = 0
 					end
 				end
 			end
 		elseif Auto_ER == 2 then
 			-- set entrances mapping despite not knowing logic
-			--lvl_list = { "ff","po","ml","tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm","ppm"}
-			lvl_list = { "ff","po","ml","tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
+			lvl_list = { "ff","po","ml","tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm","ppm"}
 			lvl_order = SLOT_DATA['entranceids']
 			true_lvl_order = {}
 			for k, v in pairs(lvl_order) do
-				if v and k < 22 then
+				if v and k < 22 then -- Exclude PPM to not cause errors
 					index_lvl = k
 					stage_value = levelsIdsToIndex[v]
 					table.insert(true_lvl_order,k,stage_value)
@@ -354,7 +349,7 @@ end
 
 function apLevelsLayoutChange()
   local lamps = Tracker:FindObjectForCode("op_lamps")
-  --print(lamps.CurrentStage)
+  print(lamps.CurrentStage)
   if (Tracker.ActiveVariantUID == "map_tracker") then
     if lamps.CurrentStage == 0 then
 	    print("Option : off")
@@ -380,54 +375,30 @@ end
 --Dev version check,remove when in prod!!!!
 --==============================================================
 function new_version_check()
-
-	--if Tracker:FindObjectForCode("ap_connected").Active == false then
-		--SLOT_DATA = nil
-		--Tracker:FindObjectForCode("new_version").Active = false
-	--end
-	--print("================================================")
-	--print(dump_table(SLOT_DATA))
-	
-	--print("================================================")
-	if SLOT_DATA or Tracker:FindObjectForCode("ap_connected").Active == true then
-		if SLOT_DATA['lamp'] == nil then
-			Tracker:FindObjectForCode("new_version").Active = false
-		else
-			Tracker:FindObjectForCode("new_version").Active = true
-			ScriptHost:AddWatchForCode("useApLayout2", "op_lamps", apLevelsLayoutChange)
-		end
-	else
+	--print(SLOT_DATA)
+	if Tracker:FindObjectForCode("ap_connected").Active == false then
 		SLOT_DATA = nil
-		--Tracker:FindObjectForCode("new_version").Active = false
-		--Tracker:FindObjectForCode("op_lamps").CurrentStage = 0
-		
 	end
-	print("New_Version:")
-	new_version = Tracker:FindObjectForCode("new_version").Active
-	--print(SLOT_DATA['lamp'])
-	print(new_version)
-	MM_Door_Icon = Tracker:FindObjectForCode("mm_lobby_doubledoor").Icon
-	lamps_off_Icon = Tracker:FindObjectForCode("op_lamps_off").Icon
-	lamps_on_Icon = Tracker:FindObjectForCode("op_lamps_on").Icon
-	if new_version == true then
-		--print(Tracker:FindObjectForCode("mm_lobby_doubledoor").Active)
-		
-		--if MM_Door_Icon ~= "images/items/MM_door_unlock.png" then
-			--Tracker:FindObjectForCode("mm_lobby_doubledoor").Icon = "images/items/MM_door_unlock.png"
-			--Tracker:FindObjectForCode("mm_lobby_doubledoor").Active = false
-			Tracker:FindObjectForCode("op_lamps_off").Icon = "images/settings/lamps_off.png"
-			Tracker:FindObjectForCode("op_lamps_on").Icon = "images/settings/lamps_on.png"
-			--Tracker:FindObjectForCode("op_lamps").CurrentStage = 0
-		--end
-	else
-		--if MM_Door_Icon == "images/items/MM_door_unlock.png" then
-			--Tracker:FindObjectForCode("mm_lobby_doubledoor").Active = true
-			--Tracker:FindObjectForCode("mm_lobby_doubledoor").Active = false
+	if SLOT_DATA then
+		if SLOT_DATA['lamp'] == nil then
+			Tracker:FindObjectForCode("mm_lobby_doubledoor").Active = true
 			Tracker:FindObjectForCode("mm_lobby_doubledoor").Icon = ""
 			Tracker:FindObjectForCode("op_lamps_off").Icon = ""
 			Tracker:FindObjectForCode("op_lamps_on").Icon = ""
-			--Tracker:FindObjectForCode("op_lamps").CurrentStage = 0
-		--end
+			Tracker:FindObjectForCode("op_lamps").CurrentStage = 0
+		else
+			Tracker:FindObjectForCode("mm_lobby_doubledoor").Icon = "images/items/MM_door_unlock.png"
+			print("--------------------------------------------------------")
+			Tracker:FindObjectForCode("op_lamps_off").Icon = "images/settings/lamps_off.png"
+			Tracker:FindObjectForCode("op_lamps_on").Icon = "images/settings/lamps_on.png"
+		end
+	end
+	MM_Door_Icon = Tracker:FindObjectForCode("mm_lobby_doubledoor").Icon
+	lamps_off_Icon = Tracker:FindObjectForCode("op_lamps_off").Icon
+	lamps_on_Icon = Tracker:FindObjectForCode("op_lamps_on").Icon
+	if Tracker:FindObjectForCode("ap_connected").Active == false then
+		--Tracker:FindObjectForCode("op_lamps").CurrentStage = 0
+		ScriptHost:AddWatchForCode("useApLayout2", "op_lamps", apLevelsLayoutChange)
 	end
 end
 
@@ -446,7 +417,7 @@ end
 
 
 ScriptHost:AddWatchForCode("useApLayout", "op_waternet", apItemLayoutChange)
---ScriptHost:AddWatchForCode("useApLayout2", "op_lamps", apLevelsLayoutChange)
+ScriptHost:AddWatchForCode("useApLayout2", "op_lamps", apLevelsLayoutChange)
 ScriptHost:AddWatchForCode("worldkey handler", "keyWorld", worldUnlocks)
 
 lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}

@@ -12,9 +12,7 @@ if (Tracker.ActiveVariantUID == "map_tracker") then
 	Tracker:AddLayouts("layouts/Entrances/entrance_grid_standard.json")
 	Tracker:AddLayouts("layouts/settings.json")
 	-- Setup for ER on reset
-	new_version_check()
 	worldUnlocks()
-	
 elseif (Tracker.ActiveVariantUID == "map_tracker_alternative") then
 
 	Tracker:AddLayouts("layouts/itemGrids/item_grids_standard.json")
@@ -24,7 +22,6 @@ elseif (Tracker.ActiveVariantUID == "map_tracker_alternative") then
 	Tracker:AddLayouts("layouts/Entrances/entrance_grid_alternative.json")
 	Tracker:AddLayouts("layouts/settings.json")
 	-- Setup for ER on reset
-	new_version_check()
 	worldUnlocks()
 elseif (Tracker.ActiveVariantUID == "items_only") then
 

@@ -264,8 +264,8 @@
                     },
                     {
                       "name": "Remember to Save",
-                      "chest_unopened_img": "images/icons/RedMailboxOn.png",
-                      "chest_opened_img": "images/icons/RedMailboxOff.png",
+                      "chest_unopened_img": "images/icons/BlueMailboxOn.png",
+                      "chest_opened_img": "images/icons/BlueMailboxOff.png",
                       "visibility_rules":
                       [
                         "shuffleMailbox"
@@ -279,8 +279,8 @@
                     },
                     {
                       "name": "Come Back Later!",
-                      "chest_unopened_img": "images/icons/RedMailboxOn.png",
-                      "chest_opened_img": "images/icons/RedMailboxOff.png",
+                      "chest_unopened_img": "images/icons/BlueMailboxOn.png",
+                      "chest_opened_img": "images/icons/BlueMailboxOff.png",
                       "visibility_rules":
                       [
                         "shuffleMailbox"

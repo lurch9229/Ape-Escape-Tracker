@@ -354,6 +354,8 @@ LOCATION_MAPPING =
 	-----Bosses----
 	[128000500] = {"@Crumbling Castle/Crumbling Castle - Monkeys/Boss"},
 	[128000501] = {"@TV Tower/TV Tower - Monkeys/Boss"},
+	[128000502] = {"@Monkey Madness/Monkey Madness - Monkeys/Rescue Professor"},
+	[128000503] = {"@Monkey Madness/Monkey Madness - Monkeys/Defeat Jake"}
 }
 
 locationToCode ={
