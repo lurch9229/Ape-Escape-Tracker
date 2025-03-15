@@ -2,12 +2,12 @@
 
 Tracker for Ape Escape, for use with AP
 
-Tracker version 0.4.6
+Tracker version 0.4.9
 
 Installation instructions:
 
 - Download [Poptracker](https://github.com/black-sliver/PopTracker/releases)
-- Place **Ape-Escape-Tracker-0.4.6.zip** in packs folder
+- Place **Ape-Escape-Tracker-0.4.9.zip** in packs folder
 - Run Poptracker
 
 Upcoming Plans:
