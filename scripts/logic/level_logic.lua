@@ -139,7 +139,7 @@ function WSW_FourthRoom()
 end
 
 function CC_5Monkeys()
-    return CRC_Lamp() and (Club() or Flyer() or Punch())
+    return CRC_Lamp() and Net() and (Club() or Flyer() or Punch())
     or
     (op_no_ij() and (CRC_Lamp() and (Hoop() or Sling())))
     or
