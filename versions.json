@@ -1,6 +1,17 @@
 {
     "versions": [
-	{
+		{
+                "package_version": "0.4.10",
+                "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.10/Ape-Escape-Tracker-0.4.10.zip",
+                "sha256": "056C6EF0276804C88338C841AA330182BB8AE9B1B9ACB34F04E34EF848228CEA",
+                "changelog": [
+					"Changed default level layout to always show unlocked Lamps to reflect the fact you can start_inventory with a Lamp now.",
+					"Adjusted Lamp logic to fit the apworld : If you got the Lamp Item it enables the locations behind the Lamps, despite lamps being unshuffled",
+					"Some locations are now \"Yellow\" to indicate you can do these locations while doing glitches (Not all locations are taken into account since logic refraction will be there soon)",
+					"Fixed logic for CanWaterCatch : Now requires Water Net or WaterCatch and Progressive Water Net 1"
+                ]
+        },	
+		{
                 "package_version": "0.4.9",
                 "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.9/Ape-Escape-Tracker-0.4.9.zip",
                 "sha256": "BEF5BF00EB4A98B9391BF0A98FE7D9783D971C7210D717F61F3007664F1D5C0C",
@@ -12,7 +23,7 @@
 			"Added tracking of MM new locations \"Defeat Jake\" and \"Rescue Professor\""
                 ]
         },	
-	{
+		{
                 "package_version": "0.4.8",
                 "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.8/Ape-Escape-Tracker-0.4.8.zip",
                 "sha256": "E5767AD4962F930C410F849604F2BD3F9415FF5C2A3A6E8C262AC5B4EDE0F0C6",
