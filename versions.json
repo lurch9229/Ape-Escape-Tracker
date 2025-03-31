@@ -3,7 +3,7 @@
 		{
                 "package_version": "0.4.10",
                 "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.10/Ape-Escape-Tracker-0.4.10.zip",
-                "sha256": "8809FE74441AD17BE20D46950945A26E0F7FB82D4DC164D47B51A8C2B2B07726",
+                "sha256": "5428A4BC54C9310E9D51513B70E5255B4DAA416D160B57840F7BC8B6A73A0599",
                 "changelog": [
 					"Changed default level layout to always show unlocked Lamps to reflect the fact you can start_inventory with a Lamp now.",
 					"Adjusted Lamp logic to fit the apworld : If you got the Lamp Item it enables the locations behind the Lamps, despite lamps being unshuffled",
