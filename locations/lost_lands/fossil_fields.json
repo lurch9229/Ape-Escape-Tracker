@@ -78,7 +78,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, flyer",
+                            "net, [flyer]",
                             "net, op_no_ij",
                             "net, op_et"
                         ],

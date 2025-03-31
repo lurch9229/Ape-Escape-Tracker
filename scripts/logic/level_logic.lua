@@ -62,7 +62,7 @@ function CanDive()
 end
 
 function CanWaterCatch()
-    return WaterCatch()
+    return WaterCatch() and Swim()
 end
 
 --THICK JUNGLE
@@ -207,7 +207,7 @@ function TVT_HitButton()
 end
 
 function TVT_TankRoom()
-    return TVT_HitButton() and TVT_Lobby_Lamp()
+    return ((has ("op_lamps_off") and TVT_HitButton() and Net()) or TVT_Lobby_Lamp())
 end
 
 function TVT_BossRoom()
@@ -249,9 +249,8 @@ function MM_UFOMonkeys()
 end
 
 function MM_UFODoor()
-    return MM_UFOMonkeys() and MM_Lamp()
+    return (has ("op_lamps_off") and MM_UFOMonkeys()) or MM_Lamp()
 end
--------------------------EDIT DOWN HERE TO CONTINUE---------------------
 
 function MM_DoubleDoor()
     return (MM_UFODoor() and Hoop() and Car() and CanHitMultiple())

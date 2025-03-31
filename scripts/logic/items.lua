@@ -39,35 +39,35 @@ function WaterCatch()
 end
 
 function CB_Lamp()
-    return (((has ("op_lamps_on") and has ("cb_lamp_on")) or (Net() and has ("op_lamps_off"))))
+    return ((has ("cb_lamp_on")) or (Net() and has ("op_lamps_off")))
 end
 
 function DI_Lamp()
-    return (((has ("op_lamps_on") and has ("di_lamp_on")) or (Net() and has ("op_lamps_off"))))
+    return ((has ("di_lamp_on")) or (Net() and has ("op_lamps_off")))
 end
 
 function CRC_Lamp()
-    return (((has ("op_lamps_on") and has ("crc_lamp_on")) or (Net() and has ("op_lamps_off"))))
+    return ((has ("crc_lamp_on")) or (Net() and has ("op_lamps_off")))
 end
 
 function CP_Lamp()
-    return (((has ("op_lamps_on") and has ("cp_lamp_on")) or (Net() and has ("op_lamps_off"))))
+    return ((has ("cp_lamp_on")) or (Net() and has ("op_lamps_off")))
 end
 
 function SF_Lamp()
-    return (((has ("op_lamps_on") and has ("sf_lamp_on")) or (Net() and has ("op_lamps_off"))))
+    return ((has ("sf_lamp_on")) or (Net() and has ("op_lamps_off")))
 end
 
 function TVT_Lobby_Lamp()
-	return (((has ("op_lamps_on") and has ("tvt_lamp_l_on")) or (Net() and has ("op_lamps_off"))))
+	return ((has ("tvt_lamp_l_on")) or (Net() and has ("op_lamps_off")))
 end
 
 function TVT_Tank_Lamp()
-	return (((has ("op_lamps_on") and has ("tvt_lamp_tr_on")) or (Net() and has ("op_lamps_off"))))
+	return ((has ("tvt_lamp_tr_on")) or (Net() and has ("op_lamps_off")))
 end
 
 function MM_Lamp()
-	return (((has ("op_lamps_on") and has ("mm_lamp_on")) or (Net() and has ("op_lamps_off"))))
+	return ((has ("mm_lamp_on")) or (Net() and has ("op_lamps_off")))
 end
 
 function MM_Lobby_DoubleDoor()
@@ -353,19 +353,19 @@ function apLevelsLayoutChange()
   if (Tracker.ActiveVariantUID == "map_tracker") then
     if lamps.CurrentStage == 0 then
 	    print("Option : off")
-	    Tracker:AddLayouts("layouts/itemGrids/level_grid_standard.json")
+	    --Tracker:AddLayouts("layouts/itemGrids/level_grid_standard.json")
     elseif lamps.CurrentStage == 1 then
 	    print("Option : on")
-	    Tracker:AddLayouts("layouts/itemGrids/level_grid_standard_lamps.json")
+	    --Tracker:AddLayouts("layouts/itemGrids/level_grid_standard_lamps.json")
     end
   end
   if (Tracker.ActiveVariantUID == "map_tracker_alternative") then
 	if lamps.CurrentStage == 0 then
 	    print("Option : off")
-	    Tracker:AddLayouts("layouts/itemGrids/level_grid_alternative.json")
+	    --Tracker:AddLayouts("layouts/itemGrids/level_grid_alternative.json")
     elseif lamps.CurrentStage == 1 then
 	    print("Option : on")
-	    Tracker:AddLayouts("layouts/itemGrids/level_grid_alternative_lamps.json")
+	    --Tracker:AddLayouts("layouts/itemGrids/level_grid_alternative_lamps.json")
     end
   end
 end
@@ -396,10 +396,10 @@ function new_version_check()
 	MM_Door_Icon = Tracker:FindObjectForCode("mm_lobby_doubledoor").Icon
 	lamps_off_Icon = Tracker:FindObjectForCode("op_lamps_off").Icon
 	lamps_on_Icon = Tracker:FindObjectForCode("op_lamps_on").Icon
-	if Tracker:FindObjectForCode("ap_connected").Active == false then
+	--if Tracker:FindObjectForCode("ap_connected").Active == false then
 		--Tracker:FindObjectForCode("op_lamps").CurrentStage = 0
-		ScriptHost:AddWatchForCode("useApLayout2", "op_lamps", apLevelsLayoutChange)
-	end
+		--ScriptHost:AddWatchForCode("useApLayout2", "op_lamps", apLevelsLayoutChange)
+	--end
 end
 
 
@@ -417,7 +417,7 @@ end
 
 
 ScriptHost:AddWatchForCode("useApLayout", "op_waternet", apItemLayoutChange)
-ScriptHost:AddWatchForCode("useApLayout2", "op_lamps", apLevelsLayoutChange)
+--ScriptHost:AddWatchForCode("useApLayout2", "op_lamps", apLevelsLayoutChange)
 ScriptHost:AddWatchForCode("worldkey handler", "keyWorld", worldUnlocks)
 
 lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}

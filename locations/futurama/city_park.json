@@ -310,12 +310,12 @@
                         "access_rules": 
                         [
                             "$CP_FrontSewer, car",
-                            "net, car, op_no_ij",
-                            "net, $SuperFlyer, op_no_ij",
+                            "$CP_Lamp, car, op_no_ij",
+                            "$CP_Lamp, $SuperFlyer, op_no_ij",
                             "$CP_BackSewer, car, op_no_ij",
-                            "net, car, op_et",
-                            "net, sling, op_et",
-                            "net, $SuperFlyer, op_et",
+                            "$CP_Lamp, car, op_et",
+                            "$CP_Lamp, sling, op_et",
+                            "$CP_Lamp, $SuperFlyer, op_et",
                             "$CP_BackSewer, car, op_et",
                             "$CP_BackSewer, sling, op_et"
                         ],

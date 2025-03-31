@@ -89,8 +89,10 @@
                         "access_rules": 
                         [
                             "net, hoop, $CanHitMultiple, $CanSwim",
-                            "$CanSwim, $CanWaterCatch",
-                            "net, $HasMobility"
+							"net, $HasMobility",
+                            "$CanWaterCatch, hoop, $CanHitMultiple, $CanSwim",
+							"$CanWaterCatch, $HasMobility"
+							
                         ],
                         "item_count": 1
                     },

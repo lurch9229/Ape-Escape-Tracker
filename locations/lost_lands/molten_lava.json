@@ -64,7 +64,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanHitMultiple",
+                            "net, $CanHitOnce, [$CanHitMultiple]",
                             "net, $CanHitOnce, op_no_ij",
                             "net, $CanHitOnce, op_et"
                         ],
@@ -118,7 +118,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, sling, $CanHitMultiple",
+                            "net, sling, [$CanHitMultiple]",
                             "net, sling, op_no_ij",
                             "net, sling, op_et"
 

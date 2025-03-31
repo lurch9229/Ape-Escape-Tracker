@@ -38,7 +38,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, flyer",
+                            "net, [flyer]",
                             "net, op_no_ij",
                             "net, op_et"
                         ],
@@ -53,7 +53,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, flyer",
+                            "net, [flyer]",
                             "net, op_no_ij",
                             "net, op_et"
                         ],
@@ -68,10 +68,10 @@
                         ],
                         "access_rules": 
                         [
-                            "net, flyer, sling",
-                            "$CanDive, $CanWaterCatch, club, flyer, sling",
-                            "$CanDive, $CanWaterCatch, sling, flyer",
-                            "$CanDive, $CanWaterCatch, punch, flyer, sling",
+                            "net, [flyer], sling",
+                            "$CanDive, $CanWaterCatch, club, [flyer], sling",
+                            "$CanDive, $CanWaterCatch, sling, [flyer]",
+                            "$CanDive, $CanWaterCatch, punch, [flyer], sling",
                             "net, $CanSwim, op_no_ij",
                             "net, sling, op_no_ij",
                             "$CanDive, $CanWaterCatch, club, $CanSwim, op_no_ij",
@@ -82,16 +82,16 @@
                             "$CanDive, $CanWaterCatch, punch, sling, op_no_ij",
                             "net, $CanSwim, op_et",
                             "net, sling, op_et",
-                            "net, hoop, flyer, op_et",
+                            "net, hoop, [flyer], op_et",
                             "$CanDive, $CanWaterCatch, club, $CanSwim, op_et",
                             "$CanDive, $CanWaterCatch, sling, $CanSwim, op_et",
                             "$CanDive, $CanWaterCatch, punch, $CanSwim, op_et",
                             "$CanDive, $CanWaterCatch, club, sling, op_et",
                             "$CanDive, $CanWaterCatch, sling, op_et",
                             "$CanDive, $CanWaterCatch, punch, sling, op_et",
-                            "$CanDive, $CanWaterCatch, club, hoop, flyer, op_et",
-                            "$CanDive, $CanWaterCatch, sling, hoop, flyer, op_et",
-                            "$CanDive, $CanWaterCatch, punch, hoop, flyer, op_et"
+                            "$CanDive, $CanWaterCatch, club, hoop, [flyer], op_et",
+                            "$CanDive, $CanWaterCatch, sling, hoop, [flyer], op_et",
+                            "$CanDive, $CanWaterCatch, punch, hoop, [flyer], op_et"
                         ],
                         "item_count": 1
                     },
@@ -104,7 +104,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, flyer",
+                            "net, [flyer]",
                             "net, op_no_ij",
                             "net, op_et"
                         ],
@@ -119,7 +119,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, flyer",
+                            "net, [flyer]",
                             "net, op_no_ij",
                             "net, op_et"
                         ],
@@ -134,7 +134,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, flyer, $CanDive",
+                            "net, [flyer], $CanDive",
                             "net, $CanDive, op_no_ij",
                             "net, flyer, op_no_ij",
                             "net, $CanDive, op_et",
@@ -152,8 +152,8 @@
                         ],
                         "access_rules": 
                         [
-                           "net, flyer",
-                           "$CanSwim, $CanWaterCatch, flyer",
+                           "net, [flyer]",
+                           "$CanSwim, $CanWaterCatch, [flyer]",
                            "net, op_no_ij",
                            "$CanSwim, $CanWaterCatch, op_no_ij",
                            "net, op_et",
@@ -170,7 +170,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, flyer",
+                            "net, [flyer]",
                             "net, op_no_ij",
                             "net, op_et"
                         ],
@@ -185,7 +185,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, flyer",
+                            "net, [flyer]",
                             "net, op_no_ij",
                             "net, op_et"
                         ],
@@ -227,7 +227,7 @@
                         ],
                         "access_rules": 
                         [
-                            "flyer",
+                            "[flyer]",
                             "op_no_ij",
                             "op_et"
                         ],
@@ -243,7 +243,7 @@
                         ],
                         "access_rules": 
                         [
-                            "flyer, $CanDive",
+                            "[flyer], $CanDive",
                             "$CanDive, op_no_ij",
                             "$CanDive, op_et"
                         ],
@@ -259,7 +259,7 @@
                         ],
                         "access_rules": 
                         [
-                            "flyer",
+                            "[flyer]",
                             "op_no_ij",
                             "op_et"
                         ],
@@ -301,7 +301,7 @@
                       ],
                       "access_rules":
                       [
-                        "flyer, $CanHitOnce",
+                        "[flyer], $CanHitOnce",
                         "op_no_ij, $CanHitOnce",
                         "op_et, $CanHitOnce"
                       ],
