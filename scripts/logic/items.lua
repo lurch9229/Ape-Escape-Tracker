@@ -59,7 +59,7 @@ function SF_Lamp()
 end
 
 function TVT_Lobby_Lamp()
-	return ((has ("tvt_lamp_l_on")) or (Net() and has ("op_lamps_off")))
+	return ((has ("tvt_lamp_l_on")) or (Net() and has ("op_lamps_off") and TVT_HitButton()))
 end
 
 function TVT_Tank_Lamp()

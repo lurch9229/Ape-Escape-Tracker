@@ -207,7 +207,7 @@ function TVT_HitButton()
 end
 
 function TVT_TankRoom()
-    return ((has ("op_lamps_off") and TVT_HitButton() and Net()) or TVT_Lobby_Lamp())
+    return (TVT_Lobby_Lamp())
 end
 
 function TVT_BossRoom()
