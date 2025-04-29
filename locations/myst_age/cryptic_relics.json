@@ -21,13 +21,13 @@
                         "map": "Overall_View",
                         "x": 140,
                         "y": 400
-                    },
+                    }
                 ],
 				"chest_unopened_img": "images/icons/monkeyOn.png",
                 "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
-                            "cr_key"
+                            "^$CanReach|CR_ENTRY"
                         ],
                 "sections": [
                     {
@@ -39,10 +39,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, sling",
-                            "net, flyer",
-                            "net, op_no_ij",
-                            "net, op_et"
+                            "^$CanReach|CR_Bazzle"
                         ],
                         "item_count": 1
                     },
@@ -55,7 +52,8 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|CR_Freeto",
+                            "^$CanReach|CR_Freeto2"
                         ],
                         "item_count": 1
                     },
@@ -68,12 +66,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, sling",
-                            "net, flyer, $CanHitOnce",
-                            "net, hoop, op_no_ij",
-                            "net, flyer, op_no_ij",
-                            "net, hoop, op_et",
-                            "net, flyer, op_et"
+                            "^$CanReach|CR_Troopa"
                         ],
                         "item_count": 1
                     },
@@ -86,7 +79,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CR_Inside"
+                            "^$CanReach|CR_Stymie"
                         ],
                         "item_count": 1
                     },
@@ -99,13 +92,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CR_Inside, $CanSwim, $HasMobility",
-                            "net, $CR_Inside, $CanSwim, $CanHitMultiple",
-                            "net, $CR_Inside, $CanSwim, $CanHitMultiple, op_no_ij",
-                            "net, $CR_Inside, flyer, op_no_ij",
-                            "net, $CR_Inside, $CanSwim, $CanHitMultiple, op_et",
-                            "net, $CR_Inside, flyer, op_et",
-                            "net, $CR_Inside, sling, op_et"
+                            "^$CanReach|CR_Spanky"
                         ],
                         "item_count": 1
                     },
@@ -118,8 +105,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CR_Inside, $CanHitMultiple",
-                            "net, $CR_Inside, $CanSwim, $HasMobility"
+                            "^$CanReach|CR_Jesta"
                         ],
                         "item_count": 1
                     },
@@ -132,7 +118,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CR_Inside"
+                            "^$CanReach|CR_Pally"
                         ],
                         "item_count": 1
                     },
@@ -145,9 +131,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CR_Inside, $RCMonkey",
-                            "net, $CR_Inside, $SuperFlyer, op_no_ij",
-                            "net, $CR_Inside, $SuperFlyer, op_et"
+                            "^$CanReach|CR_Crash"
                         ],
                         "item_count": 1
                     }
@@ -170,11 +154,11 @@
                         "map": "Overall_View",
                         "x": 170,
                         "y": 400
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "cr_key"
+                            "^$CanReach|CR_ENTRY"
                         ],
                 "sections": [
                     {
@@ -187,10 +171,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$CR_Inside, $CanSwim, $CanHitMultiple",
-                            "$CR_Inside, $HasMobility",
-                            "$CR_Inside, $CanSwim, op_no_ij",
-                            "$CR_Inside, $CanSwim, op_et"
+                            "^$CanReach|CR_C_Main Ruins"
                         ],
                         "item_count": 1
                     }
@@ -213,11 +194,11 @@
                         "map": "Overall_View",
                         "x": 200,
                         "y": 400
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "cr_key"
+                            "^$CanReach|CR_ENTRY"
                         ],
                 "sections": [
                     {
@@ -230,7 +211,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanHitOnce"
+                        "^$CanReach|CR_M_Get Rid of the Enemy"
                       ],
                       "item_count": 1
                     },
@@ -244,7 +225,7 @@
                       ],
                       "access_rules":
                       [
-                        ""
+                        "^$CanReach|CR_M_Don't Forget Your Sling"
                       ],
                       "item_count": 1
                     },
@@ -258,7 +239,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanHitOnce"
+                        "^$CanReach|CR_M_Back Camera Tutorial"
                       ],
                       "item_count": 1
                     },
@@ -272,8 +253,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CR_Inside, $CanSwim, $HasMobility",
-                        "$CR_Inside, $CanSwim, $CanHitMultiple"
+                        "^$CanReach|CR_M_Remember to Save"
                       ],
                       "item_count": 1
                     },
@@ -287,7 +267,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CR_Inside"
+                        "^$CanReach|CR_M_Come Back Later!"
                       ],
                       "item_count": 1
                     },
@@ -299,16 +279,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CR_Inside",
-                            "net, flyer, club",
-                            "net, sling, op_no_ij",
-                            "net, hoop, op_no_ij",
-                            "net, flyer, op_no_ij",
-                            "net, punch, op_no_ij",
-                            "net, sling, op_et",
-                            "net, hoop, op_et",
-                            "net, flyer, op_et",
-                            "net, punch, op_et"
+                            ""
                         ],
                         "item_count": 1
                     }

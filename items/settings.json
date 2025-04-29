@@ -9,19 +9,19 @@
       {
         "name": "Glitchless",
         "img": "images/settings/logic_gless.png",
-        "codes": "op_logic, op_gl",
+        "codes": "op_logic, op_gl, op_logic_n",
         "allow_disabled": false
       },
       {
         "name": "No Infinite Jumps",
         "img": "images/settings/logic_no_ij.png",
-        "codes": "op_logic, op_no_ij",
+        "codes": "op_logic, op_no_ij, op_logic_h",
         "inherit_codes": false
       },
       {
         "name": "Unrestricted",
         "img": "images/settings/logic_no_rest.png",
-        "codes": "op_logic, op_et",
+        "codes": "op_logic, op_et, op_logic_e",
         "inherit_codes": false
       }
     ]
@@ -52,7 +52,8 @@
     "type": "progressive",
     "initial_stage_idx": 0,
     "allow_disabled": false,
-    "loop": false,
+    "codes": "op_goal",
+	"loop": false,
     "stages": [
       {
         "name": "Specter 1",

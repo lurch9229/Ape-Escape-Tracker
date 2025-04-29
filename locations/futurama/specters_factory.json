@@ -22,13 +22,13 @@
                         "map": "Overall_View",
                         "x": 620,
                         "y": 260
-                    },
+                    }
                 ],
 				"chest_unopened_img": "images/icons/monkeyOn.png",
                 "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
-                            "sf_key"
+                            "^$CanReach|SF_ENTRY"
                         ],
                 "sections": [
                     {
@@ -40,7 +40,8 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|SF_BigShow",
+                            "^$CanReach|SF_BigShow2"
                         ],
                         "item_count": 1
                     },
@@ -53,7 +54,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|SF_Dreos"
                         ],
                         "item_count": 1
                     },
@@ -66,7 +67,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $SF_MechRoom"
+                            "^$CanReach|SF_Reznor"
                         ],
                         "item_count": 1
                     },
@@ -79,11 +80,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $SF_CarRoom",
-                            "net, sling, op_no_ij",
-                            "net, $SuperFlyer, op_no_ij",
-                            "net, sling, op_no_ij",
-                            "net, $SuperFlyer, op_no_ij"
+                            "^$CanReach|SF_Urkel"
                         ],
                         "item_count": 1
                     },
@@ -96,7 +93,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $SF_MechRoom, punch"
+                            "^$CanReach|SF_VanillaS"
                         ],
                         "item_count": 1
                     },
@@ -109,7 +106,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $SF_MechRoom"
+                            "^$CanReach|SF_Radd"
                         ],
                         "item_count": 1
                     },
@@ -122,7 +119,7 @@
                         ],
                         "access_rules": 
                         [
-                           "net, $SF_MechRoom, $RCMonkey"
+                           "^$CanReach|SF_Shimbo"
                         ],
                         "item_count": 1
                     },
@@ -135,7 +132,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $SF_MechRoom, $CanHitMultiple"
+                            "^$CanReach|SF_Hurt"
                         ],
                         "item_count": 1
                     },
@@ -148,7 +145,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $SF_MechRoom"
+                            "^$CanReach|SF_String"
                         ],
                         "item_count": 1
                     },
@@ -161,7 +158,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $SF_MechRoom, $CanHitMultiple"
+                            "^$CanReach|SF_Khamo"
                         ],
                         "item_count": 1
                     }
@@ -184,11 +181,11 @@
                         "map": "Overall_View",
                         "x": 650,
                         "y": 260
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "sf_key"
+                            "^$CanReach|SF_ENTRY"
                         ],
                 "sections": [
                     {
@@ -201,9 +198,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$SF_CarRoom",
-                            "$SuperFlyer, op_no_ij",
-                            "$SuperFlyer, op_et"
+                            "^$CanReach|SF_C_RC Car Room"
                         ],
                         "item_count": 1
                     },
@@ -217,7 +212,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$SF_MechRoom"
+                            "^$CanReach|SF_C_Lava Room"
                         ],
                         "item_count": 1
                     }
@@ -240,11 +235,11 @@
                         "map": "Overall_View",
                         "x": 680,
                         "y": 260
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "sf_key"
+                            "^$CanReach|SF_ENTRY"
                         ],
                 "sections": [
                     {
@@ -257,7 +252,7 @@
                       ],
                       "access_rules":
                       [
-                        ""
+                        "^$CanReach|SF_M_Hop In The Tank"
                       ],
                       "item_count": 1
                     },
@@ -269,12 +264,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, punch",
-                            "net, hoop, flyer, op_no_ij",
-                            "net, hoop, car, op_no_ij",
-                            "net, hoop, flyer, op_et",
-                            "net, hoop, car, op_et",
-                            "net, sling, op_et"
+                            ""
                         ],
                         "item_count": 1
                     }

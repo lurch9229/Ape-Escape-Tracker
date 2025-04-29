@@ -21,13 +21,13 @@
                         "map": "Overall_View",
                         "x": 140,
                         "y": 260
-                    },
+                    }
                 ],
 				"chest_unopened_img": "images/icons/monkeyOn.png",
                 "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
-                            "dr_key"
+                            "^$CanReach|DR_ENTRY"
                         ],
                 "sections": [
                     {
@@ -39,8 +39,8 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanHitOnce",
-                            "net, flyer"
+                            "^$CanReach|DR_Kyle",
+                            "^$CanReach|DR_Kyle2"
 
                         ],
                         "item_count": 1
@@ -54,7 +54,8 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|DR_Stan",
+                            "^$CanReach|DR_Stan2"
                         ],
                         "item_count": 1
                     },
@@ -67,7 +68,8 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|DR_Kenny",
+                            "^$CanReach|DR_Kenny2"
                         ],
                         "item_count": 1
                     },
@@ -80,7 +82,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|DR_Cratman"
                         ],
                         "item_count": 1
                     },
@@ -93,9 +95,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, hoop",
-                            "net, op_no_ij",
-                            "net, op_et"
+                            "^$CanReach|DR_Mooshy"
                         ],
                         "item_count": 1
                     },
@@ -108,11 +108,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, sling",
-                            "net, punch",
-                            "net, hoop",
-                            "net, op_no_ij",
-                            "net, op_et"
+                            "^$CanReach|DR_Nuzzy"
                         ],
                         "item_count": 1
                     },
@@ -125,7 +121,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|DR_Mav"
                         ],
                         "item_count": 1
                     },
@@ -138,7 +134,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|DR_Papou"
                         ],
                         "item_count": 1
                     },
@@ -151,7 +147,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|DR_Trance"
                         ],
                         "item_count": 1
                     },
@@ -164,9 +160,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, sling",
-                            "net, punch, op_no_ij",
-                            "net, punch, op_et"
+                            "^$CanReach|DR_Bernt"
                         ],
                         "item_count": 1
                     },
@@ -179,16 +173,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanSwim, sling, $CanHitOnce",
-                            "net, $CanSwim, sling, flyer",
-                            "net, $CanSwim, hoop, $CanHitOnce",
-                            "net, $CanSwim, hoop, flyer",
-                            "net, $CanSwim, $CanHitOnce, op_no_ij",
-                            "net, sling, op_no_ij",
-                            "net, hoop, op_no_ij",
-                            "net, $CanSwim, $CanHitOnce, op_et",
-                            "net, sling, op_et",
-                            "net, hoop, op_et"
+                            "^$CanReach|DR_Runt"
                         ],
                         "item_count": 1
                     },
@@ -201,7 +186,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanHitMultiple"
+                            "^$CanReach|DR_Hoolah"
                         ],
                         "item_count": 1
                     },
@@ -214,16 +199,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanSwim, sling, $CanHitOnce",
-                            "net, $CanSwim, sling, flyer",
-                            "net, $CanSwim, hoop, $CanHitOnce",
-                            "net, $CanSwim, hoop, flyer",
-                            "net, $CanSwim, $CanHitOnce, op_no_ij",
-                            "net, sling, op_no_ij",
-                            "net, hoop, op_no_ij",
-                            "net, $CanSwim, $CanHitOnce, op_et",
-                            "net, sling, op_et",
-                            "net, hoop, op_et"
+                            "^$CanReach|DR_Chino"
                         ],
                         "item_count": 1
                     }
@@ -246,11 +222,11 @@
                         "map": "Overall_View",
                         "x": 170,
                         "y": 260
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "dr_key"
+                            "^$CanReach|DR_ENTRY"
                         ],
                 "sections": [
                     {
@@ -263,7 +239,8 @@
                         ],
                         "access_rules": 
                         [
-                            ""
+                            "^$CanReach|DR_C_Outside",
+                            "^$CanReach|DR_C_Outside2"
                         ],
                         "item_count": 1
                     },
@@ -277,7 +254,7 @@
                         ],
                         "access_rules": 
                         [
-                            ""
+                            "^$CanReach|DR_C_Fan Basement"
                         ],
                         "item_count": 1
                     },
@@ -291,11 +268,7 @@
                         ],
                         "access_rules": 
                         [
-                            "car",
-                            "punch",
-                            "hoop, flyer, op_no_ij",
-                            "sling, op_et",
-                            "hoop, flyer, op_et"
+                            "^$CanReach|DR_C_Obelisk Inside"
                         ],
                         "item_count": 1
                     },
@@ -309,8 +282,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$CanDive, $CanHitOnce",
-                            "$CanDive, flyer"
+                            "^$CanReach|DR_C_Water Basement"
                         ],
                         "item_count": 1
                     }
@@ -333,11 +305,11 @@
                         "map": "Overall_View",
                         "x": 200,
                         "y": 260
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "dr_key"
+                            "^$CanReach|DR_ENTRY"
                         ],
                 "sections": [
                     {
@@ -350,7 +322,7 @@
                       ],
                       "access_rules":
                       [
-                        ""
+                        "^$CanReach|DR_M_Monkey Attributes"
                       ],
                       "item_count": 1
                     },
@@ -364,7 +336,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanHitOnce"
+                        "^$CanReach|DR_M_Out of Place Block"
                       ],
                       "item_count": 1
                     },
@@ -378,7 +350,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanHitOnce"
+                        "^$CanReach|DR_M_Difficult for Beginners"
                       ],
                       "item_count": 1
                     },
@@ -392,7 +364,7 @@
                       ],
                       "access_rules":
                       [
-                        ""
+                        "^$CanReach|DR_M_Hmmm... Red Switch"
                       ],
                       "item_count": 1
                     },
@@ -406,7 +378,7 @@
                       ],
                       "access_rules":
                       [
-                        ""
+                        "^$CanReach|DR_M_It'll Blow You Away"
                       ],
                       "item_count": 1
                     },
@@ -420,7 +392,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanHitOnce"
+                        "^$CanReach|DR_M_D-pad Camera Tutorial"
                       ],
                       "item_count": 1
                     },
@@ -434,7 +406,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanHitOnce"
+                        "^$CanReach|DR_M_Monkeys Lights"
                       ],
                       "item_count": 1
                     },

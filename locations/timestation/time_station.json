@@ -15,7 +15,7 @@
                         "map": "Overall_View",
                         "x": 30,
                         "y": 500
-                    },
+                    }
                 ],
                 "visibility_rules":
                         [
@@ -23,7 +23,7 @@
                         ],
                 "access_rules":
                         [
-                            ""
+                            "^$CanReach|time_station"
                         ],
                 "sections":
                 [
@@ -37,7 +37,7 @@
                             ],
                             "access_rules":
                             [
-                                ""
+                                "^$CanReach|Welcome!"
                             ],
                             "item_count": 1
                         },
@@ -51,7 +51,7 @@
                             ],
                             "access_rules":
                             [
-                                ""
+                                "^$CanReach|Save Station"
                             ],
                             "item_count": 1
                             },
@@ -65,7 +65,7 @@
                             ],
                             "access_rules":
                             [
-                                ""
+                               "^$CanReach|Mini Game Corner"
                             ],
                             "item_count": 1
                         },
@@ -79,7 +79,7 @@
                                 ],
                             "access_rules":
                                 [
-                                    ""
+                                    "^$CanReach|Training Space"
                                 ],
                             "item_count": 1
                         }

@@ -20,13 +20,13 @@
                         "map": "Overall_View",
                         "x": 785,
                         "y": 200
-                    },
+                    }
                 ],
 				"chest_unopened_img": "images/icons/monkeyOn.png",
                 "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
-                            "mm_key"
+                            "^$CanReach|MM_SL_HUB"
                         ],
                 "sections": [
                     {
@@ -38,7 +38,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|MM_Goopo"
                         ],
                         "item_count": 1
                     },
@@ -51,7 +51,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|MM_Porto"
                         ],
                         "item_count": 1
                     },
@@ -64,7 +64,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanHitOnce"
+                            "^$CanReach|MM_Slam"
                         ],
                         "item_count": 1
                     },
@@ -77,7 +77,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanHitOnce"
+                            "^$CanReach|MM_Junk"
                         ],
                         "item_count": 1
                     },
@@ -90,7 +90,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanHitOnce"
+                            "^$CanReach|MM_Crib"
                         ],
                         "item_count": 1
                     },
@@ -103,9 +103,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, sling",
-                            "net, hoop, op_no_ij",
-                            "net, hoop, op_et"
+                            "^$CanReach|MM_Nak"
                         ],
                         "item_count": 1
                     },
@@ -118,7 +116,7 @@
                         ],
                         "access_rules": 
                         [
-                           "net"
+                           "^$CanReach|MM_Cloy"
                         ],
                         "item_count": 1
                     },
@@ -131,9 +129,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, sling",
-                            "net, hoop, op_no_ij",
-                            "net, hoop, op_et"
+                            "^$CanReach|MM_Shaw"
                         ],
                         "item_count": 1
                     },
@@ -146,9 +142,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, sling",
-                            "net, hoop, op_no_ij",
-                            "net, hoop, op_et"
+                            "^$CanReach|MM_Flea"
                         ],
                         "item_count": 1
                     },
@@ -161,9 +155,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $MM_SHA, flyer",
-                            "net, $MM_SHA, op_no_ij",
-                            "net, $MM_SHA, op_et"
+                            "^$CanReach|MM_Schafette"
                         ],
                         "item_count": 1
                     },
@@ -176,7 +168,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $MM_UFOMonkeys"
+                            "^$CanReach|MM_Donovan"
                         ],
                         "item_count": 1
                     },
@@ -189,7 +181,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $MM_UFOMonkeys"
+                            "^$CanReach|MM_Laura"
                         ],
                         "item_count": 1
                     },
@@ -202,7 +194,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $MM_UFODoor, punch"
+                            "^$CanReach|MM_Uribe"
                         ],
                         "item_count": 1
                     },
@@ -215,9 +207,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $MM_UFODoor, car",
-                            "net, $MM_UFODoor, flyer, op-no_ij",
-                            "net, $MM_UFODoor, flyer, op_et"
+                            "^$CanReach|MM_Gordo"
                         ],
                         "item_count": 1
                     },
@@ -230,7 +220,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $MM_UFODoor"
+                            "^$CanReach|MM_Raeski"
                         ],
                         "item_count": 1
                     },
@@ -243,7 +233,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $MM_UFODoor"
+                            "^$CanReach|MM_Poopie"
                         ],
                         "item_count": 1
                     },
@@ -256,7 +246,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $MM_DoubleDoor"
+                            "^$CanReach|MM_Teacup"
                         ],
                         "item_count": 1
                     },
@@ -269,7 +259,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $MM_DoubleDoor"
+                            "^$CanReach|MM_Shine"
                         ],
                         "item_count": 1
                     },
@@ -282,7 +272,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $MM_SpaceMonkeys"
+                            "^$CanReach|MM_Wrench"
                         ],
                         "item_count": 1
                     },
@@ -295,7 +285,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $MM_SpaceMonkeys"
+                            "^$CanReach|MM_Bronson"
                         ],
                         "item_count": 1
                     },
@@ -308,7 +298,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $MM_DoubleDoor"
+                            "^$CanReach|MM_Bungee"
                         ],
                         "item_count": 1
                     },
@@ -321,7 +311,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $MM_DoubleDoor"
+                            "^$CanReach|MM_Carro"
                         ],
                         "item_count": 1
                     },
@@ -334,7 +324,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $MM_DoubleDoor"
+                            "^$CanReach|MM_Carlito"
                         ],
                         "item_count": 1
                     },
@@ -347,9 +337,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $MM_SHA, sling",
-                            "net, $MM_SHA, flyer, op_no_ij",
-                            "net, $MM_SHA, flyer, op_et"
+                            "^$CanReach|MM_BG"
                         ],
                         "item_count": 1
                     },
@@ -363,7 +351,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$MM_Professor"
+                            "^$CanReach|MM_Professor"
                         ],
                         "item_count": 1
                     },
@@ -377,7 +365,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$MM_Jake"
+                            "^$CanReach|MM_Jake"
                         ],
                         "item_count": 1
                     },
@@ -391,7 +379,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$MM_FinalBoss"
+                            "^$CanReach|MM_Specter"
                         ],
                         "item_count": 1
                     }
@@ -414,11 +402,11 @@
                         "map": "Overall_View",
                         "x": 815,
                         "y": 200
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "mm_key"
+                            "^$CanReach|MM_SL_HUB"
                         ],
                 "sections": [
                     {
@@ -431,7 +419,7 @@
                         ],
                         "access_rules": 
                         [
-                            ""
+                            "^$CanReach|MM_C_Coaster (Room 1)"
                         ],
                         "item_count": 1
                     },
@@ -445,7 +433,7 @@
                         ],
                         "access_rules": 
                         [
-                            ""
+                            "^$CanReach|MM_C_Coaster (Room 2)"
                         ],
                         "item_count": 1
                     },
@@ -459,8 +447,7 @@
                         ],
                         "access_rules":
                         [
-                            "flyer",
-                            "sling, op_et"
+                            "^$CanReach|MM_C_Haunted House"
                         ],
                         "item_count": 1
                     },
@@ -474,7 +461,7 @@
                         ],
                         "access_rules":
                         [
-                            ""
+                            "^$CanReach|MM_C_Western Land"
                         ],
                         "item_count": 1
                     },
@@ -488,8 +475,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$MM_SHA, flyer",
-                            "$MM_SHA, sling, op_et"
+                            "^$CanReach|MM_C_Crater"
                         ],
                         "item_count": 1
                     },
@@ -503,7 +489,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$MM_SHA"
+                            "^$CanReach|MM_C_Outside Castle"
                         ],
                         "item_count": 1
                     },
@@ -517,7 +503,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$MM_UFODoor"
+                            "^$CanReach|MM_C_Castle Main"
                         ],
                         "item_count": 1
                     },
@@ -531,7 +517,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$MM_SpaceMonkeys"
+                            "^$CanReach|MM_C_Climb (Outside)"
                         ],
                         "item_count": 1
                     },
@@ -545,7 +531,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$MM_DoubleDoor"
+                            "^$CanReach|MM_C_Monkey Head"
                         ],
                         "item_count": 1
                     },
@@ -559,8 +545,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$MM_SHA, flyer",
-                            "$MM_SHA, sling, op_et"
+                            "^$CanReach|MM_C_Side Entry"
                         ],
                         "item_count": 1
                     }
@@ -583,11 +568,11 @@
                         "map": "Overall_View",
                         "x": 845,
                         "y": 200
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "mm_key"
+                            "^$CanReach|MM_SL_HUB"
                         ],
                 "sections": [
                     {
@@ -600,7 +585,7 @@
                       ],
                       "access_rules":
                       [
-                        ""
+                        "^$CanReach|MM_M_The Terror Coaster"
                       ],
                       "item_count": 1
                     },

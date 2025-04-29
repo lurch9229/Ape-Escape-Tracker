@@ -20,13 +20,13 @@
                         "map": "Overall_View",
                         "x": 260,
                         "y": 400
-                    },
+                    }
                 ],
 				"chest_unopened_img": "images/icons/monkeyOn.png",
                 "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
-                            "di_key"
+                            "^$CanReach|DI_ENTRY"
                         ],
                 "sections": [
                     {
@@ -38,7 +38,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanHitOnce"
+                            "^$CanReach|DI_TonTon"
                         ],
                         "item_count": 1
                     },
@@ -51,8 +51,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanSwim",
-                            "net, $CanHitOnce"
+                            "^$CanReach|DI_Stuw"
                         ],
                         "item_count": 1
                     },
@@ -65,12 +64,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanHitOnce, car",
-                            "$CanSwim, $CanWaterCatch, $CanHitOnce, car",
-                            "net, car, op_no_ij",
-                            "$CanSwim, $CanWaterCatch, car, op_no_ij",
-                            "net, car, op_et",
-                            "$CanSwim, $CanWaterCatch, car, op_et"
+                            "^$CanReach|DI_Mars"
                         ],
                         "item_count": 1
                     },
@@ -83,7 +77,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanHitOnce"
+                            "^$CanReach|DI_Murky"
                         ],
                         "item_count": 1
                     },
@@ -96,9 +90,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanHitOnce, $CanSwim",
-                            "net, $CanHitOnce, flyer",
-                            "net, $CanHitOnce, sling, op_et"
+                            "^$CanReach|DI_Horke"
                         ],
                         "item_count": 1
                     },
@@ -111,8 +103,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $DI_SecondHalf, sling",
-                            "net, $DI_SecondHalf, flyer, op_et"
+                            "^$CanReach|DI_Howeerd"
                         ],
                         "item_count": 1
                     },
@@ -125,8 +116,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $DI_SecondHalf, sling",
-                            "net, $DI_SecondHalf, flyer, op_et"
+                            "^$CanReach|DI_Robbin"
                         ],
                         "item_count": 1
                     },
@@ -139,7 +129,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $DI_SecondHalf, $DI_Boulders"
+                            "^$CanReach|DI_Jakkee"
                         ],
                         "item_count": 1
                     },
@@ -152,7 +142,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $DI_SecondHalf, $DI_Boulders"
+                            "^$CanReach|DI_Frederic"
                         ],
                         "item_count": 1
                     },
@@ -165,7 +155,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $DI_SecondHalf, $DI_Boulders"
+                            "^$CanReach|DI_Baba"
                         ],
                         "item_count": 1
                     },
@@ -178,7 +168,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $DI_SecondHalf, $DI_Boulders, $DI_Lamp"
+                            "^$CanReach|DI_Quirck"
                         ],
                         "item_count": 1
                     }
@@ -201,11 +191,11 @@
                         "map": "Overall_View",
                         "x": 290,
                         "y": 400
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "di_key"
+                            "^$CanReach|DI_ENTRY"
                         ],
                 "sections": [
                     {
@@ -218,8 +208,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$CanSwim",
-                            "$CanHitOnce"
+                            "^$CanReach|DI_C_Outside"
                         ],
                         "item_count": 1
                     },
@@ -233,7 +222,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$CanDive, $CanHitOnce"
+                            "^$CanReach|DI_C_Stomach"
                         ],
                         "item_count": 1
                     },
@@ -247,12 +236,8 @@
                         ],
                         "access_rules": 
                         [
-                            "$CanSwim, $CanHitOnce, net",
-                            "$CanSwim, punch",
-                            "$CanHitOnce, net, op_no_ij",
-                            "punch, op_no_ij",
-                            "$CanHitOnce, net, op_et",
-                            "punch, op_et"
+                            "^$CanReach|DI_C_Slide Room",
+                            "^$CanReach|DI_C_Slide Room2"
                         ],
                         "item_count": 1
                     }
@@ -275,11 +260,11 @@
                         "map": "Overall_View",
                         "x": 320,
                         "y": 400
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "di_key"
+                            "^$CanReach|DI_ENTRY"
                         ],
                 "sections": [
                     {
@@ -292,7 +277,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanHitOnce"
+                        "^$CanReach|DI_M_I Named Him Dexter"
                       ],
                       "item_count": 1
                     },
@@ -306,7 +291,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanHitOnce"
+                        "^$CanReach|DI_M_Blue Pants"
                       ],
                       "item_count": 1
                     },
@@ -320,7 +305,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanHitOnce"
+                        "^$CanReach|DI_M_Don't Get Lost!"
                       ],
                       "item_count": 1
                     },
@@ -334,9 +319,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanHitOnce, $CanSwim",
-                        "op_no_ij, $CanHitOnce",
-                        "op_et, $CanHitOnce"
+                        "^$CanReach|DI_M_Normal Pellet Scare"
                       ],
                       "item_count": 1
                     },

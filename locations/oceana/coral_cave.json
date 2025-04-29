@@ -20,13 +20,13 @@
                         "map": "Overall_View",
                         "x": 260,
                         "y": 260
-                    },
+                    }
                 ],
 				"chest_unopened_img": "images/icons/monkeyOn.png",
                 "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
-                            "cc_key"
+                            "^$CanReach|CCAVE_ENTRY"
                         ],
                 "sections": [
                     {
@@ -38,9 +38,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$CanWaterCatch, $CanSwim",
-                            "net, $CanSwim, op_no_IJ",
-                            "net, $CanSwim, op_et"
+                            "^$CanReach|CCAVE_Chip"
 
                         ],
                         "item_count": 1
@@ -55,8 +53,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, hoop, $CanHitMultiple, $CanSwim",
-                            "net, $HasMobility"
+                            "^$CanReach|CCAVE_Oreo"
                         ],
                         "item_count": 1
                     },
@@ -69,12 +66,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanDive",
-                            "net, hoop, flyer, op_no_ij",
-							"net, $SuperFlyer, op_no_ij",
-                            "net, hoop, flyer, op_et",
-                            "net, $SuperFlyer, op_et",
-                            "net, sling, op_et"
+                            "^$CanReach|CCAVE_Puddles"
                         ],
                         "item_count": 1
                     },
@@ -88,10 +80,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, hoop, $CanHitMultiple, $CanSwim",
-							"net, $HasMobility",
-                            "$CanWaterCatch, hoop, $CanHitMultiple, $CanSwim",
-							"$CanWaterCatch, $HasMobility"
+                            "^$CanReach|CCAVE_Kalama"
 							
                         ],
                         "item_count": 1
@@ -105,8 +94,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanSwim",
-                            "net, sling, op_et"
+                            "^$CanReach|CCAVE_Iz"
                         ],
                         "item_count": 1
                     },
@@ -119,8 +107,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanSwim",
-                            "net, sling, op_et"
+                            "^$CanReach|CCAVE_BongBong"
                         ],
                         "item_count": 1
                     },
@@ -133,8 +120,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanSwim",
-                            "net, sling, op_et"
+                            "^$CanReach|CCAVE_Jux"
                         ],
                         "item_count": 1
                     },
@@ -147,8 +133,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanSwim, $CanHitMultiple",
-                            "net, sling, op_et"
+                            "^$CanReach|CCAVE_Pickles"
                         ],
                         "item_count": 1
                     }
@@ -171,11 +156,11 @@
                         "map": "Overall_View",
                         "x": 290,
                         "y": 260
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "cc_key"
+                            "^$CanReach|CCAVE_ENTRY"
                         ],
                 "sections": [
                     {
@@ -188,9 +173,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$CanDive",
-                            "$CanSwim, car, op_no_ij",
-                            "$CanSwim, car, op_et"
+                            "^$CanReach|CCAVE_C_Second Room"
                         ],
                         "item_count": 1
                     }
@@ -213,11 +196,11 @@
                         "map": "Overall_View",
                         "x": 320,
                         "y": 260
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "cc_key"
+                            "^$CanReach|CCAVE_ENTRY"
                         ],
                 "sections": [
                     {
@@ -230,8 +213,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanSwim, $CanHitOnce",
-                        "op_et, sling"
+                        "^$CanReach|CCAVE_M_Yellow Pants"
                       ],
                       "item_count": 1
                     },
@@ -245,8 +227,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanSwim, $CanHitOnce",
-                        "op_et, sling"
+                        "^$CanReach|CCAVE_M_Red Pants"
                       ],
                       "item_count": 1
                     },

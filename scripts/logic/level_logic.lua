@@ -1,345 +1,215 @@
-function has(item, amount)
-    local count = Tracker:ProviderCountForCode(item)
-    amount = tonumber(amount)
-    if not amount then
-      return count > 0
-    else
-      return count == amount
-    end
-  end
 
-function CanHitOnce()
-    return 
-    Club() or Sling() or Punch()
-    or 
-    (op_no_ij() and (Radar() or Hoop() or Flyer() or Car()))
-    or
-    (op_et() and (Radar() or Hoop() or Flyer() or Car()))
-end
 
-function CanHitMultiple()
-    return Club() or Punch()
-    or 
-    (op_no_ij() and (Hoop() or Sling()))
-    or 
-    (op_et() and (Hoop() or Sling()))
-end
-
-function HasMobility()
-    return Flyer()
-    or
-    (op_no_ij() and Hoop())
-    or
-    (op_et() and (Sling() or Hoop()))
-end
-
-function RCMonkey()
-    return
-    Car()
-    or
-    (op_no_ij() and Sling())
-    or
-    (op_et() and Sling())
-end
-
---May have to get the setting to know if it's used or not
---For now glitchless is always false,then other logic is always on
-function SuperFlyer()
-    return --FALSE
-    (op_no_ij() and op_superflyer() and (Flyer() and (Net() or Club() or Sling() or Punch())))
-    or
-    (op_et() and op_superflyer() and (Flyer() and (Net() or Club() or Sling() or Punch())))
-end
-
---WATER NET
 function CanSwim()
-    return Swim()
+    return ((has ("op_wn_off") or has("op_wn_on")) and has ("water")) or (has ("op_wn_prog") and (has ("swim") or has ("dive")))
 end
 
 function CanDive()
-    return Dive()
-
+    return ((has ("op_wn_off") or has("op_wn_on")) and has ("water")) or (has ("op_wn_prog") and has ("dive"))
 end
 
-function CanWaterCatch()
-    return WaterCatch() and Swim()
+function IJ()
+    ij = Tracker:ProviderCountForCode("op_ij").CurrentStage
+    return HasSling() and ij == 1
 end
 
---THICK JUNGLE
-function TJ_UFOEntry()
-    return
-    CanSwim()
+-- Lamp and Door Functions
+function MM_DoubleDoor()
+    return (has ("mm_lobby_doubledoor"))
 end
 
-function TJ_UFOCliff()
-    return 
-    Flyer()
-    or
-    (op_no_ij())
-    or
-    (op_et())
+function CB_Lamp()
+    if has ("cb_lamp_on") then
+        return true
+    end
+    return HasNet() and has ("op_lamps_off")
+    --return has("monkey_cb",3) and has ("op_lamps_off")
 end
 
-function TJ_FishEntry()
-    return
-    CanSwim()
-    or
-    (op_no_ij() and Flyer())
-    or
-    (op_et() and Flyer())
+function DI_Lamp()
+    if has ("di_lamp_on") then
+        return true
+    end
+    return HasNet() and has ("op_lamps_off")
+    --return has("monkey_di",3) and has ("op_lamps_off")
 end
 
-function TJ_Mushroom()
-    return
-    (HasMobility() and CanHitMultiple())
-    or
-    (op_no_ij() and SuperFlyer())
-    or
-    (op_no_ij() and SuperFlyer())
+function CRC_Lamp()
+    if has ("crc_lamp_on") then
+        return true
+    end
+    return HasNet() and has ("op_lamps_off")
+    --return has("monkey_crc",3) and has ("op_lamps_off")
 end
 
-function CR_Inside()
-    return Sling() or Punch()
+function CP_Lamp()
+    if has ("cp_lamp_on") then
+        return true
+    end
+    return HasNet() and has ("op_lamps_off")
+    --return has("monkey_cp",3) and has ("op_lamps_off")
 end
 
-function DI_SecondHalf()
-    return 
-    CanHitOnce() and CanDive()
-    or
-    (op_no_ij() and (CanHitMultiple() and CanDive()))
-    or
-    (op_et() and (Sling() or (CanHitMultiple() and CanDive())))
+function SF_Lamp()
+    if has ("sf_lamp_on") then
+        return true
+    end
+    return HasNet() and has ("op_lamps_off")
+    --return has("monkey_sf",3) and has ("op_lamps_off")
 end
 
-function DI_Boulders()
-    return
-    Hoop() or Car()
-    or
-    (op_no_ij() and Flyer())
-    or
-    (op_et() and (Flyer() or Sling()))
+function TVT_Lobby_Lamp()
+    if has ("tvt_lamp_l_on") then
+        return true
+    end
+    return HasNet() and has ("op_lamps_off")
+    --return has("monkey_tvt",3) and has ("op_lamps_off")
 end
 
-function WSW_ThirdRoom()
-    return 
-	(Net() and Sling()) or Flyer()
-    or
-    (op_no_ij() and ((Net() and (Sling() or Hoop()))))
-    or
-    (op_et() and ((Net() and Hoop()) or Sling()))
+function TVT_Tank_Lamp()
+    if has ("tvt_lamp_tr_on") then
+        return true
+    end
+    return HasNet() and has ("op_lamps_off")
+    --return has("monkey_tvt",3) and has ("op_lamps_off")
 end
 
-function WSW_FourthRoom()
-    return 
-	CanHitMultiple() or Flyer()
-    or
-    op_no_ij()
-    or
-    op_et()
+function MM_Lamp()
+    if has ("mm_lamp_on") then
+        return true
+    end
+    return HasNet() and has ("op_lamps_off")
+    --return has("monkey_mm",3) and has ("op_lamps_off")
 end
 
-function CC_5Monkeys()
-    return CRC_Lamp() and Net() and (Club() or Flyer() or Punch())
-    or
-    (op_no_ij() and (CRC_Lamp() and (Hoop() or Sling())))
-    or
-    (op_et() and (CRC_Lamp() and (Hoop() or Sling())))
+function HasAllMonKeys()
+    return (Tracker:ProviderCountForCode("tot_ape") == 204)
 end
 
-function CC_WaterRoom()
-    return 
-	(CanHitMultiple() and CRC_Lamp()) or (CanSwim() and Punch())
-    or
-    (op_no_ij() and ((CanSwim() and Flyer()) or (Hoop() and Flyer()) or SuperFlyer()))
-    or
-    (op_et() and ((CanSwim() and Flyer()) or (Hoop() and Flyer()) or Sling() or SuperFlyer()))
-end
-
-function CC_ButtonRoom()
-    return 
-    CC_WaterRoom() and CanSwim()
-    or
-    (op_no_ij() and (CC_WaterRoom() and Flyer()))
-    or
-    (op_et() and (CC_WaterRoom() and (Flyer() or Sling())))
-end
-
-function CP_FrontSewer()
-    return CP_Lamp() and Car()
-    or
-    (op_et() and CP_Lamp() and Sling())
-end
-
-
-function CP_FrontBarrels()
-    return CP_FrontSewer() and (CanSwim() or HasMobility())
-end
-
-function CP_BackSewer()
-    return -- FALSE
-    (op_no_ij() and (Flyer() and CanDive()))
-    or
-    (op_et() and (Sling() or ((Flyer() and CanDive()))))
-end
-
-function SF_CarRoom()
-    return Car() or Punch()
-    or
-    (op_no_ij() and (Hoop() and Flyer()))
-    or
-    (op_et() and (Sling() or (Hoop() and Flyer())))
-end
-
-function SF_MechRoom()
-    return SF_Lamp() and Club() and SF_CarRoom()
-	or
-	(op_no_ij() and ((Hoop() and Flyer()) or (SF_Lamp() and ((Club() and (Sling() or Car())) or Punch())) or SuperFlyer()))
-	or
-	(op_et() and (Sling() or (Hoop() and Flyer()) or (SF_Lamp() and ((Club() and Car()) or Punch())) or SuperFlyer()))
-end
-
-function TVT_HitButton()
-    return Flyer() and CanHitOnce()
-    or
-    (op_no_ij() and (Club() or Sling() or Flyer()))
-    or
-    (op_et() and (Club() or Sling() or Flyer()))
-end
-
-function TVT_TankRoom()
-    return (TVT_Lobby_Lamp())
-end
-
-function TVT_BossRoom()
-    return TVT_TankRoom() and TVT_Tank_Lamp()
-end
-
-function MM_Natalie()
-    return CanHitOnce() and Net()
-end
-
-function MM_Professor()
-    return Flyer() and CanHitMultiple()
-    or
-    (op_no_ij() and Flyer() and (Club() or Sling()))
-    or
-    (op_et() and Sling() or (Flyer() and (Club() or Punch())))
-end
-
-function Jake_Open()
+--Level Entries
+function TIME_Access ()
     return true
 end
 
-function MM_Jake()
-    return CanHitMultiple() and Jake_Open()
-    or
-    (op_et() and (CanHitMultiple() and (Sling() or Jake_Open())))
+function FF_Access ()
+    return Tracker:FindObjectForCode("ff_key").Active == true
 end
 
-function MM_SHA()
-    return MM_Lobby_DoubleDoor()
+function PO_Access ()
+    return Tracker:FindObjectForCode("po_key").Active == true
 end
 
-function MM_UFOMonkeys()
-    return MM_SHA() and Net() and Sling()
-    or
-    (op_no_ij() and MM_SHA() and (Club() or Punch()))
-    or
-    (op_et() and MM_SHA() and (Club() or Punch()))
+function ML_Access ()
+    return Tracker:FindObjectForCode("ml_key").Active == true
 end
 
-function MM_UFODoor()
-    return (has ("op_lamps_off") and MM_UFOMonkeys()) or MM_Lamp()
+function TJ_Access ()
+    return Tracker:FindObjectForCode("tj_key").Active == true
 end
 
-function MM_DoubleDoor()
-    return (MM_UFODoor() and Hoop() and Car() and CanHitMultiple())
-    or
-    (op_no_ij() and (MM_UFODoor() and Hoop() and Car()))
-    or
-    (op_et() and (MM_UFODoor() and Hoop() and Car()))
+function DR_Access ()
+    return Tracker:FindObjectForCode("dr_key").Active == true
 end
 
-function MM_SpaceMonkeys()
-    return MM_DoubleDoor() and Flyer()
-	or
-	(op_et() and (MM_DoubleDoor() and Sling()))
+function CR_Access ()
+    return Tracker:FindObjectForCode("cr_key").Active == true
 end
 
-function MM_FinalBoss()
-    return MM_DoubleDoor() and Sling() and Flyer()
-    or
-    (op_no_ij() and MM_UFODoor() and SuperFlyer())
-    or
-    (op_et() and MM_UFODoor() and SuperFlyer())
-    or
-    (op_et() and MM_UFODoor() and (Sling() or SuperFlyer()))
+function SA_Access ()
+    return Tracker:FindObjectForCode("sa_key").Active == true
 end
 
-function LostLandsAccess()
-    if WorldkeyTotal() >= 1 then
-        Tracker:FindObjectForCode("ff_key").Active = true
-        Tracker:FindObjectForCode("po_key").Active = true
-        Tracker:FindObjectForCode("ml_key").Active = true
+function CB_Access ()
+    return Tracker:FindObjectForCode("cb_key").Active == true
+end
+
+function CCAVE_Access ()
+    return Tracker:FindObjectForCode("cc_key").Active == true
+end
+
+function DI_Access ()
+    return Tracker:FindObjectForCode("di_key").Active == true
+end
+
+function SM_Access ()
+    return Tracker:FindObjectForCode("sm_key").Active == true
+end
+
+function FR_Access ()
+    return Tracker:FindObjectForCode("fr_key").Active == true
+end
+
+function HS_Access ()
+    return Tracker:FindObjectForCode("hs_key").Active == true
+end
+
+function GA_Access ()
+    return Tracker:FindObjectForCode("ga_key").Active == true
+end
+
+function ST_Access ()
+    return Tracker:FindObjectForCode("st_key").Active == true
+end
+
+function WSW_Access ()
+    return Tracker:FindObjectForCode("wsw_key").Active == true
+end
+
+function CC_Access ()
+    return Tracker:FindObjectForCode("crc_key").Active == true
+end
+
+function CP_Access ()
+    return Tracker:FindObjectForCode("cp_key").Active == true
+end
+
+function SF_Access ()
+    return Tracker:FindObjectForCode("sf_key").Active == true
+end
+
+function TVT_Access ()
+    return Tracker:FindObjectForCode("tvt_key").Active == true
+end
+
+function MM_Access ()
+    return Tracker:FindObjectForCode("mm_key").Active == true
+end
+
+function PPM_Access ()
+    goal = Tracker:FindObjectForCode("op_goal").CurrentStage
+    worldkeys = Tracker:ProviderCountForCode("keyWorld")
+    if requiredKeys == nil then
+        getReqKeys()
+    end
+    -- 0 = MM, 1 = PPM, 2 = tokenhunt, 3 = mmtoken, 4 = ppmtoken
+    if goal == 1 then
+        return worldkeys >= requiredKeys[21] and HasAllMonKeys()
+    elseif goal == 4 then
+        return worldkeys >= requiredKeys[21] and Tokens()
+    elseif goal == 2 or goal == 3 then
+        return worldkeys >= requiredKeys[21]
     end
 end
 
-function MystAgeAccess()
-    if WorldkeyTotal() >= 2 then
-        Tracker:FindObjectForCode("tj_key").Active = true
-        Tracker:FindObjectForCode("dr_key").Active = true
-        Tracker:FindObjectForCode("cr_key").Active = true
+
+function Keys(count)
+    return has("keyWorld",count)
+end
+
+function Tokens(count)
+    goal = Tracker:FindObjectForCode("op_goal").CurrentStage
+    if goal == 0 or goal == 1 then
+        return true
     end
+    return has("Specter_Token", count)
 end
 
-function OceanaAccess()
-    if WorldkeyTotal() >= 3 then
-        Tracker:FindObjectForCode("cb_key").Active = true
-        Tracker:FindObjectForCode("cc_key").Active = true
-        Tracker:FindObjectForCode("di_key").Active = true
-    end
-end
-
-function NewFreezelandAccess()
-    if WorldkeyTotal() >= 4 then
-        Tracker:FindObjectForCode("sm_key").Active = true
-        Tracker:FindObjectForCode("fr_key").Active = true
-        Tracker:FindObjectForCode("hs_key").Active = true
-    end
-end
-
-function MediMadAccess()
-    if WorldkeyTotal() >= 5 then
-        Tracker:FindObjectForCode("st_key").Active = true
-        Tracker:FindObjectForCode("wsw_key").Active = true
-        Tracker:FindObjectForCode("crc_key").Active = true
-    end
-end
-
-function FuturamaAccess()
-    if WorldkeyTotal() >= 6 then
-        Tracker:FindObjectForCode("cp_key").Active = true
-        Tracker:FindObjectForCode("sf_key").Active = true
-        Tracker:FindObjectForCode("tvt_key").Active = true
-    end
-end
-
-function stadiumAttack()
-	return Tracker:FindObjectForCode("sa_key").Active
-end
-
-function gladiatorAttack()
-	return Tracker:FindObjectForCode("ga_key").Active
-end
-function PPMAccess()
-	return (Tracker:ProviderCountForCode("tot_ape") == 204)
-end
 function location_check(section)
 
 	local SectionID = section.FullID
 	Code = locationToCode[SectionID]
 	isActive = Tracker:FindObjectForCode("@"..SectionID).AvailableChestCount == 1
-		
+
 		--print(Code)
 		if (Code) ~= nil then
 		MinCount = Tracker:FindObjectForCode(Code).MinCount
@@ -372,7 +242,7 @@ function location_check(section)
 			        Tracker:FindObjectForCode(Code).Active = false
 				elseif Tracker:FindObjectForCode(Code).AcquiredCount -1 >= MinCount then
 					if (string.find(string.upper(Code), "COIN")) then
-					print(Tracker:FindObjectForCode(Code).Increment)
+					--print(Tracker:FindObjectForCode(Code).Increment)
 						Tracker:FindObjectForCode("tot_coin").AcquiredCount = Tracker:FindObjectForCode("tot_coin").AcquiredCount - Tracker:FindObjectForCode(Code).Increment
 						if Tracker:FindObjectForCode("tot_coin").AcquiredCount == 0 then
 							Tracker:FindObjectForCode("tot_coin").Active = false

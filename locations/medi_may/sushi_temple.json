@@ -20,13 +20,13 @@
                         "map": "Overall_View",
                         "x": 505,
                         "y": 120
-                    },
+                    }
                 ],
 				"chest_unopened_img": "images/icons/monkeyOn.png",
                 "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
-                            "st_key"
+                            "^$CanReach|ST_ENTRY"
                         ],
                 "sections": [
                     {
@@ -38,7 +38,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|ST_Taku"
                         ],
                         "item_count": 1
                     },
@@ -51,7 +51,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|ST_Rocka"
                         ],
                         "item_count": 1
                     },
@@ -64,7 +64,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|ST_Maralea"
                         ],
                         "item_count": 1
                     },
@@ -77,11 +77,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, sling",
-                            "net, club, op_no_ij",
-                            "net, flyer, op_no_ij",
-                            "net, club, op_et",
-                            "net, flyer, op_et"
+                            "^$CanReach|ST_Wog"
                         ],
                         "item_count": 1
                     },
@@ -94,7 +90,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|ST_Mayi"
                         ],
                         "item_count": 1
                     },
@@ -107,7 +103,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|ST_Owyang"
                         ],
                         "item_count": 1
                     },
@@ -120,7 +116,7 @@
                         ],
                         "access_rules": 
                         [
-                           "net"
+                           "^$CanReach|ST_Long"
                         ],
                         "item_count": 1
                     },
@@ -133,8 +129,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, flyer",
-                            "net, sling, op_et"
+                            "^$CanReach|ST_Elly"
                         ],
                         "item_count": 1
                     },
@@ -147,8 +142,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, flyer",
-                            "net, sling, op_et"
+                            "^$CanReach|ST_Chunky"
                         ],
                         "item_count": 1
                     },
@@ -161,11 +155,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, sling",
-                            "net, hoop, flyer, op_no_ij",
-                            "net, hoop, flyer, op_no_ij",
-                            "net, $SuperFlyer, op_et",
-                            "net, $SuperFlyer, op_et"
+                            "^$CanReach|ST_Voti"
                         ],
                         "item_count": 1
                     },
@@ -178,7 +168,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|ST_QuelTin"
                         ],
                         "item_count": 1
                     },
@@ -191,7 +181,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|ST_Phaldo"
                         ],
                         "item_count": 1
                     }
@@ -214,11 +204,11 @@
                         "map": "Overall_View",
                         "x": 535,
                         "y": 120
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "st_key"
+                            "^$CanReach|ST_ENTRY"
                         ],
                 "sections": [
                     {
@@ -231,7 +221,7 @@
                         ],
                         "access_rules": 
                         [
-                            ""
+                            "^$CanReach|ST_C_Outside"
                         ],
                         "item_count": 1
                     },
@@ -245,7 +235,7 @@
                         ],
                         "access_rules": 
                         [
-                            ""
+                            "^$CanReach|ST_C_Temple"
                         ],
                         "item_count": 1
                     },
@@ -259,8 +249,7 @@
                         ],
                         "access_rules": 
                         [
-                            "flyer",
-                            "sling, op_et"
+                            "^$CanReach|ST_C_Well"
                         ],
                         "item_count": 1
                     }
@@ -283,11 +272,11 @@
                         "map": "Overall_View",
                         "x": 565,
                         "y": 120
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "st_key"
+                            "^$CanReach|ST_ENTRY"
                         ],
                 "sections": [
                     {
@@ -300,7 +289,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanHitOnce"
+                        "^$CanReach|ST_M_Green Pants = Great Vision"
                       ],
                       "item_count": 1
                     },
@@ -314,7 +303,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanHitOnce"
+                        "^$CanReach|ST_M_Light Blue Pants = Gentle"
                       ],
                       "item_count": 1
                     },
@@ -328,7 +317,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanHitOnce"
+                        "^$CanReach|ST_M_Rest and Relax"
                       ],
                       "item_count": 1
                     },

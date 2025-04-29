@@ -20,13 +20,13 @@
                         "map": "Overall_View",
                         "x": 140,
                         "y": 120
-                    },
+                    }
                 ],
 				"chest_unopened_img": "images/icons/monkeyOn.png",
                 "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
-                            "tj_key"
+                            "^$CanReach|TJ_Entry"
                         ],
                 "sections": [
                     {
@@ -38,9 +38,7 @@
                         ],
                         "access_rules": 
                         [
-                            "Net, $CanHitMultiple",
-                            "Net, op_no_ij",
-                            "Net, op_et"
+                            "^$CanReach|TJ_Marquez"
                         ],
                         "item_count": 1
                     },
@@ -53,9 +51,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanHitMultiple",
-                            "net, $CanHitOnce, op_no_ij",
-                            "net, $CanHitOnce, op_et"
+                            "^$CanReach|TJ_Livinston"
                         ],
                         "item_count": 1
                     },
@@ -68,7 +64,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|TJ_George"
                         ],
                         "item_count": 1
                     },
@@ -81,7 +77,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $TJ_Mushroom"
+                            "^$CanReach|TJ_Gonzo"
                         ],
                         "item_count": 1
                     },
@@ -94,7 +90,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $TJ_Mushroom"
+                            "^$CanReach|TJ_Zanzibar"
                         ],
                         "item_count": 1
                     },
@@ -107,7 +103,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $TJ_Mushroom"
+                            "^$CanReach|TJ_Alphonse"
                         ],
                         "item_count": 1
                     },
@@ -120,9 +116,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $TJ_FishEntry, sling",
-                            "net, $TJ_FishEntry, flyer, op_no_ij",
-                            "net, $TJ_FishEntry, flyer, op_et"
+                            "^$CanReach|TJ_Maki"
                         ],
                         "item_count": 1
                     },
@@ -135,7 +129,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $TJ_FishEntry"
+                            "^$CanReach|TJ_Herb"
                         ],
                         "item_count": 1
                     },
@@ -148,8 +142,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $TJ_FishEntry, $CanHitMultiple",
-                            "net, $TJ_UFOEntry, $TJ_UFOCliff"
+                            "^$CanReach|TJ_Dilweed"
                         ],
                         "item_count": 1
                     },
@@ -162,8 +155,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $TJ_Mushroom, $CanHitMultiple",
-                            "net, $TJ_UFOEntry, $TJ_UFOCliff"
+                            "^$CanReach|TJ_Stoddy"
                         ],
                         "item_count": 1
                     },
@@ -176,8 +168,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $TJ_FishEntry, $CanHitMultiple",
-                            "net, $TJ_UFOEntry, $TJ_UFOCliff"
+                            "^$CanReach|TJ_Mitong"
                         ],
                         "item_count": 1
                     },
@@ -190,8 +181,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $TJ_FishEntry, $CanHitMultiple",
-                            "net, $TJ_UFOEntry, $TJ_UFOCliff, $CanHitMultiple"
+                            "^$CanReach|TJ_Nasus"
                         ],
                         "item_count": 1
                     },
@@ -204,12 +194,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $TJ_UFOEntry, sling",
-                            "net, $TJ_FishEntry, $CanHitMultiple, sling",
-                            "net, op_no_ij, $TJ_UFOEntry",
-                            "net, op_no_ij, $TJ_FishEntry, $CanHitMultiple",
-                            "net, op_et, $TJ_UFOEntry",
-                            "net, op_et, $TJ_FishEntry, $CanHitMultiple"
+                            "^$CanReach|TJ_Elehcim"
                         ],
                         "item_count": 1
                     },
@@ -222,16 +207,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $TJ_UFOEntry, $TJ_UFOCliff, sling",
-                            "net, $TJ_FishEntry, $CanHitMultiple, sling",
-                            "net, $TJ_UFOEntry, $TJ_UFOCliff, club, op_no_ij",
-                            "net, $TJ_FishEntry, $CanHitMultiple, club, op_no_ij",
-                            "net, $TJ_UFOEntry, $TJ_UFOCliff, flyer, op_no_ij",
-                            "net, $TJ_FishEntry, $CanHitMultiple, flyer, op_no_ij",
-                            "net, $TJ_UFOEntry, $TJ_UFOCliff, club, op_et",
-                            "net, $TJ_FishEntry, $CanHitMultiple, club, op_et",
-                            "net, $TJ_UFOEntry, $TJ_UFOCliff, flyer, op_et",
-                            "net, $TJ_FishEntry, $CanHitMultiple, flyer, op_et"
+                            "^$CanReach|TJ_Selur"
                         ],
                         "item_count": 1
                     }
@@ -254,11 +230,11 @@
                         "map": "Overall_View",
                         "x": 170,
                         "y": 120
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "tj_key"
+                            "^$CanReach|TJ_Entry"
                         ],
                 "sections": [
                     {
@@ -271,7 +247,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$HasMobility"
+                            "^$CanReach|TJ_C_Entry"
                         ],
                         "item_count": 1
                     },
@@ -285,7 +261,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$TJ_Mushroom"
+                            "^$CanReach|TJ_C_Mushroom Area"
                         ],
                         "item_count": 1
                     },
@@ -299,7 +275,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$TJ_FishEntry"
+                            "^$CanReach|TJ_C_Fish Room"
                         ],
                         "item_count": 1
                     },
@@ -313,8 +289,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$TJ_FishEntry, $CanHitMultiple",
-                            "$TJ_UFOEntry, $TJ_UFOCliff"
+                            "^$CanReach|TJ_C_Tent/Vine Room"
                         ],
                         "item_count": 1
                     }
@@ -337,11 +312,11 @@
                         "map": "Overall_View",
                         "x": 200,
                         "y": 120
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "tj_key"
+                            "^$CanReach|TJ_Entry"
                         ],
                 "sections": [
                     {
@@ -354,7 +329,7 @@
                       ],
                       "access_rules":
                       [
-                        ""
+                        "^$CanReach|TJ_M_Monkeys are Hiding"
                       ],
                       "item_count": 1
                     },
@@ -368,7 +343,7 @@
                       ],
                       "access_rules":
                       [
-                        ""
+                        "^$CanReach|TJ_M_Monkey Camera Tutorial"
                       ],
                       "item_count": 1
                     },
@@ -382,7 +357,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanHitOnce"
+                        "^$CanReach|TJ_M_A Flying Gadget"
                       ],
                       "item_count": 1
                     },
@@ -396,7 +371,7 @@
                       ],
                       "access_rules":
                       [
-                        "$HasMobility, $CanHitOnce"
+                        "^$CanReach|TJ_M_Completely Cleared"
                       ],
                       "item_count": 1
                     },
@@ -410,7 +385,7 @@
                       ],
                       "access_rules":
                       [
-                        "$TJ_FishEntry"
+                        "^$CanReach|TJ_M_You 'Must' Rowboat"
                       ],
                       "item_count": 1
                     },
@@ -424,7 +399,7 @@
                       ],
                       "access_rules":
                       [
-                        "$TJ_FishEntry, $CanHitOnce"
+                        "^$CanReach|TJ_M_Come Back Later!"
                       ],
                       "item_count": 1
                     },
@@ -438,7 +413,7 @@
                       ],
                       "access_rules":
                       [
-                        "$TJ_FishEntry"
+                        "^$CanReach|TJ_M_A Strange Device"
                       ],
                       "item_count": 1
                     },
@@ -452,8 +427,7 @@
                       ],
                       "access_rules":
                       [
-                        "$TJ_UFOEntry, $TJ_UFOCliff, $CanHitOnce",
-                        "$TJ_FishEntry, $CanHitMultiple"
+                        "^$CanReach|TJ_M_Don't Hurt the Plants."
                       ],
                       "item_count": 1
                     },
@@ -467,8 +441,7 @@
                       ],
                       "access_rules":
                       [
-                        "$TJ_UFOEntry, $TJ_UFOCliff, $CanHitOnce",
-                        "$TJ_FishEntry, $CanHitMultiple"
+                        "^$CanReach|TJ_M_Find Specter Coins"
                       ],
                       "item_count": 1
                     },
@@ -480,10 +453,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanSwim, $CanHitMultiple",
-                            "net, $HasMobility, $CanHitMultiple, op_no_ij",
-                            "net, $HasMobility, $CanHitMultiple, op_et",
-                            "net, sling, op_et"
+                            ""
 
                         ],
                         "item_count": 1

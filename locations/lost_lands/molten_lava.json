@@ -20,13 +20,13 @@
                         "map": "Overall_View",
                         "x": 30,
                         "y": 400
-                    },
+                    }
                 ],
 				"chest_unopened_img": "images/icons/monkeyOn.png",
                 "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
-                            "ml_key"
+                            "^$CanReach|ML_Entry"
                         ],
                 "sections": [
                     {
@@ -38,7 +38,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|ML_Scotty"
                         ],
                         "item_count": 1
                     },
@@ -51,7 +51,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|ML_Coco"
                         ],
                         "item_count": 1
                     },
@@ -64,9 +64,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanHitOnce, [$CanHitMultiple]",
-                            "net, $CanHitOnce, op_no_ij",
-                            "net, $CanHitOnce, op_et"
+                            "^$CanReach|ML_JThomas"
                         ],
                         "item_count": 1
                     },
@@ -79,7 +77,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|ML_Moggan"
                         ],
                         "item_count": 1
                     },
@@ -92,7 +90,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|ML_Barney"
                         ],
                         "item_count": 1
                     },
@@ -105,7 +103,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|ML_Mattie"
                         ],
                         "item_count": 1
                     },
@@ -118,9 +116,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, sling, [$CanHitMultiple]",
-                            "net, sling, op_no_ij",
-                            "net, sling, op_et"
+                            "^$CanReach|ML_Rocky"
 
                         ],
                         "item_count": 1
@@ -144,14 +140,14 @@
                         "map": "Overall_View",
                         "x": 60,
                         "y": 400
-                    },
+                    }
                 ],
 				"visibility_rules": [
                     "shuffleCoins"
                 ],
                 "access_rules": 
                         [
-                            "ml_key"
+                            "^$CanReach|ML_Entry"
                         ],
                 "sections": [
                     {
@@ -164,7 +160,7 @@
                         ],
                         "access_rules": 
                         [
-                            ""
+                            "^$CanReach|ML_C_Entry"
                         ],
                         "item_count": 1
                     }
@@ -187,14 +183,14 @@
                         "map": "Overall_View",
                         "x": 90,
                         "y": 400
-                    },
+                    }
                 ],
 				"visibility_rules": [
                     "shuffleMailbox"
                 ],
                 "access_rules": 
                         [
-                            "ml_key"
+                            "^$CanReach|ML_Entry"
                         ],
                 "sections": [
                     {
@@ -207,7 +203,7 @@
                       ],
                       "access_rules":
                       [
-                        ""
+                        "^$CanReach|ML_M_Surrounded by a Cliff"
                       ],
                       "item_count": 1
                     },
@@ -221,7 +217,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanHitOnce"
+                        "^$CanReach|ML_M_Energy Chips"
                       ],
                       "item_count": 1
                     },
@@ -235,7 +231,7 @@
                       ],
                       "access_rules":
                       [
-                        ""
+                        "^$CanReach|ML_M_The T-Rex is Aggressive"
                       ],
                       "item_count": 1
                     },
@@ -249,7 +245,7 @@
                       ],
                       "access_rules":
                       [
-                        ""
+                        "^$CanReach|ML_M_Did I Give You That Yet?"
                       ],
                       "item_count": 1
                     },
@@ -263,7 +259,7 @@
                       ],
                       "access_rules":
                       [
-                        "sling"
+                        "^$CanReach|ML_M_Hit the Bombs!"
                       ],
                       "item_count": 1
                     },

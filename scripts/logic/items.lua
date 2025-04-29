@@ -1,42 +1,4 @@
-function Club()
-    return has ("club")
-end
 
-function Net()
-    return has ("net")
-end
-
-function Hoop()
-    return has ("hoop")
-end
-
-function Punch()
-    return has ("punch")
-end
-
-function Sling()
-    return has ("sling")
-end
-
-function Car()
-    return has ("car")
-end
-
-function Flyer()
-    return has ("flyer")
-end
-
-function Swim()
-	return ((has ("op_wn_off") or has("op_wn_on")) and has ("water")) or (has ("op_wn_prog") and (has ("swim") or has ("dive")))
-end
-
-function Dive()
-    return ((has ("op_wn_off") or has("op_wn_on")) and has ("water")) or (has ("op_wn_prog") and has ("dive"))
-end
-
-function WaterCatch()
-    return ((has ("op_wn_off") or has("op_wn_on")) and has ("water")) or (has ("op_wn_prog") and has ("watercatch"))
-end
 
 function CB_Lamp()
     return ((has ("cb_lamp_on")) or (Net() and has ("op_lamps_off")))
@@ -85,12 +47,26 @@ function op_waternet()
     return has ("op_wn_on")
 end
 
+function op_logic_n()
+    return has ("op_logic_n")
+end
+function op_logic_h()
+    return has ("op_logic_h")
+end
+function op_logic_e()
+    return has ("op_logic_e")
+end
+
 function op_gl()
     return has ("op_gl")
 end
 
 function op_no_ij()
     return has ("op_no_ij")
+end
+
+function op_ij()
+    return has ("op_ij_on")
 end
 
 function op_et()
@@ -133,12 +109,12 @@ function getReqKeys()
         reqkeys = {0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 18}
 		--Tracker:FindObjectForCode("Keyworld").MaxCount = 18
 	end
-	
+
 	for index = 1, 21 do
 		value = reqkeys[index]
 		table.insert(requiredKeys,index,value)
     end
-	
+
 	return requiredKeys
 end
 
@@ -166,7 +142,7 @@ function switchKey(label)
 	-- Before refreshing lvl_order,go see what level was there and deactivate the key
 	disableKeyID = lvl_order[index]
 	disableKeyLevel = lvl_list[disableKeyID]
-	print("Disabled:"..disableKeyLevel.."_key")
+	--print("Disabled:"..disableKeyLevel.."_key")
 	if disableKeyLevel ~= "ppm" then
 		Tracker:FindObjectForCode(disableKeyLevel.."_key").Active = false
 	end
@@ -175,7 +151,7 @@ function switchKey(label)
 end
 
 function resetworldUnlocks()
-	
+
 	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
 	for index = 1, 21 do
 		Tracker:FindObjectForCode(lvl_list[index].."_key").Active = false
@@ -183,8 +159,8 @@ function resetworldUnlocks()
 end
 
 function worldUnlocks(source)
-	print("===================Unlocks====================")
-	print(source)
+	--print("===================Unlocks====================")
+	--print(source)
 	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
 	getLvlOrder()
 	getReqKeys()
@@ -192,7 +168,7 @@ function worldUnlocks(source)
 	LevelRando = Tracker:FindObjectForCode("op_entrance").CurrentStage
 	Auto_ER = Tracker:FindObjectForCode("__setting_auto_ent").CurrentStage
 	already_checked = {}
-	
+
 	if LevelRando ~= 0 then
 		Tracker:FindObjectForCode(lvl_list[1].."_key").Active = false
 		Tracker:FindObjectForCode(lvl_list[2].."_key").Active = false
@@ -212,11 +188,11 @@ function worldUnlocks(source)
 			level_reqKeys = requiredKeys[index]
 			if has_value(already_checked, value) == false then
 				if worldkeys >= level_reqKeys then
-					print("activate_"..lvl_list[value].."_key")
+					--print("activate_"..lvl_list[value].."_key")
 					Tracker:FindObjectForCode(lvl_list[value].."_key").Active = true
 					table.insert(already_checked,value)
 				elseif worldkeys < level_reqKeys then
-					print("--deactivate_"..lvl_list[value].."_key")
+					--print("--deactivate_"..lvl_list[value].."_key")
 					Tracker:FindObjectForCode(lvl_list[value].."_key").Active = false
 				end
 			end
@@ -251,12 +227,12 @@ function worldUnlocks_Old()
 			level_reqKeys = requiredKeys[index]
 			if has_value(already_checked, value) == false then
 				if worldkeys >= level_reqKeys then
-					print("activate_"..lvl_list[value].."_key")
+					--print("activate_"..lvl_list[value].."_key")
 					Tracker:FindObjectForCode(lvl_list[value].."_key").Active = true
 					--Tracker:FindObjectForCode(lvl_list[i].."_key").Active = false
 					table.insert(already_checked,value)
 				elseif worldkeys < level_reqKeys then
-					print("--deactivate_"..lvl_list[value].."_key")
+					--print("--deactivate_"..lvl_list[value].."_key")
 					Tracker:FindObjectForCode(lvl_list[value].."_key").Active = false
 				end
 			end
@@ -282,16 +258,16 @@ end
 function loadAP()
 	resetworldUnlocks()
 	setER()
-	
+
 end
 
-function setER(source)	
+function setER(source)
 	Auto_ER = Tracker:FindObjectForCode("__setting_auto_ent").CurrentStage
 	reqKeys = getReqKeys()
 	worldkeys = Tracker:ProviderCountForCode("keyWorld")
-	
+
 	if SLOT_DATA ~= nil then
-	
+
 		if Auto_ER == 1 then
 			-- set entrances mapping respecting logic
 			lvl_list = { "ff","po","ml","tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm","ppm"}
@@ -302,7 +278,7 @@ function setER(source)
 					index_lvl = k
 					stage_value = levelsIdsToIndex[v]
 					table.insert(true_lvl_order,k,stage_value)
-					
+
 					print(string.format("ER entrance %s | %s | %s", index_lvl,stage_value,reqKeys[index_lvl]))
 					if worldkeys >= reqKeys[index_lvl] then
 						Tracker:FindObjectForCode("__er_"..lvl_list[index_lvl].."_dst").CurrentStage = stage_value
@@ -338,10 +314,10 @@ function apItemLayoutChange()
   print(lamps.CurrentStage)
   if (Tracker.ActiveVariantUID == "map_tracker") or (Tracker.ActiveVariantUID == "map_tracker_alternative") then
     if waternet.CurrentStage == 0 or waternet.CurrentStage == 2 then
-	    print("Option : off")
+	    --print("Option : off")
 		Tracker:AddLayouts("layouts/itemGrids/item_grids_standard.json")
 	elseif waternet.CurrentStage == 1 then
-		print("Option : progressive")
+		--print("Option : progressive")
         Tracker:AddLayouts("layouts/itemGrids/item_grids_waternet.json")
 	end
   end
@@ -349,22 +325,22 @@ end
 
 function apLevelsLayoutChange()
   local lamps = Tracker:FindObjectForCode("op_lamps")
-  print(lamps.CurrentStage)
+  --print(lamps.CurrentStage)
   if (Tracker.ActiveVariantUID == "map_tracker") then
     if lamps.CurrentStage == 0 then
-	    print("Option : off")
+	    --print("Option : off")
 	    --Tracker:AddLayouts("layouts/itemGrids/level_grid_standard.json")
     elseif lamps.CurrentStage == 1 then
-	    print("Option : on")
+	    --print("Option : on")
 	    --Tracker:AddLayouts("layouts/itemGrids/level_grid_standard_lamps.json")
     end
   end
   if (Tracker.ActiveVariantUID == "map_tracker_alternative") then
 	if lamps.CurrentStage == 0 then
-	    print("Option : off")
+	    --print("Option : off")
 	    --Tracker:AddLayouts("layouts/itemGrids/level_grid_alternative.json")
     elseif lamps.CurrentStage == 1 then
-	    print("Option : on")
+	    --print("Option : on")
 	    --Tracker:AddLayouts("layouts/itemGrids/level_grid_alternative_lamps.json")
     end
   end
@@ -388,7 +364,6 @@ function new_version_check()
 			Tracker:FindObjectForCode("op_lamps").CurrentStage = 0
 		else
 			Tracker:FindObjectForCode("mm_lobby_doubledoor").Icon = "images/items/MM_door_unlock.png"
-			print("--------------------------------------------------------")
 			Tracker:FindObjectForCode("op_lamps_off").Icon = "images/settings/lamps_off.png"
 			Tracker:FindObjectForCode("op_lamps_on").Icon = "images/settings/lamps_on.png"
 		end

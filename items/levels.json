@@ -668,7 +668,7 @@
     "type": "toggle",
     "loop": "false",
     "img": "images/icons/base_key.png",
-    //"initial_active_state": true,
+    "initial_active_state": true,
     "codes": "ff_key"
   },
   {
@@ -676,7 +676,7 @@
     "type": "toggle",
     "loop": "false",
     "img": "images/icons/base_key.png",
-    //"initial_active_state": true,
+    "initial_active_state": true,
     "codes": "po_key"
   },
   {
@@ -684,7 +684,7 @@
     "type": "toggle",
     "loop": "false",
     "img": "images/icons/base_key.png",
-    //"initial_active_state": true,
+    "initial_active_state": true,
     "codes": "ml_key"
   },
   {

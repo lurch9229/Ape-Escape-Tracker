@@ -21,13 +21,13 @@
                         "map": "Overall_View",
                         "x": 260,
                         "y": 120
-                    },
+                    }
                 ],
 				"chest_unopened_img": "images/icons/monkeyOn.png",
                 "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
-                            "cb_key"
+                            "^$CanReach|CB_ENTRY"
                         ],
                 "sections": [
                     {
@@ -39,8 +39,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net",
-                            "$CanSwim, $CanWaterCatch"
+                            "^$CanReach|CB_CoolBlue"
                         ],
                         "item_count": 1
                     },
@@ -53,7 +52,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|CB_Sandy"
                         ],
                         "item_count": 1
                     },
@@ -66,7 +65,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|CB_ShellE"
                         ],
                         "item_count": 1
                     },
@@ -79,7 +78,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|CB_Gidget"
                         ],
                         "item_count": 1
                     },
@@ -92,7 +91,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CB_Lamp"
+                            "^$CanReach|CB_Shaka"
                         ],
                         "item_count": 1
                     },
@@ -105,8 +104,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanHitMultiple, $CB_Lamp",
-                            "net, flyer, $CB_Lamp"
+                            "^$CanReach|CB_Shaka"
                         ],
                         "item_count": 1
                     },
@@ -119,10 +117,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, sling, flyer, $CB_Lamp",
-                            "net, hoop, op_no_ij, $CB_Lamp",
-                            "net, hoop, op_et, $CB_Lamp",
-                            "net, sling, op_et, $CB_Lamp"
+                            "^$CanReach|CB_MaxMahalo"
                         ],
                         "item_count": 1
                     },
@@ -135,8 +130,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, flyer, $CB_Lamp",
-                            "net, sling, op_et, $CB_Lamp"
+                            "^$CanReach|CB_Moko"
                         ],
                         "item_count": 1
                     }
@@ -159,11 +153,11 @@
                         "map": "Overall_View",
                         "x": 290,
                         "y": 120
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "cb_key"
+                            "^$CanReach|CB_ENTRY"
                         ],
                 "sections": [
                     {
@@ -176,7 +170,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$CB_Lamp"
+                            "^$CanReach|CB_C_Second Room"
                         ],
                         "item_count": 1
                     }
@@ -199,11 +193,11 @@
                         "map": "Overall_View",
                         "x": 320,
                         "y": 120
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "cb_key"
+                            "^$CanReach|CB_ENTRY"
                         ],
                 "sections": [
                     {
@@ -216,7 +210,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanHitOnce"
+                        "^$CanReach|CB_M_Hip Drop Attack"
                       ],
                       "item_count": 1
                     },
@@ -230,7 +224,7 @@
                       ],
                       "access_rules":
                       [
-                        ""
+                        "^$CanReach|CB_M_Monkey Lamp Tutorial"
                       ],
                       "item_count": 1
                     },
@@ -244,7 +238,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanHitOnce, $CB_Lamp"
+                        "^$CanReach|CB_M_Dangerous to Fall"
                       ],
                       "item_count": 1
                     },

@@ -20,13 +20,13 @@
                         "map": "Overall_View",
                         "x": 505,
                         "y": 400
-                    },
+                    }
                 ],
 				"chest_unopened_img": "images/icons/monkeyOn.png",
                 "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
-                            "crc_key"
+                            "^$CanReach|CC_ENTRY"
                         ],
                 "sections": [
                     {
@@ -38,7 +38,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|CC_Robart"
                         ],
                         "item_count": 1
                     },
@@ -51,7 +51,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|CC_Igor"
                         ],
                         "item_count": 1
                     },
@@ -64,7 +64,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|CC_Naners"
                         ],
                         "item_count": 1
                     },
@@ -77,7 +77,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CC_5Monkeys"
+                            "^$CanReach|CC_Neeners"
                         ],
                         "item_count": 1
                     },
@@ -90,7 +90,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, punch"
+                            "^$CanReach|CC_Charles"
                         ],
                         "item_count": 1
                     },
@@ -103,7 +103,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CC_5Monkeys"
+                            "^$CanReach|CC_Gustav"
                         ],
                         "item_count": 1
                     },
@@ -116,7 +116,7 @@
                         ],
                         "access_rules": 
                         [
-                           "net, $CC_5Monkeys"
+                           "^$CanReach|CC_Wilhelm"
                         ],
                         "item_count": 1
                     },
@@ -129,7 +129,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CC_5Monkeys"
+                            "^$CanReach|CC_Emmanuel"
                         ],
                         "item_count": 1
                     },
@@ -142,7 +142,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CC_5Monkeys"
+                            "^$CanReach|CC_SirCutty"
                         ],
                         "item_count": 1
                     },
@@ -155,8 +155,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CC_WaterRoom, $CanDive",
-                            "net, $CC_WaterRoom, punch"
+                            "^$CanReach|CC_Calligan"
                         ],
                         "item_count": 1
                     },
@@ -169,7 +168,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$CC_WaterRoom, $CanDive, $CanWaterCatch"
+                            "^$CanReach|CC_Castalist"
                         ],
                         "item_count": 1
                     },
@@ -183,8 +182,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CC_ButtonRoom",
-                            "$CanSwim, $CanWaterCatch, $CC_ButtonRoom"
+                            "^$CanReach|CC_Deveneom"
                         ],
                         "item_count": 1
                     },
@@ -197,7 +195,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CC_ButtonRoom"
+                            "^$CanReach|CC_Astur"
                         ],
                         "item_count": 1
                     },
@@ -210,8 +208,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CC_ButtonRoom",
-                            "$CanDive, $CanWaterCatch, $CC_ButtonRoom"
+                            "^$CanReach|CC_Kilserack"
                         ],
                         "item_count": 1
                     },
@@ -224,7 +221,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CC_5Monkeys"
+                            "^$CanReach|CC_Ringo"
                         ],
                         "item_count": 1
                     },
@@ -237,7 +234,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CC_5Monkeys"
+                            "^$CanReach|CC_Densil"
                         ],
                         "item_count": 1
                     },
@@ -250,7 +247,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CC_5Monkeys"
+                            "^$CanReach|CC_Figero"
                         ],
                         "item_count": 1
                     },
@@ -263,7 +260,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CC_5Monkeys"
+                            "^$CanReach|CC_Fej"
                         ],
                         "item_count": 1
                     },
@@ -276,9 +273,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $HasMobility",
-                            "net, $CC_5Monkeys, op_no_ij",
-                            "net, $CC_5Monkeys, op_et"
+                            "^$CanReach|CC_Joey"
                         ],
                         "item_count": 1
                     },
@@ -291,7 +286,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|CC_Donqui"
                         ],
                         "item_count": 1
                     },
@@ -305,7 +300,7 @@
                         ],
                         "access_rules":
                         [
-                            "$CC_ButtonRoom, $CanHitMultiple"
+                            "^$CanReach|CC_Boss"
                         ],
                         "item_count": 1
                     }
@@ -328,11 +323,11 @@
                         "map": "Overall_View",
                         "x": 535,
                         "y": 400
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "crc_key"
+                            "^$CanReach|CC_ENTRY"
                         ],
                 "sections": [
                     {
@@ -345,13 +340,7 @@
                         ],
                         "access_rules": 
                         [
-                            "club",
-							"flyer",
-							"punch",
-							"op_no_ij, sling",
-							"op_no_ij, hoop",
-							"op_et, sling",
-							"op_et, hoop"
+                            "^$CanReach|CC_C_Outside"
                         ],
                         "item_count": 1
                     },
@@ -365,8 +354,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$CRC_Lamp",
-                            "sling, op_et"
+                            "^$CanReach|CC_C_Castle Main"
                         ],
                         "item_count": 1
                     },
@@ -380,7 +368,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$CC_ButtonRoom"
+                            "^$CanReach|CC_C_Button Room"
                         ],
                         "item_count": 1
                     },
@@ -394,11 +382,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$CC_5Monkeys",
-                            "$CC_WaterRoom",
-                            "hoop, flyer, op_no_ij",
-                            "sling, op_et",
-                            "hoop, flyer, op_et"
+                            "^$CanReach|CC_C_Elevator Room"
                         ],
                         "item_count": 1
                     }
@@ -421,11 +405,11 @@
                         "map": "Overall_View",
                         "x": 565,
                         "y": 400
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "crc_key"
+                            "^$CanReach|CC_ENTRY"
                         ],
                 "sections": [
                     {
@@ -438,7 +422,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanHitOnce"
+                        "^$CanReach|CC_M_Think Clearly"
                       ],
                       "item_count": 1
                     },

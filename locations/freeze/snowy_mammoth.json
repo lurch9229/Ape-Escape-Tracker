@@ -20,13 +20,13 @@
                         "map": "Overall_View",
                         "x": 385,
                         "y": 120
-                    },
+                    }
                 ],
 				"chest_unopened_img": "images/icons/monkeyOn.png",
                 "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
-                            "sm_key"
+                            "^$CanReach|SM_ENTRY"
                         ],
                 "sections": [
                     {
@@ -38,7 +38,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|SM_Popcicle"
                         ],
                         "item_count": 1
                     },
@@ -51,7 +51,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanHitOnce"
+                            "^$CanReach|SM_Iced"
                         ],
                         "item_count": 1
                     },
@@ -64,11 +64,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, sling",
-                            "net, punch, op_no_ij",
-                            "net, club, flyer, op_no_ij",
-                            "net, punch, op_et",
-                            "net, club, flyer, op_et"
+                            "^$CanReach|SM_Rickets"
 
                         ],
                         "item_count": 1
@@ -82,10 +78,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanHitMultiple",
-                            "net, flyer",
-                            "net, op_no_ij",
-                            "net, op_et"
+                            "^$CanReach|SM_Skeens"
                         ],
                         "item_count": 1
                     },
@@ -98,10 +91,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanHitMultiple",
-                            "net, flyer",
-                            "net, op_no_ij",
-                            "net, op_et"
+                            "^$CanReach|SM_Denggoy"
                         ],
                         "item_count": 1
                     },
@@ -114,10 +104,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CanHitMultiple",
-                            "net, flyer",
-                            "net, op_no_ij",
-                            "net, op_et"
+                            "^$CanReach|SM_Chilly"
                         ],
                         "item_count": 1
                     }
@@ -140,11 +127,11 @@
                         "map": "Overall_View",
                         "x": 415,
                         "y": 120
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "sm_key"
+                            "^$CanReach|SM_ENTRY"
                         ],
                 "sections": [
                     {
@@ -157,7 +144,7 @@
                         ],
                         "access_rules": 
                         [
-                            ""
+                            "^$CanReach|SM_C_Main"
                         ],
                         "item_count": 1
                     }
@@ -180,11 +167,11 @@
                         "map": "Overall_View",
                         "x": 445,
                         "y": 120
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "sm_key"
+                            "^$CanReach|SM_ENTRY"
                         ],
                 "sections": [
                     {
@@ -197,7 +184,7 @@
                       ],
                       "access_rules":
                       [
-                        ""
+                        "^$CanReach|SM_M_Severely Cold Sea"
                       ],
                       "item_count": 1
                     },
@@ -211,7 +198,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanHitOnce"
+                        "^$CanReach|SM_M_You Are Lost!"
                       ],
                       "item_count": 1
                     },
@@ -225,9 +212,7 @@
                       ],
                       "access_rules":
                       [
-                        "$CanHitMultiple",
-                        "op_no_ij",
-                        "op_et"
+                        "^$CanReach|SM_M_This Hazardous Thing"
                       ],
                       "item_count": 1
                     },

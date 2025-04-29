@@ -20,7 +20,7 @@
                         "map": "Overall_View",
                         "x": 30,
                         "y": 260
-                    },
+                    }
                 ],
 				"chest_unopened_img": "images/icons/monkeyOn.png",
                 "chest_opened_img": "images/icons/Monkey_Captured.png",
@@ -28,7 +28,7 @@
                     ""
                 ],
                 "access_rules": [
-                    "po_key"
+                    "^$CanReach|PO_Entry"
                 ],
                 "sections": [
                     {
@@ -38,7 +38,7 @@
                             ""
                         ],
                         "access_rules": [
-                            "net"
+                            "^$CanReach|PO_Shay"
                         ],
                         "item_count": 1
                     },
@@ -49,7 +49,7 @@
                             ""
                         ],
                         "access_rules": [
-                            "net"
+                            "^$CanReach|PO_Dr. Monk"
                         ],
                         "item_count": 1
                     },
@@ -60,8 +60,7 @@
                             ""
                         ],
                         "access_rules": [
-                            "net",
-                            "$CanSwim, $CanWaterCatch"
+                            "^$CanReach|PO_Ah-Choo"
                         ],
                         "item_count": 1
                     },
@@ -72,10 +71,7 @@
                             ""
                         ],
                         "access_rules": [
-                            "net, $CanSwim",
-                            "net, flyer",
-                            "net, op_no_ij",
-                            "net, op_et"
+                            "^$CanReach|PO_Grunt"
                         ],
                         "item_count": 1
                     },
@@ -86,7 +82,7 @@
                             ""
                         ],
                         "access_rules": [
-                            "net"
+                            "^$CanReach|PO_Tyrone"
                         ],
                         "item_count": 1
                     },
@@ -97,8 +93,7 @@
                             ""
                         ],
                         "access_rules": [
-                            "net, $CanSwim",
-                            "$CanSwim, $CanWaterCatch"
+                            "^$CanReach|PO_Gornif"
                         ],
                         "item_count": 1
                     }
@@ -121,13 +116,13 @@
                         "map": "Overall_View",
                         "x": 60,
                         "y": 260
-                    },
+                    }
                 ],
                 "visibility_rules": [
                     "shuffleCoins"
                 ],
                 "access_rules": [
-                    "po_key"
+                    "^$CanReach|PO_Entry"
                 ],
                 "sections": [
                     {
@@ -138,7 +133,7 @@
                             "shuffleCoins"
                         ],
                         "access_rules": [
-                            "$CanDive"
+                            "^$CanReach|PO_C_Main"
                         ],
                         "item_count": 1
                     }
@@ -161,13 +156,13 @@
                         "map": "Overall_View",
                         "x": 90,
                         "y": 260
-                    },
+                    }
                 ],
                 "visibility_rules": [
                     "shuffleMailbox"
                 ],
                 "access_rules": [
-                    "po_key"
+                    "^$CanReach|PO_Entry"
                 ],
                 "sections": [
                     {
@@ -180,7 +175,7 @@
                       ],
                       "access_rules":
                       [
-                        ""
+                        "^$CanReach|PO_M_Dive Reminder"
                       ],
                       "item_count": 1
                     },
@@ -194,7 +189,7 @@
                       ],
                       "access_rules":
                       [
-                        ""
+                        "^$CanReach|PO_M_Climb a Tree"
                       ],
                       "item_count": 1
                     },
@@ -208,7 +203,7 @@
                       ],
                       "access_rules":
                       [
-                        ""
+                        "^$CanReach|PO_M_Camera Tutorial"
                       ],
                       "item_count": 1
                     },
@@ -222,7 +217,7 @@
                       ],
                       "access_rules":
                       [
-                        ""
+                        "^$CanReach|PO_M_Crawl Tutorial"
                       ],
                       "item_count": 1
                     },

@@ -119,7 +119,7 @@ function onClear(slot_data)
 	elseif slot_data['unlocksperkey'] == 3 then
         Tracker:FindObjectForCode("op_keyoption").CurrentStage = 3
     end
-	print(slot_data['entrance'])
+	--print(slot_data['entrance'])
 	if slot_data['entrance'] == 0 then
         Tracker:FindObjectForCode("op_entrance").CurrentStage = 0
     elseif slot_data['entrance'] == 1 then

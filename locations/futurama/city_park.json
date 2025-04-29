@@ -20,13 +20,13 @@
                         "map": "Overall_View",
                         "x": 620,
                         "y": 120
-                    },
+                    }
                 ],
 				"chest_unopened_img": "images/icons/monkeyOn.png",
                 "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
-                            "cp_key"
+                            "^$CanReach|CP_ENTRY"
                         ],
                 "sections": [
                     {
@@ -38,9 +38,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $RCMonkey",
-                            "net, op_no_ij",
-                            "net, op_et"
+                            "^$CanReach|CP_Kaine"
                         ],
                         "item_count": 1
                     },
@@ -53,7 +51,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|CP_Jaxx"
                         ],
                         "item_count": 1
                     },
@@ -66,12 +64,8 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CP_FrontBarrels, $CanDive, flyer",
-                            "net, $CP_FrontBarrels, $CanDive, op_no_ij",
-                            "net, flyer, op_no_ij,",
-                            "net, $CP_FrontBarrels, $CanDive, op_et",
-                            "net, flyer, op_et",
-                            "net, sling, op_et"
+                            "^$CanReach|CP_Gehry",
+                            "^$CanReach|CP_Gehry2"
                         ],
                         "item_count": 1
                     },
@@ -84,7 +78,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net"
+                            "^$CanReach|CP_Alcatraz"
                         ],
                         "item_count": 1
                     },
@@ -97,9 +91,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CP_FrontSewer, car",
-                            "net, $CP_BackSewer, op_no_ij, car",
-                            "net, $CP_BackSewer, op_et, car"
+                            "^$CanReach|CP_Tino"
                         ],
                         "item_count": 1
                     },
@@ -112,9 +104,8 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CP_FrontSewer, car",
-                            "net, $CP_BackSewer, op_no_ij",
-                            "net, $CP_BackSewer, op_et"
+                            "^$CanReach|CP_QBee",
+                            "^$CanReach|CP_QBee2"
                         ],
                         "item_count": 1
                     },
@@ -127,12 +118,8 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CP_FrontSewer, car",
-                            "net, $CP_BackSewer, car, op_no_ij",
-                            "net, flyer, op_no_ij",
-                            "net, $CP_BackSewer, car, op_et",
-                            "net, flyer, op_et",
-                            "net, sling, op_et"
+                            "^$CanReach|CP_McManic",
+                            "^$CanReach|CP_McManic2"
                         ],
                         "item_count": 1
                     },
@@ -145,9 +132,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CP_FrontBarrels",
-                            "net, $CP_BackSewer, op_no_ij",
-                            "net, $CP_BackSewer, op_et"
+                            "^$CanReach|CP_Dywan"
                         ],
                         "item_count": 1
                     },
@@ -160,11 +145,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CP_FrontBarrels, $CanDive, flyer",
-                            "net, $CP_FrontBarrels, $CanDive, op_no_ij",
-                            "net, $CP_BackSewer, $CanDive, op_no_ij",
-                            "net, $CP_FrontBarrels, $CanDive, op_et",
-                            "net, $CP_BackSewer, $CanDive, op_et"
+                            "^$CanReach|CP_CKHutch"
                         ],
                         "item_count": 1
                     },
@@ -177,16 +158,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CP_FrontBarrels, flyer",
-                            "$CanDive, $CanWaterCatch, $CP_FrontBarrels, flyer",
-                            "net, $CP_FrontBarrels, op_no_ij",
-                            "$CanDive, $CanWaterCatch, $CP_FrontBarrels, op_no_ij",
-                            "net, $CP_BackSewer, op_no_ij",
-                            "$CanDive, $CanWaterCatch, $CP_BackSewer, op_no_ij",
-                            "net, $CP_FrontBarrels, op_et",
-                            "$CanDive, $CanWaterCatch, $CP_FrontBarrels, op_et",
-                            "net, $CP_BackSewer, op_et",
-                            "$CanDive, $CanWaterCatch, $CP_BackSewer, op_et"
+                            "^$CanReach|CP_Winky"
                         ],
                         "item_count": 1
                     },
@@ -199,13 +171,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CP_FrontBarrels, flyer",
-
-                            "net, $CP_FrontBarrels, $CanSwim, op_no_ij",
-                            "net, $CP_BackSewer, op_no_ij",
-                            "net, $CP_FrontBarrels, $CanSwim, op_et",
-                            "net, $CP_FrontBarrels, sling, op_et",
-                            "net, $CP_BackSewer, op_et"
+                            "^$CanReach|CP_BLuv"
                         ],
                         "item_count": 1
                     },
@@ -218,19 +184,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CP_FrontBarrels, $CanDive, flyer",
-                            "$CanDive, $CanWaterCatch, $CP_FrontBarrels, $CanDive, flyer",
-                            "net, $CP_FrontBarrels, $CanDive, op_no_ij",
-                            "$CanDive, $CanWaterCatch, $CP_FrontBarrels, $CanDive, op_no_ij",
-                            "net, $CP_BackSewer, $CanDive, op_no_ij",
-                            "$CanDive, $CanWaterCatch, $CP_BackSewer, $CanDive, op_no_ij",
-
-                            "net, $CP_FrontBarrels, $CanDive, op_et",
-                            "$CanDive, $CanWaterCatch, $CP_FrontBarrels, $CanDive, op_et",
-                            "net, $CP_BackSewer, $CanDive, op_et",
-                            "$CanDive, $CanWaterCatch, $CP_BackSewer, $CanDive, op_et",
-                            "net, sling, car, op_et",
-                            "$CanDive, $CanWaterCatch, sling, car, op_et"
+                            "^$CanReach|CP_Camper"
                         ],
                         "item_count": 1
                     },
@@ -243,14 +197,7 @@
                         ],
                         "access_rules": 
                         [
-                            "net, $CP_FrontBarrels, $CanSwim, flyer",
-                            "net, $CP_FrontBarrels, hoop, flyer, op_no_ij",
-                            "net, $CP_FrontBarrels, $CanSwim, flyer, op_no_ij",
-                            "net, $CP_BackSewer, op_no_ij",
-                            "net, $CP_FrontBarrels, hoop, flyer, op_et",
-                            "net, $CP_FrontBarrels, $CanSwim, flyer, op_et",
-                            "net, $CP_BackSewer, op_et",
-                            "net, sling, op_et"
+                            "^$CanReach|CP_Huener"
                         ],
                         "item_count": 1
                     }
@@ -273,11 +220,11 @@
                         "map": "Overall_View",
                         "x": 650,
                         "y": 120
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "cp_key"
+                            "^$CanReach|CP_ENTRY"
                         ],
                 "sections": [
                     {
@@ -290,12 +237,8 @@
                         ],
                         "access_rules": 
                         [
-                            "$CP_FrontBarrels, $CanDive, flyer",
-                            "$CP_FrontBarrels, $CanDive, op_no_ij",
-                            "flyer, op_no_ij",
-                            "$CP_FrontBarrels, $CanDive, op_et",
-                            "flyer, op_et",
-                            "sling, op_et"
+                            "^$CanReach|CP_C_Outside",
+                            "^$CanReach|CP_C_Outside2"
                         ],
                         "item_count": 1
                     },
@@ -309,15 +252,8 @@
                         ],
                         "access_rules": 
                         [
-                            "$CP_FrontSewer, car",
-                            "$CP_Lamp, car, op_no_ij",
-                            "$CP_Lamp, $SuperFlyer, op_no_ij",
-                            "$CP_BackSewer, car, op_no_ij",
-                            "$CP_Lamp, car, op_et",
-                            "$CP_Lamp, sling, op_et",
-                            "$CP_Lamp, $SuperFlyer, op_et",
-                            "$CP_BackSewer, car, op_et",
-                            "$CP_BackSewer, sling, op_et"
+                            "^$CanReach|CP_C_Sewers Front",
+                            "^$CanReach|CP_C_Sewers Front2"
                         ],
                         "item_count": 1
                     },
@@ -331,11 +267,7 @@
                         ],
                         "access_rules": 
                         [
-                            "$CP_FrontBarrels, flyer",
-                            "$CP_BackSewer, flyer, op_no_ij",
-                            "$CP_FrontBarrels, sling, op_et",
-                            "$CP_BackSewer, sling, op_et",
-                            "$CP_BackSewer, flyer, op_et"
+                            "^$CanReach|CP_C_Barrel Room"
 
                         ],
                         "item_count": 1
@@ -359,11 +291,11 @@
                         "map": "Overall_View",
                         "x": 680,
                         "y": 120
-                    },
+                    }
                 ],
                 "access_rules": 
                         [
-                            "cp_key"
+                            "^$CanReach|CP_ENTRY"
                         ],
                 "sections": [
                     {
