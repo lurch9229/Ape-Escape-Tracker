@@ -168,7 +168,7 @@
                         ],
                         "access_rules": 
                         [
-                            "^$CanReach|MM_Donovan"
+                            "^$CanReach|MM_SIDE_ENTRY_OUTSIDE_CASTLE, ^$CanReach|MM_Donovan"
                         ],
                         "item_count": 1
                     },
@@ -181,7 +181,7 @@
                         ],
                         "access_rules": 
                         [
-                            "^$CanReach|MM_Laura"
+                            "^$CanReach|MM_SIDE_ENTRY_OUTSIDE_CASTLE, ^$CanReach|MM_Laura"
                         ],
                         "item_count": 1
                     },

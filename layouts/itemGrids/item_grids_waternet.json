@@ -4,18 +4,26 @@
     "h_alignment": "center",
     "item_margin": "10,2,0,0",
     "item_size": "55,55",
-	"margin": "0,0,0,59",
+	"margin": "0,0,0,118",
     "rows": [
-      ["stun","keyworld"], 
-      ["net","tot_ape"], 
-      ["progwater","tot_coin"],
-	  ["watercatch",""],
-      ["hoop",""],
-      ["flyer",""],
-      ["shooter",""],
-      ["car",""],
-      ["punch",""],
-      ["radar",""]
+      ["stun","net","keyworld"],
+      ["hoop","flyer","tot_ape"],
+      ["shooter","car","specter_tokens"],
+      ["punch","radar","required_tokens"],
+      ["progwater","watercatch",""]
+    ]
+  },
+  "item_grid2": {
+    "type": "itemgrid",
+    "h_alignment": "center",
+    "item_margin": "10,2,0,0",
+    "item_size": "55,55",
+	"margin": "0,0,0,80",
+    "rows": [
+      ["stun","net","hoop"],
+      ["flyer","shooter","car"],
+      ["punch","radar",""],
+      ["progwater","watercatch",""]
     ]
   },
   "item_grid_horizontal": {
@@ -26,7 +34,19 @@
     "item_margin": "4,2",
     "item_size": "55,55",
     "rows": [
-      ["","stun","net","progwater","watercatch","hoop","flyer","shooter","car","punch","radar","","keyWorld","tot_ape","tot_coin"],
+      ["keyWorld","tot_ape","specter_tokens","required_tokens","","stun","net","progwater","watercatch","hoop","flyer","shooter","car","punch","radar"]
+
+    ]
+  },
+    "item_grid_horizontal2": {
+    "type": "itemgrid",
+    "h_alignment": "center",
+	"v_alignment": "center",
+	"margin": "0,0,0,0",
+    "item_margin": "4,2",
+    "item_size": "55,55",
+    "rows": [
+      ["stun","net","progwater","watercatch","hoop","flyer","shooter","car","punch","radar","","keyWorld","tot_ape","specter_tokens","required_tokens"]
     ]
   }
 }

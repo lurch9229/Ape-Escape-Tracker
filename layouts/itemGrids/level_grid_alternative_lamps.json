@@ -1,7 +1,7 @@
 {
   "level_grid_1": {
     "type": "array",
-	"margin": "20,0,0,0",
+	"margin": "0,0,0,0",
     "orientation": "vertical",
     "h_alignment": "center",
     "content":[
@@ -219,15 +219,15 @@
             ],
             "item_size": 46,
             "margin": "-15,-65,0,0"
-          },
+          }
 		  
         ]
-      },
+      }
     ]
   },
   "level_grid_2": {
     "type": "array",
-	"margin": "25,0,0,0",
+	"margin": "64,0,0,0",
     "orientation": "vertical",
     "h_alignment": "center",
     "content":[
@@ -259,15 +259,7 @@
             ],
             "item_size": 46,
             "margin": "7,0,0,0"
-          },
-		  {
-            "type": "itemgrid",
-            "rows": [
-              ["cb_lamp"]
-            ],
-            "item_size": 46,
-            "margin": "-9,3,0,0"
-          },
+          }
         ]
       },
       {
@@ -329,15 +321,7 @@
             ],
             "item_size": 46,
             "margin": "7,-65,0,0"
-          },
-		  {
-            "type": "itemgrid",
-            "rows": [
-              ["di_lamp"]
-            ],
-            "item_size": 46,
-            "margin": "-5,-65,0,0"
-          },
+          }
         ]
       },
 	  {
@@ -461,7 +445,7 @@
             ],
             "item_size": 46,
             "margin": "-15,-65,0,0"
-          },
+          }
 		  
         ]
       }
@@ -472,7 +456,7 @@
     "type": "array",
     "orientation": "vertical",
     "h_alignment": "center",
-    "margin": "-26,0,0,0",
+    "margin": "64,0,0,0",
 	"content":[
       {
         "type": "array",
@@ -564,15 +548,7 @@
             ],
             "item_size": 46,
             "margin": "7,-65,0,0"
-          },
-		  {
-            "type": "itemgrid",
-            "rows": [
-              ["crc_lamp"]
-            ],
-            "item_size": 46,
-            "margin": "-5,-65,0,0"
-          },
+          }
         ]
       },
       {
@@ -603,15 +579,7 @@
             ],
             "item_size": 46,
             "margin": "7,-65,0,0"
-          },
-		  {
-            "type": "itemgrid",
-            "rows": [
-              ["cp_lamp"]
-            ],
-            "item_size": 46,
-            "margin": "-5,-65,0,0"
-          },
+          }
         ]
       },
       {
@@ -642,15 +610,7 @@
             ],
             "item_size": 46,
             "margin": "7,-65,0,0"
-          },
-		  {
-            "type": "itemgrid",
-            "rows": [
-              ["sf_lamp"]
-            ],
-            "item_size": 46,
-            "margin": "-5,-65,0,0"
-          },
+          }
         ]
       },
       {
@@ -681,22 +641,6 @@
             ],
             "item_size": 46,
             "margin": "7,-65,0,0"
-          },
-		  {
-            "type": "itemgrid",
-            "rows": [
-              ["tvt_lamp_l"]
-            ],
-            "item_size": 46,
-            "margin": "-5,-65,-25,0"
-          },
-		  {
-            "type": "itemgrid",
-            "rows": [
-              ["tvt_lamp_tr"]
-            ],
-            "item_size": 46,
-            "margin": "5,-65,-25,0"
           }
         ]
       },
@@ -728,25 +672,9 @@
             ],
             "item_size": 46,
             "margin": "7,-65,0,0"
-          },
-		  {
-            "type": "itemgrid",
-            "rows": [
-              ["mm_lamp"]
-            ],
-            "item_size": 46,
-            "margin": "-5,-65,-25,-65"
-          },
-		  {
-            "type": "itemgrid",
-            "rows": [
-              ["mm_lobby_doubledoor"]
-            ],
-            "item_size": 46,
-            "margin": "-5,-65,-25,-65"
-          },
+          }
         ]
-      },
+      }
     ]
   }
 }

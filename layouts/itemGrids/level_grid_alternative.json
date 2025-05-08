@@ -1,7 +1,7 @@
 {
   "level_grid_1": {
     "type": "array",
-	"margin": "20,0,0,0",
+	"margin": "0,0,0,0",
     "orientation": "vertical",
     "h_alignment": "center",
     "content":[
@@ -219,10 +219,10 @@
             ],
             "item_size": 46,
             "margin": "-15,-65,0,0"
-          },
+          }
 		  
         ]
-      },
+      }
     ]
   },
   "level_grid_2": {
@@ -445,7 +445,7 @@
             ],
             "item_size": 46,
             "margin": "-15,-65,0,0"
-          },
+          }
 		  
         ]
       }
@@ -680,9 +680,9 @@
             ],
             "item_size": 46,
             "margin": "-5,-65,-25,-65"
-          },
+          }
         ]
-      },
+      }
     ]
   }
 }

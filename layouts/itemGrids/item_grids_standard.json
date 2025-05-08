@@ -6,26 +6,59 @@
     "item_size": "55,55",
 	"margin": "0,0,0,118",
     "rows": [
-      ["stun","keyworld"], 
-      ["net","tot_ape"], 
-      ["water","tot_coin"],
-      ["hoop",""],
-      ["flyer",""],
-      ["shooter",""],
-      ["car",""],
-      ["punch",""],
-      ["radar",""],
+      ["stun","net","keyworld"],
+      ["hoop","flyer","tot_ape"],
+      ["shooter","car","specter_tokens"],
+      ["punch","radar","required_tokens"],
+      ["water","",""]
     ]
   },
-  "item_grid_horizontal": {
+  "item_grid2": {
+    "type": "itemgrid",
+    "h_alignment": "center",
+    "item_margin": "10,2,0,0",
+    "item_size": "55,55",
+	"margin": "0,0,0,80",
+    "rows": [
+      ["stun","net","hoop"],
+      ["flyer","shooter","car"],
+      ["punch","radar",""],
+      ["water","",""]
+    ]
+  },
+    "item_grid_horizontal": {
     "type": "itemgrid",
     "h_alignment": "center",
 	"v_alignment": "center",
-	"margin": "63,0,0,0",
+	"margin": "0,0,0,0",
     "item_margin": "4,2",
     "item_size": "55,55",
     "rows": [
-      ["","stun","net","water","hoop","flyer","shooter","car","punch","radar","","keyWorld","tot_ape","tot_coin"],
+      ["keyWorld","tot_ape","specter_tokens","required_tokens","","stun","net","water","hoop","flyer","shooter","car","punch","radar",""]
+
+    ]
+  },
+    "totals_grid": {
+    "type": "itemgrid",
+    "h_alignment": "center",
+	"v_alignment": "center",
+	"margin": "0,0,0,0",
+    "item_margin": "4,2",
+    "item_size": "55,55",
+    "rows": [
+      ["keyWorld","tot_ape","specter_tokens","required_tokens"]
+
+    ]
+  },
+  "item_grid_horizontal2": {
+    "type": "itemgrid",
+    "h_alignment": "center",
+	"v_alignment": "center",
+	"margin": "0,0,0,0",
+    "item_margin": "4,2",
+    "item_size": "55,55",
+    "rows": [
+      ["","stun","net","water","hoop","flyer","shooter","car","punch","radar","","keyWorld","tot_ape","specter_tokens","required_tokens"]
     ]
   }
 }

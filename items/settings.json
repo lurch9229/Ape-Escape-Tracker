@@ -1,5 +1,13 @@
 [
   {
+    "name": "Logic Mode - Label",
+    "type": "label",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/settings/op_logic.png",
+    "codes": "op_logic_label"
+  },
+  {
     "name": "Logic Mode",
     "type": "progressive",
     "initial_stage_idx": 0,
@@ -7,24 +15,32 @@
     "loop": false,
     "stages": [
       {
-        "name": "Glitchless",
-        "img": "images/settings/logic_gless.png",
+        "name": "Normal",
+        "img": "images/settings/logic_normal.png",
         "codes": "op_logic, op_gl, op_logic_n",
         "allow_disabled": false
       },
       {
-        "name": "No Infinite Jumps",
-        "img": "images/settings/logic_no_ij.png",
+        "name": "Hard",
+        "img": "images/settings/logic_hard.png",
         "codes": "op_logic, op_no_ij, op_logic_h",
         "inherit_codes": false
       },
       {
-        "name": "Unrestricted",
-        "img": "images/settings/logic_no_rest.png",
+        "name": "Expert",
+        "img": "images/settings/logic_expert.png",
         "codes": "op_logic, op_et, op_logic_e",
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Shuffle Coins - Label",
+    "type": "label",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/settings/op_coins.png",
+    "codes": "op_coins_label"
   },
   {
     "name": "Specter Coins",
@@ -35,17 +51,25 @@
     "stages": [
       {
         "name": "No Coins",
-        "img": "images/settings/coins_off.png",
+        "img": "images/settings/off.png",
         "codes": "op_coins,op_sc_off",
         "allow_disabled": false
       },
       {
         "name": "Shuffled Coins",
-        "img": "images/settings/coins_on.png",
+        "img": "images/settings/on.png",
         "codes": "op_coins,op_sc, shuffleCoins",
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Goal - Label",
+    "type": "label",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/settings/op_goal.png",
+    "codes": "op_goal_label"
   },
   {
     "name": "Goal",
@@ -56,18 +80,45 @@
 	"loop": false,
     "stages": [
       {
-        "name": "Specter 1",
-        "img": "images/settings/goal1.png",
-        "codes": "goal, goal1",
+        "name": "Monkey Madness",
+        "img": "images/settings/goal_mm.png",
+        "codes": "goal, goalmm",
         "allow_disabled": false
       },
       {
-        "name": "Specter 2",
-        "img": "images/settings/goal2.png",
-        "codes": "goal, goal2",
+        "name": "Peak Point Matrix",
+        "img": "images/settings/goal_ppm.png",
+        "codes": "goal, goalppm",
+        "inherit_codes": false
+      },
+      {
+        "name": "Token Hunt",
+        "img": "images/settings/goal_tokenhunt.png",
+        "codes": "goal, goaltoken",
+        "inherit_codes": false
+      },
+      {
+        "name": "Monkey Madness (Tokens)",
+        "img": "images/settings/goal_mmtoken.png",
+        "codes": "goal, goalmmtoken",
+        "inherit_codes": false
+      },
+
+      {
+        "name":  "Peak Point Matrix (Tokens)",
+        "img": "images/settings/goal_ppmtoken.png",
+        "codes": "goal, goalppmtoken",
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Mailbox - Label",
+    "type": "label",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/settings/op_mailbox.png",
+    "codes": "op_mailbox_label"
   },
   {
     "name": "Mailboxes",
@@ -78,17 +129,54 @@
     "stages": [
       {
         "name": "Mailboxes Off",
-        "img": "images/settings/mailboxes_off.png",
+        "img": "images/settings/off.png",
         "codes": "op_mailbox, op_mb_off",
         "allow_disabled": false
       },
       {
         "name": "Mailboxes On",
-        "img": "images/settings/mailboxes_on.png",
+        "img": "images/settings/on.png",
         "codes": "op_mailbox, op_mb_on, shuffleMailbox",
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Infinite Jump - Label",
+    "type": "label",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/settings/op_infinitejump.png",
+    "codes": "op_ij_label"
+  },
+  {
+    "name": "Infinite Jump",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "loop": false,
+    "stages": [
+      {
+        "name": "Infinite Jump Off",
+        "img": "images/settings/off.png",
+        "codes": "op_ij, op_ij_off",
+        "allow_disabled": false
+      },
+      {
+        "name": "Infinite Jump On",
+        "img": "images/settings/on.png",
+        "codes": "op_ij, op_ij_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "SuperFlyer - Label",
+    "type": "label",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/settings/op_superflyer.png",
+    "codes": "op_superflyer_label"
   },
   {
     "name": "Super Flyer",
@@ -99,17 +187,25 @@
     "stages": [
       {
         "name": "Super Flyer Off",
-        "img": "images/settings/superflyer_off.png",
+        "img": "images/settings/off.png",
         "codes": "op_superflyer, op_sf_off",
         "allow_disabled": false
       },
       {
         "name": "Super Flyer On",
-        "img": "images/settings/superflyer_on.png",
+        "img": "images/settings/on.png",
         "codes": "op_superflyer, op_sf_on",
         "inherit_codes": false
       }
     ]
+  },
+    {
+    "name": "Water Net- Label",
+    "type": "label",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/settings/op_waternet.png",
+    "codes": "op_waternet_label"
   },
   {
     "name": "Shuffle Water Net",
@@ -120,23 +216,31 @@
     "stages": [
       {
         "name": "Shuffle Water Net Off",
-        "img": "images/settings/shufflewaternet_off.png",
+        "img": "images/settings/off.png",
         "codes": "op_waternet, op_wn_off",
         "allow_disabled": false
       },
       {
         "name": "Shuffle Water Net Progressive",
-        "img": "images/settings/shufflewaternet_prog.png",
+        "img": "images/settings/waternet_prog.png",
         "codes": "op_waternet, op_wn_prog",
         "inherit_codes": false
       },
       {
         "name": "Shuffle Water Net On",
-        "img": "images/settings/shufflewaternet_on.png",
+        "img": "images/settings/on.png",
         "codes": "op_waternet, op_wn_on",
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Key Option - Label",
+    "type": "label",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/settings/op_keyoption.png",
+    "codes": "op_keyoption_label"
   },
   {
     "name": "Key Option",
@@ -152,24 +256,32 @@
         "allow_disabled": false
       },
       {
-        "name": "World and Races",
-        "img": "images/settings/keyunlock_worlds_races.png",
-        "codes": "op_keyoption, op_ko_wr",
-        "inherit_codes": false
-      },
-	  {
         "name": "Levels",
         "img": "images/settings/keyunlock_levels.png",
         "codes": "op_keyoption, op_ko_l",
         "inherit_codes": false
       },
 	  {
-        "name": "Levels and Races",
-        "img": "images/settings/keyunlock_levels_races.png",
-        "codes": "op_keyoption, op_ko_lr",
+        "name": "Two Levels",
+        "img": "images/settings/keyunlock_twolevels.png",
+        "codes": "op_keyoption, op_ko_tl",
+        "inherit_codes": false
+      },
+	  {
+        "name": "None",
+        "img": "images/settings/keyunlock_none.png",
+        "codes": "op_keyoption, op_ko_none",
         "inherit_codes": false
       }
     ]
+  },
+    {
+    "name": "Lamps - Label",
+    "type": "label",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/settings/op_lamps.png",
+    "codes": "op_lamps_label"
   },
   {
     "name": "Lamps",
@@ -180,17 +292,25 @@
     "stages": [
       {
         "name": "Lamps - Off",
-        "img": "images/settings/lamps_off.png",
+        "img": "images/settings/off.png",
         "codes": "op_lamps, op_lamps_off",
         "allow_disabled": false
       },
       {
         "name": "Lamps - On",
-        "img": "images/settings/lamps_on.png",
+        "img": "images/settings/on.png",
         "codes": "op_lamps, op_lamps_on",
         "inherit_codes": false
       }
     ]
+  },
+  {
+    "name": "Entrances Shuffle - Label",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/settings/op_entrance.png",
+    "codes": "op_entrance_label"
   },
   {
     "name": "Entrances Shuffle",
@@ -200,33 +320,21 @@
     "loop": false,
     "stages": [
       {
-        "name": "None",
-        "img": "images/settings/entrance_none.png",
+        "name": "Off",
+        "img": "images/settings/off.png",
         "codes": "op_entrance, op_es_n",
         "allow_disabled": false
       },
 	  {
-        "name": "Eras",
-        "img": "images/settings/entrance_eras.png",
-        "codes": "op_entrance, op_es_w",
-        "allow_disabled": false
+        "name": "On",
+        "img": "images/settings/on.png",
+        "codes": "op_entrance, op_es_on",
+        "inherit_codes": false
       },
       {
-        "name": "Eras and Races",
-        "img": "images/settings/entrance_eras_races.png",
-        "codes": "op_entrance, op_es_wr",
-        "inherit_codes": false
-      },
-	  {
-        "name": "Levels",
-        "img": "images/settings/entrance_levels.png",
-        "codes": "op_entrance, op_es_l",
-        "inherit_codes": false
-      },
-	  {
-        "name": "Levels and Races",
-        "img": "images/settings/entrance_levels_races.png",
-        "codes": "op_entrance, op_es_lr",
+        "name": "On - (Lock MM)",
+        "img": "images/settings/on-lockmm.png",
+        "codes": "op_entrance, op_es_lockmm",
         "inherit_codes": false
       }
     ]
@@ -279,21 +387,21 @@
         "codes": "__setting_auto_ent",
         "allow_disabled": false,
         "initial_stage_idx": 1,
-        "loop": true,
+        "loop": false,
         "stages": [
             {
                 "name": "Auto-set Entrances - Disabled",
-                "img": "images/settings/no.png",
+                "img": "images/settings/off.png",
                 "inherit_codes": false
             },
             {
-                "name": "Auto-set Entrances - Disabled",
-                "img": "images/settings/logical_access.png",
+                "name": "Auto-set Entrances - Logical Access",
+                "img": "images/settings/Logical_Access.png",
                 "inherit_codes": false
             },
             {
                 "name": "Auto-set Entrances - Enabled",
-                "img": "images/settings/yes.png",
+                "img": "images/settings/On.png",
                 "inherit_codes": false
             }
         ]

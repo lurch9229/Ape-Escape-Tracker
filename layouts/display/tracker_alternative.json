@@ -87,8 +87,8 @@
 												"title": "Specter Land",
 												"content": {
 													"type": "map",
-													"maps": ["Specter_Land",]
-												},
+													"maps": ["Specter_Land"]
+												}
 											},
 											{
 												"title": "Peak Point Matrix",
@@ -132,21 +132,40 @@
 								"content": [
 									{
 										"type": "group",
-										"header": "Settings",
+										"header": "Lamps/Door",
 										"dock":"left",
 										"content": {
 											"type": "array",
 											"orientation": "vertical",
-											"margin": "0,-10",
+											"margin": "10,5,0,0",
 											"content": [
 												{
 													"type": "layout",
-													"key": "settings_grid"
+													"key": "Lamps_grid"
 												}
 
 											]
 										}
 									},
+									{
+										"type": "group",
+										"header": "Events",
+										"dock":"left",
+										"content": {
+											"type": "array",
+											"orientation": "vertical",
+											"margin": "0,5,0,0",
+											"content": [
+												{
+													"type": "layout",
+													"key": "Events_grid"
+												}
+
+											]
+										}
+									}
+
+
 									//{
 									//		"type": "group",
 									//		"header":"Specters",
@@ -185,7 +204,7 @@
 														"content": {
 															"type": "array",
 															"orientation": "horizontal",
-															"margin": "-30,0",
+															"margin": "0,0,0,0",
 															"content": [
 																{
 																	"type": "layout",
@@ -241,7 +260,7 @@
 							{
 								"type": "group",
 								// Very long string to place "Totals" at the right spot ----->
-								"header": "Items                                                                                                                                                                                       Totals",
+								"header": "Totals                                                                    Items",
 								"content": {
 									"type": "array",
 									"orientation": "horizontal",

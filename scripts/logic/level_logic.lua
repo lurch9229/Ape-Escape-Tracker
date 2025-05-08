@@ -62,8 +62,8 @@ function TVT_Lobby_Lamp()
     if has ("tvt_lamp_l_on") then
         return true
     end
-    return HasNet() and has ("op_lamps_off")
-    --return has("monkey_tvt",3) and has ("op_lamps_off")
+    --return HasNet() and has ("op_lamps_off")
+    return has("monkey_tvt",3) and has ("op_lamps_off")
 end
 
 function TVT_Tank_Lamp()
@@ -182,12 +182,14 @@ function PPM_Access ()
         getReqKeys()
     end
     -- 0 = MM, 1 = PPM, 2 = tokenhunt, 3 = mmtoken, 4 = ppmtoken
-    if goal == 1 then
-        return worldkeys >= requiredKeys[21] and HasAllMonKeys()
+    if goal == 0 then
+        return false
+    elseif goal == 1 then
+        return worldkeys >= requiredKeys[22] and HasAllMonKeys()
     elseif goal == 4 then
-        return worldkeys >= requiredKeys[21] and Tokens()
+        return worldkeys >= requiredKeys[22] and Tokens()
     elseif goal == 2 or goal == 3 then
-        return worldkeys >= requiredKeys[21]
+        return worldkeys >= requiredKeys[22]
     end
 end
 
@@ -196,12 +198,14 @@ function Keys(count)
     return has("keyWorld",count)
 end
 
-function Tokens(count)
+function Tokens()
     goal = Tracker:FindObjectForCode("op_goal").CurrentStage
+    requiredtokens = Tracker:ProviderCountForCode("required_tokens")
     if goal == 0 or goal == 1 then
         return true
     end
-    return has("Specter_Token", count)
+    --return true
+    return has("specter_tokens", requiredtokens)
 end
 
 function location_check(section)

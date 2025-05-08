@@ -1,5 +1,169 @@
 {
-  "settings_grid": {
+  "Lamps_grid": {
+    "type": "array",
+	"h_alignement": "center",
+    "orientation": "vertical",
+    "content":[
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0,0,0",
+
+        "content": [
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["cb_lamp","di_lamp","crc_lamp","cp_lamp"]
+            ],
+            "item_size": 70,
+            "item_margin": "-10,0,0,0",
+            "margin": "10,0,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["sf_lamp","tvt_lamp_l","tvt_lamp_tr","mm_lamp"]
+            ],
+            "item_size": 70,
+            "item_margin": "-10,0,0,0",
+            "margin": "10,5,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["mm_lobby_doubledoor"]
+            ],
+            "item_size": 70,
+            "item_margin": "-10,0,0,0",
+            "margin": "5,0,0,10"
+          }
+        ]
+      }
+    ]
+  },
+  "Events_grid": {
+    "type": "array",
+	"h_alignement": "center",
+    "orientation": "vertical",
+    "content":[
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0,0,0",
+
+        "content": [
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["DR-Block","DI-Button","CC-Button"]
+            ],
+            "item_size": 70,
+            "margin": "0,0,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["TVT_Lobby_Button","MM-Button","MM-Painting"]
+            ],
+            "item_size": 70,
+            "margin": "0,0,0,0"
+          }
+        ]
+      }
+    ]
+  },
+  "Lamps_grid2": {
+    "type": "array",
+	"h_alignement": "center",
+    "orientation": "vertical",
+    "content":[
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0,0,0",
+
+        "content": [
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["cb_lamp","di_lamp"]
+            ],
+            "item_size": 60,
+            "item_margin": "-10,0,0,0",
+            "margin": "10,0,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["crc_lamp","cp_lamp","sf_lamp"]
+            ],
+            "item_size": 60,
+            "item_margin": "-10,0,0,0",
+            "margin": "10,5,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["tvt_lamp_l","tvt_lamp_tr","mm_lamp"]
+            ],
+            "item_size": 60,
+            "item_margin": "-10,0,0,0",
+            "margin": "10,5,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["mm_lobby_doubledoor"]
+            ],
+            "item_size": 60,
+            "item_margin": "-10,0,0,0",
+            "margin": "5,0,0,10"
+          }
+        ]
+      }
+    ]
+  },
+  "Events_grid2": {
+    "type": "array",
+	"h_alignement": "center",
+    "orientation": "vertical",
+    "content":[
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0,0,0",
+
+        "content": [
+
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["DR-Block"]
+            ],
+            "item_size": 50,
+            "margin": "0,0,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["DI-Button","CC-Button","TVT_Lobby_Button"]
+            ],
+            "item_size": 50,
+            "margin": "0,0,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["MM-Button","MM-Painting"]
+            ],
+            "item_size": 50,
+            "margin": "0,0,0,0"
+          }
+        ]
+      }
+    ]
+  },
+  "Item_grids_alternative3": {
     "type": "array",
 	"h_alignement": "center",
     "orientation": "vertical",
@@ -13,82 +177,255 @@
           {
             "type": "itemgrid",
             "rows": [
-              ["op_gl"]
+              ["cb_lamp"]
             ],
-            "item_size": 150,
+            "item_size": 70,
+            "margin": "75,-85,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["di_lamp"]
+            ],
+            "item_size": 50,
+            "margin": "75,-85,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["crc_lamp"]
+            ],
+            "item_size": 50,
+            "margin": "75,-85,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["cp_lamp"]
+            ],
+            "item_size": 50,
+            "margin": "75,-85,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["sf_lamp"]
+            ],
+            "item_size": 50,
+            "margin": "75,-85,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["tvt_lamp_l"]
+            ],
+            "item_size": 50,
+            "margin": "75,-85,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["tvt_lamp_tr"]
+            ],
+            "item_size": 50,
+            "margin": "105,-60,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              [
+                "mm_lamp"
+              ]
+            ],
+            "item_size": 50,
+            "margin": "75,-85,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["mm_lobby_doubledoor"]
+            ],
+            "item_size": 50,
+            "margin": "105,-60,0,0"
+          }
+        ]
+      }
+    ]
+  },
+  "Item_grids_alternative": {
+    "type": "array",
+	"h_alignement": "center",
+    "orientation": "vertical",
+    "content":[
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0,0,-100",
+
+        "content": [
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["DR_Label"]
+            ],
+            "item_size": 70,
+            "margin": "0,10,0,0"
+          },
+                    {
+            "type": "itemgrid",
+            "rows": [
+              ["DR-Block"]
+            ],
+            "item_size": 40,
+            "margin": "75,-85,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["CB_Label"]
+            ],
+            "item_size": 70,
+            "margin": "125,-45,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["cb_lamp"]
+            ],
+            "item_size": 50,
+            "margin": "180,-85,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["DI_Label"]
+            ],
+            "item_size": 70,
+            "margin": "0,-10,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["di_lamp"]
+            ],
+            "item_size": 50,
+            "margin": "75,-85,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["DI-Button"]
+            ],
+            "item_size": 45,
+            "margin": "110,-60,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["CRC_Label"]
+            ],
+            "item_size": 70,
             "margin": "0,10,0,0"
           },
           {
             "type": "itemgrid",
             "rows": [
-              ["goal"]
+              ["crc_lamp"]
             ],
-            "item_size": 150,
-            "margin": "0,-115,0,0"
-          },
-		  {
-            "type": "itemgrid",
-            "rows": [
-              ["op_keyoption"]
-            ],
-            "item_size": 150,
-            "margin": "0,-115,0,0"
-          },
-		  {
-            "type": "itemgrid",
-            "rows": [
-              ["op_entrance"]
-            ],
-            "item_size": 150,
-            "margin": "0,-115,0,0"
+            "item_size": 50,
+            "margin": "75,-85,0,0"
           },
           {
             "type": "itemgrid",
             "rows": [
-              ["op_coins"]
+              ["CC-Button"]
             ],
-            "item_size": 150,
-            "margin": "0,-115,0,0"
+            "item_size": 45,
+            "margin": "110,-60,0,0"
           },
           {
             "type": "itemgrid",
             "rows": [
-              ["op_mailbox"]
+              ["CP_Label"]
             ],
-            "item_size": 150,
-            "margin": "0,-115,0,0"
+            "item_size": 70,
+            "margin": "0,10,0,0"
           },
           {
             "type": "itemgrid",
             "rows": [
-              ["op_ij"]
+              ["cp_lamp"]
             ],
-            "item_size": 150,
-            "margin": "0,-115,0,0"
+            "item_size": 50,
+            "margin": "75,-85,0,0"
           },
           {
             "type": "itemgrid",
             "rows": [
-              ["op_superflyer"]
+              [
+                "SF_Label"
+              ]
             ],
-            "item_size": 150,
-            "margin": "0,-115,0,0"
+            "item_size": 70,
+            "margin": "125,-55,0,0"
           },
-		  {
+          {
             "type": "itemgrid",
             "rows": [
-              ["op_waternet"]
+              ["sf_lamp"]
             ],
-            "item_size": 150,
-            "margin": "0,-115,0,0"
+            "item_size": 50,
+            "margin": "180,-85,0,0"
           },
-		  {
+          {
             "type": "itemgrid",
             "rows": [
-              ["op_lamps"]
+              ["TVT_Label"]
             ],
-            "item_size": 150,
-            "margin": "0,-115,0,0"
+            "item_size": 70,
+            "margin": "0,0,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["tvt_lamp_l"]
+            ],
+            "item_size": 50,
+            "margin": "75,-85,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["tvt_lamp_tr"]
+            ],
+            "item_size": 50,
+            "margin": "105,-60,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["MM_Label"]
+            ],
+            "item_size": 70,
+            "margin": "0,0,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              [
+                "mm_lamp"
+              ]
+            ],
+            "item_size": 50,
+            "margin": "75,-85,0,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["mm_lobby_doubledoor"]
+            ],
+            "item_size": 50,
+            "margin": "105,-60,0,0"
           }
         ]
       }

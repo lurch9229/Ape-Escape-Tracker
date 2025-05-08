@@ -112,12 +112,32 @@
   {
     "name": "World Key",
     "type": "consumable",
-    "max_quantity": 18,
+    "max_quantity": 19,
     "min_quantity": 0,
     "initial_quantity": 0,
     "increment": 1,
     "img": "images/items/World_Key.png",
     "codes": "keyWorld"
+  },
+  {
+    "name": "Specter Tokens",
+    "type": "consumable",
+    "loop": "false",
+    "min_quantity": 0,
+    "max_quantity": 60,
+    "increment": 1,
+    "img": "images/icons/specterIcon.png",
+    "codes": "specter_tokens"
+  },
+  {
+    "name": "Required Tokens",
+    "type": "consumable",
+    "loop": "false",
+    "min_quantity": 5,
+    "max_quantity": 60,
+    "increment": 1,
+    "img": "images/icons/requiredtokens.png",
+    "codes": "required_tokens"
   },
   {
     "name": "Crabby Beach Lamp",
@@ -128,13 +148,13 @@
     "stages": [
       {
         "name": "Crabby Beach Lamp (Off)",
-        "img": "images/items/Lamp_off.png",
+        "img": "images/items/CB_Lamp_off.png",
         "codes": "cb_lamp, cb_lamp_off",
         "allow_disabled": false
       },
       {
         "name": "Crabby Beach Lamp (On)",
-        "img": "images/items/Lamp_on.png",
+        "img": "images/items/CB_Lamp_on.png",
         "codes": "cb_lamp, cb_lamp_on",
         "inherit_codes": false
       }
@@ -149,13 +169,13 @@
     "stages": [
       {
         "name": "Dexter's Island Lamp (Off)",
-        "img": "images/items/Lamp_off.png",
+        "img": "images/items/DI_Lamp_off.png",
         "codes": "di_lamp, di_lamp_off",
         "allow_disabled": false
       },
       {
         "name": "Dexter's Island Lamp (On)",
-        "img": "images/items/Lamp_on.png",
+        "img": "images/items/DI_Lamp_on.png",
         "codes": "di_lamp, di_lamp_on",
         "inherit_codes": false
       }
@@ -170,13 +190,13 @@
     "stages": [
       {
         "name": "Crumbling Castle Lamp (Off)",
-        "img": "images/items/Lamp_off.png",
+        "img": "images/items/CRC_Lamp_off.png",
         "codes": "crc_lamp, crc_lamp_off",
         "allow_disabled": false
       },
       {
         "name": "Crumbling Castle Lamp (On)",
-        "img": "images/items/Lamp_on.png",
+        "img": "images/items/CRC_Lamp_on.png",
         "codes": "crc_lamp, crc_lamp_on",
         "inherit_codes": false
       }
@@ -191,13 +211,13 @@
     "stages": [
       {
         "name": "City Park Lamp (Off)",
-        "img": "images/items/Lamp_off.png",
+        "img": "images/items/CP_Lamp_off.png",
         "codes": "cp_lamp, cp_lamp_off",
         "allow_disabled": false
       },
       {
         "name": "City Park Lamp (On)",
-        "img": "images/items/Lamp_on.png",
+        "img": "images/items/CP_Lamp_on.png",
         "codes": "cp_lamp, cp_lamp_on",
         "inherit_codes": false
       }
@@ -212,13 +232,13 @@
     "stages": [
       {
         "name": "Specter's Factory Lamp (Off)",
-        "img": "images/items/Lamp_off.png",
+        "img": "images/items/SF_Lamp_off.png",
         "codes": "sf_lamp, sf_lamp_off",
         "allow_disabled": false
       },
       {
         "name": "Specter's Factory Lamp (On)",
-        "img": "images/items/Lamp_on.png",
+        "img": "images/items/SF_Lamp_on.png",
         "codes": "sf_lamp, sf_lamp_on",
         "inherit_codes": false
       }
@@ -233,13 +253,13 @@
     "stages": [
       {
         "name": "TV Tower Lamp (Off)",
-        "img": "images/items/Lamp_off.png",
+        "img": "images/items/TVT1_Lamp_off.png",
         "codes": "tvt_lamp_l, tvt_lamp_l_off",
         "allow_disabled": false
       },
       {
         "name": "TV Tower Lamp (On)",
-        "img": "images/items/Lamp_on.png",
+        "img": "images/items/TVT1_Lamp_on.png",
         "codes": "tvt_lamp_l, tvt_lamp_l_on",
         "inherit_codes": false
       }
@@ -254,13 +274,13 @@
     "stages": [
       {
         "name": "TV Tower Lamp - Tank Room (Off)",
-        "img": "images/items/Lamp_off.png",
+        "img": "images/items/TVT2_Lamp_off.png",
         "codes": "tvt_lamp_tr, tvt_lamp_tr_off",
         "allow_disabled": false
       },
       {
         "name": "TV Tower Lamp - Tank Room (On)",
-        "img": "images/items/Lamp_on.png",
+        "img": "images/items/TVT1_Lamp_on.png",
         "codes": "tvt_lamp_tr, tvt_lamp_tr_on",
         "inherit_codes": false
       }
@@ -275,34 +295,13 @@
     "stages": [
       {
         "name": "Monkey Madness Lamp (Off)",
-        "img": "images/items/Lamp_off.png",
+        "img": "images/items/MM_Lamp_off.png",
         "codes": "mm_lamp, mm_lamp_off",
         "allow_disabled": false
       },
       {
         "name": "Monkey Madness Lamp (On)",
-        "img": "images/items/Lamp_on.png",
-        "codes": "mm_lamp, mm_lamp_on",
-        "inherit_codes": false
-      }
-    ]
-  },
-  {
-    "name": "Monkey Madness Lamp",
-    "type": "progressive",
-    "initial_stage_idx": 0,
-    "allow_disabled": false,
-    "loop": false,
-    "stages": [
-      {
-        "name": "Monkey Madness Lamp (Off)",
-        "img": "images/items/Lamp_off.png",
-        "codes": "mm_lamp, mm_lamp_off",
-        "allow_disabled": false
-      },
-      {
-        "name": "Monkey Madness Lamp (On)",
-        "img": "images/items/Lamp_on.png",
+        "img": "images/items/MM_Lamp_on.png",
         "codes": "mm_lamp, mm_lamp_on",
         "inherit_codes": false
       }
@@ -322,4 +321,110 @@
     "img": "",
     "codes": "ap_connected"
   },
+  {
+    "name": "Dark Ruins - Block Pushed",
+    "type": "toggle",
+    "loop": "false",
+    "img": "images/items/DR-Cube.png",
+    "codes": "DR-Block"
+  },
+  {
+    "name": "Dexter's Island - Slide Room Button",
+    "type": "toggle",
+    "loop": "false",
+    "img": "images/items/DI_Button.png",
+    "codes": "DI-Button"
+  },
+  {
+    "name": "Crumbling Castle - Water Room Button",
+    "type": "toggle",
+    "loop": "false",
+    "img": "images/items/CRC_Button.png",
+    "codes": "CC-Button"
+  },
+  {
+    "name": "TV Tower - Lobby Button",
+    "type": "toggle",
+    "loop": "false",
+    "img": "images/items/TVT_Button.png",
+    "codes": "TVT_Lobby_Button"
+  },
+  {
+    "name": "Monkey Madness - Monkey Head Button",
+    "type": "toggle",
+    "loop": "false",
+    "img": "images/items/MM1_Button.png",
+    "codes": "MM-Button"
+  },
+  {
+    "name": "Monkey Madness - Painting Button",
+    "type": "toggle",
+    "loop": "false",
+    "img": "images/items/MM2_Button.png",
+    "codes": "MM-Painting"
+  },
+  {
+    "name": "Dark Ruins Label",
+    "type": "label",
+    "allow_disabled": false,
+    "loop": "false",
+    "img": "images/labels/DR.png",
+    "codes": "DR_Label"
+  },
+  {
+    "name": "Crabby Beach Label",
+    "type": "label",
+    "allow_disabled": false,
+    "loop": "false",
+    "img": "images/labels/CB.png",
+    "codes": "CB_Label"
+  },
+  {
+    "name": "Dexter's Island Label",
+    "type": "label",
+    "allow_disabled": false,
+    "loop": "false",
+    "img": "images/labels/DI.png",
+    "codes": "DI_Label"
+  },
+  {
+    "name": "Crumbling Castle Label",
+    "type": "label",
+    "allow_disabled": false,
+    "loop": "false",
+    "img": "images/labels/CRC.png",
+    "codes": "CRC_Label"
+  },
+  {
+    "name": "City Park Label",
+    "type": "label",
+    "allow_disabled": false,
+    "loop": "false",
+    "img": "images/labels/CP.png",
+    "codes": "CP_Label"
+  },
+  {
+    "name": "Specter's Factory Label",
+    "type": "label",
+    "allow_disabled": false,
+    "loop": "false",
+    "img": "images/labels/SF.png",
+    "codes": "SF_Label"
+  },
+  {
+    "name": "TV Tower Label",
+    "type": "label",
+    "allow_disabled": false,
+    "loop": "false",
+    "img": "images/labels/TVT.png",
+    "codes": "TVT_Label"
+  },
+  {
+    "name": "Monkey Madness Label",
+    "type": "label",
+    "allow_disabled": false,
+    "loop": "false",
+    "img": "images/labels/MM.png",
+    "codes": "MM_Label"
+  }
 ]

@@ -7,7 +7,6 @@ if Tracker.AllowDeferredLogicUpdate ~= nil then
 	Tracker.AllowDeferredLogicUpdate = false
 end
 
-
 ScriptHost:LoadScript("scripts/logic/items.lua")
 ScriptHost:LoadScript("scripts/logic/level_logic.lua")
 ScriptHost:LoadScript("scripts/utils.lua")

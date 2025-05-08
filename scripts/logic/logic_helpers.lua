@@ -60,13 +60,14 @@ function has(item, amount)
     end
 end
 
-function isTokenHunt()
+function isMMToken()
     return Tracker:FindObjectForCode("op_goal").CurrentStage == 3
 end
 
-function GetRequiredTokens()
-    return Tracker:ProviderCountForCode("op_required_tokens")
+function isnotMMGoal()
+    return Tracker:FindObjectForCode("op_goal").CurrentStage > 0
 end
+
 function Eval_Logic(boolRule,minlogic)
     --boolrule is the result of the rule presented
     --minlogic is the minimum logic required for the rule(0,1 or 2)
@@ -153,8 +154,6 @@ function CanHitMultiple(logic)
     if not logic then
 	    logic = Tracker:FindObjectForCode("op_logic").CurrentStage
 	end
-	--print("----------------------------logicrules[logic]------------------------")
-	--print(logicrules[logic])
     accessrule = logicrules[logic]
 	return accessrule
 end
@@ -191,6 +190,7 @@ function IJ()
     end
 end
 function SuperFlyer(region,logic)
+    --To see if SuperFlyer trick is in logic
     if not logic then
 	    logic = Tracker:FindObjectForCode("op_logic").CurrentStage
 	end
@@ -210,18 +210,12 @@ function SuperFlyer(region,logic)
         return false
     end
 
-    -- TODO change SuperFlyer to account for region access
+
     -- If the player can reach this location without activating the Flyer, Super Flyer is available. To check for this, we check for the ability to access this region on a modified CollectionState. The Radar conveniently has the same ground pound properties as the Flyer while introducing no new access, and so replacing the Flyer with the Radar in this state serves as a valid check.
-    --Temporary condition to ensure it does not fail
-    --print(region)
     if region ~= nil then
-        --print("--------------------------")
-        --print("SUPER FLYER TEST")
-        --print(region.name)
+        -- Rerun the accesibility checkup, but this time taking into account you cannot use the Flyer
+        -- TODO Currently there is no way of spliting the Item in 2 parts.I will need to change the locations rules instead
         return Access_to_Bool(CanReach(region,true))
-    --    if (HasRadar() and (HasNet() or HasClub() or HasSling() or HasPunch())) then
-    --        return true
-    --    end
      else
         return true
     end
@@ -247,16 +241,8 @@ function FakeSuperFlyer()
     end
 
     -- TODO change SuperFlyer to account for region access
-    -- If the player can reach this location without activating the Flyer, Super Flyer is available. To check for this, we check for the ability to access this region on a modified CollectionState. The Radar conveniently has the same ground pound properties as the Flyer while introducing no new access, and so replacing the Flyer with the Radar in this state serves as a valid check.
-    --Temporary condition to ensure it does not fail
-    --if region ~= nil then
-        --return CanReach(region,true)
-    --    if (HasRadar() and (HasNet() or HasClub() or HasSling() or HasPunch())) then
-    --        return true
-    --    end
-    -- else
-        return AccessibilityLevel.Normal
-    --end
+    -- If the player can reach this location without activating the Flyer, Super Flyer is available.
+    return AccessibilityLevel.Normal
 end
 function OldSuperFlyer(logic)
 	local logicrules = {

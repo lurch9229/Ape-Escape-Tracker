@@ -1,37 +1,4 @@
 
-
-function CB_Lamp()
-    return ((has ("cb_lamp_on")) or (Net() and has ("op_lamps_off")))
-end
-
-function DI_Lamp()
-    return ((has ("di_lamp_on")) or (Net() and has ("op_lamps_off")))
-end
-
-function CRC_Lamp()
-    return ((has ("crc_lamp_on")) or (Net() and has ("op_lamps_off")))
-end
-
-function CP_Lamp()
-    return ((has ("cp_lamp_on")) or (Net() and has ("op_lamps_off")))
-end
-
-function SF_Lamp()
-    return ((has ("sf_lamp_on")) or (Net() and has ("op_lamps_off")))
-end
-
-function TVT_Lobby_Lamp()
-	return ((has ("tvt_lamp_l_on")) or (Net() and has ("op_lamps_off") and TVT_HitButton()))
-end
-
-function TVT_Tank_Lamp()
-	return ((has ("tvt_lamp_tr_on")) or (Net() and has ("op_lamps_off")))
-end
-
-function MM_Lamp()
-	return ((has ("mm_lamp_on")) or (Net() and has ("op_lamps_off")))
-end
-
 function MM_Lobby_DoubleDoor()
     return (has ("mm_lobby_doubledoor"))
 end
@@ -95,26 +62,37 @@ end
 
 function getReqKeys()
 	local KeyOption = Tracker:FindObjectForCode("op_keyoption").CurrentStage
+	local CoinOption = Tracker:FindObjectForCode("op_coins").CurrentStage
+	local GoalOption = Tracker:FindObjectForCode("op_goal").CurrentStage
 	requiredKeys = {}
-	if KeyOption == 0 then
+	if KeyOption == 3 then --None
+        reqkeys = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+    elseif KeyOption == 0 then -- World
         reqkeys = {0, 0, 0, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 6, 6}
 		--Tracker:FindObjectForCode("Keyworld").MaxCount = 6
-    elseif KeyOption == 1 then
-        reqkeys = {0, 0, 0, 1, 1, 1, 2, 3, 3, 3, 4, 4, 4, 5, 6, 6, 6, 7, 7, 7, 8, 8}
-		--Tracker:FindObjectForCode("Keyworld").MaxCount = 8
-    elseif KeyOption == 2 then
+    elseif KeyOption == 1 then -- Level
         reqkeys = {0, 0, 0, 1, 2, 3, 4, 4, 5, 6, 7, 8, 9, 10, 10, 11, 12, 13, 14, 15, 16, 16}
+		--Tracker:FindObjectForCode("Keyworld").MaxCount = 8
+    elseif KeyOption == 2 then -- Two Levels
+        reqkeys = {0, 0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 5, 5, 5, 6, 6, 7, 7, 8, 8, 8}
 		--Tracker:FindObjectForCode("Keyworld").MaxCount = 16
-    elseif KeyOption == 3 then
-        reqkeys = {0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 18}
-		--Tracker:FindObjectForCode("Keyworld").MaxCount = 18
 	end
-
-	for index = 1, 21 do
+    if GoalOption >= 2 and KeyOption ~= 3 then
+        reqkeys[22] = reqkeys[22] + 1
+    end
+	for index = 1, 22 do
 		value = reqkeys[index]
+		if CoinOption == 1 and KeyOption ~= 3 then
+		    if index >= 8 then
+		        value = value + 1
+		    end
+		    if index >= 15 then
+		        value = value + 1
+		    end
+		end
+		--print(value)
 		table.insert(requiredKeys,index,value)
     end
-
 	return requiredKeys
 end
 
@@ -135,7 +113,7 @@ end
 
 function switchKey(label)
 	print("====================SwitchKey==================")
-	--getLvlOrder()
+	getLvlOrder()
 	-- Get lvl name of clicked label
 	levelclicked = string.sub(label,6,-5)
 	index = find_index(lvl_list,levelclicked)
@@ -161,6 +139,9 @@ end
 function worldUnlocks(source)
 	--print("===================Unlocks====================")
 	--print(source)
+	if source ~= "keyworld" then
+	    setER()
+	end
 	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
 	getLvlOrder()
 	getReqKeys()
@@ -170,9 +151,9 @@ function worldUnlocks(source)
 	already_checked = {}
 
 	if LevelRando ~= 0 then
-		Tracker:FindObjectForCode(lvl_list[1].."_key").Active = false
-		Tracker:FindObjectForCode(lvl_list[2].."_key").Active = false
-		Tracker:FindObjectForCode(lvl_list[3].."_key").Active = false
+		--Tracker:FindObjectForCode(lvl_list[1].."_key").Active = false
+		--Tracker:FindObjectForCode(lvl_list[2].."_key").Active = false
+		--Tracker:FindObjectForCode(lvl_list[3].."_key").Active = false
 	end
 
 	for index = 1, 21 do
@@ -188,23 +169,30 @@ function worldUnlocks(source)
 			level_reqKeys = requiredKeys[index]
 			if has_value(already_checked, value) == false then
 				if worldkeys >= level_reqKeys then
-					--print("activate_"..lvl_list[value].."_key")
-					Tracker:FindObjectForCode(lvl_list[value].."_key").Active = true
+					if Tracker:FindObjectForCode(lvl_list[value].."_key").Active ~= true then
+					    print("activate_"..lvl_list[value].."_key")
+					    Tracker:FindObjectForCode(lvl_list[value].."_key").Active = true
+					end
 					table.insert(already_checked,value)
 				elseif worldkeys < level_reqKeys then
-					--print("--deactivate_"..lvl_list[value].."_key")
-					Tracker:FindObjectForCode(lvl_list[value].."_key").Active = false
+					if Tracker:FindObjectForCode(lvl_list[index].."_key").Active ~= false then
+				        print("--deactivate_"..lvl_list[index].."_key")
+				        Tracker:FindObjectForCode(lvl_list[index].."_key").Active = false
+				    end
 				end
 			end
 		else
 			if has_value(already_checked, index) == false then
 				--print(index)
 				--print("--deactivate_"..lvl_list[index].."_key")
-				Tracker:FindObjectForCode(lvl_list[index].."_key").Active = false
+				if Tracker:FindObjectForCode(lvl_list[index].."_key").Active ~= false then
+				    Tracker:FindObjectForCode(lvl_list[index].."_key").Active = false
+				end
 				--table.insert(already_checked,index)
 			end
 		end
     end
+
 end
 
 function worldUnlocks_Old()
@@ -279,7 +267,7 @@ function setER(source)
 					stage_value = levelsIdsToIndex[v]
 					table.insert(true_lvl_order,k,stage_value)
 
-					print(string.format("ER entrance %s | %s | %s", index_lvl,stage_value,reqKeys[index_lvl]))
+					--print(string.format("ER entrance %s | %s | %s", index_lvl,stage_value,reqKeys[index_lvl]))
 					if worldkeys >= reqKeys[index_lvl] then
 						Tracker:FindObjectForCode("__er_"..lvl_list[index_lvl].."_dst").CurrentStage = stage_value
 					else
@@ -311,7 +299,7 @@ end
 function apItemLayoutChange()
   local waternet = Tracker:FindObjectForCode("op_waternet")
   local lamps = Tracker:FindObjectForCode("op_lamps")
-  print(lamps.CurrentStage)
+  --print(lamps.CurrentStage)
   if (Tracker.ActiveVariantUID == "map_tracker") or (Tracker.ActiveVariantUID == "map_tracker_alternative") then
     if waternet.CurrentStage == 0 or waternet.CurrentStage == 2 then
 	    --print("Option : off")
@@ -394,6 +382,8 @@ end
 ScriptHost:AddWatchForCode("useApLayout", "op_waternet", apItemLayoutChange)
 --ScriptHost:AddWatchForCode("useApLayout2", "op_lamps", apLevelsLayoutChange)
 ScriptHost:AddWatchForCode("worldkey handler", "keyWorld", worldUnlocks)
+ScriptHost:AddWatchForCode("worldkey handler2", "keyWorld", setER)
+ScriptHost:AddWatchForCode("op_coins handler", "op_coins", worldUnlocks)
 
 lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
 for index = 1, 21 do

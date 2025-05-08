@@ -12,31 +12,101 @@
           			"orientation": "horizontal",
           			"content": [
             			{
-              				"type": "group",
-              				"header": "Items            Totals",
+              				"type": "array",
+              				//"header": "Items                              Totals",
+							"margin": "0,0,0,0",
 							"content": [
 								{
+										"type": "group",
+										"header": "Totals",
+										"margin": "10,5,0,0",
+										"dock":"left",
+										"content": {
+											"type": "array",
+											"orientation": "horizontal",
+											"content": [
+												{
+													"type": "layout",
+													"key": "totals_grid"
+												}
+
+											]
+										}
+								},
+								{
+										"type": "group",
+										"header": "Items",
+										"margin": "10,5,0,0",
+										"dock":"left",
+										"content": {
+											"type": "array",
+											"orientation": "vertical",
+											"content": [
+												{
+													"type": "layout",
+													"key": "item_grid2"
+												}
+
+											]
+										}
+								},
+								/*{
 									"type": "array",
 									"orientation": "vertical",
-									"margin": "0,0",
+									"margin": "0,0,0,-100",
 									"content": [
 										{
 											"type": "layout",
-											"key": "item_grid"
+											"key": "item_grid2"
 										}
 									]
+								},*/
+								{
+										"type": "group",
+										"header": "Lamps/Door",
+										"margin": "10,5,0,0",
+										"dock":"left",
+										"content": {
+											"type": "array",
+											"orientation": "vertical",
+											"content": [
+												{
+													"type": "layout",
+													"key": "Lamps_grid"
+												}
+
+											]
+										}
+								},
+								{
+										"type": "group",
+										"header": "Events",
+										"dock":"left",
+										"content": {
+											"type": "array",
+											"orientation": "vertical",
+											"margin": "0,0,0,0",
+											"content": [
+												{
+													"type": "layout",
+													"key": "Events_grid"
+												}
+
+											]
+										}
 								}
 							]
             			},
 						{
 							"type": "tabbed",
+							"margin": "0,0,0,0",
 							"tabs": [
 								{
 									"title": "Levels",
 									"content": {
 										"type": "array",
 										"orientation": "horizontal",
-										"margin": "0,0",
+										"margin": "0,0,0,0",
 										"content": [
 											{
 												"type": "layout",
@@ -45,8 +115,7 @@
 											{
 												"type": "layout",
 												"key": "level_grid_right"
-											},
-
+											}
 										]
 									}
 								},
@@ -73,105 +142,106 @@
 					]
 				},
                 {
-								"type": "tabbed",
-								"content": [
-									{
-										"title": "Levels",
-										"type": "tabbed",
-										"tabs": [
-											{
-												"title": "Time Station",
-												"content": {
-													"type":"map",
-													"maps": ["Time_Station"]
-												}
-											},
-											{
-												"title": "Lost Lands",
-												"content": {
-													"type":"map",
-													"maps": ["Lost_Lands"]
-												}
-											},
-											{
-												"title": "Mysterious Age",
-												"content": {
-													"type": "map",
-													"maps": ["Mysterious_Age"]
-												}
-											},
-											{
-												"title": "Stadium Attack",
-												"content": {
-													"type": "map",
-													"maps": ["Stadium_Attack"]
-												}
-											},
-											{
-												"title": "Oceana",
-												"content": {
-													"type": "map",
-													"maps": ["Oceana"]
-												}
-											},
-											{
-												"title": "New Freezeland",
-												"content": {
-													"type": "map",
-													"maps": ["New_Freezeland"]
-												}
-											},
-											{
-												"title": "Gladiator Attack",
-												"content": {
-													"type": "map",
-													"maps": ["Gladiator_Attack"]
-												}
-											},
-											{
-												"title": "Medieval Mayhem",
-												"content": {
-													"type": "map",
-													"maps": ["Medieval_Mayhem"]
-												}
-											},
-											{
-												"title": "Futurama",
-												"content": {
-													"type": "map",
-													"maps": ["Futurama"]
-												}
-											},
-											{
-												"title": "Specter Land",
-												"content": {
-													"type": "map",
-													"maps": ["Specter_Land",]
-												},
-											},
-											{
-												"title": "Peak Point Matrix",
-												"content": {
-													"type": "map",
-													"maps": ["Peak_Point_Matrix"]
-												}
-											}
-										]
-									},
-									{
-										"title": "Overall view",
-										"type": "tabbed",
-										"tabs": [
-											{
-												"title": "Overall View",
-												"content": {
-													"type":"map",
-													"maps": ["Overall_View"]
-												}
-											}
-										]
+					"type": "tabbed",
+					"margin": "0,0,0,0",
+					"content": [
+						{
+							"title": "Levels",
+							"type": "tabbed",
+							"tabs": [
+								{
+									"title": "Time Station",
+									"content": {
+										"type":"map",
+										"maps": ["Time_Station"]
 									}
-								]
+								},
+								{
+									"title": "Lost Lands",
+									"content": {
+										"type":"map",
+										"maps": ["Lost_Lands"]
+									}
+								},
+								{
+									"title": "Mysterious Age",
+									"content": {
+										"type": "map",
+										"maps": ["Mysterious_Age"]
+									}
+								},
+								{
+									"title": "Stadium Attack",
+									"content": {
+										"type": "map",
+										"maps": ["Stadium_Attack"]
+									}
+								},
+								{
+									"title": "Oceana",
+									"content": {
+										"type": "map",
+										"maps": ["Oceana"]
+									}
+								},
+								{
+									"title": "New Freezeland",
+									"content": {
+										"type": "map",
+										"maps": ["New_Freezeland"]
+									}
+								},
+								{
+									"title": "Gladiator Attack",
+									"content": {
+										"type": "map",
+										"maps": ["Gladiator_Attack"]
+									}
+								},
+								{
+									"title": "Medieval Mayhem",
+									"content": {
+										"type": "map",
+										"maps": ["Medieval_Mayhem"]
+									}
+								},
+								{
+									"title": "Futurama",
+									"content": {
+										"type": "map",
+										"maps": ["Futurama"]
+									}
+								},
+								{
+									"title": "Specter Land",
+									"content": {
+										"type": "map",
+										"maps": ["Specter_Land"]
+									}
+								},
+								{
+									"title": "Peak Point Matrix",
+									"content": {
+										"type": "map",
+										"maps": ["Peak_Point_Matrix"]
+									}
+								}
+							]
+						},
+						{
+							"title": "Overall view",
+							"type": "tabbed",
+							"tabs": [
+								{
+									"title": "Overall View",
+									"content": {
+										"type":"map",
+										"maps": ["Overall_View"]
+									}
+								}
+							]
+						}
+					]
 				}
 			]
 		}

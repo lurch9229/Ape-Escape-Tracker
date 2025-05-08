@@ -29,13 +29,9 @@ local indirectConnections = {}
 --
 function CanReach(name,fakesuperflyer)
     local location
-
+    --Ensure fakesuperflyer is something if not specified
     if fakesuperflyer == nil then
         fakesuperflyer = false
-    else
-        print("fakesuperflyer")
-        print(fakesuperflyer)
-        print(name.name)
     end
     if stale then
         stale = false
@@ -44,13 +40,6 @@ function CanReach(name,fakesuperflyer)
         indirectConnections = {}
         while not accessibilityCacheComplete do
             accessibilityCacheComplete = true
-            --print("Before Discover")
-            --print(fakesuperflyer)
-            --print(name.name)
-            if fakesuperflyer == true then
-                print("--------------------")
-                print("Super Flyer region " .. tostring(name.name))
-            end
             entry_point:discover(AccessibilityLevel.Normal,fakesuperflyer)
             for dst, parents in pairs(indirectConnections) do
                 if dst:accessibility() < AccessibilityLevel.Normal then
@@ -88,11 +77,11 @@ function CanReach(name,fakesuperflyer)
         end
         return AccessibilityLevel.None
     end
+    --If there is a SuperFlyer trick, ensure you can reach specified region without using it (See FakeSuperFlyer() helper function)
     if fakesuperflyer then
-        print("-------------SHOULD RULE--------")
+        --print("-------------SHOULD EVALUATE RULE-------------")
         --print(location:accessibility())
         returnvalue = any(location:accessibility(),FakeSuperFlyer())
-        print(returnvalue)
     else
         returnvalue = location:accessibility()
     end
@@ -230,7 +219,15 @@ function apeescape_location:discover(accessibility,fakesuperflyer)
                 if type(access) == "boolean" then
                     access = A(access)
                 end
+                if access == nil then
+                    -- For when a rule function returns nothing, the "access" variable is nil
+                    --    access = 0
 
+                    --print(location.name)
+                    --print(currentParent.name)
+                    --print(access)
+                    --print(parent_access)
+                end
                 if access > parent_access then
                     access = parent_access
                 end
@@ -267,6 +264,7 @@ entry_point:connect_one_way(time_station, true)
 -- 
 function stateChanged()
     stale = true
+
     -- ScriptHost:LoadScript("scripts/logic/logic_helpers.lua")
     -- ScriptHost:LoadScript("scripts/logic/logic_main.lua")
     -- ScriptHost:LoadScript("scripts/logic_import.lua")

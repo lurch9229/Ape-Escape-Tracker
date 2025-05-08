@@ -6,8 +6,9 @@
         "content": [
             {
                 "type": "itemgrid",
-                "item_margin": "4, 4",
-                "item_size": "240, 28",
+                "item_margin": "2, 0",
+                "item_size": 175,
+                "margin": "0,0,0,-135",
                 "rows": [
                     [
                         "__setting_auto_ent_txt",
@@ -23,9 +24,20 @@
 						{
 							"type": "layout",
 							"key": "ap_connected"
-						}
-
-					]
+						},
+                        {
+                            "type": "layout",
+                            "key": "settings_logic"
+                        },
+                        {
+                            "type": "layout",
+                            "key": "settings_tricks"
+                        },
+                        {
+                            "type": "layout",
+                            "key": "settings_items"
+                        }
+                    ]
 			}
         ]
     }

@@ -10,8 +10,38 @@ CUR_INDEX = -1
 SLOT_DATA = nil
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
+IGNORE_CHANGE = false
+
+function onClearHandler(slot_data)
+    local clear_timer = os.clock()
+    ScriptHost:RemoveWatchForCode("StateChanged")
+    -- Disable tracker updates.
+    Tracker.BulkUpdate = true
+    -- Use a protected call so that tracker updates always get enabled again, even if an error occurred.
+    local ok, err = pcall(onClear, slot_data)
+    -- Enable tracker updates again.
+    if ok then
+        -- Defer re-enabling tracker updates until the next frame, which doesn't happen until all received items/cleared
+        -- locations from AP have been processed.
+        local handlerName = "AP onClearHandler"
+        local function frameCallback()
+            ScriptHost:AddWatchForCode("StateChanged", "*", stateChanged)
+            ScriptHost:RemoveOnFrameHandler(handlerName)
+            Tracker.BulkUpdate = false
+
+            --forceUpdate()
+            print(string.format("Time taken total: %.2f", os.clock() - clear_timer))
+        end
+        ScriptHost:AddOnFrameHandler(handlerName, frameCallback)
+    else
+        Tracker.BulkUpdate = false
+        print("Error: onClear failed:")
+        print(err)
+    end
+end
 
 function onClear(slot_data) 
+	local onClear_timer = os.clock()
 	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onClear, slot_data:\n%s", dump_table(slot_data)))
     end
@@ -62,86 +92,86 @@ function onClear(slot_data)
     end
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
-	
-	
+    PLAYER_ID = Archipelago.PlayerNumber or -1
+    TEAM_NUMBER = Archipelago.TeamNumber or 0
+    print(PLAYER_ID)
+    print(TEAM_NUMBER)
+
+    if PLAYER_ID > -1 then
+        --HINTS_ID = "_read_hints_"..TEAM_NUMBER.."_"..PLAYER_ID
+        --DIButton = "Dragon_Monkey_DIButton"
+        DIButton = "AE_DIButton_"..TEAM_NUMBER.."_"..PLAYER_ID
+        CrCWaterButton = "AE_CrCWaterButton_"..TEAM_NUMBER.."_"..PLAYER_ID
+        MM_Painting_Button = "AE_MM_Painting_Button_"..TEAM_NUMBER.."_"..PLAYER_ID
+        MM_MonkeyHead_Button = "AE_MM_MonkeyHead_Button_"..TEAM_NUMBER.."_"..PLAYER_ID
+        TVT_Lobby_Button = "AE_TVT_Lobby_Button_"..TEAM_NUMBER.."_"..PLAYER_ID
+        DR_Block_Pushed = "AE_DR_Block_"..TEAM_NUMBER.."_"..PLAYER_ID
+
+        Archipelago:SetNotify({DIButton,CrCWaterButton,MM_Painting_Button,MM_MonkeyHead_Button,TVT_Lobby_Button,DR_Block_Pushed})
+        Archipelago:Get({DIButton,CrCWaterButton,MM_Painting_Button,MM_MonkeyHead_Button,TVT_Lobby_Button,DR_Block_Pushed})
+
+    end
+	-- Logic :     
+		-- 0 = normal
+		-- 1 = hard
+		-- 2 = expert
     if SLOT_DATA == nil then
         return
     end
-	-- Logic :     
-		-- 0 = glitchless
-		-- 1 = noij
-		-- 2 = ij
-    if slot_data['logic'] == 0 then
-        Tracker:FindObjectForCode("op_logic").CurrentStage = 0
-    elseif slot_data['logic'] == 1 then
-        Tracker:FindObjectForCode("op_logic").CurrentStage = 1
-    elseif slot_data['logic'] == 2 then
-        Tracker:FindObjectForCode("op_logic").CurrentStage = 2
+    if slot_data['logic'] ~= nil then
+        Tracker:FindObjectForCode("op_logic").CurrentStage = slot_data['logic']
     end
-
 	-- Coins Shuffle:
 		--0 = Off
 		--1 = On
-    if slot_data['coin'] == 0 then
-        Tracker:FindObjectForCode("op_coins").CurrentStage = 0
-	else
-		Tracker:FindObjectForCode("op_coins").CurrentStage = 1
+    if slot_data['coin'] ~= nil then
+        Tracker:FindObjectForCode("op_coins").CurrentStage = slot_data['coin']
     end
     -- Goal:
-		--0 = First
-		--1 = Second
-    if slot_data['goal'] == 0 then
-        Tracker:FindObjectForCode("goal").CurrentStage = 0
-    elseif slot_data['goal'] == 1 then
-        Tracker:FindObjectForCode("goal").CurrentStage = 1
+		--0 = mm
+		--1 = ppm
+		--2 = tokenhunt
+		--3 = mmtoken
+
+		--4 = ppmtoken
+    if slot_data['goal'] ~= nil then
+        Tracker:FindObjectForCode("op_goal").CurrentStage = slot_data['goal']
     end
-    if slot_data['superflyer'] == 0 then
-        Tracker:FindObjectForCode("op_superflyer").CurrentStage = 0
-    elseif slot_data['superflyer'] == 1 then
-        Tracker:FindObjectForCode("op_superflyer").CurrentStage = 1
+    if slot_data['superflyer'] ~= nil then
+        Tracker:FindObjectForCode("op_superflyer").CurrentStage = slot_data['superflyer']
     end
-    if slot_data['mailbox'] == 0 then
-        Tracker:FindObjectForCode("op_mailbox").CurrentStage = 0
-    elseif slot_data['mailbox'] == 1 then
-        Tracker:FindObjectForCode("op_mailbox").CurrentStage = 1
+    if slot_data['requiredtokens'] ~= nil then
+        Tracker:FindObjectForCode("required_tokens").AcquiredCount = slot_data['requiredtokens']
     end
-    if slot_data['shufflewaternet'] == 0 then
-        Tracker:FindObjectForCode("op_waternet").CurrentStage = 0
-    elseif slot_data['shufflewaternet'] == 1 then
-        Tracker:FindObjectForCode("op_waternet").CurrentStage = 1
+    if slot_data['mailbox'] ~= nil then
+        Tracker:FindObjectForCode("op_mailbox").CurrentStage = slot_data['mailbox']
     end
-	if slot_data['unlocksperkey'] == 0 then
-        Tracker:FindObjectForCode("op_keyoption").CurrentStage = 0
-    elseif slot_data['unlocksperkey'] == 1 then
-		Tracker:FindObjectForCode("op_keyoption").CurrentStage = 1
-	elseif slot_data['unlocksperkey'] == 2 then
-		Tracker:FindObjectForCode("op_keyoption").CurrentStage = 2
-	elseif slot_data['unlocksperkey'] == 3 then
-        Tracker:FindObjectForCode("op_keyoption").CurrentStage = 3
+    if slot_data['infinitejump'] ~= nil then
+        Tracker:FindObjectForCode("op_ij").CurrentStage = slot_data['infinitejump']
+    end
+    if slot_data['shufflewaternet'] ~= nil then
+        Tracker:FindObjectForCode("op_waternet").CurrentStage = slot_data['shufflewaternet']
+    end
+	if slot_data['unlocksperkey'] ~= nil then
+        Tracker:FindObjectForCode("op_keyoption").CurrentStage = slot_data['unlocksperkey']
     end
 	--print(slot_data['entrance'])
-	if slot_data['entrance'] == 0 then
-        Tracker:FindObjectForCode("op_entrance").CurrentStage = 0
-    elseif slot_data['entrance'] == 1 then
-		Tracker:FindObjectForCode("op_entrance").CurrentStage = 1
-	elseif slot_data['entrance'] == 2 then
-		Tracker:FindObjectForCode("op_entrance").CurrentStage = 2
-	elseif slot_data['entrance'] == 3 then
-        Tracker:FindObjectForCode("op_entrance").CurrentStage = 3
-	elseif slot_data['entrance'] == 4 then
-        Tracker:FindObjectForCode("op_entrance").CurrentStage = 4
+	if slot_data['entrance'] ~= nil then
+        Tracker:FindObjectForCode("op_entrance").CurrentStage = slot_data['entrance']
     end
-	
-	Tracker:FindObjectForCode("ap_connected").Active = true
-	
+
 	if slot_data['lamp'] == 0 or slot_data["lamp"] == nil then
 		Tracker:FindObjectForCode("op_lamps").CurrentStage = 0
 	else
 		Tracker:FindObjectForCode("op_lamps").CurrentStage = 1
 	end
+
+	Tracker:FindObjectForCode("ap_connected").Active = true
+
 	
 	loadAP()
 	--worldUnlocks()
+	print(string.format("Time taken onClear: %.2f", os.clock() - onClear_timer))
 end
 
 
@@ -207,9 +237,8 @@ function onItem(index, item_id, item_name, player_number)
     if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
         -- add snes interface functions here for local item tracking
     end
-	
-	setER()
-	worldUnlocks()
+    setER()
+    worldUnlocks()
 end
 
 --called when a location gets cleared
@@ -234,9 +263,9 @@ function onLocation(location_id, location_name)
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("onLocation: could not find object for code %s", v[1]))
     end
-	
-	setER()
-	worldUnlocks()
+
+    --setER()
+    --worldUnlocks()
 end
 
 -- called when a locations is scouted
@@ -256,9 +285,79 @@ function onBounce(json)
     -- your code goes here
 end
 
+function onNotify(key, value, old_value)
+    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("called onNotify: %s, %s, %s", key, dump(value), old_value))
+    end
+
+    if value ~= old_value then
+        print(key)
+        if key == DR_Block_Pushed then
+            if value == 1 then
+              Tracker:FindObjectForCode("DR-Block").Active = true
+            end
+		elseif key == DIButton then
+            if value == 1 then
+                Tracker:FindObjectForCode("DI-Button").Active = true
+            end
+		elseif key == CrCWaterButton then
+            if value == 1 then
+                Tracker:FindObjectForCode("CC-Button").Active = true
+            end
+		elseif key == MM_Painting_Button then
+		    if value == 1 then
+		        Tracker:FindObjectForCode("MM-Painting").Active = true
+		    end
+		elseif key == MM_MonkeyHead_Button then
+            if value == 1 then
+                Tracker:FindObjectForCode("MM-Button").Active = true
+            end
+		elseif key == TVT_Lobby_Button then
+            if value == 1 then
+                Tracker:FindObjectForCode("TVT_Lobby_Button").Active = true
+            end
+		end
+    end
+end
+function onNotifyLaunch(key, value)
+    if value ~= nil then
+        print(key)
+        if key == DR_Block_Pushed then
+		  if value == 1 then
+              Tracker:FindObjectForCode("DR-Block").Active = true
+		  end
+		elseif key == DIButton then
+		  if value == 1 then
+		    Tracker:FindObjectForCode("DI-Button").Active = true
+		  end
+		elseif key == CrCWaterButton then
+		  if value == 1 then
+		    Tracker:FindObjectForCode("CC-Button").Active = true
+		  end
+		elseif key == MM_Painting_Button then
+		  if value == 1 then
+		    Tracker:FindObjectForCode("MM-Painting").Active = true
+		  end
+		elseif key == MM_MonkeyHead_Button then
+		  if value == 1 then
+		    Tracker:FindObjectForCode("MM-Button").Active = true
+		  end
+		elseif key == TVT_Lobby_Button then
+		  if value == 1 then
+		    Tracker:FindObjectForCode("TVT_Lobby_Button").Active = true
+		  end
+		end
+    end
+end
+-- on data received
+Archipelago:AddSetReplyHandler("notify handler", onNotify)
+-- on connect
+Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)
+
 -- add AP callbacks
 -- un-/comment as needed
-Archipelago:AddClearHandler("clear handler", onClear)
+Archipelago:AddClearHandler("clear handler", onClearHandler)
+--Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
 -- Archipelago:AddScoutHandler("scout handler", onScout)

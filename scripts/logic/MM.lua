@@ -237,16 +237,20 @@ end)
 --Castle Outside
 MM_OUTSIDE_CASTLE_CRATER:connect_one_way("MM_Donovan",function()
     result = any(
-                Eval_Logic((has("MM-UFOs") and HasSling() and HasNet()),0),
-                Eval_Logic((has("MM-UFOs") and (HasClub() or HasSling() or HasPunch()) and HasNet()),1)
+                --Eval_Logic((has("MM-UFOs") and HasSling() and HasNet()),0),
+                --Eval_Logic((has("MM-UFOs") and (HasClub() or HasSling() or HasPunch()) and HasNet()),1)
+                Eval_Logic((HasSling() and HasNet()),0),
+                Eval_Logic(((HasClub() or HasSling() or HasPunch()) and HasNet()),1)
                )
     return result
 
 end)
 MM_OUTSIDE_CASTLE_CRATER:connect_one_way("MM_Laura",function()
     result = any(
-                Eval_Logic((has("MM-UFOs") and HasSling() and HasNet()),0),
-                Eval_Logic((has("MM-UFOs") and (HasClub() or HasSling() or HasPunch()) and HasNet()),1)
+                --Eval_Logic((has("MM-UFOs") and HasSling() and HasNet()),0),
+                --Eval_Logic((has("MM-UFOs") and (HasClub() or HasSling() or HasPunch()) and HasNet()),1)
+                Eval_Logic((HasSling() and HasNet()),0),
+                Eval_Logic(((HasClub() or HasSling() or HasPunch()) and HasNet()),1)
                )
     return result
 
@@ -313,8 +317,8 @@ end)
 --Specter 1
 MM_SPECTER1_ROOM:connect_one_way("MM_Specter",function()
     result = any(
-                Eval_Logic((HasClub() or HasPunch()) and ((isTokenHunt()) or Tokens(GetRequiredTokens())),0),
-                Eval_Logic(((HasClub() or HasSling() or HasPunch()) and ((isTokenHunt()) or Tokens(GetRequiredTokens()))),1)
+                Eval_Logic((HasClub() or HasPunch()) and ((isMMToken() == false) or Tokens()),0),
+                Eval_Logic(((HasClub() or HasSling() or HasPunch()) and ((isMMToken() == false) or Tokens())),1)
                )
     return result
 

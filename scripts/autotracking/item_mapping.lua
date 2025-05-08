@@ -20,6 +20,6 @@ ITEM_MAPPING =
 [128001024] = {"water", "toggle"}, -- Water Net
 [128001025] = {"progwater", "progressive"}, -- Water Net
 [128001026] = {"watercatch", "toggle"}, -- Water Net
-[128001027] = {"mm_lobby_doubledoor","toggle"}
-
+[128001027] = {"mm_lobby_doubledoor","toggle"},
+[128000768] = {"specter_tokens","consumable"} -- Specter Tokens
 }

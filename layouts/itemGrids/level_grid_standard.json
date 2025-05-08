@@ -669,7 +669,7 @@
           },
         ]
       },
-      {
+      /*{
         "type": "array",
         "orientation": "horizontal",
         "margin": "0,0",
@@ -747,7 +747,7 @@
 			"margin": "-0,110,0,0"
           }
         ]
-      }
+      }*/
     ]
   }
 }
