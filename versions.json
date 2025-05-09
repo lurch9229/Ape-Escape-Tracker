@@ -1,6 +1,24 @@
 {
     "versions": [
 		{
+                "package_version": "0.6.0",
+                "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.6.0/Ape-Escape-Tracker-0.6.0.zip",
+                "sha256": "4DE88C0C9F790902D023FDBA636F7F1636EF2AFDE95118FC2BB21B00B6CE7412",
+                "changelog": [
+					 "Redid all logic to work with Lua functions and by Region/Transitions",
+					 "All logic now shows Red/Yellow/Green depending on if there is a trick you can do in an higher difficulty.",
+					 "Removed some unused print as they slow the tracker WAY more than I expected",
+					 "Added required Tokens and acquired Tokens into the layout",
+					 "Huge Layout change for ItemGrid : Changed both layout to add Totals, Lamps and Events. Moved things around.",
+					 "Autotracking of Events with Datastorage reading",
+					 "Used \"Frame Handler\" trick to speed up the location/item updates when connecting to AP",
+					 "Fixed SF Wheel Room to not take account of Lamp for access",
+					 "Fixed MM and PPM access rules",
+					 "Fixed MM Donovan and Laura access rules by also checking if you can reach the BG Button room to trigger them"
+
+                ]
+        },
+		{
                 "package_version": "0.4.10",
                 "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.4.10/Ape-Escape-Tracker-0.4.10.zip",
                 "sha256": "5428A4BC54C9310E9D51513B70E5255B4DAA416D160B57840F7BC8B6A73A0599",
