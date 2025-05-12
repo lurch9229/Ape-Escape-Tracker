@@ -343,7 +343,7 @@ end)
 MM_MONKEY_HEAD_CASTLE_MAIN:connect_one_way("MM_C_Monkey Head",function()
     result = any(
                 Eval_Logic((HasSling() and HasFlyer()),0),
-                Eval_Logic(((HasClub() or HasSling() or HasPunch() or HasFlyer()) and HasNet()),1),
+                Eval_Logic((HasClub() or HasSling() or HasPunch() or HasFlyer()),1),
                 Eval_Logic((CanHitWheel(2) or HasFlyer()),2)
                )
     return result
