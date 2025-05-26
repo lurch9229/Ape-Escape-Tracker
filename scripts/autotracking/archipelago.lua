@@ -140,9 +140,18 @@ function onClear(slot_data)
     if slot_data['superflyer'] ~= nil then
         Tracker:FindObjectForCode("op_superflyer").CurrentStage = slot_data['superflyer']
     end
-    if slot_data['requiredtokens'] ~= nil then
-        Tracker:FindObjectForCode("required_tokens").AcquiredCount = slot_data['requiredtokens']
+
+	if slot_data['requiredtokens'] ~= nil then
+		requiredtokens = slot_data['requiredtokens']
+		totaltokens = slot_data['totaltokens']
+		if requiredtokens > totaltokens then
+			Tracker:FindObjectForCode("required_tokens").AcquiredCount = totaltokens
+		else
+			Tracker:FindObjectForCode("required_tokens").AcquiredCount = requiredtokens
+		end
+		
     end
+	
     if slot_data['mailbox'] ~= nil then
         Tracker:FindObjectForCode("op_mailbox").CurrentStage = slot_data['mailbox']
     end
