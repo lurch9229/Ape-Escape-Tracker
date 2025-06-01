@@ -305,6 +305,35 @@
     ]
   },
   {
+    "name": "Net Option - Label",
+    "type": "label",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/settings/op_netoption.png",
+    "codes": "op_netoption_label"
+  },
+  {
+    "name": "Net shuffle",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "loop": false,
+    "stages": [
+      {
+        "name": "Net - Off",
+        "img": "images/settings/off.png",
+        "codes": "op_net, op_net_off",
+        "allow_disabled": false
+      },
+      {
+        "name": "Net - On",
+        "img": "images/settings/on.png",
+        "codes": "op_net, op_net_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Entrances Shuffle - Label",
     "type": "toggle",
     "initial_active_state": true,

@@ -146,8 +146,10 @@ function onClear(slot_data)
 		totaltokens = slot_data['totaltokens']
 		if requiredtokens > totaltokens then
 			Tracker:FindObjectForCode("required_tokens").AcquiredCount = totaltokens
+			print("Used TotalTokens")
 		else
 			Tracker:FindObjectForCode("required_tokens").AcquiredCount = requiredtokens
+			print("Used RequiredTokens")
 		end
 		
     end
@@ -163,6 +165,9 @@ function onClear(slot_data)
     end
 	if slot_data['unlocksperkey'] ~= nil then
         Tracker:FindObjectForCode("op_keyoption").CurrentStage = slot_data['unlocksperkey']
+    end
+	if slot_data['shufflenet'] ~= nil then
+        Tracker:FindObjectForCode("op_net").CurrentStage = slot_data['shufflenet']
     end
 	--print(slot_data['entrance'])
 	if slot_data['entrance'] ~= nil then

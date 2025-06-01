@@ -703,6 +703,26 @@
                 "item_size": 175,
                 "margin": "170,-190,0,0"
               },
+			  {
+                "type": "itemgrid",
+                "rows": [
+                  [
+                    "op_netoption_label"
+                  ]
+                ],
+                "item_size": 175,
+                "margin": "0,-140,0,0"
+              },
+              {
+                "type": "itemgrid",
+                "rows": [
+                  [
+                    "op_net"
+                  ]
+                ],
+                "item_size": 175,
+                "margin": "170,-190,0,0"
+              },
               {
                 "type": "itemgrid",
                 "rows": [

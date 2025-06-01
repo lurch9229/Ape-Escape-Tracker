@@ -33,7 +33,8 @@
                             "chest_opened_img": "images/icons/RedMailboxOff.png",
                             "visibility_rules":
                             [
-                                "shuffleMailbox"
+                                "shuffleMailbox",
+								"^$showTimeStationMailboxes"
                             ],
                             "access_rules":
                             [
@@ -47,7 +48,8 @@
                             "chest_opened_img": "images/icons/RedMailboxOff.png",
                             "visibility_rules":
                             [
-                                "shuffleMailbox"
+                                "shuffleMailbox",
+								"^$showTimeStationMailboxes"
                             ],
                             "access_rules":
                             [
@@ -61,7 +63,8 @@
                             "chest_opened_img": "images/icons/RedMailboxOff.png",
                             "visibility_rules":
                             [
-                                "shuffleMailbox"
+                                "shuffleMailbox",
+								"^$showTimeStationMailboxes"
                             ],
                             "access_rules":
                             [
@@ -74,9 +77,10 @@
                             "chest_unopened_img": "images/icons/RedMailboxOn.png",
                             "chest_opened_img": "images/icons/RedMailboxOff.png",
                             "visibility_rules":
-                                [
-                                    "shuffleMailbox"
-                                ],
+                            [
+                                "shuffleMailbox",
+								"^$showTimeStationMailboxes"
+                            ],
                             "access_rules":
                                 [
                                     "^$CanReach|Training Space"
