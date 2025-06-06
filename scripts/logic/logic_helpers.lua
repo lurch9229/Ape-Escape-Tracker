@@ -60,6 +60,10 @@ function has(item, amount)
     end
 end
 
+function showTimeStationMailboxes()
+    return Tracker:FindObjectForCode("op_net").CurrentStage == 1 and Tracker:FindObjectForCode("op_coins").CurrentStage == 1
+end
+
 function isMMToken()
     return Tracker:FindObjectForCode("op_goal").CurrentStage == 3
 end
