@@ -12,11 +12,6 @@ LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 IGNORE_CHANGE = false
 
-function forceUpdate()
-    local update = Tracker:FindObjectForCode("update")
-    update.Active = not update.Active
-end
-
 function onClearHandler(slot_data)
     local clear_timer = os.clock()
     ScriptHost:RemoveWatchForCode("StateChanged")
@@ -34,7 +29,7 @@ function onClearHandler(slot_data)
             ScriptHost:RemoveOnFrameHandler(handlerName)
             Tracker.BulkUpdate = false
 
-            forceUpdate()
+            --forceUpdate()
             print(string.format("Time taken total: %.2f", os.clock() - clear_timer))
         end
         ScriptHost:AddOnFrameHandler(handlerName, frameCallback)
@@ -52,8 +47,7 @@ function onClear(slot_data)
     end
     SLOT_DATA = slot_data
     CUR_INDEX = -1
-	Tracker.BulkUpdate = true
-	-- reset locations
+    -- reset locations
     for _, v in pairs(LOCATION_MAPPING) do
         if v[1] then
             if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -71,7 +65,7 @@ function onClear(slot_data)
             end
         end
     end
-	-- reset items
+    -- reset items
     for _, v in pairs(ITEM_MAPPING) do
         if v[1] and v[2] then
             if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -96,7 +90,6 @@ function onClear(slot_data)
             end
         end
     end
-	Tracker.BulkUpdate = false
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
     PLAYER_ID = Archipelago.PlayerNumber or -1
@@ -281,10 +274,6 @@ function onLocation(location_id, location_name)
         else
             obj.Active = true
         end
-		if v[2] then
-			local obj2 = Tracker:FindObjectForCode(v[2])
-			obj2.AcquiredCount = obj2.AcquiredCount - 1
-		end
     elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("onLocation: could not find object for code %s", v[1]))
     end
@@ -314,6 +303,7 @@ function onNotify(key, value, old_value)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onNotify: %s, %s, %s", key, dump(value), old_value))
     end
+
     if value ~= old_value then
         print(key)
         if key == DR_Block_Pushed then
@@ -343,11 +333,8 @@ function onNotify(key, value, old_value)
 		end
     end
 end
-
 function onNotifyLaunch(key, value)
-	obj = Tracker:FindObjectForCode("tot_ape")
-	print(obj.AcquiredCount)
-	if value ~= nil then
+    if value ~= nil then
         print(key)
         if key == DR_Block_Pushed then
 		  if value == 1 then
@@ -374,29 +361,7 @@ function onNotifyLaunch(key, value)
 		    Tracker:FindObjectForCode("TVT_Lobby_Button").Active = true
 		  end
 		end
-    else
-		--local onClear_timer = os.clock()
-		--tot_ape = Tracker:FindObjectForCode("tot_ape")
-		--tot_ape.AcquiredCount = 0
-		-- reset locations
-		--for k, v in pairs(locationToCode) do
-		--	if k then 
-		--		local obj = Tracker:FindObjectForCode("@"..k)
-		--		if obj then
-		--			--print(v)
-		--			if (string.find(string.upper(v), "MONKEY")) then
-		--				if obj.AvailableChestCount == 0 then
-		--					tot_ape.AcquiredCount = tot_ape.AcquiredCount + 1							
-		--				end
-		--			end
-		--		elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-		--			print(string.format("onClear: could not find object for code %s", k))
-		--		end
-		--	end
-		--end
-		--print(string.format("Time taken onRESET: %.2f", os.clock() - onClear_timer))
-	end
-	
+    end
 end
 -- on data received
 Archipelago:AddSetReplyHandler("notify handler", onNotify)
@@ -405,8 +370,8 @@ Archipelago:AddRetrievedHandler("notify launch handler", onNotifyLaunch)
 
 -- add AP callbacks
 -- un-/comment as needed
---Archipelago:AddClearHandler("clear handler", onClearHandler)
-Archipelago:AddClearHandler("clear handler", onClear)
+Archipelago:AddClearHandler("clear handler", onClearHandler)
+--Archipelago:AddClearHandler("clear handler", onClear)
 Archipelago:AddItemHandler("item handler", onItem)
 Archipelago:AddLocationHandler("location handler", onLocation)
 -- Archipelago:AddScoutHandler("scout handler", onScout)
