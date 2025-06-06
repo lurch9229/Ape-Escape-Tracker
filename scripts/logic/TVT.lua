@@ -79,7 +79,7 @@ TVT_LOBBY_OUTSIDE:connect_one_way("TVT_Tortuss",function() return HasNet() end)
 TVT_WATER_LOBBY:connect_one_way("TVT_Manic",function()
     result = any(
                 Eval_Logic(((HasFlyer() or IJ()) and HasNet()),0),
-                Eval_Logic((HasFlyer() or IJ() or HasHoop()) and HasNet(),1)
+                Eval_Logic(((HasFlyer() or IJ() or HasHoop()) and HasNet()),1)
                )
     return result
 

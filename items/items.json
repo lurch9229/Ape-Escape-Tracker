@@ -1,5 +1,10 @@
 [
-{
+  {
+	"name": "Force Update",
+	"type": "toggle",
+	"codes": "update"
+  },
+  {
     "name": "Stun Club",
     "type": "toggle",
     "loop": "false",
@@ -93,8 +98,9 @@
   },
   {
     "name": "Monkey Total",
-    "type": "non-interractive",
+    "type": "non-interactive",
     "loop": "false",
+	"min_quantity": 0,
     "max_quantity": 204,
     "increment": 1,
     "img": "images/items/monkeytotal.png",
@@ -102,9 +108,10 @@
   },
   {
     "name": "Specter Coins Total",
-    "type": "non-interractive",
+    "type": "non-interactive",
     "loop": "false",
-    "max_quantity": 60,
+    "min_quantity": 0,
+	"max_quantity": 60,
     "increment": 1,
     "img": "images/items/Specter_Coin.png",
     "codes": "tot_coin"
