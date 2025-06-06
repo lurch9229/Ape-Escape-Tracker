@@ -93,7 +93,7 @@
   },
   {
     "name": "Monkey Total",
-    "type": "non-interactive",
+    "type": "non-interractive",
     "loop": "false",
     "max_quantity": 204,
     "increment": 1,
@@ -102,7 +102,7 @@
   },
   {
     "name": "Specter Coins Total",
-    "type": "non-interactive",
+    "type": "non-interractive",
     "loop": "false",
     "max_quantity": 60,
     "increment": 1,
