@@ -209,7 +209,6 @@ function Tokens()
 end
 
 function location_check(section)
-
 	local SectionID = section.FullID
 	Code = locationToCode[SectionID]
 	isActive = Tracker:FindObjectForCode("@"..SectionID).AvailableChestCount == 1
@@ -247,18 +246,18 @@ function location_check(section)
 				elseif Tracker:FindObjectForCode(Code).AcquiredCount -1 >= MinCount then
 					if (string.find(string.upper(Code), "COIN")) then
 					--print(Tracker:FindObjectForCode(Code).Increment)
-						Tracker:FindObjectForCode("tot_coin").AcquiredCount = Tracker:FindObjectForCode("tot_coin").AcquiredCount - Tracker:FindObjectForCode(Code).Increment
+						Tracker:FindObjectForCode("tot_coin").AcquiredCount = Tracker:FindObjectForCode("tot_coin").AcquiredCount - Tracker:FindObjectForCode(Code).Decrement
 						if Tracker:FindObjectForCode("tot_coin").AcquiredCount == 0 then
 							Tracker:FindObjectForCode("tot_coin").Active = false
 						end
 					elseif (string.find(string.upper(Code), "MONKEY")) then
-						Tracker:FindObjectForCode("tot_ape").AcquiredCount = Tracker:FindObjectForCode("tot_ape").AcquiredCount - Tracker:FindObjectForCode(Code).Increment
+						Tracker:FindObjectForCode("tot_ape").AcquiredCount = Tracker:FindObjectForCode("tot_ape").AcquiredCount - Tracker:FindObjectForCode(Code).Decrement
 						if Tracker:FindObjectForCode("tot_ape").AcquiredCount == 0 then
 							Tracker:FindObjectForCode("tot_ape").Active = false
 						end
 					end
 					--Tracker:FindObjectForCode(Code).AcquiredCount = Tracker:FindObjectForCode(Code).MinCount
-					Tracker:FindObjectForCode(Code).AcquiredCount = Tracker:FindObjectForCode(Code).AcquiredCount - Tracker:FindObjectForCode(Code).Increment
+					Tracker:FindObjectForCode(Code).AcquiredCount = Tracker:FindObjectForCode(Code).AcquiredCount - Tracker:FindObjectForCode(Code).Decrement
 					if Tracker:FindObjectForCode(Code).Active and (Tracker:FindObjectForCode(Code).AcquiredCount == MinCount) then
 						Tracker:FindObjectForCode(Code).Active = false
 					end
@@ -267,4 +266,4 @@ function location_check(section)
 		end
 end
 
-ScriptHost:AddOnLocationSectionChangedHandler("location_check",function(section) location_check(section) end)
+ScriptHost:AddOnLocationSectionChangedHandler("location_check",location_check)
