@@ -113,14 +113,20 @@ end
 
 function switchKey(label)
 	print("====================SwitchKey==================")
-	getLvlOrder()
 	-- Get lvl name of clicked label
+	--print(label)
 	levelclicked = string.sub(label,6,-5)
+	--print("Label:"..levelclicked)
 	index = find_index(lvl_list,levelclicked)
+	--print(index)
+	-- Find what was the old value to deativate it
+	
+	
 	-- Before refreshing lvl_order,go see what level was there and deactivate the key
 	disableKeyID = lvl_order[index]
 	disableKeyLevel = lvl_list[disableKeyID]
 	--print("Disabled:"..disableKeyLevel.."_key")
+	getLvlOrder()
 	if disableKeyLevel ~= "ppm" then
 		Tracker:FindObjectForCode(disableKeyLevel.."_key").Active = false
 	end
@@ -137,11 +143,11 @@ function resetworldUnlocks()
 end
 
 function worldUnlocks(source)
-	--print("===================Unlocks====================")
+	print("===================Unlocks====================")
 	--print(source)
-	if source ~= "keyworld" then
-	    setER()
-	end
+	--if source ~= "keyworld" then
+	    --setER()
+	--end
 	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
 	getLvlOrder()
 	getReqKeys()
@@ -170,13 +176,13 @@ function worldUnlocks(source)
 			if has_value(already_checked, value) == false then
 				if worldkeys >= level_reqKeys then
 					if Tracker:FindObjectForCode(lvl_list[value].."_key").Active ~= true then
-					    print("activate_"..lvl_list[value].."_key")
+					    --print("activate_"..lvl_list[value].."_key")
 					    Tracker:FindObjectForCode(lvl_list[value].."_key").Active = true
 					end
 					table.insert(already_checked,value)
 				elseif worldkeys < level_reqKeys then
 					if Tracker:FindObjectForCode(lvl_list[index].."_key").Active ~= false then
-				        print("--deactivate_"..lvl_list[index].."_key")
+				        --print("--deactivate_"..lvl_list[index].."_key")
 				        Tracker:FindObjectForCode(lvl_list[index].."_key").Active = false
 				    end
 				end
@@ -245,8 +251,8 @@ end
 
 function loadAP()
 	resetworldUnlocks()
-	setER()
-
+	setER("loadAP")
+	worldUnlocks()
 end
 
 function setER(source)
@@ -256,7 +262,7 @@ function setER(source)
 
 	if SLOT_DATA ~= nil then
 
-		if Auto_ER == 1 then
+		if Auto_ER == 1 or source == "loadAP" then
 			-- set entrances mapping respecting logic
 			lvl_list = { "ff","po","ml","tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm","ppm"}
 			lvl_order = SLOT_DATA['entranceids']
