@@ -1,6 +1,23 @@
 {
     "versions": [
-		{
+        {
+                "package_version": "0.6.1",
+                "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.6.1/Ape-Escape-Tracker-0.6.1.zip",
+                "sha256": "50F7E351E7C8291CBF3FF903C4278DAE3F2C01D013310C57A6EE1161429B75E7",
+                "changelog": [
+                  "Fixed logic for \"MM_C_Monkey Head\" wrongly requiring net",
+                  "Fixed logic for \"MM_Carlito\" wrongly NOT requiring net",
+                  "Fixed syntax error in \"TVT_Manic\" rule",
+                  "Fixed calculation of Required Tokens if it is greater than Total Tokens",
+                  "Added Time Net shuffle option in the settings, mostly since it affects Time Station Mailboxes",
+                  "Modified logic for Time Station Mailboxes to take into account that when \"Coins\" and \"Netshuffle\" is on, it will activate the Time Station Mailboxes as locations",
+                  "Grid adjustments",
+                  "Fixed Items not being reset properly when disconnecting/reconnecting from AP",
+                  "Fixed ER level unlocks being weird again"
+
+                ]
+        },
+        {
                 "package_version": "0.6.0",
                 "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.6.0/Ape-Escape-Tracker-0.6.0.zip",
                 "sha256": "4DE88C0C9F790902D023FDBA636F7F1636EF2AFDE95118FC2BB21B00B6CE7412",
