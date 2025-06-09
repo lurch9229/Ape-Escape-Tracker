@@ -81,7 +81,8 @@ end)
 CR_PILLAR_ROOM_MAIN_RUINS:connect_one_way("CR_Crash",function()
     result = any(
                 Eval_Logic((HasRC() and HasNet()),0),
-                Eval_Logic(((HasRC() or HasSling() or SuperFlyer(CR_PILLAR_ROOM_MAIN_RUINS,1)) and HasNet()),1)
+                Eval_Logic(((HasRC() or HasSling() or SuperFlyer(CR_PILLAR_ROOM_MAIN_RUINS,1)) and HasNet()),1),
+                Eval_Logic(HasNet(),4)
                )
     return result
 
