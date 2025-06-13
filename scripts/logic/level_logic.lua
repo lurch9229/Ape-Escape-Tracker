@@ -1,18 +1,3 @@
-
-
-function CanSwim()
-    return ((has ("op_wn_off") or has("op_wn_on")) and has ("water")) or (has ("op_wn_prog") and (has ("swim") or has ("dive")))
-end
-
-function CanDive()
-    return ((has ("op_wn_off") or has("op_wn_on")) and has ("water")) or (has ("op_wn_prog") and has ("dive"))
-end
-
-function IJ()
-    ij = Tracker:ProviderCountForCode("op_ij").CurrentStage
-    return HasSling() and ij == 1
-end
-
 -- Lamp and Door Functions
 function MM_DoubleDoor()
     return (has ("mm_lobby_doubledoor"))

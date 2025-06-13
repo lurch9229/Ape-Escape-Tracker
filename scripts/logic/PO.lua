@@ -19,18 +19,13 @@ PO_Entry:connect_one_way("PO_Grunt",function()
 end)
 
 PO_Entry:connect_one_way("PO_Tyrone",function() return HasNet() end)
-PO_Entry:connect_one_way("PO_Gornif",function() 
-    if (CanSwim() and (HasNet() or HasWaterNet())) then
-        return AccessibilityLevel.Normal
-    elseif (HasNet() or HasWaterNet()) then
-        if op_logic_n() then
-            return AccessibilityLevel.SequenceBreak
-        else
-            return AccessibilityLevel.Normal
-        end
-    else
-        return AccessibilityLevel.None
-    end
+PO_Entry:connect_one_way("PO_Gornif",function()
+    result = any(
+                Eval_Logic((CanSwim() and (HasNet() or HasWaterNet())),0),
+                Eval_Logic((HasNet() or HasWaterNet()),1)
+               )
+    return result
+
 end)
 
 PO_Entry:connect_one_way("PO_C_Main",function() return CanDive() end)
