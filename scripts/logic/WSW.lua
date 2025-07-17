@@ -74,16 +74,17 @@ end)
 --Barrel
 WSW_BARREL_OBSTACLE:connect_one_way("WSW_Kong",function()
     result = any(
-                Eval_Logic(((HasFlyer() or HasSling() or (HasHoop() and (HasClub() or HasPunch()))) and HasNet()),0),
-                Eval_Logic(((HasFlyer() or HasSling() or HasHoop()) and HasNet()),1)
+                Eval_Logic((HasSling() and HasNet()),0),
+                Eval_Logic(((HasSling() or HasHoop()) and HasNet()),1)
                )
     return result
 
 end)
+
 WSW_BARREL_OBSTACLE:connect_one_way("WSW_Phool",function()
     result = any(
-                Eval_Logic((HasSling() and HasNet()),0),
-                Eval_Logic(((HasSling() or HasHoop()) and HasNet()),1)
+                Eval_Logic(((HasFlyer() or HasSling() or (HasHoop() and (HasClub() or HasPunch()))) and HasNet()),0),
+                Eval_Logic(((HasFlyer() or HasSling() or HasHoop()) and HasNet()),1)
                )
     return result
 
