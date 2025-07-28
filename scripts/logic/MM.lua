@@ -227,6 +227,15 @@ end)
 MM_CRATER_SL_HUB:connect_one_way("MM_Schafette",function()
     result = any(
                 Eval_Logic((HasFlyer() and HasNet()),0),
+                Eval_Logic((HasNet()),1)
+               )
+    return result
+
+end)
+
+MM_CRATER_OUTSIDE_CASTLE:connect_one_way("MM_Schafette2",function()
+    result = any(
+                Eval_Logic((HasFlyer() and HasNet()),0),
                 Eval_Logic(((HasFlyer() or IJ()) and HasNet()),1),
                 Eval_Logic(((HasFlyer() or IJ() or HasHoop()) and HasNet()),2)
                )

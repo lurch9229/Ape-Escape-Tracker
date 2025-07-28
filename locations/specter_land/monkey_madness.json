@@ -155,7 +155,8 @@
                         ],
                         "access_rules": 
                         [
-                            "^$CanReach|MM_Schafette"
+                            "^$CanReach|MM_Schafette",
+                            "^$CanReach|MM_Schafette2"
                         ],
                         "item_count": 1
                     },
