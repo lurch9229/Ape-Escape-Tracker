@@ -49,7 +49,7 @@ end)
 CCAVE_ENTRY:connect_one_way("CCAVE_Kalama",function()
     result = any(
                 Eval_Logic(((((((HasHoop() and CanHitMultiple(0)) or HasSling()) and CanSwim()) or HasFlyer()) and HasNet()) or HasWaterNet()),0),
-                Eval_Logic((CanSwim() or HasFlyer() or HasHoop() or IJ()) and (CanHitWheel() or HasFlyer()),1)
+                Eval_Logic((CanSwim() or HasFlyer() or HasHoop() or IJ()) and (CanHitWheel() or HasFlyer()) and HasNet(),1)
                )
     return result
 
