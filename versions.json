@@ -1,6 +1,19 @@
 {
     "versions": [
         {
+                "package_version": "0.6.2",
+                "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.6.2/Ape-Escape-Tracker-0.6.2.zip",
+                "sha256": "48fa35c37f3da502fb710f3aca9043bf462402a13a626ad0dd9f4bcc465f8bd8",
+                "changelog": [
+			 "Fixed logic for \"CCAVE_Kalama\"",
+			 "Fixed logic for \"MM_Schafette",
+			 "Fixed inverted rules for WSW Kong and Phool",
+			 "Fixed TJ Tent/Vine Room Coin logic",
+			 "Added CR Crash out of logic rule : Can be caught with only Net() (Not included in Expert)"
+
+                ]
+        },
+	{
                 "package_version": "0.6.1",
                 "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.6.1/Ape-Escape-Tracker-0.6.1.zip",
                 "sha256": "50F7E351E7C8291CBF3FF903C4278DAE3F2C01D013310C57A6EE1161429B75E7",
