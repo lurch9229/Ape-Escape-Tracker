@@ -31,7 +31,6 @@ DR_OBELISK_TOP:connect_one_way_entrance("DR_OBELISK_TOP_to_DR_OUTSIDE_OBELISK_TO
 DR_WATER_SIDE:connect_one_way_entrance("DR_WATER_SIDE_to_DR_OUTSIDE_WATER_BUTTON",DR_OUTSIDE_WATER_BUTTON)
 DR_WATER_LEDGE:connect_one_way_entrance("DR_WATER_LEDGE_to_DR_OUTSIDE_WATER_LEDGE",DR_OUTSIDE_WATER_LEDGE)
 
-
 DR_ENTRY:connect_one_way_entrance("DR_ENTRY_to_DR_OUTSIDE_FENCE",DR_OUTSIDE_FENCE,function()
     result = any(
                 Eval_Logic((HasFlyer() or IJ()),0),
@@ -55,8 +54,6 @@ DR_ENTRY:connect_one_way_entrance("DR_ENTRY_to_DR_OUTSIDE_WATER_LEDGE",DR_OUTSID
 
 end)
 DR_OUTSIDE_FENCE:connect_one_way_entrance("DR_OUTSIDE_FENCE_to_DR_ENTRY",DR_ENTRY,true)
-
---TODO : ---------------Rule does not work for now,since I do not track the events------------
 DR_OUTSIDE_HOLE:connect_one_way_entrance("DR_OUTSIDE_HOLE_to_DR_ENTRY",DR_ENTRY,function() return has("DR-Block") end)
 DR_OUTSIDE_OBELISK_BOTTOM:connect_one_way_entrance("DR_OUTSIDE_OBELISK_BOTTOM_to_DR_ENTRY",DR_ENTRY,true)
 DR_OUTSIDE_OBELISK_TOP:connect_one_way_entrance("DR_OUTSIDE_OBELISK_TOP_to_DR_ENTRY",DR_ENTRY,true)
@@ -67,7 +64,8 @@ DR_FAN_OUTSIDE_HOLE:connect_one_way_entrance("DR_FAN_OUTSIDE_HOLE_to_DR_FAN_OUTS
 DR_OBELISK_BOTTOM:connect_one_way_entrance("DR_OBELISK_BOTTOM_to_DR_OBELISK_TOP",DR_OBELISK_TOP,true)
 DR_OBELISK_TOP:connect_one_way_entrance("DR_OBELISK_TOP_to_DR_OBELISK_BOTTOM",DR_FAN_OUTSIDE_FENCE,true)
 DR_WATER_SIDE:connect_one_way_entrance("DR_WATER_SIDE_to_DR_WATER_LEDGE",DR_WATER_LEDGE,true)
-DR_WATER_LEDGE:connect_one_way_entrance("DR_OBELISK_TOP_to_DR_WATER_SIDE",DR_WATER_SIDE,true)
+DR_WATER_LEDGE:connect_one_way_entrance("DR_WATER_LEDGE_to_DR_WATER_SIDE",DR_WATER_SIDE,true)
+DR_OUTSIDE_OBELISK_TOP:connect_one_way_entrance("DR_OUTSIDE_OBELISK_TOP_to_DR_OUTSIDE_HOLE",DR_OUTSIDE_HOLE,true)
 
 --Monkeys
 DR_ENTRY:connect_one_way("DR_Kyle",function()
