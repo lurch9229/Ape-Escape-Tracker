@@ -103,6 +103,6 @@ end)
 --Mailboxes
 CR_ENTRY:connect_one_way("CR_M_Get Rid of the Enemy",function() return CanHitOnce() end)
 CR_ENTRY:connect_one_way("CR_M_Don't Forget Your Sling",true)
-CR_MAIN_RUINS_PILLAR_ROOM:connect_one_way("CR_M_Back Camera Tutorial",function() return CanHitOnce() end)
+CR_MAIN_RUINS_ENTRY:connect_one_way("CR_M_Back Camera Tutorial",function() return CanHitOnce() end)
 CR_MAIN_RUINS_PILLAR_ROOM:connect_one_way("CR_M_Remember to Save",function() return ((CanHitWheel() or HasFlyer()) and CanSwim()) end)
 CR_PILLAR_ROOM_MAIN_RUINS:connect_one_way("CR_M_Come Back Later!",function() return CanHitOnce() end)
