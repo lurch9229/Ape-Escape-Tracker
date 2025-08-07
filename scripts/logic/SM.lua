@@ -12,7 +12,7 @@ SM_ENTRY:connect_one_way("SM_Iced",function() return CanHitOnce() and HasNet() e
 SM_ENTRY:connect_one_way("SM_Rickets",function()
     result = any(
                 Eval_Logic((HasSling() and HasNet()),0),
-                Eval_Logic((HasSling() or (HasClub() and HasFlyer()) and HasNet()),1),
+                Eval_Logic((HasSling() or (HasClub() and HasFlyer())) and HasNet(),1),
                 Eval_Logic(((HasSling() or HasPunch() or (HasClub() and HasFlyer())) and HasNet()),2)
                )
     return result
