@@ -77,12 +77,14 @@ function getReqKeys()
         reqkeys = {0, 0, 0, 1, 1, 2, 2, 2, 3, 3, 4, 4, 5, 5, 5, 6, 6, 7, 7, 8, 8, 8}
 		--Tracker:FindObjectForCode("Keyworld").MaxCount = 16
 	end
-    if GoalOption >= 2 and KeyOption ~= 3 then
+    --if GoalOption == 2 or GoalOption == 3 or GoalOption == 4 and KeyOption ~= 3 then
+    if GoalOption == 2 or GoalOption == 3 or GoalOption == 4 then
         reqkeys[22] = reqkeys[22] + 1
     end
 	for index = 1, 22 do
 		value = reqkeys[index]
-		if CoinOption == 1 and KeyOption ~= 3 then
+		--if CoinOption == 1 and KeyOption ~= 3 then
+		if CoinOption == 1 then
 		    if index >= 8 then
 		        value = value + 1
 		    end
@@ -100,7 +102,7 @@ function getLvlOrder()
 
 	LevelRando = Tracker:FindObjectForCode("op_entrance").CurrentStage
 	lvl_order = {}
-	for index = 1, 21 do
+	for index = 1, 22 do
 		value = Tracker:FindObjectForCode("__er_"..lvl_list[index].."_dst").CurrentStage
 		if value == 0 then
 			value = index
@@ -117,27 +119,33 @@ function switchKey(label)
 	--print(label)
 	levelclicked = string.sub(label,6,-5)
 	--print("Label:"..levelclicked)
+    --print(dump_table(lvl_list))
 	index = find_index(lvl_list,levelclicked)
 	--print(index)
 	-- Find what was the old value to deativate it
 	
 	
 	-- Before refreshing lvl_order,go see what level was there and deactivate the key
+
+	--Not deactivating the right index??
+
+	--print(dump_table(lvl_order))
 	disableKeyID = lvl_order[index]
 	disableKeyLevel = lvl_list[disableKeyID]
 	--print("Disabled:"..disableKeyLevel.."_key")
 	getLvlOrder()
-	if disableKeyLevel ~= "ppm" then
-		Tracker:FindObjectForCode(disableKeyLevel.."_key").Active = false
-	end
+	--print(dump_table(lvl_order))
+	--if disableKeyLevel ~= "ppm" then
+	--	Tracker:FindObjectForCode(disableKeyLevel.."_key").Active = false
+	--end
 	--Then do the world unlocks to reactivate the right keys depending on the new level_order
 	worldUnlocks(index)
 end
 
 function resetworldUnlocks()
 
-	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
-	for index = 1, 21 do
+	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm","ppm"}
+	for index = 1, 22 do
 		Tracker:FindObjectForCode(lvl_list[index].."_key").Active = false
     end
 end
@@ -148,7 +156,7 @@ function worldUnlocks(source)
 	--if source ~= "keyworld" then
 	    --setER()
 	--end
-	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
+	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm","ppm"}
 	getLvlOrder()
 	getReqKeys()
 	worldkeys = Tracker:ProviderCountForCode("keyWorld")
@@ -157,12 +165,12 @@ function worldUnlocks(source)
 	already_checked = {}
 
 	if LevelRando ~= 0 then
-		--Tracker:FindObjectForCode(lvl_list[1].."_key").Active = false
-		--Tracker:FindObjectForCode(lvl_list[2].."_key").Active = false
-		--Tracker:FindObjectForCode(lvl_list[3].."_key").Active = false
+		Tracker:FindObjectForCode(lvl_list[1].."_key").Active = false
+		Tracker:FindObjectForCode(lvl_list[2].."_key").Active = false
+		Tracker:FindObjectForCode(lvl_list[3].."_key").Active = false
 	end
 
-	for index = 1, 21 do
+	for index = 1, 22 do
 		value = Tracker:FindObjectForCode("__er_"..lvl_list[index].."_dst").CurrentStage
 		if LevelRando == 0 then
 			--if value == 0 then
@@ -172,6 +180,7 @@ function worldUnlocks(source)
 		end
 		--print(value)
 		if value ~= 0 then
+			print(requiredKeys[index])
 			level_reqKeys = requiredKeys[index]
 			if has_value(already_checked, value) == false then
 				if worldkeys >= level_reqKeys then
@@ -179,13 +188,14 @@ function worldUnlocks(source)
 					    --print("activate_"..lvl_list[value].."_key")
 					    Tracker:FindObjectForCode(lvl_list[value].."_key").Active = true
 					end
-					table.insert(already_checked,value)
+
 				elseif worldkeys < level_reqKeys then
-					if Tracker:FindObjectForCode(lvl_list[index].."_key").Active ~= false then
+					if Tracker:FindObjectForCode(lvl_list[value].."_key").Active ~= false then
 				        --print("--deactivate_"..lvl_list[index].."_key")
-				        Tracker:FindObjectForCode(lvl_list[index].."_key").Active = false
+				        Tracker:FindObjectForCode(lvl_list[value].."_key").Active = false
 				    end
 				end
+				table.insert(already_checked,value)
 			end
 		else
 			if has_value(already_checked, index) == false then
@@ -194,7 +204,7 @@ function worldUnlocks(source)
 				if Tracker:FindObjectForCode(lvl_list[index].."_key").Active ~= false then
 				    Tracker:FindObjectForCode(lvl_list[index].."_key").Active = false
 				end
-				--table.insert(already_checked,index)
+				table.insert(already_checked,index)
 			end
 		end
     end
@@ -203,14 +213,14 @@ end
 
 function worldUnlocks_Old()
 	print("===================Unlocks====================")
-	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
+	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm","ppm"}
 	getLvlOrder()
 	getReqKeys()
 	worldkeys = Tracker:ProviderCountForCode("keyWorld")
 	LevelRando = Tracker:FindObjectForCode("op_entrance").CurrentStage
 	Auto_ER = Tracker:FindObjectForCode("__setting_auto_ent").CurrentStage
 	already_checked = {}
-	for index = 1, 21 do
+	for index = 1, 22 do
 		value = Tracker:FindObjectForCode("__er_"..lvl_list[index].."_dst").CurrentStage
 		if LevelRando == 0 then
 			if value == 0 then
@@ -236,15 +246,15 @@ end
 
 
 function clearER()
-	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
-	for index = 1, 21 do
+	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm","ppm"}
+	for index = 1, 22 do
 		Tracker:FindObjectForCode("__er_"..lvl_list[index].."_dst").CurrentStage = 0
     end
 end
 
 function resetER()
-	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
-	for index = 1, 21 do
+	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm","ppm"}
+	for index = 1, 22 do
 		Tracker:FindObjectForCode("__er_"..lvl_list[index].."_dst").CurrentStage = index
     end
 end
@@ -259,16 +269,15 @@ function setER(source)
 	Auto_ER = Tracker:FindObjectForCode("__setting_auto_ent").CurrentStage
 	reqKeys = getReqKeys()
 	worldkeys = Tracker:ProviderCountForCode("keyWorld")
-
 	if SLOT_DATA ~= nil then
 
-		if Auto_ER == 1 or source == "loadAP" then
+		if Auto_ER == 1 then
 			-- set entrances mapping respecting logic
 			lvl_list = { "ff","po","ml","tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm","ppm"}
 			lvl_order = SLOT_DATA['entranceids']
 			true_lvl_order = {}
 			for k, v in pairs(lvl_order) do
-				if v and k < 22 then -- Exclude PPM to not cause errors
+				--if v and k < 22 then -- Exclude PPM to not cause errors
 					index_lvl = k
 					stage_value = levelsIdsToIndex[v]
 					table.insert(true_lvl_order,k,stage_value)
@@ -279,7 +288,7 @@ function setER(source)
 					else
 						Tracker:FindObjectForCode("__er_"..lvl_list[index_lvl].."_dst").CurrentStage = 0
 					end
-				end
+				--end
 			end
 		elseif Auto_ER == 2 then
 			-- set entrances mapping despite not knowing logic
@@ -287,13 +296,13 @@ function setER(source)
 			lvl_order = SLOT_DATA['entranceids']
 			true_lvl_order = {}
 			for k, v in pairs(lvl_order) do
-				if v and k < 22 then -- Exclude PPM to not cause errors
+				--if v and k < 22 then -- Exclude PPM to not cause errors
 					index_lvl = k
 					stage_value = levelsIdsToIndex[v]
 					table.insert(true_lvl_order,k,stage_value)
 					--print(string.format("ER entrance %s | %s | %s", index_lvl,stage_value,lvl_list[index_lvl]))
 					Tracker:FindObjectForCode("__er_"..lvl_list[index_lvl].."_dst").CurrentStage = stage_value
-				end
+				--end
 			end
 		end
 	end
@@ -391,8 +400,8 @@ ScriptHost:AddWatchForCode("worldkey handler", "keyWorld", worldUnlocks)
 ScriptHost:AddWatchForCode("worldkey handler2", "keyWorld", setER)
 ScriptHost:AddWatchForCode("op_coins handler", "op_coins", worldUnlocks)
 
-lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm"}
-for index = 1, 21 do
+lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm","ppm"}
+for index = 1, 22 do
 	ScriptHost:AddWatchForCode("er_label handler_"..lvl_list[index], "__er_"..lvl_list[index].."_dst", switchKey)
 end
 

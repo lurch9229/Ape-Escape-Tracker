@@ -641,7 +641,7 @@
               ["__er_mm_ent"]
             ],
             "item_size": 100,
-            "margin": "-120,-55,180,0"
+            "margin": "-259,-55,180,0"
           },
 		  {
             "type": "itemgrid",
@@ -658,6 +658,37 @@
             ],
             "item_size": 100,
             "margin": "0,-55,180,0"
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["__er_ppm_ent"]
+            ],
+            "item_size": 100,
+            "margin": "0,-110,180,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["__er_arrow"]
+            ],
+            "item_size": 25,
+            "margin": "-185,-110,-15,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["__er_ppm_dst"]
+            ],
+            "item_size": 100,
+            "margin": "0,-110,180,0"
           }
         ]
       },

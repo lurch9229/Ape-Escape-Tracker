@@ -67,7 +67,7 @@ function MM_Lamp()
     --return has("monkey_mm",3) and has ("op_lamps_off")
 end
 
-function HasAllMonKeys()
+function HasAllMonkeys()
     return (Tracker:ProviderCountForCode("tot_ape") == 204)
 end
 
@@ -169,15 +169,32 @@ function PPM_Access ()
     -- 0 = MM, 1 = PPM, 2 = tokenhunt, 3 = mmtoken, 4 = ppmtoken
     if goal == 0 then
         return false
+    elseif goal == 4 then --ppmtoken
+        return Tracker:FindObjectForCode("ppm_key").Active == true and Tokens()
+    elseif goal == 2 or goal == 3 then --tokenHunt or mmtoken
+        return Tracker:FindObjectForCode("ppm_key").Active == true
     elseif goal == 1 then
-        return worldkeys >= requiredKeys[22] and HasAllMonKeys()
-    elseif goal == 4 then
-        return worldkeys >= requiredKeys[22] and Tokens()
-    elseif goal == 2 or goal == 3 then
-        return worldkeys >= requiredKeys[22]
+        return Tracker:FindObjectForCode("ppm_key").Active == true and HasAllMonkeys()
     end
 end
 
+function oldPPM_Access ()
+    goal = Tracker:FindObjectForCode("op_goal").CurrentStage
+    worldkeys = Tracker:ProviderCountForCode("keyWorld")
+    if requiredKeys == nil then
+        getReqKeys()
+    end
+    -- 0 = MM, 1 = PPM, 2 = tokenhunt, 3 = mmtoken, 4 = ppmtoken
+    if goal == 0 then
+        return false
+    elseif goal == 4 then --ppmtoken
+        return worldkeys >= requiredKeys[22] and Tokens()
+    elseif goal == 2 or goal == 3 then --tokenHunt or mmtoken
+        return worldkeys >= requiredKeys[22]
+    elseif goal == 1 then
+        return worldkeys >= requiredKeys[22] and HasAllMonkeys()
+    end
+end
 
 function Keys(count)
     return has("keyWorld",count)
@@ -188,9 +205,10 @@ function Tokens()
     requiredtokens = Tracker:ProviderCountForCode("required_tokens")
     if goal == 0 or goal == 1 then
         return true
+    else
+        return has("specter_tokens", requiredtokens)
     end
     --return true
-    return has("specter_tokens", requiredtokens)
 end
 
 function location_check(section)

@@ -233,9 +233,9 @@ function FakeSuperFlyer()
     end
 
     -- If the difficulty is normal, Super Flyer is never in logic.
-    --if logic == 0 then
-    --    return AccessibilityLevel.None
-    --end
+    if logic == 0 then
+        return AccessibilityLevel.None
+    end
     if (HasFlyer() and (HasNet() or HasClub() or HasSling() or HasPunch())) == false then
         return AccessibilityLevel.None
     end

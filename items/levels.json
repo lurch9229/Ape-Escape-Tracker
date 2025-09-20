@@ -168,6 +168,14 @@
     "codes": "label_mm"
   },
   {
+    "name": "Peak Point Matrix Label",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/labels/label_peak_point_matrix.png",
+    "codes": "label_ppm"
+  },
+  {
     "name": "FF Monkeys",
     "type": "non-interactive",
     "loop": "false",
@@ -813,6 +821,14 @@
     "img": "images/icons/base_key.png",
     "codes": "mm_key"
   },
+  {
+    "name": "Peak Point Matrix World Key",
+    "type": "toggle",
+    "loop": "false",
+    "img": "images/icons/base_key.png",
+    "codes": "ppm_key"
+  },
+
   {
     "name": "Specter 1",
     "type": "non-interactive",

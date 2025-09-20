@@ -674,6 +674,37 @@
             "margin": "7,-65,0,0"
           }
         ]
+      },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["label_ppm"]
+            ],
+            "item_size": 100,
+            "margin": "0,-55,180,0"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["specter_2"]
+            ],
+            "item_size": 35,
+            "margin": "-180,-62,-20,-12"
+          },
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["ppm_key"]
+            ],
+            "item_size": 46,
+            "margin": "7,-65,0,0"
+          }
+        ]
       }
     ]
   }

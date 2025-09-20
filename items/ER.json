@@ -169,6 +169,14 @@
     "codes": "__er_mm_ent"
   },
   {
+    "name": "Peak Point Matrix - Entrance",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/er/er_peak_point_matrix_ent.png",
+    "codes": "__er_ppm_ent"
+  },
+  {
 	"name": "Fossil Fields - Destination Icon",
 	"type": "progressive",
 	"loop": true,
@@ -284,6 +292,11 @@
 		{
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
+			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
 			"inherit_codes": false
 		}
 	]
@@ -405,6 +418,11 @@
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
 			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
+			"inherit_codes": false
 		}
 	]
   },
@@ -524,6 +542,11 @@
 		{
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
+			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
 			"inherit_codes": false
 		}
 	]
@@ -645,6 +668,11 @@
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
 			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
+			"inherit_codes": false
 		}
 	]
   },
@@ -764,6 +792,11 @@
 		{
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
+			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
 			"inherit_codes": false
 		}
 	]
@@ -885,6 +918,11 @@
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
 			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
+			"inherit_codes": false
 		}
 	]
   },
@@ -1004,6 +1042,11 @@
 		{
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
+			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
 			"inherit_codes": false
 		}
 	]
@@ -1125,6 +1168,11 @@
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
 			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
+			"inherit_codes": false
 		}
 	]
   },
@@ -1244,6 +1292,11 @@
 		{
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
+			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
 			"inherit_codes": false
 		}
 	]
@@ -1365,6 +1418,11 @@
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
 			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
+			"inherit_codes": false
 		}
 	]
   },
@@ -1484,6 +1542,11 @@
 		{
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
+			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
 			"inherit_codes": false
 		}
 	]
@@ -1605,6 +1668,11 @@
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
 			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
+			"inherit_codes": false
 		}
 	]
   },
@@ -1724,6 +1792,11 @@
 		{
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
+			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
 			"inherit_codes": false
 		}
 	]
@@ -1845,6 +1918,11 @@
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
 			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
+			"inherit_codes": false
 		}
 	]
   },
@@ -1964,6 +2042,11 @@
 		{
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
+			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
 			"inherit_codes": false
 		}
 	]
@@ -2085,6 +2168,11 @@
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
 			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
+			"inherit_codes": false
 		}
 	]
   },
@@ -2204,6 +2292,11 @@
 		{
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
+			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
 			"inherit_codes": false
 		}
 	]
@@ -2325,6 +2418,11 @@
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
 			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
+			"inherit_codes": false
 		}
 	]
   },
@@ -2444,6 +2542,11 @@
 		{
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
+			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
 			"inherit_codes": false
 		}
 	]
@@ -2565,6 +2668,11 @@
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
 			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
+			"inherit_codes": false
 		}
 	]
   },
@@ -2684,6 +2792,11 @@
 		{
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
+			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
 			"inherit_codes": false
 		}
 	]
@@ -2805,6 +2918,11 @@
 			"name": "Monkey Madness - Destination",
 			"img": "images/er/er_monkey_madness_dst.png",
 			"inherit_codes": false
+		},
+		{
+			"name": "Peak Point Matrix - Destination",
+			"img": "images/er/er_peak_point_matrix_dst.png",
+			"inherit_codes": false
 		}
 	]
   },
@@ -2815,5 +2933,5 @@
     "allow_disabled": false,
     "img": "images/er/er_arrow.png",
     "codes": "__er_arrow"
-  },
+  }
 ]

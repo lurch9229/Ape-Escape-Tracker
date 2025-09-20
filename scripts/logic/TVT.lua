@@ -36,7 +36,8 @@ TVT_ENTRY:connect_one_way_entrance("TVT_ENTRY_to_TVT_OUTSIDE_LOBBY",TVT_OUTSIDE_
 TVT_LOBBY_OUTSIDE:connect_one_way_entrance("TVT_LOBBY_OUTSIDE_to_TVT_LOBBY_WATER",TVT_LOBBY_WATER,function()
     result = any(
                 Eval_Logic((HasFlyer() or IJ()),0),
-                Eval_Logic((HasFlyer() or HasSling() or HasHoop() or HasClub()),1)
+                Eval_Logic((HasFlyer() or HasSling() or HasClub()),1),
+                Eval_Logic((HasFlyer() or HasSling() or HasHoop() or HasClub()),2)
                )
     return result
 

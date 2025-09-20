@@ -673,6 +673,37 @@
           }
         ]
       },
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "rows": [
+              ["__er_ppm_ent"]
+            ],
+            "item_size": 100,
+            "margin": "0,-55,180,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["__er_arrow"]
+            ],
+            "item_size": 25,
+            "margin": "-185,-55,-15,0"
+          },
+		  {
+            "type": "itemgrid",
+            "rows": [
+              ["__er_ppm_dst"]
+            ],
+            "item_size": 100,
+            "margin": "0,-55,0,0"
+          }
+        ]
+      },
 	  {
         "type": "array",
         "orientation": "horizontal",
@@ -684,7 +715,7 @@
               ["__er_clear"]
             ],
             "item_size": 200,
-            "margin": "-520,-55,180,-300"
+            "margin": "-570,-125,70,-300"
           },
 		  {
             "type": "itemgrid",
@@ -692,7 +723,7 @@
               ["__er_reset_all"]
             ],
             "item_size": 200,
-            "margin": "-120,-55,180,-300"
+            "margin": "-120,-125,70,-300"
           },
           {
             "type": "itemgrid",
@@ -700,7 +731,7 @@
               ["__er_load_ap"]
             ],
             "item_size": 200,
-            "margin": "-120,-55,180,-300"
+            "margin": "-120,-125,180,-300"
           }
         ]
       }

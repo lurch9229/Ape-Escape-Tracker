@@ -195,7 +195,7 @@ end)
 TJ_ENTRY:connect_one_way("TJ_C_Entry",function()
     result = any(
                 Eval_Logic((HasFlyer()),0),
-                Eval_Logic((IJ() or HasHoop() or HasFlyer()),2)
+                Eval_Logic((IJ() or (HasHoop() and CanSwim()) or HasFlyer()),2)
                )
     return result
 
