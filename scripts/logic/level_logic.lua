@@ -15,16 +15,16 @@ function DI_Lamp()
     if has ("di_lamp_on") then
         return true
     end
-    return HasNet() and has ("op_lamps_off")
-    --return has("monkey_di",3) and has ("op_lamps_off")
+    --return HasNet() and has ("op_lamps_off")
+    return has("monkey_di",5) and has ("op_lamps_off")
 end
 
 function CRC_Lamp()
     if has ("crc_lamp_on") then
         return true
     end
-    return HasNet() and has ("op_lamps_off")
-    --return has("monkey_crc",3) and has ("op_lamps_off")
+    --return HasNet() and has ("op_lamps_off")
+    return has("monkey_crc",5) and has ("op_lamps_off")
 end
 
 function CP_Lamp()
@@ -39,8 +39,8 @@ function SF_Lamp()
     if has ("sf_lamp_on") then
         return true
     end
-    return HasNet() and has ("op_lamps_off")
-    --return has("monkey_sf",3) and has ("op_lamps_off")
+    --return HasNet() and has ("op_lamps_off")
+    return has("monkey_sf",3) and has ("op_lamps_off")
 end
 
 function TVT_Lobby_Lamp()
@@ -55,8 +55,8 @@ function TVT_Tank_Lamp()
     if has ("tvt_lamp_tr_on") then
         return true
     end
-    return HasNet() and has ("op_lamps_off")
-    --return has("monkey_tvt",3) and has ("op_lamps_off")
+    --return HasNet() and has ("op_lamps_off")
+    return has("monkey_tvt",6) and has ("op_lamps_off")
 end
 
 function MM_Lamp()
