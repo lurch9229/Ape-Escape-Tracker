@@ -1,6 +1,18 @@
 {
+	
     "versions": [
         {
+                "package_version": "0.6.3",
+                "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.6.3/Ape-Escape-Tracker-0.6.3.zip",
+                "sha256": "d8075711140aed27b31e266647e1401860ee4057ad3f73be190d79dc29dc1d54",
+                "changelog": [
+					 "Updated Lamps logic to now require a certain amount of Monkeys (When \"Lamps\" option is off)",
+					 "Fixed logic to fit the rules in the apworld",
+					 "Corrected worldUnlocks function to correctly remove access while changing entrances in ER tab",
+					 "Added PPM label in levels and ER menu to be able to track the entrance correctly"
+                ]
+        },
+		{
                 "package_version": "0.6.2",
                 "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.6.2/Ape-Escape-Tracker-0.6.2.zip",
                 "sha256": "48fa35c37f3da502fb710f3aca9043bf462402a13a626ad0dd9f4bcc465f8bd8",
@@ -13,7 +25,7 @@
 
                 ]
         },
-	{
+		{
                 "package_version": "0.6.1",
                 "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.6.1/Ape-Escape-Tracker-0.6.1.zip",
                 "sha256": "50F7E351E7C8291CBF3FF903C4278DAE3F2C01D013310C57A6EE1161429B75E7",
