@@ -4,7 +4,7 @@
         {
                 "package_version": "0.6.3",
                 "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.6.3/Ape-Escape-Tracker-0.6.3.zip",
-                "sha256": "d8075711140aed27b31e266647e1401860ee4057ad3f73be190d79dc29dc1d54",
+                "sha256": "a16e8d25a796853e3f4f4dea3388ea4b5544cc0682704a64037f88fa73417113",
                 "changelog": [
 					 "Updated Lamps logic to now require a certain amount of Monkeys (When \"Lamps\" option is off)",
 					 "Fixed logic to fit the rules in the apworld",
