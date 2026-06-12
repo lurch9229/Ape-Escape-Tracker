@@ -1,0 +1,916 @@
+[
+  {
+    "name": "Fossil Fields - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_fossil_fields_ent.png",
+    "codes": "__sr_ff_ent"
+  },
+  {
+    "name": "Primordial Ooze - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_primordial_ooze_ent.png",
+    "codes": "__sr_po_ent"
+  },
+  {
+    "name": "Molten Lava - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_molten_lava_ent.png",
+    "codes": "__sr_ml_ent"
+  },
+  {
+    "name": "Thick Jungle - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_thick_jungle_ent.png",
+    "codes": "__sr_tj_ent"
+  },
+  {
+    "name": "Dark Ruins - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_dark_ruins_ent.png",
+    "codes": "__sr_dr_ent"
+  },
+  {
+    "name": "Cryptic Relics - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_cryptic_relics_ent.png",
+    "codes": "__sr_cr_ent"
+  },
+  {
+    "name": "Stadium Attack - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_stadium_attack_ent.png",
+    "codes": "__sr_sa_ent"
+  },
+  {
+    "name": "Crabby Beach - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_crabby_beach_ent.png",
+    "codes": "__sr_cb_ent"
+  },
+  {
+    "name": "Coral Cave - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_coral_cave_ent.png",
+    "codes": "__sr_cc_ent"
+  },
+  {
+    "name": "Dexter's Island - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_dexter_island_ent.png",
+    "codes": "__sr_di_ent"
+  },
+  {
+    "name": "Snowy Mammoth - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_snowy_mammoth_ent.png",
+    "codes": "__sr_sm_ent"
+  },
+  {
+    "name": "Frosty Retreat - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_frosty_retreat_ent.png",
+    "codes": "__sr_fr_ent"
+  },
+  {
+    "name": "Hot Springs - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_hot_springs_ent.png",
+    "codes": "__sr_hs_ent"
+  },
+  {
+    "name": "Gladiator Attack - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_gladiator_attack_ent.png",
+    "codes": "__sr_ga_ent"
+  },
+  {
+    "name": "Sushi Temple - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_sushi_temple_ent.png",
+    "codes": "__sr_st_ent"
+  },
+  {
+    "name": "Wabi Sabi Wall - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_wabi_sabi_wall_ent.png",
+    "codes": "__sr_wsw_ent"
+  },
+  {
+    "name": "Crumbling Castle - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_crumbling_castle_ent.png",
+    "codes": "__sr_crc_ent"
+  },
+  {
+    "name": "City Park - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_city_park_ent.png",
+    "codes": "__sr_cp_ent"
+  },
+  {
+    "name": "Specter's Factory - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_specters_factory_ent.png",
+    "codes": "__sr_sf_ent"
+  },
+  {
+    "name": "TV Tower - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_tv_tower_ent.png",
+    "codes": "__sr_tvt_ent"
+  },
+  {
+    "name": "Monkey Madness - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_monkey_madness_ent.png",
+    "codes": "__sr_mm_ent"
+  },
+  {
+    "name": "Peak Point Matrix - Start Room",
+    "type": "toggle",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/sr/sr_peak_point_matrix_ent.png",
+    "codes": "__sr_ppm_ent"
+  },
+  {
+    "name": "Fossil Fields - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_ff_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Fossil Fields - Main",
+        "img": "images/sr/sr_ff_entry.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Primordial Ooze - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_po_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Primordial Ooze - Main",
+        "img": "images/sr/sr_po_entry.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Molten Lava - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_ml_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Molten Lava - Entry",
+        "img": "images/sr/sr_ml_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Molten Lava - Volcano",
+        "img": "images/sr/sr_ml_volcano_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Molten Lava - Triceratops",
+        "img": "images/sr/sr_ml_triceratops_entry.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Thick Jungle - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_tj_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Thick Jungle - Entry",
+        "img": "images/sr/sr_tj_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Thick Jungle - Mushroom",
+        "img": "images/sr/sr_tj_mushroom_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Thick Jungle - Fish Room",
+        "img": "images/sr/sr_tj_fish_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Thick Jungle - Tent/Vine Room",
+        "img": "images/sr/sr_tj_tent_fish.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Thick Jungle - Boulder Room",
+        "img": "images/sr/sr_tj_boulder_tent.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Dark Ruins - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_dr_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Dark Ruins - Entry",
+        "img": "images/sr/sr_dr_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Dark Ruins - Fan Basement",
+        "img": "images/sr/sr_dr_fan_outside_hole.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Dark Ruins - Obelisk Inside",
+        "img": "images/sr/sr_dr_obelisk_bottom.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Dark Ruins - Water Basement",
+        "img": "images/sr/sr_dr_water_side.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Cryptic Relics - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_cr_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Cryptic Relics - Entry",
+        "img": "images/sr/sr_cr_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Cryptic Relics - Side Room",
+        "img": "images/sr/sr_cr_side_room_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Cryptic Relics - Main Ruins",
+        "img": "images/sr/sr_cr_main_ruins_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Cryptic Relics - Pillar Room",
+        "img": "images/sr/sr_cr_pillar_room_main_ruins.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Stadium Attack - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_sa_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Stadium Attack - Entry",
+        "img": "images/sr/sr_sa_entry.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Crabby Beach - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_cb_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Crabby Beach - Entry",
+        "img": "images/sr/sr_cb_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Crabby Beach - Second Room",
+        "img": "images/sr/sr_cb_second_room_entry.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Coral Cave - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_cc_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Coral Cave - Entry",
+        "img": "images/sr/sr_ccave_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Coral Cave - Second Room",
+        "img": "images/sr/sr_ccave_second_room_entry.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Dexter's Island - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_di_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Dexter's Island - Entry",
+        "img": "images/sr/sr_di_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Dexter's Island - Stomach",
+        "img": "images/sr/sr_di_stomach_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Dexter's Island - Gallery",
+        "img": "images/sr/sr_di_gallery_slide_elevator.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Dexter's Island - Tentacle Room",
+        "img": "images/sr/sr_di_tentacle.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Dexter's Island - Slide Room",
+        "img": "images/sr/sr_di_slide_room_stomach.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Snowy Mammoth - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_sm_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Snowy Mammoth - Main",
+        "img": "images/sr/sr_sm_entry.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Frosty Retreat - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_fr_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Frosty Retreat - Entry",
+        "img": "images/sr/sr_fr_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Frosty Retreat - Water Room",
+        "img": "images/sr/sr_fr_water_caverns.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Frosty Retreat - Caverns",
+        "img": "images/sr/sr_fr_caverns_entry.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Hot Springs - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_hs_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Hot Springs - Entry",
+        "img": "images/sr/sr_hs_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Hot Springs - Hot Springs",
+        "img": "images/sr/sr_hs_hot_spring.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Hot Springs - Polar Bear Cave",
+        "img": "images/sr/sr_hs_polar_bear_cave.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Gladiator Attack - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_ga_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Gladiator Attack - Entry",
+        "img": "images/sr/sr_ga_entry.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Sushi Temple - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_st_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Sushi Temple - Entry",
+        "img": "images/sr/sr_st_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Sushi Temple - Temple",
+        "img": "images/sr/sr_st_temple.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Sushi Temple - Well",
+        "img": "images/sr/sr_st_well.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Wabi Sabi Wall - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_wsw_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Wabi Sabi Wall - Entry",
+        "img": "images/sr/sr_wsw_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Wabi Sabi Wall - Gong Room",
+        "img": "images/sr/sr_wsw_gong_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Wabi Sabi Wall - Middle Room",
+        "img": "images/sr/sr_wsw_middle_gong.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Wabi Sabi Wall - Obstacle Course",
+        "img": "images/sr/sr_wsw_obstacle_middle.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Wabi Sabi Wall - Barrel Room",
+        "img": "images/sr/sr_wsw_barrel_obstacle.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Crumbling Castle - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_crc_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Crumbling Castle - Entry",
+        "img": "images/sr/sr_cc_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Crumbling Castle - Castle Main",
+        "img": "images/sr/sr_cc_castlemain_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Crumbling Castle - Flooded Basement",
+        "img": "images/sr/sr_cc_basement_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Crumbling Castle - Button Room",
+        "img": "images/sr/sr_cc_button_basement_water.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Crumbling Castle - Elevator Room",
+        "img": "images/sr/sr_cc_elevator_castlemain.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Crumbling Castle - Bell Tower",
+        "img": "images/sr/sr_cc_bell_castle.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "City Park - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_cp_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "City Park - Entry",
+        "img": "images/sr/sr_cp_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "City Park - Sewers Front",
+        "img": "images/sr/sr_cp_sewersfront_outside.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "City Park - Barrel Room",
+        "img": "images/sr/sr_cp_barrel_sewers_front.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Specter's Factory - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_sf_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Specter's Factory - Entry",
+        "img": "images/sr/sr_sf_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Specter's Factory - Main Factory",
+        "img": "images/sr/sr_sf_factory_outside.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Specter's Factory - RC Car Room",
+        "img": "images/sr/sr_sf_rc_car_factory.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Specter's Factory - Lava Room",
+        "img": "images/sr/sr_sf_lava_mech.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Specter's Factory - Triple Wheel Room",
+        "img": "images/sr/sr_sf_wheel_factory_bottom.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Specter's Factory - Conveyor Room",
+        "img": "images/sr/sr_sf_conveyor_lava.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Specter's Factory - Mech Room",
+        "img": "images/sr/sr_sf_mech_factory.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "TV Tower - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_tvt_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "TV Tower - Entry",
+        "img": "images/sr/sr_tvt_entry.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "TV Tower - Water Basement",
+        "img": "images/sr/sr_tvt_water_lobby.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "TV Tower - Lobby",
+        "img": "images/sr/sr_tvt_lobby_outside.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "TV Tower - Tank Room",
+        "img": "images/sr/sr_tvt_tank_lobby.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "TV Tower - Fan Room",
+        "img": "images/sr/sr_tvt_fan_tank.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Monkey Madness - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_mm_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Monkey Madness - Specter Land Hub",
+        "img": "images/sr/sr_mm_sl_hub.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Monkey Madness - Coaster Entry",
+        "img": "images/sr/sr_mm_coaster_entry_sl_hub.png",
+        "inherit_codes": false
+      },
+      //{
+      //  "name": "Monkey Madness - Coaster Room 1",
+      //  "img": "images/sr/sr_mm_coaster1_entry.png",
+      //  "inherit_codes": false
+      //},
+      //{
+      //  "name": "Monkey Madness - Coaster Room 2",
+      //  "img": "images/sr/sr_mm_coaster2_entry.png",
+      //  "inherit_codes": false
+      //},
+      {
+        "name": "Monkey Madness - Haunted House",
+        "img": "images/sr/sr_mm_haunted_house_disembark.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Monkey Madness - Coffin Room",
+        "img": "images/sr/sr_mm_coffin_haunted_house.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Monkey Madness - Western Land",
+        "img": "images/sr/sr_mm_western_sl_hub.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Monkey Madness - Crater",
+        "img": "images/sr/sr_mm_crater_sl_hub.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Monkey Madness - Outside Castle",
+        "img": "images/sr/sr_mm_outside_castle_crater.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Monkey Madness - Castle Main",
+        "img": "images/sr/sr_mm_castle_main_outside_castle.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Monkey Madness - Inside Climb",
+        "img": "images/sr/sr_mm_inside_climb_castle_main.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Monkey Madness - Outside Climb",
+        "img": "images/sr/sr_mm_outside_climb_inside_climb.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Monkey Madness - Monkey Head",
+        "img": "images/sr/sr_mm_monkey_head_castle_main.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Monkey Madness - Castle Side Entry",
+        "img": "images/sr/sr_mm_side_entry_outside_castle.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Peak Point Matrix - Destination Icon",
+    "type": "progressive",
+    "loop": false,
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "codes": "__sr_label, __sr_ppm_dst",
+    "stages": [
+      {
+        "name": "Unknown",
+        "img": "images/sr/sr_unknown_dst.png",
+        "inherit_codes": false
+      },
+      {
+        "name": "Peak Point Matrix - Entry",
+        "img": "images/sr/sr_ppm_entry.png",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "To",
+    "type": "label",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/er/er_arrow.png",
+    "codes": "__sr_arrow"
+  }
+]

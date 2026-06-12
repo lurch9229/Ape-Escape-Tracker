@@ -1,4 +1,5 @@
 -- time_station = apeescape_location.new("time_station")
+local TJ_ENTRANCE = apeescape_location.new("TJ_ENTRANCE")
 local TJ_ENTRY = apeescape_location.new("TJ_ENTRY")
 
 local TJ_ENTRY_MUSHROOM = apeescape_location.new("TJ_ENTRY_MUSHROOM")
@@ -14,8 +15,26 @@ local TJ_TENT_BOULDER = apeescape_location.new("TJ_TENT_BOULDER")
 local TJ_BOULDER_ENTRY = apeescape_location.new("TJ_BOULDER_ENTRY")
 local TJ_BOULDER_TENT = apeescape_location.new("TJ_BOULDER_TENT")
 
---TS Main Hub
-time_station:connect_one_way_entrance("Time Station - TJ",TJ_ENTRY,function() return TJ_Access() end)
+local start_rooms = {
+    TJ_ENTRY,          -- Stage 1 / Unknown (0)
+    TJ_MUSHROOM_ENTRY, -- Stage 2
+    TJ_FISH_ENTRY,     -- Stage 3
+    TJ_TENT_FISH,      -- Stage 4
+    TJ_BOULDER_TENT    -- Stage 5
+}
+
+-- 1. Main connection to the level hub
+time_station:connect_one_way_entrance("Time Station - TJ", TJ_ENTRANCE, function() return TJ_Access() end)
+
+-- 2. Localized inline loop to map the dynamic start rooms
+for stage_idx, room_node in ipairs(start_rooms) do
+    TJ_ENTRANCE:connect_one_way_entrance("TJ Start - Stage " .. stage_idx, room_node, function()
+        local current_stage = get_start_stage("tj")
+        if current_stage == 0 then current_stage = 1 end
+
+        return current_stage == stage_idx
+    end)
+end
 
 --Entrances
 TJ_ENTRY_MUSHROOM:connect_one_way_entrance("TJ_ENTRY_MUSHROOM_to_TJ_MUSHROOM_ENTRY",TJ_MUSHROOM_ENTRY,true)

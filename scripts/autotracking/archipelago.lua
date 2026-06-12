@@ -180,13 +180,23 @@ function onClear(slot_data)
 	if slot_data['entrance'] ~= nil then
         Tracker:FindObjectForCode("op_entrance").CurrentStage = slot_data['entrance']
     end
-
+    if slot_data['randomizestartingroom'] ~= nil then
+        Tracker:FindObjectForCode("op_rsr").CurrentStage = slot_data['randomizestartingroom']
+    end
 	if slot_data['lamp'] == 0 or slot_data["lamp"] == nil then
 		Tracker:FindObjectForCode("op_lamps").CurrentStage = 0
 	else
 		Tracker:FindObjectForCode("op_lamps").CurrentStage = 1
 	end
+    if slot_data['jacket'] == 0 or slot_data["jacket"] == nil then
+		Tracker:FindObjectForCode("op_jackets").CurrentStage = 0
+	else
+		Tracker:FindObjectForCode("op_jackets").CurrentStage = 1
+	end
+	if slot_data['trainingrooms'] ~= nil then
+		Tracker:FindObjectForCode("op_tr").CurrentStage = slot_data['trainingrooms']
 
+	end
 	Tracker:FindObjectForCode("ap_connected").Active = true
 
 	
@@ -259,6 +269,7 @@ function onItem(index, item_id, item_name, player_number)
         -- add snes interface functions here for local item tracking
     end
     setER()
+    setSR()
     worldUnlocks()
 end
 

@@ -1,4 +1,5 @@
 -- time_station = apeescape_location.new("time_station")
+local CR_ENTRANCE = apeescape_location.new("CR_ENTRANCE")
 local CR_ENTRY = apeescape_location.new("CR_ENTRY")
 
 local CR_ENTRY_SIDE_ROOM = apeescape_location.new("CR_ENTRY_SIDE_ROOM")
@@ -10,8 +11,25 @@ local CR_PILLAR_ROOM_MAIN_RUINS = apeescape_location.new("CR_PILLAR_ROOM_MAIN_RU
 
 local CR_ENTRYOBA = apeescape_location.new("CR_ENTRYOBA")
 
---TS Main Hub
-time_station:connect_one_way_entrance("Time Station - CR",CR_ENTRY,function() return CR_Access() end)
+local start_rooms = {
+    CR_ENTRY,                  -- Stage 1 / Unknown (0)
+    CR_SIDE_ROOM_ENTRY,        -- Stage 2
+    CR_MAIN_RUINS_ENTRY,       -- Stage 3
+    CR_PILLAR_ROOM_MAIN_RUINS  -- Stage 4
+}
+
+-- 1. Main connection to the level hub
+time_station:connect_one_way_entrance("Time Station - CR", CR_ENTRANCE, function() return CR_Access() end)
+
+-- 2. Localized inline loop to map the dynamic start rooms
+for stage_idx, room_node in ipairs(start_rooms) do
+    CR_ENTRANCE:connect_one_way_entrance("CR Start - Stage " .. stage_idx, room_node, function()
+        local current_stage = get_start_stage("cr")
+        if current_stage == 0 then current_stage = 1 end
+
+        return current_stage == stage_idx
+    end)
+end
 
 --Entrances
 CR_ENTRY_SIDE_ROOM:connect_one_way_entrance("CR_ENTRY_SIDE_ROOM_to_CR_SIDE_ROOM_ENTRY",CR_SIDE_ROOM_ENTRY,true)
@@ -98,6 +116,16 @@ CR_MAIN_RUINS_PILLAR_ROOM:connect_one_way("CR_C_Main Ruins",function()
                )
     return result
 
+end)
+
+--Jackets
+CR_MAIN_RUINS_PILLAR_ROOM:connect_one_way("CR_J_Main Ruins",function()
+    result = any(
+                Eval_Logic(((CanHitWheel() or HasFlyer()) and CanSwim()),0),
+                Eval_Logic(((CanHitWheel() and CanSwim()) or IJ() or HasFlyer()),1),
+                Eval_Logic(((CanHitWheel() and CanSwim()) or IJ() or HasHoop() or HasFlyer()),2)
+               )
+    return result
 end)
 
 --Mailboxes

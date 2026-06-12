@@ -26,7 +26,7 @@
                 "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
-                            "^$CanReach|DI_ENTRY"
+                            "^$CanReach|DI_ENTRANCE"
                         ],
                 "sections": [
                     {
@@ -195,7 +195,7 @@
                 ],
                 "access_rules": 
                         [
-                            "^$CanReach|DI_ENTRY"
+                            "^$CanReach|DI_ENTRANCE"
                         ],
                 "sections": [
                     {
@@ -264,7 +264,7 @@
                 ],
                 "access_rules": 
                         [
-                            "^$CanReach|DI_ENTRY"
+                            "^$CanReach|DI_ENTRANCE"
                         ],
                 "sections": [
                     {
@@ -333,6 +333,37 @@
                         [
                             "net, $CanHitOnce"
                         ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Dexters Island - Jackets",
+                "map_locations": [
+                    {
+                        "map": "Dexters_Island",
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "map": "Oceana",
+                        "x": 395,
+                        "y": 140
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 260,
+                        "y": 370
+                    }
+                ],
+                "access_rules": ["^$CanReach|DI_ENTRANCE"],
+                "sections": [
+                    {
+                        "name": "Tentacle Room",
+                        "chest_unopened_img": "images/icons/jacketOn.png",
+                        "chest_opened_img": "images/icons/jacketOff.png",
+                        "visibility_rules": ["shuffleJackets"],
+                        "access_rules": ["^$CanReach|DI_J_Tentacle Room"],
                         "item_count": 1
                     }
                 ]

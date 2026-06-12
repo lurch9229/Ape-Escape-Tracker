@@ -1,11 +1,27 @@
 -- time_station = apeescape_location.new("time_station")
+local CB_ENTRANCE = apeescape_location.new("CB_ENTRANCE")
 local CB_ENTRY = apeescape_location.new("CB_ENTRY")
 
 local CB_ENTRY_SECOND_ROOM = apeescape_location.new("CB_ENTRY_SECOND_ROOM")
 local CB_SECOND_ROOM_ENTRY = apeescape_location.new("CB_SECOND_ROOM_ENTRY")
 
---TS Main Hub
-time_station:connect_one_way_entrance("Time Station - CB",CB_ENTRY,function() return CB_Access() end)
+local start_rooms = {
+    CB_ENTRY,             -- Stage 1 / Unknown (0)
+    CB_SECOND_ROOM_ENTRY  -- Stage 2
+}
+
+-- 1. Main connection to the level hub
+time_station:connect_one_way_entrance("Time Station - CB", CB_ENTRANCE, function() return CB_Access() end)
+
+-- 2. Localized inline loop to map the dynamic start rooms
+for stage_idx, room_node in ipairs(start_rooms) do
+    CB_ENTRANCE:connect_one_way_entrance("CB Start - Stage " .. stage_idx, room_node, function()
+        local current_stage = get_start_stage("cb")
+        if current_stage == 0 then current_stage = 1 end
+
+        return current_stage == stage_idx
+    end)
+end
 
 --Entrances
 CB_ENTRY_SECOND_ROOM:connect_one_way_entrance("CB_ENTRY_SECOND_ROOM_to_CB_SECOND_ROOM_ENTRY",CB_SECOND_ROOM_ENTRY,true)

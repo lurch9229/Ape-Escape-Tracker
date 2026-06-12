@@ -275,7 +275,7 @@
       }
     ]
   },
-    {
+  {
     "name": "Lamps - Label",
     "type": "label",
     "initial_active_state": true,
@@ -300,6 +300,70 @@
         "name": "Lamps - On",
         "img": "images/settings/on.png",
         "codes": "op_lamps, op_lamps_on",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Jackets - Label",
+    "type": "label",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/settings/op_jackets.png",
+    "codes": "op_jackets_label"
+  },
+  {
+    "name": "Jackets",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "loop": false,
+    "stages": [
+      {
+        "name": "Jackets - Off",
+        "img": "images/settings/off.png",
+        "codes": "op_jackets, op_jackets_off",
+        "allow_disabled": false
+      },
+      {
+        "name": "Jackets - On",
+        "img": "images/settings/on.png",
+        "codes": "op_jackets, op_jackets_on, shuffleJackets",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Training Rooms - Label",
+    "type": "label",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/settings/op_trainingrooms.png",
+    "codes": "op_tr_label"
+  },
+  {
+    "name": "Training Rooms",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "loop": false,
+    "stages": [
+      {
+        "name": "Training Rooms - Off",
+        "img": "images/settings/off.png",
+        "codes": "op_tr, op_tr_off",
+        "allow_disabled": false
+      },
+      {
+        "name": "Training Rooms - Completion",
+        "img": "images/settings/op_tr_completion.png",
+        "codes": "op_tr, op_tr_completion",
+        "inherit_codes": false
+      },
+      {
+        "name": "Training Rooms - Mailboxes",
+        "img": "images/settings/op_tr_mailboxes.png",
+        "codes": "op_tr, op_tr_mailboxes",
         "inherit_codes": false
       }
     ]
@@ -355,15 +419,74 @@
         "allow_disabled": false
       },
 	  {
-        "name": "On",
-        "img": "images/settings/on.png",
-        "codes": "op_entrance, op_es_on",
+        "name": "Recommended",
+        "img": "images/settings/entrance_recommended.png",
+        "codes": "op_entrance, op_es_recommended",
+        "inherit_codes": false
+      },
+	  {
+        "name": "Levelshuffle",
+        "img": "images/settings/entrance_levelshuffle.png",
+        "codes": "op_entrance, op_es_levelshuffle",
         "inherit_codes": false
       },
       {
-        "name": "On - (Lock MM)",
-        "img": "images/settings/on-lockmm.png",
-        "codes": "op_entrance, op_es_lockmm",
+        "name": "Erashuffle",
+        "img": "images/settings/entrance_erashuffle.png",
+        "codes": "op_entrance, op_es_erashuffle",
+        "inherit_codes": false
+      },
+      {
+        "name": "Lockendgame",
+        "img": "images/settings/entrance_lockendgame.png",
+        "codes": "op_entrance, op_es_lockendgame",
+        "inherit_codes": false
+      },
+      {
+        "name": "Lockppm",
+        "img": "images/settings/entrance_lockppm.png",
+        "codes": "op_entrance, op_es_lockppm",
+        "inherit_codes": false
+      },
+      {
+        "name": "Goallevelfirst",
+        "img": "images/settings/entrance_goallevelfirst.png",
+        "codes": "op_entrance, op_es_recommended",
+        "inherit_codes": false
+      },
+      {
+        "name": "Custom",
+        "img": "images/settings/entrance_custom.png",
+        "codes": "op_entrance, op_es_custom",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "Random Starting Room - Label",
+    "type": "label",
+    "initial_active_state": true,
+    "allow_disabled": false,
+    "img": "images/settings/op_randomstartingroom.png",
+    "codes": "op_rsr_label"
+  },
+  {
+    "name": "Random Starting Room",
+    "type": "progressive",
+    "initial_stage_idx": 0,
+    "allow_disabled": false,
+    "loop": false,
+    "stages": [
+      {
+        "name": "Random Starting Room - Off",
+        "img": "images/settings/off.png",
+        "codes": "op_rsr, op_rsr_off",
+        "allow_disabled": false
+      },
+      {
+        "name": "Random Starting Room - On",
+        "img": "images/settings/on.png",
+        "codes": "op_rsr, op_rsr_on",
         "inherit_codes": false
       }
     ]
@@ -400,6 +523,24 @@
             },
             {
                 "img": "images/er/er_reset_all.png",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Reset All Starting Rooms to Default",
+        "type": "progressive",
+        "codes": "__sr_reset_all",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "loop": true,
+        "stages": [
+            {
+                "img": "images/sr/sr_reset_all.png",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/sr/sr_reset_all.png",
                 "inherit_codes": false
             }
         ]
@@ -449,6 +590,24 @@
             },
             {
                 "img": "images/er/er_load_ap.png",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Load starting rooms from AP",
+        "type": "progressive",
+        "codes": "__sr_load_ap",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "loop": true,
+        "stages": [
+            {
+                "img": "images/sr/sr_load_ap.png",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/sr/sr_load_ap.png",
                 "inherit_codes": false
             }
         ]

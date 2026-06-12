@@ -259,9 +259,22 @@ function resetER()
     end
 end
 
-function loadAP()
+function resetSR()
+	lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm","ppm"}
+	for index = 1, 22 do
+		Tracker:FindObjectForCode("__sr_"..lvl_list[index].."_dst").CurrentStage = 0
+    end
+end
+function loadAP(source)
 	resetworldUnlocks()
-	setER("loadAP")
+	if source == "__er_load_ap" then
+	    setER("loadAP")
+	elseif source == "__sr_load_ap" then
+	    setSR("loadAP")
+	else
+	    setER("loadAP")
+	    setSR("loadAP")
+	end
 	worldUnlocks()
 end
 
@@ -310,6 +323,80 @@ end
 
 
 
+local roomToStageIndex = nil
+local roomToLevelId = nil -- Added to track which level a room belongs to
+
+function setSR(source)
+    -- LAZY LOAD: Build the lookup tables the first time this function runs.
+    if roomToStageIndex == nil or roomToLevelId == nil then
+        roomToStageIndex = {}
+        roomToLevelId = {}
+        if roomsperlevel ~= nil then
+            for levelId, rooms in pairs(roomsperlevel) do
+                for index, roomId in ipairs(rooms) do
+                    -- Stage 0 is reserved for "Unknown", so the first room becomes Stage 1
+                    roomToStageIndex[roomId] = index
+                    roomToLevelId[roomId] = levelId -- Map room back to its level ID
+                end
+            end
+        else
+            print("ERROR: roomsperlevel is still nil inside setSR!")
+            return -- Abort to prevent crashing
+        end
+    end
+
+    local Auto_SR = Tracker:FindObjectForCode("__setting_auto_ent").CurrentStage
+    local reqKeys = getReqKeys()
+    local worldkeys = Tracker:ProviderCountForCode("keyWorld")
+
+    if SLOT_DATA ~= nil then
+        local lvl_list = { "ff", "po", "ml", "tj", "dr", "cr", "sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm", "ppm" }
+
+        -- Create a reverse lookup table: Level ID -> Physical Entrance Slot Index
+        local levelIdToSlot = {}
+        if SLOT_DATA['entranceids'] ~= nil then
+            for slot_k, lvl_v in pairs(SLOT_DATA['entranceids']) do
+                levelIdToSlot[lvl_v] = slot_k
+            end
+        end
+
+        if SLOT_DATA['firstrooms'] ~= nil then
+            -- Iterate through the randomized starting rooms directly
+            for _, roomId in pairs(SLOT_DATA['firstrooms']) do
+                local stage_value = roomToStageIndex[roomId]
+                local levelId = roomToLevelId[roomId]
+
+                if stage_value ~= nil and levelId ~= nil then
+                    -- Convert internal level ID to vanilla 1-22 index for acronym lookup
+                    local target_level_idx = levelsIdsToIndex[levelId]
+                    local level_acronym = lvl_list[target_level_idx]
+
+                    if level_acronym ~= nil then
+                        if Auto_SR == 1 then
+                            -- Find which physical entrance slot currently holds this level
+                            local physical_slot = levelIdToSlot[levelId]
+
+                            -- Fallback safety: if entranceids is missing, default to vanilla index
+                            local final_slot_index = physical_slot or target_level_idx
+
+                            -- Check keys against the actual physical slot order
+                            if worldkeys >= reqKeys[final_slot_index] then
+                                Tracker:FindObjectForCode("__sr_"..level_acronym.."_dst").CurrentStage = stage_value
+                            else
+                                -- Reverts to Stage 0 ("Unknown") if keys aren't met
+                                Tracker:FindObjectForCode("__sr_"..level_acronym.."_dst").CurrentStage = 0
+                            end
+
+                        elseif Auto_SR == 2 then
+                            -- Set starting rooms mapping ignoring logic checks
+                            Tracker:FindObjectForCode("__sr_"..level_acronym.."_dst").CurrentStage = stage_value
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
 
 function apItemLayoutChange()
   local waternet = Tracker:FindObjectForCode("op_waternet")
@@ -398,6 +485,7 @@ ScriptHost:AddWatchForCode("useApLayout", "op_waternet", apItemLayoutChange)
 --ScriptHost:AddWatchForCode("useApLayout2", "op_lamps", apLevelsLayoutChange)
 ScriptHost:AddWatchForCode("worldkey handler", "keyWorld", worldUnlocks)
 ScriptHost:AddWatchForCode("worldkey handler2", "keyWorld", setER)
+ScriptHost:AddWatchForCode("worldkey handler3", "keyWorld", setSR)
 ScriptHost:AddWatchForCode("op_coins handler", "op_coins", worldUnlocks)
 
 lvl_list = {"ff", "po", "ml", "tj", "dr", "cr","sa", "cb", "cc", "di", "sm", "fr", "hs", "ga", "st", "wsw", "crc", "cp", "sf", "tvt", "mm","ppm"}
@@ -410,4 +498,6 @@ ScriptHost:AddWatchForCode("op_keys switch", "op_keyoption", worldUnlocks)
 
 ScriptHost:AddWatchForCode("Clear entrances (ER)", "__er_clear", clearER)
 ScriptHost:AddWatchForCode("Reset entrances (ER)", "__er_reset_all", resetER)
+ScriptHost:AddWatchForCode("Reset entrances (SR)", "__sr_reset_all", resetSR)
 ScriptHost:AddWatchForCode("Load from AP (ER)", "__er_load_ap", loadAP)
+ScriptHost:AddWatchForCode("Load from AP (SR)", "__sr_load_ap", loadAP)

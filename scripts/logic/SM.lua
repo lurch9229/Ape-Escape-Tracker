@@ -1,9 +1,24 @@
 -- time_station = apeescape_location.new("time_station")
+local SM_ENTRANCE = apeescape_location.new("SM_ENTRANCE")
 local SM_ENTRY = apeescape_location.new("SM_ENTRY")
 --local ts_minigame = apeescape_location.new("ts_minigame")
 
---TS Main Hub
-time_station:connect_one_way_entrance("Time Station - SM",SM_ENTRY,function() return SM_Access() end)
+local start_rooms = {
+    SM_ENTRY -- Stage 1 / Unknown (0)
+}
+
+-- 1. Main connection to the level hub
+time_station:connect_one_way_entrance("Time Station - SM", SM_ENTRANCE, function() return SM_Access() end)
+
+-- 2. Localized inline loop to map the dynamic start rooms
+for stage_idx, room_node in ipairs(start_rooms) do
+    SM_ENTRANCE:connect_one_way_entrance("SM Start - Stage " .. stage_idx, room_node, function()
+        local current_stage = get_start_stage("sm")
+        if current_stage == 0 then current_stage = 1 end
+
+        return current_stage == stage_idx
+    end)
+end
 --Entrances (None,One room level)
 
 --Monkeys

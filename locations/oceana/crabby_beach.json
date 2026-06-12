@@ -27,7 +27,7 @@
                 "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
-                            "^$CanReach|CB_ENTRY"
+                            "^$CanReach|CB_ENTRANCE"
                         ],
                 "sections": [
                     {
@@ -157,7 +157,7 @@
                 ],
                 "access_rules": 
                         [
-                            "^$CanReach|CB_ENTRY"
+                            "^$CanReach|CB_ENTRANCE"
                         ],
                 "sections": [
                     {
@@ -197,7 +197,7 @@
                 ],
                 "access_rules": 
                         [
-                            "^$CanReach|CB_ENTRY"
+                            "^$CanReach|CB_ENTRANCE"
                         ],
                 "sections": [
                     {

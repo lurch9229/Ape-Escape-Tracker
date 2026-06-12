@@ -1,4 +1,5 @@
 -- time_station = apeescape_location.new("time_station")
+local TVT_ENTRANCE = apeescape_location.new("TVT_ENTRANCE")
 local TVT_ENTRY = apeescape_location.new("TVT_ENTRY")
 
 local TVT_OUTSIDE_LOBBY = apeescape_location.new("TVT_OUTSIDE_LOBBY")
@@ -14,8 +15,26 @@ local TVT_BOSS_TANK = apeescape_location.new("TVT_BOSS_TANK")
 
 
 
---TS Main Hub
-time_station:connect_one_way_entrance("Time Station - TVT",TVT_ENTRY,function() return TVT_Access() end)
+local start_rooms = {
+    TVT_ENTRY,          -- Stage 1 / Unknown (0)
+    TVT_WATER_LOBBY,    -- Stage 2
+    TVT_LOBBY_OUTSIDE,  -- Stage 3
+    TVT_TANK_LOBBY,     -- Stage 4
+    TVT_FAN_TANK        -- Stage 5
+}
+
+-- 1. Main connection to the level hub
+time_station:connect_one_way_entrance("Time Station - TVT", TVT_ENTRANCE, function() return TVT_Access() end)
+
+-- 2. Localized inline loop to map the dynamic start rooms
+for stage_idx, room_node in ipairs(start_rooms) do
+    TVT_ENTRANCE:connect_one_way_entrance("TVT Start - Stage " .. stage_idx, room_node, function()
+        local current_stage = get_start_stage("tvt")
+        if current_stage == 0 then current_stage = 1 end
+
+        return current_stage == stage_idx
+    end)
+end
 
 --Entrances
 TVT_OUTSIDE_LOBBY:connect_one_way_entrance("TVT_OUTSIDE_LOBBY_to_TVT_LOBBY_OUTSIDE",TVT_LOBBY_OUTSIDE,true)
@@ -62,7 +81,7 @@ TVT_TANK_BOSS:connect_one_way_entrance("TVT_TANK_BOSS_to_TVT_TANK_LOBBY",TVT_TAN
 --Monkeys
 
 --Outside
-TVT_ENTRY:connect_one_way("TVT_Fredo",function() return HasPunch() and HasNet() end)
+TVT_OUTSIDE_LOBBY:connect_one_way("TVT_Fredo",function() return HasPunch() and HasNet() end)
 
 --Basement
 TVT_WATER_LOBBY:connect_one_way("TVT_Charlee",function()

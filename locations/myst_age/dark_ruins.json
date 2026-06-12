@@ -27,7 +27,7 @@
                 "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
-                            "^$CanReach|DR_ENTRY"
+                            "^$CanReach|DR_ENTRANCE"
                         ],
                 "sections": [
                     {
@@ -226,7 +226,7 @@
                 ],
                 "access_rules": 
                         [
-                            "^$CanReach|DR_ENTRY"
+                            "^$CanReach|DR_ENTRANCE"
                         ],
                 "sections": [
                     {
@@ -309,7 +309,7 @@
                 ],
                 "access_rules": 
                         [
-                            "^$CanReach|DR_ENTRY"
+                            "^$CanReach|DR_ENTRANCE"
                         ],
                 "sections": [
                     {
@@ -423,6 +423,45 @@
                             "net, op_no_ij",
                             "net, op_et"
                         ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Dark Ruins - Jackets",
+                "map_locations": [
+                    {
+                        "map": "Dark_Ruins",
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "map": "Mysterious_Age",
+                        "x": 265,
+                        "y": 195
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 140,
+                        "y": 230
+                    }
+                ],
+                "access_rules": ["^$CanReach|DR_ENTRANCE"],
+                "sections": [
+                    {
+                        "name": "Obelisk Inside",
+                        "chest_unopened_img": "images/icons/jacketOn.png",
+                        "chest_opened_img": "images/icons/jacketOff.png",
+                        "visibility_rules": ["shuffleJackets"],
+                        "access_rules": ["^$CanReach|DR_J_Obelisk Inside"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Water Basement",
+                        "chest_unopened_img": "images/icons/jacketOn.png",
+                        "chest_opened_img": "images/icons/jacketOff.png",
+                        "visibility_rules": ["shuffleJackets"],
+                        "access_rules": ["^$CanReach|DR_J_Water Basement"],
                         "item_count": 1
                     }
                 ]

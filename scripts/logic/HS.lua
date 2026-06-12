@@ -1,4 +1,5 @@
 -- time_station = apeescape_location.new("time_station")
+local HS_ENTRANCE = apeescape_location.new("HS_ENTRANCE")
 local HS_ENTRY = apeescape_location.new("HS_ENTRY")
 
 local HS_ENTRY_HOT_SPRING = apeescape_location.new("HS_ENTRY_HOT_SPRING")
@@ -6,8 +7,40 @@ local HS_ENTRY_POLAR_BEAR_CAVE = apeescape_location.new("HS_ENTRY_POLAR_BEAR_CAV
 local HS_HOT_SPRING = apeescape_location.new("HS_HOT_SPRING")
 local HS_POLAR_BEAR_CAVE = apeescape_location.new("HS_POLAR_BEAR_CAVE")
 
---TS Main Hub
-time_station:connect_one_way_entrance("Time Station - HS",HS_ENTRY,function() return HS_Access() end)
+local start_rooms = {
+    HS_ENTRY,             -- Stage 1 / Unknown (0)
+    HS_HOT_SPRING,        -- Stage 2
+    HS_POLAR_BEAR_CAVE    -- Stage 3
+}
+
+local start_rooms = {
+    HS_ENTRY,             -- Stage 1 / Unknown (0)
+    HS_HOT_SPRING,        -- Stage 2
+    HS_POLAR_BEAR_CAVE    -- Stage 3
+}
+
+-- 1. Main connection to the level hub
+time_station:connect_one_way_entrance("Time Station - HS", HS_ENTRANCE, function() return HS_Access() end)
+
+-- 2. Localized inline loop to map the dynamic start rooms
+for stage_idx, room_node in ipairs(start_rooms) do
+    HS_ENTRANCE:connect_one_way_entrance("HS Start - Stage " .. stage_idx, room_node, function()
+        local current_stage = get_start_stage("hs")
+        if current_stage == 0 then current_stage = 1 end
+
+        return current_stage == stage_idx
+    end)
+end
+
+-- 2. Localized inline loop to map the dynamic start rooms
+for stage_idx, room_node in ipairs(start_rooms) do
+    HS_ENTRANCE:connect_one_way_entrance("HS Start - Stage " .. stage_idx, room_node, function()
+        local current_stage = get_start_stage("hs")
+        if current_stage == 0 then current_stage = 1 end
+
+        return current_stage == stage_idx
+    end)
+end
 
 --Entrances
 
@@ -82,6 +115,23 @@ HS_POLAR_BEAR_CAVE:connect_one_way("HS_C_Polar Bear Cave",function()
                )
     return result
 
+end)
+
+--Jackets
+HS_ENTRY_HOT_SPRING:connect_one_way("HS_J_Entry",function() return CanSwim() end)
+HS_HOT_SPRING:connect_one_way("HS_J_Hot Spring",function()
+    result = any(
+                Eval_Logic(HasFlyer(),0),
+                Eval_Logic((HasFlyer() or IJ()),1)
+               )
+    return result
+end)
+HS_POLAR_BEAR_CAVE:connect_one_way("HS_J_Polar Bear Cave",function()
+    result = any(
+                Eval_Logic(CanHitMultiple(),0),
+                Eval_Logic((CanHitMultiple() or IJ() or SuperFlyer(HS_POLAR_BEAR_CAVE,1)),1)
+               )
+    return result
 end)
 
 --Mailboxes

@@ -1,4 +1,5 @@
 -- time_station = apeescape_location.new("time_station")
+local MM_ENTRANCE = apeescape_location.new("MM_ENTRANCE")
 local MM_SL_HUB = apeescape_location.new("MM_SL_HUB")
 
 local MM_SL_HUB_WESTERN = apeescape_location.new("MM_SL_HUB_WESTERN")
@@ -38,8 +39,36 @@ local MM_COASTER_ENTRY_DISEMBARK = apeescape_location.new("MM_COASTER_ENTRY_DISE
 local MM_SPECTER1_ROOM = apeescape_location.new("MM_SPECTER1_ROOM")
 local MM_CASTLE_MAIN_FROM_OUTSIDE = apeescape_location.new("MM_CASTLE_MAIN_FROM_OUTSIDE")
 
---TS Main Hub
-time_station:connect_one_way_entrance("Time Station - MM",MM_SL_HUB,function() return MM_Access() end)
+local start_rooms = {
+    MM_SL_HUB,                        -- Stage 1 / Unknown (0)
+    MM_COASTER_ENTRY_SL_HUB,          -- Stage 2
+    MM_HAUNTED_HOUSE_DISEMBARK,       -- Stage 3
+    MM_COFFIN_HAUNTED_HOUSE,          -- Stage 4
+    MM_WESTERN_SL_HUB,                -- Stage 5
+    MM_CRATER_SL_HUB,                 -- Stage 6
+    MM_OUTSIDE_CASTLE_CRATER,         -- Stage 7
+    MM_CASTLE_MAIN_OUTSIDE_CASTLE,    -- Stage 8
+    MM_INSIDE_CLIMB_CASTLE_MAIN,      -- Stage 9
+    MM_OUTSIDE_CLIMB_INSIDE_CLIMB,    -- Stage 10
+    MM_MONKEY_HEAD_CASTLE_MAIN,       -- Stage 11
+    MM_SIDE_ENTRY_OUTSIDE_CASTLE      -- Stage 12
+}
+
+-- 1. Main connection to the level hub
+time_station:connect_one_way_entrance("Time Station - MM", MM_ENTRANCE, function() return MM_Access() end)
+
+-- 2. Localized inline loop to map the dynamic start rooms
+for stage_idx, room_node in ipairs(start_rooms) do
+    MM_ENTRANCE:connect_one_way_entrance("MM Start - Stage " .. stage_idx, room_node, function()
+        local current_stage = get_start_stage("mm")
+        if current_stage == 0 then current_stage = 1 end
+
+        return current_stage == stage_idx
+    end)
+end
+
+--MM_ENTRY:connect_one_way_entrance("MM_ENTRY_to_MM_SL_HUB",MM_SL_HUB,true)
+
 
 --Entrances
 MM_SL_HUB_WESTERN:connect_one_way_entrance("MM_SL_HUB_WESTERN_to_MM_WESTERN_SL_HUB",MM_WESTERN_SL_HUB,true)
@@ -116,14 +145,26 @@ end)
 -- Castle Outside
 MM_OUTSIDE_CASTLE_CRATER:connect_one_way_entrance("MM_OUTSIDE_CASTLE_CRATER_to_MM_OUTSIDE_CASTLE_SIDE_ENTRY",MM_OUTSIDE_CASTLE_SIDE_ENTRY,true)
 MM_OUTSIDE_CASTLE_CRATER:connect_one_way_entrance("MM_OUTSIDE_CASTLE_CRATER_to_MM_OUTSIDE_CASTLE_CASTLE_MAIN",MM_OUTSIDE_CASTLE_CASTLE_MAIN,function() return MM_Lamp() end)
-MM_OUTSIDE_CASTLE_SIDE_ENTRY:connect_one_way_entrance("MM_OUTSIDE_CASTLE_SIDE_ENTRY_to_MM_OUTSIDE_CASTLE_CRATER",MM_OUTSIDE_CASTLE_CRATER,true)
-MM_OUTSIDE_CASTLE_CASTLE_MAIN:connect_one_way_entrance("MM_OUTSIDE_CASTLE_CASTLE_MAIN_to_MM_OUTSIDE_CASTLE_CRATER",MM_OUTSIDE_CASTLE_CRATER,true)
+MM_OUTSIDE_CASTLE_SIDE_ENTRY:connect_one_way_entrance("MM_OUTSIDE_CASTLE_SIDE_ENTRY_to_MM_OUTSIDE_CASTLE_CRATER", MM_OUTSIDE_CASTLE_CRATER, function()
+    result = any(
+                Eval_Logic((HasFlyer()), 0),
+                Eval_Logic((true), 1)
+               )
+    return result
 
+end)
+MM_OUTSIDE_CASTLE_CASTLE_MAIN:connect_one_way_entrance("MM_OUTSIDE_CASTLE_CASTLE_MAIN_to_MM_OUTSIDE_CASTLE_CRATER", MM_OUTSIDE_CASTLE_CRATER, function()
+    result = any(
+                Eval_Logic((HasFlyer()), 0),
+                Eval_Logic((true), 1)
+               )
+    return result
+
+end)
 --Castle Foyer
 MM_OUTSIDE_CASTLE_CASTLE_MAIN:connect_one_way_entrance("MM_OUTSIDE_CASTLE_CASTLE_MAIN_to_MM_CASTLE_MAIN_MONKEY_HEAD",MM_CASTLE_MAIN_MONKEY_HEAD,function()
     result = any(
-                Eval_Logic((HasHoop() and HasRC()),0),
-                Eval_Logic((HasRC()),2)
+                Eval_Logic((HasHoop() and HasRC()),0)
                )
     return result
 
@@ -368,3 +409,29 @@ MM_SIDE_ENTRY_OUTSIDE_CASTLE:connect_one_way("MM_C_Side Entry",function()
 end)
 --Mailboxes
 MM_COASTER_ENTRY_SL_HUB:connect_one_way("MM_M_The Terror Coaster",true)
+
+--Jackets
+MM_COASTER1_ENTRY:connect_one_way("MM_J_Coaster (Room 1)",function() return true end)
+MM_CASTLE_MAIN_OUTSIDE_CASTLE:connect_one_way("MM_J_Castle Main (Green Alcove)",function() return true end)
+MM_CASTLE_MAIN_OUTSIDE_CASTLE:connect_one_way("MM_J_Castle Main (Below Coin)",function() return CanHitOnce() end)
+MM_INSIDE_CLIMB_CASTLE_MAIN:connect_one_way("MM_J_Inside Climb (Respawning)",function() return CanHitOnce() end)
+MM_INSIDE_CLIMB_CASTLE_MAIN:connect_one_way("MM_J_Inside Climb (Balance Beam)",function() return true end)
+MM_INSIDE_CLIMB_CASTLE_MAIN:connect_one_way("MM_J_Inside Climb (Top Chain Link)",function() return true end)
+MM_OUTSIDE_CLIMB_INSIDE_CLIMB:connect_one_way("MM_J_Outside Climb (Respawning)",function() return CanHitOnce() end)
+MM_OUTSIDE_CLIMB_INSIDE_CLIMB:connect_one_way("MM_J_Outside Climb (Above Barrels)",function()
+    result = any(
+                Eval_Logic(HasFlyer(),0),
+                Eval_Logic((HasFlyer() or IJ() or HasHoop()),1)
+               )
+    return result
+end)
+MM_MONKEY_HEAD_CASTLE_MAIN:connect_one_way("MM_J_Monkey Head (By Wheel)",function() return true end)
+MM_MONKEY_HEAD_CASTLE_MAIN:connect_one_way("MM_J_Monkey Head (Secret Room)",function()
+    result = any(
+                Eval_Logic((HasSling() and HasFlyer()),0),
+                Eval_Logic((HasClub() or HasSling() or HasPunch() or HasFlyer()),1),
+                Eval_Logic((CanHitWheel() or HasFlyer()),2)
+               )
+    return result
+end)
+MM_SPECTER1_ROOM:connect_one_way("MM_J_Specter 1 Room (Respawning)",function() return CanHitOnce() end)

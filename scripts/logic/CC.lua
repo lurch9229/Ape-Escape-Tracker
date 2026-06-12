@@ -1,4 +1,5 @@
 -- time_station = apeescape_location.new("time_station")
+local CC_ENTRANCE = apeescape_location.new("CC_ENTRANCE")
 local CC_ENTRY = apeescape_location.new("CC_ENTRY")
 
 local CC_ENTRY_CASTLE = apeescape_location.new("CC_ENTRY_CASTLE")
@@ -21,8 +22,27 @@ local CC_BUTTON_BASEMENT_WATER = apeescape_location.new("CC_BUTTON_BASEMENT_WATE
 local CC_BUTTON_BASEMENT_LEDGE = apeescape_location.new("CC_BUTTON_BASEMENT_LEDGE")
 local CC_BOSS_ROOM = apeescape_location.new("CC_BOSS_ROOM")
 
---TS Main Hub
-time_station:connect_one_way_entrance("Time Station - CC",CC_ENTRY,function() return CC_Access() end)
+local start_rooms = {
+    CC_ENTRY,            -- Stage 1 / Unknown (0)
+    CC_CASTLEMAIN_ENTRY,      -- Stage 2
+    CC_BASEMENT_ENTRY, -- Stage 3
+    CC_BUTTON_BASEMENT_WATER,      -- Stage 4
+    CC_ELEVATOR_CASTLEMAIN,    -- Stage 5
+    CC_BELL_ENTRY        -- Stage 6
+}
+
+-- 1. Main connection to the level hub
+time_station:connect_one_way_entrance("Time Station - CC", CC_ENTRANCE, function() return CC_Access() end)
+
+-- 2. Localized inline loop to map the dynamic start rooms
+for stage_idx, room_node in ipairs(start_rooms) do
+    CC_ENTRANCE:connect_one_way_entrance("CC Start - Stage " .. stage_idx, room_node, function()
+        local current_stage = get_start_stage("crc")
+        if current_stage == 0 then current_stage = 1 end
+
+        return current_stage == stage_idx
+    end)
+end
 
 --Entrances
 CC_ENTRY_CASTLE:connect_one_way_entrance("CC_ENTRY_CASTLE_to_CC_CASTLEMAIN_ENTRY",CC_CASTLEMAIN_ENTRY,true)
@@ -88,11 +108,9 @@ end)
 CC_CASTLEMAIN_ELEVATOR:connect_one_way_entrance("CC_CASTLEMAIN_ELEVATOR_to_CC_CASTLEMAINTHRONEROOM",CC_CASTLEMAINTHRONEROOM,function()
     result = any(
                 Eval_Logic((HasFlyer() and CRC_Lamp()),0),
-                Eval_Logic(( SuperFlyer(CC_CASTLEMAIN_ELEVATOR,1)),1)
-                --Eval_Logic(((HasFlyer() and CRC_Lamp()) or IJ() or SuperFlyer(CC_CASTLEMAIN_ELEVATOR,1)),1)
+                Eval_Logic(((HasFlyer() and CRC_Lamp()) or IJ() or SuperFlyer(CC_CASTLEMAIN_ELEVATOR,1)),1)
                )
     return result
-
 end)
 CC_BELL_CASTLE:connect_one_way_entrance("CC_BELL_CASTLE_to_CC_BELL_ENTRY",CC_BELL_ENTRY,function() return CanHitWheel() or HasFlyer() end)
 CC_BELL_ENTRY:connect_one_way_entrance("CC_BELL_ENTRY_to_CC_BELL_CASTLE",CC_BELL_CASTLE,true)
@@ -172,6 +190,7 @@ CC_BASEMENT_ELEVATOR:connect_one_way("CC_Deveneom",function()
     return result
 
 end)
+CC_BASEMENT_BUTTON_DOWN:connect_one_way("CC_Deveneom2",function() return HasNet() or HasWaterNet() end)
 CC_BUTTON_BASEMENT_WATER:connect_one_way("CC_Astur",function() return HasNet() end)
 CC_BUTTON_BASEMENT_WATER:connect_one_way("CC_Kilserack",function() return HasNet() or (HasWaterNet() and CanDive()) end)
 CC_ELEVATOR_CASTLEMAIN:connect_one_way("CC_Ringo",function() return HasNet() end)
@@ -203,6 +222,9 @@ CC_ENTRY_BELL:connect_one_way("CC_C_Outside",true)
 CC_CASTLEMAINTHRONEROOM:connect_one_way("CC_C_Castle Main",true)
 CC_BUTTON_BASEMENT_WATER:connect_one_way("CC_C_Button Room",true)
 CC_ELEVATOR_CASTLEMAIN:connect_one_way("CC_C_Elevator Room",true)
+
+--Jackets
+CC_BASEMENT_BUTTON_UP:connect_one_way("CC_J_Flooded Basement",function() return true end)
 
 --Mailboxes
 CC_ENTRY:connect_one_way("CC_M_Think Clearly",function() return CanHitOnce() end)

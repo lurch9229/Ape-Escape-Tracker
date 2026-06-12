@@ -28,7 +28,7 @@
                     ""
                 ],
                 "access_rules": [
-                    "^$CanReach|PO_Entry"
+                    "^$CanReach|PO_ENTRANCE"
                 ],
                 "sections": [
                     {
@@ -122,7 +122,7 @@
                     "shuffleCoins"
                 ],
                 "access_rules": [
-                    "^$CanReach|PO_Entry"
+                    "^$CanReach|PO_ENTRANCE"
                 ],
                 "sections": [
                     {
@@ -162,7 +162,7 @@
                     "shuffleMailbox"
                 ],
                 "access_rules": [
-                    "^$CanReach|PO_Entry"
+                    "^$CanReach|PO_ENTRANCE"
                 ],
                 "sections": [
                     {

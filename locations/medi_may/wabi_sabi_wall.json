@@ -28,7 +28,7 @@
                 "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
-                            "^$CanReach|WSW_ENTRY"
+                            "^$CanReach|WSW_ENTRANCE"
                         ],
                 "sections": [
                     {
@@ -185,7 +185,7 @@
                 ],
                 "access_rules": 
                         [
-                            "^$CanReach|WSW_ENTRY"
+                            "^$CanReach|WSW_ENTRANCE"
                         ],
                 "sections": [
                     {
@@ -253,7 +253,7 @@
                 ],
                 "access_rules": 
                         [
-                            "^$CanReach|WSW_ENTRY"
+                            "^$CanReach|WSW_ENTRANCE"
                         ],
                 "sections": [
                     {
@@ -327,394 +327,32 @@
                 ]
             },
             {
-                "name": "Islands - Monkey",
+                "name": "Wabi Sabi Wall - Jackets",
                 "map_locations": [
                     {
                         "map": "Wabi_Sabi_Wall",
                         "x": 0,
                         "y": 0
+                    },
+                    {
+                        "map": "Medieval_Mayhem",
+                        "x": 245,
+                        "y": 180
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 505,
+                        "y": 230
                     }
                 ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
+                "access_rules": ["^$CanReach|WSW_ENTRANCE"],
                 "sections": [
                     {
-                        "name": "Minky",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "On The Wall - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Wabi_Sabi_Wall",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Zobbro",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Gong Room 1st - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Wabi_Sabi_Wall",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Xeeto",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Gong Room 2nd - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Wabi_Sabi_Wall",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Moops",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Gong Room 3rd - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Wabi_Sabi_Wall",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Zanabi",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Middle Room - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Wabi_Sabi_Wall",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Doxs",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "WSW_ThirdRoom"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Obstacle Course  - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Wabi_Sabi_Wall",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Buddha",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                           "WSW_ThirdRoom, WSW_ForthRoom"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Car Cage  - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Wabi_Sabi_Wall",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Fooey",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "WSW_ThirdRoom, RCMonkey"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "By UFO  - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Wabi_Sabi_Wall",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Kong",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "WSW_ThirdRoom, WSW_ForthRoom, sling"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Archway  - Monkey",
-                "map_locations": [
-                    {
-                        "map": "Wabi_Sabi_Wall",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Phool",
-                        "visibility_rules": 
-                        [
-                            "disabled"
-                        ],
-                        "access_rules": 
-                        [
-                            "WSW_ThirdRoom, WSW_ForthRoom, sling"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Wabi Sabi Wall - First Room - Specter Coin",
-                "map_locations": [
-                    {
-                        "map": "Wabi_Sabi_Wall",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Coin 1",
-                        "visibility_rules": 
-                        [
-                            "disabled, shuffleCoins"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Wabi Sabi Wall - Gong Room - Specter Coin",
-                "map_locations": [
-                    {
-                        "map": "Wabi_Sabi_Wall",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Coin 2",
-                        "visibility_rules": 
-                        [
-                            "disabled, shuffleCoins"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Wabi Sabi Wall - Barrel Room - Specter Coin",
-                "map_locations": [
-                    {
-                        "map": "Wabi_Sabi_Wall",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Coin 3",
-                        "visibility_rules": 
-                        [
-                            "disabled, shuffleCoins"
-                        ],
-                        "access_rules": 
-                        [
-                            "flyer"
-                        ],
-                        "item_count": 1
-                    }
-                ]
-            },
-            {
-                "name": "Wabi Sabi Wall - Time Attack",
-                "map_locations": [
-                    {
-                        "map": "Wabi_Sabi_Wall",
-                        "x": 0,
-                        "y": 0
-                    }
-                ],
-                "access_rules": 
-                        [
-                            ""
-                        ],
-                "sections": [
-                    {
-                        "name": "Beat 0:0:0",
-                        "visibility_rules": 
-                        [
-                            "disabled",
-                            "shuffleTT"
-                        ],
-                        "access_rules": 
-                        [
-                            ""
-                        ],
+                        "name": "Barrel Room",
+                        "chest_unopened_img": "images/icons/jacketOn.png",
+                        "chest_opened_img": "images/icons/jacketOff.png",
+                        "visibility_rules": ["shuffleJackets"],
+                        "access_rules": ["^$CanReach|WSW_J_Barrel Room"],
                         "item_count": 1
                     }
                 ]

@@ -1,4 +1,5 @@
 -- time_station = apeescape_location.new("time_station")
+local SF_ENTRANCE = apeescape_location.new("SF_ENTRANCE")
 local SF_ENTRY = apeescape_location.new("SF_ENTRY")
 
 local SF_OUTSIDE_FACTORY = apeescape_location.new("SF_OUTSIDE_FACTORY")
@@ -30,8 +31,28 @@ local SF_CONVEYOR5_EXIT = apeescape_location.new("SF_CONVEYOR5_EXIT")
 local SF_CONVEYOR6_EXIT = apeescape_location.new("SF_CONVEYOR6_EXIT")
 
 
---TS Main Hub
-time_station:connect_one_way_entrance("Time Station - SF",SF_ENTRY,function() return SF_Access() end)
+local start_rooms = {
+    SF_ENTRY,                 -- Stage 1 / Unknown (0)
+    SF_FACTORY_OUTSIDE,       -- Stage 2
+    SF_RC_CAR_FACTORY,        -- Stage 3
+    SF_LAVA_MECH,             -- Stage 4
+    SF_WHEEL_FACTORY_BOTTOM,  -- Stage 5
+    SF_CONVEYOR_LAVA,         -- Stage 6
+    SF_MECH_FACTORY           -- Stage 7
+}
+
+-- 1. Main connection to the level hub
+time_station:connect_one_way_entrance("Time Station - SF", SF_ENTRANCE, function() return SF_Access() end)
+
+-- 2. Localized inline loop to map the dynamic start rooms
+for stage_idx, room_node in ipairs(start_rooms) do
+    SF_ENTRANCE:connect_one_way_entrance("SF Start - Stage " .. stage_idx, room_node, function()
+        local current_stage = get_start_stage("sf")
+        if current_stage == 0 then current_stage = 1 end
+
+        return current_stage == stage_idx
+    end)
+end
 
 --Entrances
 SF_OUTSIDE_FACTORY:connect_one_way_entrance("SF_OUTSIDE_FACTORY_to_SF_FACTORY_OUTSIDE",SF_FACTORY_OUTSIDE,true)
@@ -61,8 +82,14 @@ SF_CONVEYOR7_ENTRY:connect_one_way_entrance("SF_CONVEYOR7_ENTRY_to_SF_CONVEYOR6_
 
 --Outside
 SF_ENTRY:connect_one_way_entrance("SF_ENTRY_to_SF_OUTSIDE_FACTORY",SF_OUTSIDE_FACTORY,true)
-SF_OUTSIDE_FACTORY:connect_one_way_entrance("SF_OUTSIDE_FACTORY_to_SF_ENTRY",SF_ENTRY,function() return HasFlyer() or HasPunch() end)
+SF_OUTSIDE_FACTORY:connect_one_way_entrance("SF_OUTSIDE_FACTORY_to_SF_ENTRY", SF_ENTRY, function()
+    result = any(
+                Eval_Logic((HasFlyer() or HasPunch()), 0),
+                Eval_Logic((HasFlyer() or HasPunch() or IJ()), 1)
+               )
+    return result
 
+end)
 --Main Factory
 SF_FACTORY_OUTSIDE:connect_one_way_entrance("SF_FACTORY_OUTSIDE_to_SF_FACTORY_RC_CAR",SF_FACTORY_RC_CAR,true)
 SF_FACTORY_WHEEL_BOTTOM:connect_one_way_entrance("SF_FACTORY_WHEEL_BOTTOM_to_SF_FACTORY_RC_CAR",SF_FACTORY_RC_CAR,true)
@@ -220,3 +247,7 @@ end)
 
 --Mailboxes
 SF_ENTRY:connect_one_way("SF_M_Hop In The Tank",true)
+
+--Jackets
+SF_WHEEL_FACTORY_TOP:connect_one_way("SF_J_Triple Wheel Room",function() return true end)
+SF_CONVEYOR_LAVA:connect_one_way("SF_J_Conveyor Room",function() return true end)

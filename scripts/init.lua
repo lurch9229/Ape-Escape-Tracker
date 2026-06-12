@@ -14,6 +14,7 @@ ScriptHost:LoadScript("scripts/utils.lua")
 Tracker:AddItems("items/items.json")
 Tracker:AddItems("items/levels.json")
 Tracker:AddItems("items/ER.json")
+Tracker:AddItems("items/StartRooms.json")
 Tracker:AddItems("items/settings.json")
 
 ScriptHost:LoadScript("scripts/layouts.lua")

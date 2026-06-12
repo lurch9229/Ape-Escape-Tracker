@@ -136,6 +136,24 @@
 											}
 										]
 									}
+								},
+								{
+									"title": "Starting Rooms",
+									"content": {
+										"type": "array",
+										"orientation": "horizontal",
+										"margin": "0,0",
+										"content": [
+											{
+												"type": "layout",
+												"key": "startrooms_grid_left"
+											},
+											{
+												"type": "layout",
+												"key": "startrooms_grid_right"
+											}
+										]
+									}
 								}
 							]
 						}

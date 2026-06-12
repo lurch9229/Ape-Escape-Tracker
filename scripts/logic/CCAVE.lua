@@ -1,12 +1,27 @@
 -- time_station = apeescape_location.new("time_station")
+local CCAVE_ENTRANCE = apeescape_location.new("CCAVE_ENTRANCE")
 local CCAVE_ENTRY = apeescape_location.new("CCAVE_ENTRY")
 
 local CCAVE_ENTRY_SECOND_ROOM = apeescape_location.new("CCAVE_ENTRY_SECOND_ROOM")
 local CCAVE_SECOND_ROOM_ENTRY = apeescape_location.new("CCAVE_SECOND_ROOM_ENTRY")
 
---TS Main Hub
-time_station:connect_one_way_entrance("Time Station - CCAVE",CCAVE_ENTRY,function() return CCAVE_Access() end)
+local start_rooms = {
+    CCAVE_ENTRY,             -- Stage 1 / Unknown (0)
+    CCAVE_SECOND_ROOM_ENTRY  -- Stage 2
+}
 
+-- 1. Main connection to the level hub
+time_station:connect_one_way_entrance("Time Station - CCAVE", CCAVE_ENTRANCE, function() return CCAVE_Access() end)
+
+-- 2. Localized inline loop to map the dynamic start rooms
+for stage_idx, room_node in ipairs(start_rooms) do
+    CCAVE_ENTRANCE:connect_one_way_entrance("CCAVE Start - Stage " .. stage_idx, room_node, function()
+        local current_stage = get_start_stage("cc")
+        if current_stage == 0 then current_stage = 1 end
+
+        return current_stage == stage_idx
+    end)
+end
 --Entrances
 CCAVE_ENTRY_SECOND_ROOM:connect_one_way_entrance("CCAVE_ENTRY_SECOND_ROOM_to_CCAVE_SECOND_ROOM_ENTRY",CCAVE_SECOND_ROOM_ENTRY,true)
 CCAVE_SECOND_ROOM_ENTRY:connect_one_way_entrance("CCAVE_SECOND_ROOM_ENTRY_to_CCAVE_ENTRY_SECOND_ROOM",CCAVE_ENTRY_SECOND_ROOM,true)
@@ -18,7 +33,7 @@ CCAVE_ENTRY:connect_one_way_entrance("CCAVE_ENTRY_to_CCAVE_ENTRY_SECOND_ROOM",CC
     return result
 
 end)
-CCAVE_ENTRY_SECOND_ROOM:connect_one_way_entrance("CCAVE_ENTRY_SECOND_ROOM_to_CCAVE_ENTRY",CCAVE_ENTRY,function() return CanSwim() end)
+CCAVE_ENTRY_SECOND_ROOM:connect_one_way_entrance("CCAVE_ENTRY_SECOND_ROOM_to_CCAVE_ENTRY",CCAVE_ENTRY,function() return CanDive() end)
 
 --Monkeys
 CCAVE_ENTRY:connect_one_way("CCAVE_Chip",function()

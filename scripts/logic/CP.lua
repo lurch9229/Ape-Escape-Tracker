@@ -1,4 +1,5 @@
 -- time_station = apeescape_location.new("time_station")
+local CP_ENTRANCE = apeescape_location.new("CP_ENTRANCE")
 local CP_ENTRY = apeescape_location.new("CP_ENTRY")
 
 local CP_OUTSIDE_SEWERS_FRONT = apeescape_location.new("CP_OUTSIDE_SEWERS_FRONT")
@@ -9,8 +10,24 @@ local CP_BARREL_OUTSIDE = apeescape_location.new("CP_BARREL_OUTSIDE")
 local CP_BARREL_SEWERS_FRONT = apeescape_location.new("CP_BARREL_SEWERS_FRONT")
 local CP_BARRELSEWERMIDDLE = apeescape_location.new("CP_BARRELSEWERMIDDLE")
 
---TS Main Hub
-time_station:connect_one_way_entrance("Time Station - CP",CP_ENTRY,function() return CP_Access() end)
+local start_rooms = {
+    CP_ENTRY,                 -- Stage 1 / Unknown (0)
+    CP_SEWERSFRONT_OUTSIDE,   -- Stage 2
+    CP_BARREL_SEWERS_FRONT    -- Stage 3
+}
+
+-- 1. Main connection to the level hub
+time_station:connect_one_way_entrance("Time Station - CP", CP_ENTRANCE, function() return CP_Access() end)
+
+-- 2. Localized inline loop to map the dynamic start rooms
+for stage_idx, room_node in ipairs(start_rooms) do
+    CP_ENTRANCE:connect_one_way_entrance("CP Start - Stage " .. stage_idx, room_node, function()
+        local current_stage = get_start_stage("cp")
+        if current_stage == 0 then current_stage = 1 end
+
+        return current_stage == stage_idx
+    end)
+end
 
 --Entrances
 CP_OUTSIDE_SEWERS_FRONT:connect_one_way_entrance("CP_OUTSIDE_SEWERS_FRONT_to_CP_SEWERSFRONT_OUTSIDE",CP_SEWERSFRONT_OUTSIDE,true)
@@ -171,4 +188,5 @@ CP_SEWERSFRONT_BARREL:connect_one_way("CP_C_Sewers Front2",function()
 end)
 CP_BARRELSEWERMIDDLE:connect_one_way("CP_C_Barrel Room",function() return HasFlyer() or IJ() end)
 
---Mailboxes
+--Jackets
+CP_BARREL_SEWERS_FRONT:connect_one_way("CP_J_Barrel Room",function() return true end)

@@ -579,6 +579,26 @@
                   ]
                 ],
                 "item_size": 175,
+                "margin": "170,-190,0,0"
+              },
+              {
+                "type": "itemgrid",
+                "rows": [
+                  [
+                    "op_rsr_label"
+                  ]
+                ],
+                "item_size": 175,
+                "margin": "0,-140,0,0"
+              },
+              {
+                "type": "itemgrid",
+                "rows": [
+                  [
+                    "op_rsr"
+                  ]
+                ],
+                "item_size": 175,
                 "margin": "170,-190,0,-140"
               }
             ]
@@ -698,6 +718,46 @@
                 "rows": [
                   [
                     "op_mailbox"
+                  ]
+                ],
+                "item_size": 175,
+                "margin": "170,-190,0,0"
+              },
+              {
+                "type": "itemgrid",
+                "rows": [
+                  [
+                    "op_jackets_label"
+                  ]
+                ],
+                "item_size": 175,
+                "margin": "0,-140,0,0"
+              },
+              {
+                "type": "itemgrid",
+                "rows": [
+                  [
+                    "op_jackets"
+                  ]
+                ],
+                "item_size": 175,
+                "margin": "170,-190,0,0"
+              },
+              {
+                "type": "itemgrid",
+                "rows": [
+                  [
+                    "op_tr_label"
+                  ]
+                ],
+                "item_size": 175,
+                "margin": "0,-140,0,0"
+              },
+              {
+                "type": "itemgrid",
+                "rows": [
+                  [
+                    "op_tr"
                   ]
                 ],
                 "item_size": 175,

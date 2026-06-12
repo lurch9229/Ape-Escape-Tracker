@@ -25,7 +25,7 @@
                         ],
                 "access_rules": 
                         [
-                            "$CanReach|SA_ENTRY"
+                            "$CanReach|SA_ENTRANCE"
                         ],
                 "sections": [
                     {
@@ -90,7 +90,7 @@
                         ],
                 "access_rules": 
                         [
-                            "$CanReach|GA_ENTRY"
+                            "$CanReach|GA_ENTRANCE"
                         ],
                 "sections": [
                     {

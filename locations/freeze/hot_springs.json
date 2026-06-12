@@ -26,7 +26,7 @@
                 "chest_opened_img": "images/icons/Monkey_Captured.png",
                 "access_rules": 
                         [
-                            "^$CanReach|HS_ENTRY"
+                            "^$CanReach|HS_ENTRANCE"
                         ],
                 "sections": [
                     {
@@ -171,7 +171,7 @@
                 ],
                 "access_rules": 
                         [
-                            "^$CanReach|HS_ENTRY"
+                            "^$CanReach|HS_ENTRANCE"
                         ],
                 "sections": [
                     {
@@ -225,7 +225,7 @@
                 ],
                 "access_rules": 
                         [
-                            "^$CanReach|HS_ENTRY"
+                            "^$CanReach|HS_ENTRANCE"
                         ],
                 "sections": [
                     {
@@ -284,6 +284,53 @@
                             "net, $CanDive, punch, op_et"
 
                         ],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Hot Springs - Jackets",
+                "map_locations": [
+                    {
+                        "map": "Hot_Springs",
+                        "x": 0,
+                        "y": 0
+                    },
+                    {
+                        "map": "New_Freezeland",
+                        "x": 400,
+                        "y": 140
+                    },
+					{
+                        "map": "Overall_View",
+                        "x": 385,
+                        "y": 370
+                    }
+                ],
+                "access_rules": ["^$CanReach|HS_ENTRANCE"],
+                "sections": [
+                    {
+                        "name": "Entry",
+                        "chest_unopened_img": "images/icons/jacketOn.png",
+                        "chest_opened_img": "images/icons/jacketOff.png",
+                        "visibility_rules": ["shuffleJackets"],
+                        "access_rules": ["^$CanReach|HS_J_Entry"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Hot Spring",
+                        "chest_unopened_img": "images/icons/jacketOn.png",
+                        "chest_opened_img": "images/icons/jacketOff.png",
+                        "visibility_rules": ["shuffleJackets"],
+                        "access_rules": ["^$CanReach|HS_J_Hot Spring"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Polar Bear Cave",
+                        "chest_unopened_img": "images/icons/jacketOn.png",
+                        "chest_opened_img": "images/icons/jacketOff.png",
+                        "visibility_rules": ["shuffleJackets"],
+                        "access_rules": ["^$CanReach|HS_J_Polar Bear Cave"],
                         "item_count": 1
                     }
                 ]

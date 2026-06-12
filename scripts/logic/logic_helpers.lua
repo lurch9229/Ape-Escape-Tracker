@@ -278,3 +278,17 @@ end
 function HasWaterNet() -- CanSwim + CanWaterCatch together
     return (CanSwim() and CanWaterCatch())
 end
+
+function get_start_stage(level_acronym)
+    -- Dynamically build the item code (e.g., "__sr_cc_dst")
+    local item_code = "__sr_" .. tostring(level_acronym) .. "_dst"
+    local sr_item = Tracker:FindObjectForCode(item_code)
+
+    if sr_item then
+        return sr_item.CurrentStage
+    end
+
+    -- Fallback to Stage 1 (Vanilla Entry) if the item is somehow missing
+    print("WARNING: Could not find starting room item for " .. item_code)
+    return 1
+end

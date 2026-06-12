@@ -11,82 +11,449 @@
                         "x": 45,
                         "y": 140
                     },
-					{
+                    {
                         "map": "Overall_View",
-                        "x": 30,
+                        "x": 22,
                         "y": 500
                     }
                 ],
-                "visibility_rules":
-                        [
-                            ""
-                        ],
-                "access_rules":
-                        [
-                            "^$CanReach|time_station"
-                        ],
-                "sections":
-                [
-                        {
-                            "name": "Welcome!",
-                            "chest_unopened_img": "images/icons/RedMailboxOn.png",
-                            "chest_opened_img": "images/icons/RedMailboxOff.png",
-                            "visibility_rules":
-                            [
-                                "shuffleMailbox",
-								"^$showTimeStationMailboxes"
-                            ],
-                            "access_rules":
-                            [
-                                "^$CanReach|Welcome!"
-                            ],
-                            "item_count": 1
-                        },
-                        {
-                            "name": "Save Station",
-                            "chest_unopened_img": "images/icons/RedMailboxOn.png",
-                            "chest_opened_img": "images/icons/RedMailboxOff.png",
-                            "visibility_rules":
-                            [
-                                "shuffleMailbox",
-								"^$showTimeStationMailboxes"
-                            ],
-                            "access_rules":
-                            [
-                                "^$CanReach|Save Station"
-                            ],
-                            "item_count": 1
-                            },
-                        {
-                            "name": "Mini Game Corner",
-                            "chest_unopened_img": "images/icons/RedMailboxOn.png",
-                            "chest_opened_img": "images/icons/RedMailboxOff.png",
-                            "visibility_rules":
-                            [
-                                "shuffleMailbox",
-								"^$showTimeStationMailboxes"
-                            ],
-                            "access_rules":
-                            [
-                               "^$CanReach|Mini Game Corner"
-                            ],
-                            "item_count": 1
-                        },
-                        {
-                            "name": "Training Space",
-                            "chest_unopened_img": "images/icons/RedMailboxOn.png",
-                            "chest_opened_img": "images/icons/RedMailboxOff.png",
-                            "visibility_rules":
-                            [
-                                "shuffleMailbox",
-								"^$showTimeStationMailboxes"
-                            ],
-                            "access_rules":
-                                [
-                                    "^$CanReach|Training Space"
-                                ],
-                            "item_count": 1
-                        }
+                "visibility_rules": [""],
+                "access_rules": ["^$CanReach|time_station"],
+                "sections": [
+                    {
+                        "name": "Welcome!",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["shuffleMailbox", "^$showTimeStationMailboxes"],
+                        "access_rules": ["^$CanReach|Welcome!"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Save Station",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["shuffleMailbox", "^$showTimeStationMailboxes"],
+                        "access_rules": ["^$CanReach|Save Station"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Mini Game Corner",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["shuffleMailbox", "^$showTimeStationMailboxes"],
+                        "access_rules": ["^$CanReach|Mini Game Corner"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Training Space",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["shuffleMailbox", "^$showTimeStationMailboxes"],
+                        "access_rules": ["^$CanReach|Training Space"],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Water Net Training - Mailboxes",
+                "map_locations": [
+                    {"map": "Time_Station", "x": 285, "y": 140},
+                    {"map": "Overall_View", "x": 50, "y": 480}
+                ],
+                "visibility_rules": ["op_tr_mailboxes"],
+                "access_rules": ["^$CanReach|TIME_TRAINING_WATERNET"],
+                "sections": [
+                    {
+                        "name": "The Water Net Appears",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_WN_The Water Net Appears"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Push In the Sticks",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_WN_Push In the Sticks"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Launch the Net",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_WN_Launch the Net"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "You Passed!",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_WN_You Passed!"],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Water Net Training - Completion",
+                "map_locations": [
+                    {"map": "Time_Station", "x": 285, "y": 140},
+                    {"map": "Overall_View", "x": 50, "y": 480}
+                ],
+                "visibility_rules": ["op_tr_completion"],
+                "access_rules": ["^$CanReach|TIME_TRAINING_WATERNET"],
+                "sections": [
+                    {
+                        "name": "Completion",
+                        "chest_unopened_img": "images/icons/WaterNetOn.png",
+                        "chest_opened_img": "images/icons/WaterNetOff.png",
+                        "visibility_rules": ["op_tr_completion"],
+                        "access_rules": ["^$CanReach|TT_WN_Completion"],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Radar Training - Mailboxes",
+                "map_locations": [
+                    {"map": "Time_Station", "x": 310, "y": 140},
+                    {"map": "Overall_View", "x": 70, "y": 480}
+                ],
+                "visibility_rules": ["op_tr_mailboxes"],
+                "access_rules": ["^$CanReach|TIME_TRAINING_RADAR"],
+                "sections": [
+                    {
+                        "name": "A Gadget For Finding Monkeys",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_MR_A Gadget For Finding Monkeys"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Use the Radar",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_MR_Use the Radar"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Gadget Select Screen",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_MR_Gadget Select Screen"],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Monkey Radar Training - Completion",
+                "map_locations": [
+                    {"map": "Time_Station", "x": 310, "y": 140},
+                    {"map": "Overall_View", "x": 70, "y": 480}
+                ],
+                "visibility_rules": ["op_tr_completion"],
+                "access_rules": ["^$CanReach|TIME_TRAINING_RADAR"],
+                "sections": [
+                    {
+                        "name": "Completion",
+                        "chest_unopened_img": "images/icons/RadarOn.png",
+                        "chest_opened_img": "images/icons/RadarOff.png",
+                        "visibility_rules": ["op_tr_completion"],
+                        "access_rules": ["^$CanReach|TT_MR_Completion"],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Slingback Shooter Training - Mailboxes",
+                "map_locations": [
+                    {"map": "Time_Station", "x": 335, "y": 140},
+                    {"map": "Overall_View", "x": 90, "y": 480}
+                ],
+                "visibility_rules": ["op_tr_mailboxes"],
+                "access_rules": ["^$CanReach|TIME_TRAINING_SLING"],
+                "sections": [
+                    {
+                        "name": "Destroy Distant Enemies",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_SL_Destroy Distant Enemies"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Switches Out of Reach",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_SL_Switches Out of Reach"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Types of Bullets",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_SL_Types of Bullets"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Nice Shooting!",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_SL_Nice Shooting!"],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Slingback Shooter Training - Completion",
+                "map_locations": [
+                    {"map": "Time_Station", "x": 335, "y": 140},
+                    {"map": "Overall_View", "x": 90, "y": 480}
+                ],
+                "visibility_rules": ["op_tr_completion"],
+                "access_rules": ["^$CanReach|TIME_TRAINING_SLING"],
+                "sections": [
+                    {
+                        "name": "Completion",
+                        "chest_unopened_img": "images/icons/SLingOn.png",
+                        "chest_opened_img": "images/icons/SlingOff.png",
+                        "visibility_rules": ["op_tr_completion"],
+                        "access_rules": ["^$CanReach|TT_SL_Completion"],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Super Hoop Training - Mailboxes",
+                "map_locations": [
+                    {"map": "Time_Station", "x": 360, "y": 140},
+                    {"map": "Overall_View", "x": 110, "y": 480}
+                ],
+                "visibility_rules": ["op_tr_mailboxes"],
+                "access_rules": ["^$CanReach|TIME_TRAINING_HOOP"],
+                "sections": [
+                    {
+                        "name": "Dash Shield",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_HP_Dash Shield"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Step On the Switch",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_HP_Step On the Switch"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Way To Go!",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_HP_Way To Go!"],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Super Hoop Training - Completion",
+                "map_locations": [
+                    {"map": "Time_Station", "x": 360, "y": 140},
+                    {"map": "Overall_View", "x": 110, "y": 480}
+                ],
+                "visibility_rules": ["op_tr_completion"],
+                "access_rules": ["^$CanReach|TIME_TRAINING_HOOP"],
+                "sections": [
+                    {
+                        "name": "Completion",
+                        "chest_unopened_img": "images/icons/HoopOn.png",
+                        "chest_opened_img": "images/icons/HoopOff.png",
+                        "visibility_rules": ["op_tr_completion"],
+                        "access_rules": ["^$CanReach|TT_HP_Completion"],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Sky Flyer Training - Mailboxes",
+                "map_locations": [
+                    {"map": "Time_Station", "x": 285, "y": 165},
+                    {"map": "Overall_View", "x": 50, "y": 500}
+                ],
+                "visibility_rules": ["op_tr_mailboxes"],
+                "access_rules": ["^$CanReach|TIME_TRAINING_FLYER"],
+                "sections": [
+                    {
+                        "name": "It's a Great Invention!",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_FL_It's a Great Invention!"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Jump Long Distances",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_FL_Jump Long Distances"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Excellent Flying!!",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_FL_Excellent Flying!!"],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Sky Flyer Training - Completion",
+                "map_locations": [
+                    {"map": "Time_Station", "x": 285, "y": 165},
+                    {"map": "Overall_View", "x": 50, "y": 500}
+                ],
+                "visibility_rules": ["op_tr_completion"],
+                "access_rules": ["^$CanReach|TIME_TRAINING_FLYER"],
+                "sections": [
+                    {
+                        "name": "Completion",
+                        "chest_unopened_img": "images/icons/FlyerOn.png",
+                        "chest_opened_img": "images/icons/FlyerOff.png",
+                        "visibility_rules": ["op_tr_completion"],
+                        "access_rules": ["^$CanReach|TT_FL_Completion"],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "RC Car Training - Mailboxes",
+                "map_locations": [
+                    {"map": "Time_Station", "x": 310, "y": 165},
+                    {"map": "Overall_View", "x": 70, "y": 500}
+                ],
+                "visibility_rules": ["op_tr_mailboxes"],
+                "access_rules": ["^$CanReach|TIME_TRAINING_CAR"],
+                "sections": [
+                    {
+                        "name": "The RC Car Appears",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_RC_The RC Car Appears"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Trigger the Floor Switch",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_RC_Trigger the Floor Switch"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Through That Small Opening",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_RC_Through That Small Opening"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "What a Great Gadget!",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_RC_What a Great Gadget!"],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "RC Car Training - Completion",
+                "map_locations": [
+                    {"map": "Time_Station", "x": 310, "y": 165},
+                    {"map": "Overall_View", "x": 70, "y": 500}
+                ],
+                "visibility_rules": ["op_tr_completion"],
+                "access_rules": ["^$CanReach|TIME_TRAINING_CAR"],
+                "sections": [
+                    {
+                        "name": "Completion",
+                        "chest_unopened_img": "images/icons/CarOn.png",
+                        "chest_opened_img": "images/icons/CarOff.png",
+                        "visibility_rules": ["op_tr_completion"],
+                        "access_rules": ["^$CanReach|TT_RC_Completion"],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Magic Punch Training - Mailboxes",
+                "map_locations": [
+                    {"map": "Time_Station", "x": 335, "y": 165},
+                    {"map": "Overall_View", "x": 90, "y": 500}
+                ],
+                "visibility_rules": ["op_tr_mailboxes"],
+                "access_rules": ["^$CanReach|TIME_TRAINING_PUNCH"],
+                "sections": [
+                    {
+                        "name": "A Mighty Fist!",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_MP_A Mighty Fist!"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Aim Well!",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_MP_Aim Well!"],
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Packs a Powerful Punch",
+                        "chest_unopened_img": "images/icons/RedMailboxOn.png",
+                        "chest_opened_img": "images/icons/RedMailboxOff.png",
+                        "visibility_rules": ["op_tr_mailboxes"],
+                        "access_rules": ["^$CanReach|TT_MP_Packs a Powerful Punch"],
+                        "item_count": 1
+                    }
+                ]
+            },
+            {
+                "name": "Magic Punch Training - Completion",
+                "map_locations": [
+                    {"map": "Time_Station", "x": 335, "y": 165},
+                    {"map": "Overall_View", "x": 90, "y": 500}
+                ],
+                "visibility_rules": ["op_tr_completion"],
+                "access_rules": ["^$CanReach|TIME_TRAINING_PUNCH"],
+                "sections": [
+                    {
+                        "name": "Completion",
+                        "chest_unopened_img": "images/icons/PunchOn.png",
+                        "chest_opened_img": "images/icons/PunchOff.png",
+                        "visibility_rules": ["op_tr_completion"],
+                        "access_rules": ["^$CanReach|TT_MP_Completion"],
+                        "item_count": 1
+                    }
                 ]
             }
         ]

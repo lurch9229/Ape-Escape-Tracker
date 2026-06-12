@@ -1,4 +1,5 @@
 -- time_station = apeescape_location.new("time_station")
+local WSW_ENTRANCE = apeescape_location.new("WSW_ENTRANCE")
 local WSW_ENTRY = apeescape_location.new("WSW_ENTRY")
 
 local WSW_ENTRY_GONG = apeescape_location.new("WSW_ENTRY_GONG")
@@ -11,8 +12,26 @@ local WSW_OBSTACLE_BARREL = apeescape_location.new("WSW_OBSTACLE_BARREL")
 local WSW_BARREL_OBSTACLE = apeescape_location.new("WSW_BARREL_OBSTACLE")
 
 
---TS Main Hub
-time_station:connect_one_way_entrance("Time Station - WSW",WSW_ENTRY,function() return WSW_Access() end)
+local start_rooms = {
+    WSW_ENTRY,            -- Stage 1 / Unknown (0)
+    WSW_GONG_ENTRY,       -- Stage 2
+    WSW_MIDDLE_GONG,      -- Stage 3
+    WSW_OBSTACLE_MIDDLE,  -- Stage 4
+    WSW_BARREL_OBSTACLE   -- Stage 5
+}
+
+-- 1. Main connection to the level hub
+time_station:connect_one_way_entrance("Time Station - WSW", WSW_ENTRANCE, function() return WSW_Access() end)
+
+-- 2. Localized inline loop to map the dynamic start rooms
+for stage_idx, room_node in ipairs(start_rooms) do
+    WSW_ENTRANCE:connect_one_way_entrance("WSW Start - Stage " .. stage_idx, room_node, function()
+        local current_stage = get_start_stage("wsw")
+        if current_stage == 0 then current_stage = 1 end
+
+        return current_stage == stage_idx
+    end)
+end
 
 --Entrances
 WSW_ENTRY_GONG:connect_one_way_entrance("WSW_ENTRY_GONG_to_WSW_GONG_ENTRY",WSW_GONG_ENTRY,true)
@@ -100,6 +119,9 @@ WSW_BARREL_OBSTACLE:connect_one_way("WSW_C_Barrel Room",function()
     return result
 
 end)
+
+--Jackets
+WSW_BARREL_OBSTACLE:connect_one_way("WSW_J_Barrel Room",function() return true end)
 
 --Mailboxes
 WSW_GONG_ENTRY:connect_one_way("WSW_M_White Pants = Very Alert",function() return CanHitOnce() end)

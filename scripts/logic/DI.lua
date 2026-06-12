@@ -1,4 +1,5 @@
 -- time_station = apeescape_location.new("time_station")
+local DI_ENTRANCE = apeescape_location.new("DI_ENTRANCE")
 local DI_ENTRY = apeescape_location.new("DI_ENTRY")
 
 local DI_ENTRY_STOMACH = apeescape_location.new("DI_ENTRY_STOMACH")
@@ -14,9 +15,26 @@ local DI_TENTACLE = apeescape_location.new("DI_TENTACLE")
 
 local DI_GALLERYBOULDER = apeescape_location.new("DI_GALLERYBOULDER")
 
---TS Main Hub
-time_station:connect_one_way_entrance("Time Station - DI",DI_ENTRY,function() return DI_Access() end)
+local start_rooms = {
+    DI_ENTRY,                   -- Stage 1 / Unknown (0)
+    DI_STOMACH_ENTRY,           -- Stage 2
+    DI_GALLERY_SLIDE_ELEVATOR,  -- Stage 3
+    DI_TENTACLE,                -- Stage 4
+    DI_SLIDE_ROOM_STOMACH       -- Stage 5
+}
 
+-- 1. Main connection to the level hub
+time_station:connect_one_way_entrance("Time Station - DI", DI_ENTRANCE, function() return DI_Access() end)
+
+-- 2. Localized inline loop to map the dynamic start rooms
+for stage_idx, room_node in ipairs(start_rooms) do
+    DI_ENTRANCE:connect_one_way_entrance("DI Start - Stage " .. stage_idx, room_node, function()
+        local current_stage = get_start_stage("di")
+        if current_stage == 0 then current_stage = 1 end
+
+        return current_stage == stage_idx
+    end)
+end
 --Entrances
 DI_ENTRY_STOMACH:connect_one_way_entrance("DI_ENTRY_STOMACH_to_DI_STOMACH_ENTRY",DI_STOMACH_ENTRY,true)
 DI_STOMACH_ENTRY:connect_one_way_entrance("DI_STOMACH_ENTRY_to_DI_ENTRY_STOMACH",DI_ENTRY_STOMACH,true)
@@ -149,6 +167,10 @@ DI_SLIDE_ROOM_GALLERY_WATER:connect_one_way("DI_C_Slide Room2",function()
     return result
 
 end)
+
+--Jackets
+DI_TENTACLE:connect_one_way("DI_J_Tentacle Room",function() return true end)
+
 --Mailboxes
 DI_ENTRY:connect_one_way("DI_M_I Named Him Dexter",function() return CanHitOnce() end)
 DI_ENTRY:connect_one_way("DI_M_Blue Pants",function() return CanHitOnce() end)

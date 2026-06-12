@@ -1,4 +1,5 @@
 -- time_station = apeescape_location.new("time_station")
+local DR_ENTRANCE = apeescape_location.new("DR_ENTRANCE")
 local DR_ENTRY = apeescape_location.new("DR_ENTRY")
 
 local DR_OUTSIDE_FENCE = apeescape_location.new("DR_OUTSIDE_FENCE")
@@ -14,8 +15,25 @@ local DR_OBELISK_TOP = apeescape_location.new("DR_OBELISK_TOP")
 local DR_WATER_SIDE = apeescape_location.new("DR_WATER_SIDE")
 local DR_WATER_LEDGE = apeescape_location.new("DR_WATER_LEDGE")
 
---TS Main Hub
-time_station:connect_one_way_entrance("Time Station - DR",DR_ENTRY,function() return DR_Access() end)
+local start_rooms = {
+    DR_ENTRY,             -- Stage 1 / Unknown (0)
+    DR_FAN_OUTSIDE_HOLE,  -- Stage 2
+    DR_OBELISK_BOTTOM,    -- Stage 3
+    DR_WATER_SIDE         -- Stage 4
+}
+
+-- 1. Main connection to the level hub
+time_station:connect_one_way_entrance("Time Station - DR", DR_ENTRANCE, function() return DR_Access() end)
+
+-- 2. Localized inline loop to map the dynamic start rooms
+for stage_idx, room_node in ipairs(start_rooms) do
+    DR_ENTRANCE:connect_one_way_entrance("DR Start - Stage " .. stage_idx, room_node, function()
+        local current_stage = get_start_stage("dr")
+        if current_stage == 0 then current_stage = 1 end
+
+        return current_stage == stage_idx
+    end)
+end
 
 --Entrances
 DR_OUTSIDE_FENCE:connect_one_way_entrance("DR_OUTSIDE_FENCE_to_DR_FAN_OUTSIDE_FENCE",DR_FAN_OUTSIDE_FENCE)
@@ -158,6 +176,17 @@ DR_OBELISK_BOTTOM:connect_one_way("DR_C_Obelisk Inside",function()
 
 end)
 DR_WATER_SIDE:connect_one_way("DR_C_Water Basement",function() return CanDive() end)
+
+--Jackets
+DR_OBELISK_BOTTOM:connect_one_way("DR_J_Obelisk Inside",function()
+    result = any(
+                Eval_Logic(HasPunch(),0),
+                Eval_Logic((HasPunch() or IJ()),1),
+                Eval_Logic((HasPunch() or IJ() or SuperFlyer(DR_OBELISK_BOTTOM,2)),2)
+               )
+    return result
+end)
+DR_WATER_SIDE:connect_one_way("DR_J_Water Basement",function() return true end)
 
 --Mailboxes
 DR_ENTRY:connect_one_way("DR_M_Monkey Attributes",true)

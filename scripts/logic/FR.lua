@@ -1,4 +1,5 @@
 -- time_station = apeescape_location.new("time_station")
+local FR_ENTRANCE = apeescape_location.new("FR_ENTRANCE")
 local FR_ENTRY = apeescape_location.new("FR_ENTRY")
 
 local FR_ENTRY_CAVERNS = apeescape_location.new("FR_ENTRY_CAVERNS")
@@ -6,8 +7,24 @@ local FR_CAVERNS_ENTRY = apeescape_location.new("FR_CAVERNS_ENTRY")
 local FR_CAVERNS_WATER = apeescape_location.new("FR_CAVERNS_WATER")
 local FR_WATER_CAVERNS = apeescape_location.new("FR_WATER_CAVERNS")
 
---TS Main Hub
-time_station:connect_one_way_entrance("Time Station - FR",FR_ENTRY,function() return FR_Access() end)
+local start_rooms = {
+    FR_ENTRY,          -- Stage 1 / Unknown (0)
+    FR_WATER_CAVERNS,  -- Stage 2
+    FR_CAVERNS_ENTRY   -- Stage 3
+}
+
+-- 1. Main connection to the level hub
+time_station:connect_one_way_entrance("Time Station - FR", FR_ENTRANCE, function() return FR_Access() end)
+
+-- 2. Localized inline loop to map the dynamic start rooms
+for stage_idx, room_node in ipairs(start_rooms) do
+    FR_ENTRANCE:connect_one_way_entrance("FR Start - Stage " .. stage_idx, room_node, function()
+        local current_stage = get_start_stage("fr")
+        if current_stage == 0 then current_stage = 1 end
+
+        return current_stage == stage_idx
+    end)
+end
 
 --Entrances
 
@@ -28,7 +45,7 @@ end)
 FR_CAVERNS_ENTRY:connect_one_way_entrance("FR_CAVERNS_ENTRY_to_FR_CAVERNS_WATER",FR_CAVERNS_WATER,function()
     result = any(
                 Eval_Logic((HasFlyer() or IJ()),0),
-                Eval_Logic((true),1)
+                Eval_Logic((true),2)
                )
     return result
 
@@ -65,7 +82,14 @@ FR_WATER_CAVERNS:connect_one_way("FR_Droog",function()
     return result
 
 end)
-FR_CAVERNS_ENTRY:connect_one_way("FR_Gash",function() return HasNet() end)
+FR_CAVERNS_ENTRY:connect_one_way("FR_Gash",function()
+    result = any(
+                Eval_Logic((HasNet() or (CanDive() and HasWaterNet())), 0),
+                Eval_Logic((HasNet() or HasWaterNet()), 1)
+               )
+    return result
+
+end)
 FR_CAVERNS_WATER:connect_one_way("FR_Kundra",function() return HasNet() end)
 FR_WATER_CAVERNS:connect_one_way("FR_Shadow",function()
     result = any(
