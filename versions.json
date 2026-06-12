@@ -2,6 +2,18 @@
 	
     "versions": [
         {
+                "package_version": "0.7.0",
+                "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.7.0/Ape-Escape-Tracker-0.7.0.zip",
+                "sha256": "5e40f6c95f900659e6f020440c18d21e471dd6e2837d64bf5fabf8b1d5067b88",
+                "changelog": [
+					"Changed/Added settings (Including autotracking) : Random Start Room, Entrances, Jackets, Training Rooms",
+					"Added Jackets and Training Rooms locations to the map",
+					"Added Starting Room tab where you can track the Randomize Starting Room of each level",
+					"Updated all logic according to apworld and fixed a logic bug in TVT",
+					"Logic is now compatible with Random Starting Room option and will show correctly what you can do depending on Starting Room"
+                ]
+        },
+		{
                 "package_version": "0.6.3",
                 "download_url": "https://github.com/lurch9229/Ape-Escape-Tracker/releases/download/0.6.3/Ape-Escape-Tracker-0.6.3.zip",
                 "sha256": "a16e8d25a796853e3f4f4dea3388ea4b5544cc0682704a64037f88fa73417113",
