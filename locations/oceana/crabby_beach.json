@@ -104,7 +104,7 @@
                         ],
                         "access_rules": 
                         [
-                            "^$CanReach|CB_Shaka"
+                            "^$CanReach|CB_Puka"
                         ],
                         "item_count": 1
                     },
